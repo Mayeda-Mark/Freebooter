@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ocean
+  - Land
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ocean
+    uniqueID: 523155495
+    locked: 0
+  - name: Ships
+    uniqueID: 1063570197
+    locked: 0
+  - name: Land
+    uniqueID: 416527521
     locked: 0
