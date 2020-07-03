@@ -12,14 +12,10 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float shipSpeed = 0.3f;
     float stopped = 0f;
     int sails = 0;
-    float shipRotation;
-    float absShipRotation;
     // Start is called before the first frame update
     void Start()
     {
 		myRigidBody = GetComponent<Rigidbody2D>();
-        shipRotation = myRigidBody.rotation;
-        
     }
 
     // Update is called once per frame
@@ -32,32 +28,10 @@ public class PlayerShipController : MonoBehaviour
     private void Turn() {
         if(Input.GetKey("a")) {
             myRigidBody.rotation += spinRate;
-            shipRotation += spinRate;
         }
         if(Input.GetKey("d")) {
             myRigidBody.rotation -= spinRate;
-            shipRotation -= spinRate;
         }
-        shipRotation = CorrectRotation(shipRotation);
-        absShipRotation = FindAbsRotation(shipRotation);
-        print(absShipRotation);
-    }
-    private float CorrectRotation(float rotation) {
-        if(rotation >= 360) {
-            rotation -= 360;
-        }
-        if(rotation <= -360) {
-            rotation += 360;
-        } return rotation;
-    }
-    private float FindAbsRotation(float rotation) {
-        float absRotation;
-        if(rotation >= 0) {
-            absRotation = rotation - 360;
-        } else {
-            absRotation = rotation;
-        }
-        return Mathf.Abs(absRotation);
     }
     private void SetSails() {
         if(Input.GetKeyDown("w")){
@@ -70,10 +44,6 @@ public class PlayerShipController : MonoBehaviour
     }
     private void Move() {
         float moveSpeed = (shipSpeed * sails) * Time.deltaTime;
-        float currentx = myRigidBody.transform.position.x;
-        float currenty = myRigidBody.transform.position.y;
-        Vector2 newPlayerPosition = new Vector2((moveSpeed * Mathf.Sin(absShipRotation)) + currentx, 
-        (moveSpeed * Mathf.Cos(absShipRotation)) + currenty);
-        myRigidBody.transform.position = newPlayerPosition;
+        myRigidBody.transform.position += transform.up * moveSpeed;
     }
 }
