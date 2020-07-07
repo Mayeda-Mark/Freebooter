@@ -47,6 +47,9 @@ TagManager:
   - name: Ships
     uniqueID: 1063570197
     locked: 0
+  - name: Cannon Balls
+    uniqueID: 818620103
+    locked: 0
   - name: Land
     uniqueID: 416527521
     locked: 0
