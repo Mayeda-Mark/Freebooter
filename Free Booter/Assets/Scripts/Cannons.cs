@@ -36,5 +36,10 @@ public class Cannons : MonoBehaviour
             GameObject newProjectile = Instantiate(projectile, rCannon.transform.position, rCannon.transform.rotation) as GameObject;
             newProjectile.transform.parent = projectileParent.transform;
         }
+        if(Input.GetKeyUp(KeyCode.LeftArrow)) {
+            print("Fire right cannon!");
+            GameObject newProjectile = Instantiate(projectile, lCannon.transform.position, lCannon.transform.rotation) as GameObject;
+            newProjectile.transform.parent = projectileParent.transform;
+        }
     }
 }

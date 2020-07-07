@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 5
+  range: 10
 --- !u!212 &4180485456894371010
 SpriteRenderer:
   m_ObjectHideFlags: 0
