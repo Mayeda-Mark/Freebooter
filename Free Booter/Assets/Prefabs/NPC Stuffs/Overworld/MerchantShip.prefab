@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2948743637687882404}
   - component: {fileID: 1147424065839538496}
   - component: {fileID: 3398257759081425562}
+  - component: {fileID: 458001062491142849}
   m_Layer: 11
   m_Name: MerchantShip
   m_TagString: Untagged
@@ -108,7 +109,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577285437477490979}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -133,3 +134,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811a419cc1248864daaf2b076ef2e078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAttacker: 0
+  projectile: {fileID: 4180485456894371011, guid: 8bf75d812e36e4ee98adc9b489e79faa,
+    type: 3}
+--- !u!114 &458001062491142849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7577285437477490979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe21580e1c8170418bf1e3471f4b874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  townPortals:
+  - {fileID: 8303569242417062062, guid: e067b490e7d761e47b5c9055e7b1dd60, type: 3}
+  - {fileID: 3549571670482602287, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
+  - {fileID: 1264828353130469911, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
+  spawnDistance: 20
+  shipSpeed: 2
+  NPC: {fileID: 7577285437477490979}

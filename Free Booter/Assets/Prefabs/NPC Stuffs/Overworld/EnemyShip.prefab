@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5551627976959358481}
   - component: {fileID: 2445905045612224864}
   - component: {fileID: 130649582749659087}
-  - component: {fileID: -3109442725568711914}
+  - component: {fileID: 5968402080820494390}
+  - component: {fileID: -2391417674518802338}
   m_Layer: 11
   m_Name: EnemyShip
   m_TagString: Untagged
@@ -108,7 +109,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4300154938260787729}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -121,7 +122,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &-3109442725568711914
+--- !u!114 &5968402080820494390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4300154938260787729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe21580e1c8170418bf1e3471f4b874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  townPortals:
+  - {fileID: 8303569242417062062, guid: e067b490e7d761e47b5c9055e7b1dd60, type: 3}
+  - {fileID: 3549571670482602287, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
+  - {fileID: 1264828353130469911, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
+  spawnDistance: 20
+  shipSpeed: 2
+  NPC: {fileID: 4300154938260787729}
+--- !u!114 &-2391417674518802338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,5 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811a419cc1248864daaf2b076ef2e078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAttacker: 1
+  isAttacker: 0
   projectile: {fileID: 0}
