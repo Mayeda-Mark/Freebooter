@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 674494186}
   - component: {fileID: 674494187}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cannons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,6 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1155456149}
+  - {fileID: 1783988732}
   m_Father: {fileID: 2190582240179415412}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 4180485456894371011, guid: 8bf75d812e36e4ee98adc9b489e79faa,
     type: 3}
-  lCannon: {fileID: 0}
+  lCannon: {fileID: 1783988731}
   rCannon: {fileID: 1155456148}
 --- !u!1 &1155456148
 GameObject:
@@ -57,7 +58,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155456149}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rcannons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,6 +79,36 @@ Transform:
   m_Father: {fileID: 674494186}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &1783988731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783988732}
+  m_Layer: 10
+  m_Name: LCannons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1783988732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783988731}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 674494186}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &2190582240179415418
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +121,8 @@ GameObject:
   - component: {fileID: 2190582240179415413}
   - component: {fileID: 2190582240179415415}
   - component: {fileID: 2190582240179415414}
-  m_Layer: 0
+  - component: {fileID: 1211782308}
+  m_Layer: 10
   m_Name: Player-Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,11 +206,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19ca9b0872eced428a5d3fea5a88b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinRate: 0.3
+  spinRate: 1
   fullSail: 3
   halfSail: 2
   quarterSail: 1
-  shipSpeed: 0.3
+  shipSpeed: 1
 --- !u!50 &2190582240179415414
 Rigidbody2D:
   serializedVersion: 4
@@ -198,5 +230,21 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!70 &1211782308
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2190582240179415418}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.66, y: 1.13}
+  m_Direction: 0

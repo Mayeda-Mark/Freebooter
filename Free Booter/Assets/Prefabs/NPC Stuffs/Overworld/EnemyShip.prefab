@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4300154938260787729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.462006, y: 14.251385, z: -12.153838}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: -1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &2445905045612224864
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4300154938260787729}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -135,11 +135,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   townPortals:
-  - {fileID: 8303569242417062062, guid: e067b490e7d761e47b5c9055e7b1dd60, type: 3}
-  - {fileID: 3549571670482602287, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
-  - {fileID: 1264828353130469911, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
+  - {fileID: 885343561695667143, guid: e067b490e7d761e47b5c9055e7b1dd60, type: 3}
+  - {fileID: 2114630486268830826, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
+  - {fileID: 8397689371320945120, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
   spawnDistance: 20
   shipSpeed: 2
+  turnSpeed: 50
   NPC: {fileID: 4300154938260787729}
 --- !u!114 &-2391417674518802338
 MonoBehaviour:
