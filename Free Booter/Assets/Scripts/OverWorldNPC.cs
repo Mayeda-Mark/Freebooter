@@ -7,6 +7,8 @@ public class OverWorldNPC : MonoBehaviour
     [SerializeField] bool isAttacker = false;
     [SerializeField] GameObject projectile;
     // Start is called before the first frame update
+    bool vulnerable = false;
+    float spawnInvincibility = 2f;
     void Start()
     {
         
@@ -16,5 +18,14 @@ public class OverWorldNPC : MonoBehaviour
     void Update()
     {
         
+    }
+    public IEnumerator Spawn() {
+        yield return new WaitForSeconds(spawnInvincibility);
+        vulnerable = true;
+    }
+    public void Kill() {
+        if(vulnerable) {
+            Destroy(gameObject);
+        }
     }
 }

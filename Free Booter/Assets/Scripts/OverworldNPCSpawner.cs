@@ -20,6 +20,7 @@ public class OverworldNPCSpawner : MonoBehaviour
         int protalIndex = GetPortalIndex();
         int NPCIndex = GetNPCIndex();
         var newNPC = Instantiate(NPCs[NPCIndex], townPortals[protalIndex].transform.position, Quaternion.identity);
+        StartCoroutine(newNPC.GetComponent<OverWorldNPC>().Spawn());
         yield return new WaitForSeconds(spawnDelay);
     }
     private int GetPortalIndex() {

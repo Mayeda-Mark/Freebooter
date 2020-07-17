@@ -19,11 +19,14 @@ public class OverworldNPCController : MonoBehaviour
     }
     private void SetTarget() {
         target = RollTarget();
+        print(Vector2.Distance(transform.position, target.transform.position));
         if(Vector2.Distance(transform.position, target.transform.position) <= spawnDistance) {
-            target = RollTarget();
+            print("IF");
+            SetTarget();
         }
     }
     private TownPortal RollTarget() {
+        print("rollTarget Called");
         int index = Random.Range(0, townPortals.Count);
         return townPortals[index];
     }
