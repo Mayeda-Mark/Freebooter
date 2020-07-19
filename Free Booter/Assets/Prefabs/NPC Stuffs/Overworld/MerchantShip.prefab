@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 1147424065839538496}
   - component: {fileID: 3398257759081425562}
   - component: {fileID: 458001062491142849}
+  - component: {fileID: 471296552}
+  - component: {fileID: 8764445939405476193}
+  - component: {fileID: 4908913204696189239}
   m_Layer: 11
   m_Name: MerchantShip
   m_TagString: Untagged
@@ -154,6 +157,81 @@ MonoBehaviour:
   - {fileID: 2114630486268830826, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
   - {fileID: 8397689371320945120, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
   spawnDistance: 20
-  shipSpeed: 2
+  shipSpeed: 1.5
   turnSpeed: 1
   NPC: {fileID: 7577285437477490979}
+  landSpotter: {fileID: 8764445939405476193}
+  lCollider: {fileID: 4908913204696189239}
+--- !u!114 &471296552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7577285437477490979}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b1f0b9b3b35f448bf9632f1086e1cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewRadius: 10
+  viewAngle: 44
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 512
+  visibleTargets: []
+--- !u!61 &8764445939405476193
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7577285437477490979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000009536743, y: -1.7823877}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.66, y: 1.13}
+    newSize: {x: 0.66, y: 1.13}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98026466, y: 2.8086243}
+  m_EdgeRadius: 0
+--- !u!61 &4908913204696189239
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7577285437477490979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.36432457, y: -1.2168562}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.66, y: 1.13}
+    newSize: {x: 0.66, y: 1.13}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7548065, y: 3.5637126}
+  m_EdgeRadius: 0

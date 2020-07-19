@@ -48,7 +48,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   NPCs:
-  - {fileID: -2391417674518802338, guid: acdc22e80d1282247aa3f0b4adc71fe8, type: 3}
+  - {fileID: 6730089708881765223, guid: acdc22e80d1282247aa3f0b4adc71fe8, type: 3}
   - {fileID: 3398257759081425562, guid: 7c99e8f1e309e5e498be9a52410541b6, type: 3}
   spawnDelay: 10
   spawning: 1

@@ -11,17 +11,19 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] GameObject NPC;
     TownPortal target;
     Rigidbody2D myRigidBody;
+    CapsuleCollider2D MyHullCollider;
+    [SerializeField] BoxCollider2D landSpotter, lCollider;
     
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+        MyHullCollider = GetComponent<CapsuleCollider2D>();
         SetTarget();
     }
     private void SetTarget() {
         target = RollTarget();
         print(Vector2.Distance(transform.position, target.transform.position));
         if(Vector2.Distance(transform.position, target.transform.position) <= spawnDistance) {
-            print("IF");
             SetTarget();
         }
     }
@@ -33,7 +35,6 @@ public class OverworldNPCController : MonoBehaviour
 
     void Update()
     {
-        TurnTowardsTarget();
         Move();   
     }
     private void TurnTowardsTarget() {
@@ -43,7 +44,28 @@ public class OverworldNPCController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
     }
     private void Move() {
+        if(!CanSeeLand() || !GetComponent<OverWorldNPC>().isVulnerable()){
+            TurnTowardsTarget();
+        } if(CanSeeLand() && !CanSeeTown()) {
+            TurnAwayFromLand();
+        }
         float moveSpeed = shipSpeed * Time.deltaTime;
         transform.position += transform.up * moveSpeed;
+    }
+    private bool CanSeeTown() {
+        return landSpotter.IsTouchingLayers(LayerMask.GetMask("Portals"));
+    }
+    private bool CanSeeLand() {
+        return landSpotter.IsTouchingLayers(LayerMask.GetMask("Land"));
+    }
+    private bool LandLeft() {
+        return lCollider.IsTouchingLayers(LayerMask.GetMask("Land"));
+    }
+    private void TurnAwayFromLand() {
+        if(LandLeft()) {
+            myRigidBody.rotation -= turnSpeed;
+        } else {
+            myRigidBody.rotation += turnSpeed;
+        }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 885343561695667143}
   - component: {fileID: 791654990057893274}
   - component: {fileID: 4994711052202608113}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Town Portal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

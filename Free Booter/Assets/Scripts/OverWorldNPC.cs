@@ -9,16 +9,6 @@ public class OverWorldNPC : MonoBehaviour
     // Start is called before the first frame update
     bool vulnerable = false;
     float spawnInvincibility = 2f;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public IEnumerator Spawn() {
         yield return new WaitForSeconds(spawnInvincibility);
         vulnerable = true;
@@ -28,4 +18,5 @@ public class OverWorldNPC : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public bool isVulnerable() { return vulnerable; }
 }
