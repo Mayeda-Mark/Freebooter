@@ -8,64 +8,137 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] float spawnDistance = 20f;
     [SerializeField] float shipSpeed = 2f;
     [SerializeField] float turnSpeed = 50f;
-    [SerializeField] GameObject NPC;
-    TownPortal target;
+    [SerializeField] float reloadTime = 1.5f;
+    TownPortal targetPortal;
+    Transform target;
     Rigidbody2D myRigidBody;
+    Cannons myCannons;
     CapsuleCollider2D MyHullCollider;
+    bool shootLeft, attacking, playerInSights = false;
     [SerializeField] BoxCollider2D landSpotter, lCollider;
+    [SerializeField] CircleCollider2D visualRange, cannonRange;
+    [SerializeField] EdgeCollider2D lCannon, rCannon;
     
     void Start()
     {
+        myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
         MyHullCollider = GetComponent<CapsuleCollider2D>();
+        //^^^MIGHT NOT NEED THIS. MAY NEED TO GO TO OVERWORLDNPC
         SetTarget();
     }
     private void SetTarget() {
-        target = RollTarget();
-        print(Vector2.Distance(transform.position, target.transform.position));
-        if(Vector2.Distance(transform.position, target.transform.position) <= spawnDistance) {
+        targetPortal = RollTarget();
+        target = targetPortal.transform;
+        if(Vector2.Distance(transform.position, target.position) <= spawnDistance) {
             SetTarget();
         }
     }
     private TownPortal RollTarget() {
-        print("rollTarget Called");
         int index = Random.Range(0, townPortals.Count);
         return townPortals[index];
     }
 
     void Update()
     {
-        Move();   
+        Move(); 
+        LookForPlayer();  
     }
-    private void TurnTowardsTarget() {
-        Vector2 dir = target.transform.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.Euler( 0, 0, angle - 90f);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
-    }
+    /******************MOVING***************************/
     private void Move() {
-        if(!CanSeeLand() || !GetComponent<OverWorldNPC>().isVulnerable()){
-            TurnTowardsTarget();
+        if(!CanSeeLand() || !GetComponent<OverWorldNPC>().IsVulnerable()){
+            if(!attacking) {
+                TurnTowardsTarget();
+            }
         } if(CanSeeLand() && !CanSeeTown()) {
             TurnAwayFromLand();
         }
         float moveSpeed = shipSpeed * Time.deltaTime;
         transform.position += transform.up * moveSpeed;
     }
+    private void TurnTowardsTarget() {
+        Vector2 dir = target.position - transform.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.Euler( 0, 0, angle - 90f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
+    }
+    /******************NAVIGATING***************************/
     private bool CanSeeTown() {
         return landSpotter.IsTouchingLayers(LayerMask.GetMask("Portals"));
     }
     private bool CanSeeLand() {
-        return landSpotter.IsTouchingLayers(LayerMask.GetMask("Land"));
+        return landSpotter.IsTouchingLayers(LayerMask.GetMask("Land", "Player", "NPC"));
     }
     private bool LandLeft() {
-        return lCollider.IsTouchingLayers(LayerMask.GetMask("Land"));
+        return lCollider.IsTouchingLayers(LayerMask.GetMask("Land", "Player", "NPC"));
     }
     private void TurnAwayFromLand() {
         if(LandLeft()) {
             myRigidBody.rotation -= turnSpeed;
         } else {
             myRigidBody.rotation += turnSpeed;
+        }
+    }
+    /******************ATTACKING***************************/
+    private void LookForPlayer() {
+        if(GetComponent<OverWorldNPC>().IsNPCAttacker()){
+            if(visualRange.IsTouchingLayers(LayerMask.GetMask("Player"))) {
+                target = FindObjectOfType<PlayerShipController>().transform;
+            } else {
+            target = targetPortal.transform;
+            }
+            EngagePlayer();
+        }
+    }
+    private void EngagePlayer() {
+        if(cannonRange.IsTouchingLayers(LayerMask.GetMask("Player"))) {
+            attacking = true;
+            TurnToShoot();
+            FireAtPlayer();
+        } else {
+            attacking = false;
+            RollDirOfAttack();
+        }
+    }
+    private void RollDirOfAttack(){
+        int randomizer = Random.Range(0, 10);
+        if(randomizer % 2 == 1) {
+            shootLeft = true;
+        } else {
+            shootLeft = false;
+        }
+    }
+    private void TurnToShoot() {
+        print("called turn to shoot");
+        Vector2 dir = target.position - transform.position;
+        float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if(shootLeft) {
+            shootAngle += 180;
+        }
+        Quaternion rotation = Quaternion.Euler( 0, 0, shootAngle);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
+    }
+    private void FireAtPlayer() {
+        if(lCannon.IsTouchingLayers(LayerMask.GetMask("Player"))) {
+            playerInSights = true;
+            StartCoroutine("FireLeft");
+        } else if(rCannon.IsTouchingLayers(LayerMask.GetMask("Player"))) {
+            playerInSights = true;
+            StartCoroutine("FireRight");
+        } else {
+            playerInSights = false;
+        }
+    }
+    private IEnumerator FireLeft() {
+        while (playerInSights) {
+            yield return new WaitForSeconds(reloadTime);
+            myCannons.FireLeftCannon();
+        }
+    }
+    private IEnumerator FireRight() {
+        while (playerInSights) {
+            yield return new WaitForSeconds(reloadTime);
+            myCannons.FireRightCannon();
         }
     }
 }

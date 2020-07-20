@@ -10,12 +10,14 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float halfSail = 2f;
     [SerializeField] float quarterSail = 1f;
     [SerializeField] float shipSpeed = 0.3f;
+    [SerializeField]Cannons myCannons;
     float stopped = 0f;
     int sails = 0;
     // Start is called before the first frame update
     void Start()
     {
 		myRigidBody = GetComponent<Rigidbody2D>();
+        //myCannons = GetComponent<Cannons>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,16 @@ public class PlayerShipController : MonoBehaviour
         Turn();
         SetSails();
         Move();
+        FireCannon();
+    }
+    private void FireCannon()
+    {
+        if(Input.GetKeyUp(KeyCode.RightArrow)) {
+            myCannons.FireRightCannon();
+        }
+        if(Input.GetKeyUp(KeyCode.LeftArrow)) {
+            myCannons.FireLeftCannon();
+        }
     }
     private void Turn() {
         if(Input.GetKey("a")) {

@@ -26,7 +26,6 @@ public class Projectile : MonoBehaviour
         lastPosition = transform.position;
         transform.Translate(Vector2.up * projectileSpeed * Time.deltaTime);
         distanceTravelled = CalculateDistanceTravelled();
-        print(distanceTravelled);
         if(distanceTravelled >= range) {
             DestroyProjectile();
         }

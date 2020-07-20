@@ -26,20 +26,13 @@ public class Cannons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FireCannon();
     }
-
-    private void FireCannon()
-    {
-        if(Input.GetKeyUp(KeyCode.RightArrow)) {
-            print("Fire right cannon!");
-            GameObject newProjectile = Instantiate(projectile, rCannon.transform.position, rCannon.transform.rotation) as GameObject;
-            newProjectile.transform.parent = projectileParent.transform;
-        }
-        if(Input.GetKeyUp(KeyCode.LeftArrow)) {
-            print("Fire right cannon!");
-            GameObject newProjectile = Instantiate(projectile, lCannon.transform.position, lCannon.transform.rotation) as GameObject;
-            newProjectile.transform.parent = projectileParent.transform;
-        }
+    public void FireRightCannon() {
+        GameObject newProjectile = Instantiate(projectile, rCannon.transform.position, rCannon.transform.rotation) as GameObject;
+        newProjectile.transform.parent = projectileParent.transform;
+    }
+    public void FireLeftCannon() {
+        GameObject newProjectile = Instantiate(projectile, lCannon.transform.position, lCannon.transform.rotation) as GameObject;
+        newProjectile.transform.parent = projectileParent.transform;
     }
 }

@@ -211,6 +211,7 @@ MonoBehaviour:
   halfSail: 2
   quarterSail: 1
   shipSpeed: 1
+  myCannons: {fileID: 674494187}
 --- !u!50 &2190582240179415414
 Rigidbody2D:
   serializedVersion: 4

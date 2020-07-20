@@ -18,5 +18,6 @@ public class OverWorldNPC : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public bool isVulnerable() { return vulnerable; }
+    public bool IsVulnerable() { return vulnerable; }
+    public bool IsNPCAttacker()   { return isAttacker; }
 }
