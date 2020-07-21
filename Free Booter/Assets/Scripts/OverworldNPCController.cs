@@ -14,7 +14,7 @@ public class OverworldNPCController : MonoBehaviour
     Rigidbody2D myRigidBody;
     Cannons myCannons;
     CapsuleCollider2D MyHullCollider;
-    bool shootLeft, attacking, playerInSights = false;
+    bool shootLeft, attacking, playerInSights, lReload, rReload = false;
     [SerializeField] BoxCollider2D landSpotter, lCollider;
     [SerializeField] CircleCollider2D visualRange, cannonRange;
     [SerializeField] EdgeCollider2D lCannon, rCannon;
@@ -109,7 +109,6 @@ public class OverworldNPCController : MonoBehaviour
         }
     }
     private void TurnToShoot() {
-        print("called turn to shoot");
         Vector2 dir = target.position - transform.position;
         float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         if(shootLeft) {
@@ -119,26 +118,26 @@ public class OverworldNPCController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
     }
     private void FireAtPlayer() {
-        if(lCannon.IsTouchingLayers(LayerMask.GetMask("Player"))) {
+        if(lCannon.IsTouchingLayers(LayerMask.GetMask("Player")) && !lReload) {
             playerInSights = true;
-            StartCoroutine("FireLeft");
-        } else if(rCannon.IsTouchingLayers(LayerMask.GetMask("Player"))) {
+            myCannons.FireLeftCannon();
+            StartCoroutine("ReloadLeft");
+            lReload = true;
+        } else if(rCannon.IsTouchingLayers(LayerMask.GetMask("Player")) &&!rReload) {
             playerInSights = true;
-            StartCoroutine("FireRight");
+            myCannons.FireRightCannon();
+            StartCoroutine("ReloadRight");
+            rReload = true;
         } else {
             playerInSights = false;
         }
     }
-    private IEnumerator FireLeft() {
-        while (playerInSights) {
-            yield return new WaitForSeconds(reloadTime);
-            myCannons.FireLeftCannon();
-        }
+    private IEnumerator ReloadLeft() {
+        yield return new WaitForSeconds(reloadTime);
+        lReload = false;
     }
-    private IEnumerator FireRight() {
-        while (playerInSights) {
-            yield return new WaitForSeconds(reloadTime);
-            myCannons.FireRightCannon();
-        }
+    private IEnumerator ReloadRight() {
+        yield return new WaitForSeconds(reloadTime);
+        rReload = false;
     }
 }

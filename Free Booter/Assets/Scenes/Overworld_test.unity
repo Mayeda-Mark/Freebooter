@@ -80530,6 +80530,16 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 477599865}
+    - target: {fileID: 3621083943012179778, guid: f482935a3f7372947979e9a59d48b17c,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621083943691265017, guid: f482935a3f7372947979e9a59d48b17c,
+        type: 3}
+      propertyPath: orthographic size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3621083944398105340, guid: f482935a3f7372947979e9a59d48b17c,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -274,7 +274,7 @@ MonoBehaviour:
   spawnDistance: 20
   shipSpeed: 1.5
   turnSpeed: 1
-  reloadTime: 1.5
+  reloadTime: 3.5
   landSpotter: {fileID: 4244720579567570706}
   lCollider: {fileID: 528646603338061636}
   visualRange: {fileID: 6482261582084274528}
