@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 5f;
     [SerializeField] float range = 10f;
-    [SerializeField] float damage = 10f;
+    [SerializeField] int damage = 10;
     float distanceToClearShip = 0.5f;
     bool canDamage = false;
     Vector2 lastPosition;

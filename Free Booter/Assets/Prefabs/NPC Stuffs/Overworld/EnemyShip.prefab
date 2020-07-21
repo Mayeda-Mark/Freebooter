@@ -272,6 +272,8 @@ MonoBehaviour:
   - {fileID: 885343561695667143, guid: e067b490e7d761e47b5c9055e7b1dd60, type: 3}
   - {fileID: 2114630486268830826, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
   - {fileID: 8397689371320945120, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
+  damageSprites:
+  - {fileID: 21300000, guid: 4a950e30d5cd72a4591641b718241fc2, type: 3}
   spawnDistance: 20
   shipSpeed: 1.5
   turnSpeed: 1

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerShipController : MonoBehaviour
 {
@@ -10,14 +11,22 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float halfSail = 2f;
     [SerializeField] float quarterSail = 1f;
     [SerializeField] float shipSpeed = 0.3f;
-    [SerializeField]Cannons myCannons;
+    [SerializeField] Cannons myCannons;
+    [SerializeField] Text healthText;
+    [SerializeField] Text bootyText;
+    CapsuleCollider2D myCollider;
+    Health myHealth;
     float stopped = 0f;
     int sails = 0;
+    int booty = 0;
     // Start is called before the first frame update
     void Start()
     {
+        myHealth = GetComponent<Health>();
+        myCollider = GetComponent<CapsuleCollider2D>();
 		myRigidBody = GetComponent<Rigidbody2D>();
         //myCannons = GetComponent<Cannons>();
+        UpdateBootyDisplay();
     }
 
     // Update is called once per frame
@@ -27,6 +36,7 @@ public class PlayerShipController : MonoBehaviour
         SetSails();
         Move();
         FireCannon();
+        UpdateHealthDisplay();
     }
     private void FireCannon()
     {
@@ -57,5 +67,19 @@ public class PlayerShipController : MonoBehaviour
     private void Move() {
         float moveSpeed = (shipSpeed * sails) * Time.deltaTime;
         myRigidBody.transform.position += transform.up * moveSpeed;
+    }
+    private void OnTriggerEnter2D(Collider2D otherCollider) {
+        OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
+        if(lootableShip && lootableShip.IsLootable()) {
+            booty += lootableShip.GetLoot();
+            UpdateBootyDisplay();
+            lootableShip.Kill();
+        }
+    }
+    private void UpdateHealthDisplay() {
+        healthText.text = myHealth.GetHealth().ToString();
+    }
+    private void UpdateBootyDisplay() {
+        bootyText.text = booty.ToString();
     }
 }

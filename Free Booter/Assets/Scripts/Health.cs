@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] float health = 100f;
-    public void DealDamage(float damage) {
+    [SerializeField] int health = 100;
+    public void DealDamage(int damage) {
         health -= damage;
         if(health <= 0) {
             if(GetComponent<OverWorldNPC>()) {
@@ -15,4 +15,5 @@ public class Health : MonoBehaviour
             }
         }
     }
+    public int GetHealth() { return health; }
 }

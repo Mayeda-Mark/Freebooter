@@ -10,6 +10,10 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] float shipSpeed = 2f;
     [SerializeField] float turnSpeed = 50f;
     [SerializeField] float reloadTime = 1.5f;
+    [SerializeField] float sinkTime = 10f;
+    [SerializeField] int maxLoot = 100;
+    [SerializeField] int minLoot = 50;
+    int loot;
     TownPortal targetPortal;
     Transform target;
     Rigidbody2D myRigidBody;
@@ -23,6 +27,7 @@ public class OverworldNPCController : MonoBehaviour
     
     void Start()
     {
+        loot = Random.Range(minLoot, maxLoot);
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
         MyHullCollider = GetComponent<CapsuleCollider2D>();
@@ -46,7 +51,9 @@ public class OverworldNPCController : MonoBehaviour
         if(isAlive) {
             Move(); 
             LookForPlayer();
-        }  
+        } else {
+            SinkTimer();
+        }
     }
     /******************MOVING***************************/
     private void Move() {
@@ -149,5 +156,20 @@ public class OverworldNPCController : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = damageSprites[0];
         lootable = true;
         isAlive = false;
+        gameObject.layer = 13;
+        SinkTimer();
+    }
+    private void SinkTimer() {
+        if(lootable) {
+            sinkTime -= Time.deltaTime;
+            if(sinkTime <= 0) {
+                Destroy(gameObject);
+            }
+        }
+    }
+    public int GetLoot() { return loot; }
+    public bool IsLootable() { return lootable; }
+    public void Kill() {
+        Destroy(gameObject);
     }
 }
