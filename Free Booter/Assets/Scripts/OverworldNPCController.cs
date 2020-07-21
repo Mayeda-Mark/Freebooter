@@ -5,6 +5,7 @@ using UnityEngine;
 public class OverworldNPCController : MonoBehaviour
 {
     [SerializeField] List<TownPortal> townPortals;
+    [SerializeField] Sprite[] damageSprites;
     [SerializeField] float spawnDistance = 20f;
     [SerializeField] float shipSpeed = 2f;
     [SerializeField] float turnSpeed = 50f;
@@ -14,7 +15,8 @@ public class OverworldNPCController : MonoBehaviour
     Rigidbody2D myRigidBody;
     Cannons myCannons;
     CapsuleCollider2D MyHullCollider;
-    bool shootLeft, attacking, playerInSights, lReload, rReload = false;
+    bool shootLeft, attacking, playerInSights, lReload, rReload, lootable = false;
+    bool isAlive = true;
     [SerializeField] BoxCollider2D landSpotter, lCollider;
     [SerializeField] CircleCollider2D visualRange, cannonRange;
     [SerializeField] EdgeCollider2D lCannon, rCannon;
@@ -41,8 +43,10 @@ public class OverworldNPCController : MonoBehaviour
 
     void Update()
     {
-        Move(); 
-        LookForPlayer();  
+        if(isAlive) {
+            Move(); 
+            LookForPlayer();
+        }  
     }
     /******************MOVING***************************/
     private void Move() {
@@ -139,5 +143,11 @@ public class OverworldNPCController : MonoBehaviour
     private IEnumerator ReloadRight() {
         yield return new WaitForSeconds(reloadTime);
         rReload = false;
+    }
+    /******************DEATH***************************/
+    public void Death() {
+        GetComponent<SpriteRenderer>().sprite = damageSprites[0];
+        lootable = true;
+        isAlive = false;
     }
 }

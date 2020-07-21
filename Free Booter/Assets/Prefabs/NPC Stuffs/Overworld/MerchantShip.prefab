@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 4653658837369793239}
   - component: {fileID: 4653658837369793238}
   - component: {fileID: 1906065739595851124}
+  - component: {fileID: 498517617578070475}
   m_Layer: 11
   m_Name: MerchantShip
   m_TagString: Untagged
@@ -442,3 +443,16 @@ MonoBehaviour:
     type: 3}
   lCannon: {fileID: 4653658836640726959}
   rCannon: {fileID: 4653658836939223663}
+--- !u!114 &498517617578070475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708796137539175209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e713dc959944441ba19827388a53c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100

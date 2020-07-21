@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] float projectileSpeed = 5f;
     [SerializeField] float range = 10f;
     [SerializeField] float damage = 10f;
+    float distanceToClearShip = 0.5f;
+    bool canDamage = false;
     Vector2 lastPosition;
     float distanceTravelled;
     Collider2D myCollider;
@@ -28,7 +30,13 @@ public class Projectile : MonoBehaviour
         lastPosition = transform.position;
         transform.Translate(Vector2.up * projectileSpeed * Time.deltaTime);
         distanceTravelled = CalculateDistanceTravelled();
+        if(distanceTravelled >= distanceToClearShip) {
+            canDamage = true;
+        }
         if(distanceTravelled >= range) {
+            DestroyProjectile();
+        }
+        if(myCollider.IsTouchingLayers(LayerMask.GetMask("Land"))) {
             DestroyProjectile();
         }
     }
@@ -38,12 +46,9 @@ public class Projectile : MonoBehaviour
     public void DestroyProjectile() {
         Destroy(gameObject);
     }
-    private void OnTriggerEnter2D(Collider otherCollider) {
-        if(otherCollider.GetType() == typeof(CapsuleCollider2D)) {
+    private void OnTriggerEnter2D(Collider2D otherCollider) {
+        if(canDamage && otherCollider.GetType() == typeof(CapsuleCollider2D)) {
             otherCollider.GetComponent<Health>().DealDamage(damage);
-            DestroyProjectile();
-        }
-        if(myCollider.IsTouchingLayers(LayerMask.GetMask("Land"))) {
             DestroyProjectile();
         }
     }

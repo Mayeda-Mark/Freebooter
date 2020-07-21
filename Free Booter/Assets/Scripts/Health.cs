@@ -8,8 +8,11 @@ public class Health : MonoBehaviour
     public void DealDamage(float damage) {
         health -= damage;
         if(health <= 0) {
-            print("I is ded");
-            Destroy(gameObject);
+            if(GetComponent<OverWorldNPC>()) {
+                GetComponent<OverworldNPCController>().Death();
+            } else{
+                Destroy(gameObject);
+            }
         }
     }
 }
