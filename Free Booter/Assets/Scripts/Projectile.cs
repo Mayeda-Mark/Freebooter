@@ -7,12 +7,14 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 5f;
     [SerializeField] float range = 10f;
+    [SerializeField] float damage = 10f;
     Vector2 lastPosition;
     float distanceTravelled;
+    Collider2D myCollider;
     // Start is called before the first frame update
     void Start()
     {
-        
+        myCollider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -35,5 +37,14 @@ public class Projectile : MonoBehaviour
     }
     public void DestroyProjectile() {
         Destroy(gameObject);
+    }
+    private void OnTriggerEnter2D(Collider otherCollider) {
+        if(otherCollider.GetType() == typeof(CapsuleCollider2D)) {
+            otherCollider.GetComponent<Health>().DealDamage(damage);
+            DestroyProjectile();
+        }
+        if(myCollider.IsTouchingLayers(LayerMask.GetMask("Land"))) {
+            DestroyProjectile();
+        }
     }
 }
