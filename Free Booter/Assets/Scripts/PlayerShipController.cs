@@ -11,6 +11,9 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float halfSail = 2f;
     [SerializeField] float quarterSail = 1f;
     [SerializeField] float shipSpeed = 0.3f;
+    [SerializeField] float lootTime = 3f;
+    float lootTimer;
+    bool looting = false;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
     [SerializeField] Text bootyText;
@@ -22,6 +25,7 @@ public class PlayerShipController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ResetLootTimer();
         myHealth = GetComponent<Health>();
         myCollider = GetComponent<CapsuleCollider2D>();
 		myRigidBody = GetComponent<Rigidbody2D>();
@@ -71,10 +75,28 @@ public class PlayerShipController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D otherCollider) {
         OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
         if(lootableShip && lootableShip.IsLootable()) {
-            booty += lootableShip.GetLoot();
-            UpdateBootyDisplay();
-            lootableShip.Kill();
+            looting = true;
         }
+    }
+    private void OnTriggerStay2D(Collider2D otherCollider) {
+        OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
+            if(lootTimer <= 0) {
+                booty += lootableShip.GetLoot();
+                UpdateBootyDisplay();
+                lootableShip.Kill();
+            }
+    }
+    private void lootCountdown() {
+        if(looting) {
+            lootTimer -= Time.deltaTime;
+        }
+    }
+    private void onExitTrigger2D(Collider2D otherCollider) {
+        looting = false;
+        ResetLootTimer();
+    }
+    private void ResetLootTimer() {
+        lootTimer = lootTime;
     }
     private void UpdateHealthDisplay() {
         healthText.text = myHealth.GetHealth().ToString();
