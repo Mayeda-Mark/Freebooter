@@ -12,8 +12,8 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float quarterSail = 1f;
     [SerializeField] float shipSpeed = 0.3f;
     [SerializeField] float lootTime = 3f;
-    float lootTimer;
-    bool looting = false;
+    [SerializeField] float lootTimer;
+    [SerializeField] bool looting = false;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
     [SerializeField] Text bootyText;
@@ -33,7 +33,6 @@ public class PlayerShipController : MonoBehaviour
         UpdateBootyDisplay();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Turn();
@@ -41,6 +40,7 @@ public class PlayerShipController : MonoBehaviour
         Move();
         FireCannon();
         UpdateHealthDisplay();
+        LootCountdown();
     }
     private void FireCannon()
     {
@@ -72,29 +72,40 @@ public class PlayerShipController : MonoBehaviour
         float moveSpeed = (shipSpeed * sails) * Time.deltaTime;
         myRigidBody.transform.position += transform.up * moveSpeed;
     }
-    private void OnTriggerEnter2D(Collider2D otherCollider) {
-        OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
-        if(lootableShip && lootableShip.IsLootable()) {
-            looting = true;
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D otherCollider) {
+    //    OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
+    //    if(lootableShip && lootableShip.IsLootable() && otherCollider is CapsuleCollider2D) {
+    //        looting = true;
+    //    }
+    //}
     private void OnTriggerStay2D(Collider2D otherCollider) {
         OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
-            if(lootTimer <= 0) {
+        if (lootableShip && lootableShip.IsLootable() && otherCollider is CapsuleCollider2D)
+        {
+            looting = true;
+        }
+        //LootCountdown();
+        if(lootTimer <= 0 && otherCollider is CapsuleCollider2D) {
                 booty += lootableShip.GetLoot();
                 UpdateBootyDisplay();
                 lootableShip.Kill();
+                ResetLootTimer();
+                looting = false;
             }
     }
-    private void lootCountdown() {
-        if(looting) {
+    private void LootCountdown() {
+        if(looting && myCollider.IsTouchingLayers(LayerMask.GetMask("Loot"))) {
             lootTimer -= Time.deltaTime;
+        } else {
+            print("No touching!");
+            ResetLootTimer();
+            looting = false;
         }
     }
-    private void onExitTrigger2D(Collider2D otherCollider) {
-        looting = false;
-        ResetLootTimer();
-    }
+    //private void onExitTrigger2D(Collider2D otherCollider) {
+    //    looting = false;
+    //    ResetLootTimer();
+    //}
     private void ResetLootTimer() {
         lootTimer = lootTime;
     }

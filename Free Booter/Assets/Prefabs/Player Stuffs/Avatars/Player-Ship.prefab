@@ -212,6 +212,9 @@ MonoBehaviour:
   halfSail: 2
   quarterSail: 1
   shipSpeed: 1
+  lootTime: 3
+  lootTimer: 0
+  looting: 0
   myCannons: {fileID: 674494187}
   healthText: {fileID: 0}
   bootyText: {fileID: 0}
