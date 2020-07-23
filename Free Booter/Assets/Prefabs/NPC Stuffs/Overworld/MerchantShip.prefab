@@ -123,7 +123,6 @@ GameObject:
   - component: {fileID: 878397435228107594}
   - component: {fileID: 3239707328982317200}
   - component: {fileID: 398546859686242507}
-  - component: {fileID: 278319154688981026}
   - component: {fileID: 8826308626728338283}
   - component: {fileID: 5171046370896714557}
   - component: {fileID: 1828602866696910105}
@@ -271,40 +270,28 @@ MonoBehaviour:
   townPortals:
   - {fileID: 885343561695667143, guid: e067b490e7d761e47b5c9055e7b1dd60, type: 3}
   - {fileID: 2114630486268830826, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
+  - {fileID: 4241129389110695900, guid: ced2de43de4065a49a9ddc8bfc254263, type: 3}
+  - {fileID: 5222254721921989660, guid: 491b784bf16899a49b27874811e062be, type: 3}
+  - {fileID: 345335459849519645, guid: fe180b0d6e85230488de1ef2d7eeeb75, type: 3}
+  - {fileID: 3524394495101716662, guid: f4f8515362006f245a34252b4dd25afe, type: 3}
+  - {fileID: 6359146273797157144, guid: 5f77d36406c619f498619d0835bb8502, type: 3}
+  - {fileID: 1839745193964476276, guid: 69c7c3fa62f8a2a4a904a0ddcbae44eb, type: 3}
   - {fileID: 8397689371320945120, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
   damageSprites:
   - {fileID: 21300000, guid: 7344ba4e921458940a6f94b0edd638c4, type: 3}
   spawnDistance: 20
-  shipSpeed: 1.5
+  shipSpeed: 2.5
   turnSpeed: 1
   reloadTime: 1.5
+  sinkTime: 10
+  maxLoot: 100
+  minLoot: 50
   landSpotter: {fileID: 8826308626728338283}
   lCollider: {fileID: 5171046370896714557}
   visualRange: {fileID: 1828602866696910105}
   cannonRange: {fileID: 5256109850416957065}
   lCannon: {fileID: 4653658837369793238}
   rCannon: {fileID: 4653658837369793239}
---- !u!114 &278319154688981026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7708796137539175209}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b1f0b9b3b35f448bf9632f1086e1cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  viewRadius: 10
-  viewAngle: 44
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 512
-  visibleTargets: []
 --- !u!61 &8826308626728338283
 BoxCollider2D:
   m_ObjectHideFlags: 0

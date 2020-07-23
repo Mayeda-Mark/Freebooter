@@ -11,9 +11,12 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float halfSail = 2f;
     [SerializeField] float quarterSail = 1f;
     [SerializeField] float shipSpeed = 0.3f;
+    [SerializeField] float reloadTime = 0.5f;
+    float rReloadTime, lReloadTIme;
+    bool rReload, lReload = false;
     [SerializeField] float lootTime = 3f;
     [SerializeField] float lootTimer;
-    [SerializeField] bool looting = false;
+    bool looting = false;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
     [SerializeField] Text bootyText;
@@ -29,7 +32,8 @@ public class PlayerShipController : MonoBehaviour
         myHealth = GetComponent<Health>();
         myCollider = GetComponent<CapsuleCollider2D>();
 		myRigidBody = GetComponent<Rigidbody2D>();
-        //myCannons = GetComponent<Cannons>();
+        rReloadTime = reloadTime;
+        lReloadTIme = reloadTime;
         UpdateBootyDisplay();
     }
 
@@ -41,14 +45,37 @@ public class PlayerShipController : MonoBehaviour
         FireCannon();
         UpdateHealthDisplay();
         LootCountdown();
+        ReloadCountdowns();
     }
     private void FireCannon()
     {
         if(Input.GetKeyUp(KeyCode.RightArrow)) {
-            myCannons.FireRightCannon();
+            if(!rReload) {
+                myCannons.FireRightCannon();
+                rReload = true;
+            }
         }
         if(Input.GetKeyUp(KeyCode.LeftArrow)) {
-            myCannons.FireLeftCannon();
+            if(!lReload) {
+                myCannons.FireLeftCannon();
+                lReload = true;
+            }
+        }
+    }
+    private void ReloadCountdowns() {
+        if(rReload) {
+            rReloadTime -= Time.deltaTime;
+            if(rReloadTime <= 0) {
+                rReloadTime = reloadTime;
+                rReload = false;
+            }
+        }
+        if (lReload) {
+            lReloadTIme -= Time.deltaTime;
+            if(lReloadTIme <= 0) {
+                lReloadTIme = reloadTime;
+                lReload = false;
+            }
         }
     }
     private void Turn() {
@@ -97,7 +124,6 @@ public class PlayerShipController : MonoBehaviour
         if(looting && myCollider.IsTouchingLayers(LayerMask.GetMask("Loot"))) {
             lootTimer -= Time.deltaTime;
         } else {
-            print("No touching!");
             ResetLootTimer();
             looting = false;
         }
