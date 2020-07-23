@@ -156,6 +156,7 @@ public class OverworldNPCController : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = damageSprites[0];
         lootable = true;
         isAlive = false;
+        DisableExtraColliders();
         gameObject.layer = 13;
         SinkTimer();
     }
@@ -166,6 +167,14 @@ public class OverworldNPCController : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+    private void DisableExtraColliders() {
+        landSpotter.enabled = false;
+        visualRange.enabled = false;
+        cannonRange.enabled = false;
+        lCollider.enabled = false;
+        lCannon.enabled = false;
+        rCannon.enabled = false;
     }
     public int GetLoot() { return loot; }
     public bool IsLootable() { return lootable; }
