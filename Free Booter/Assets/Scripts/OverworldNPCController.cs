@@ -13,12 +13,12 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] float sinkTime = 10f;
     [SerializeField] int maxLoot = 100;
     [SerializeField] int minLoot = 50;
-    int loot;
+    int loot, startingHealth;
     TownPortal targetPortal;
     Transform target;
     Rigidbody2D myRigidBody;
     Cannons myCannons;
-    CapsuleCollider2D MyHullCollider;
+    CapsuleCollider2D myHullCollider;
     bool shootLeft, attacking, playerInSights, lReload, rReload, lootable = false;
     bool isAlive = true;
     [SerializeField] BoxCollider2D landSpotter, lCollider;
@@ -30,10 +30,20 @@ public class OverworldNPCController : MonoBehaviour
         loot = Random.Range(minLoot, maxLoot);
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
-        MyHullCollider = GetComponent<CapsuleCollider2D>();
+        myHullCollider = GetComponent<CapsuleCollider2D>();
         //^^^MIGHT NOT NEED THIS. MAY NEED TO GO TO OVERWORLDNPC
         SetTarget();
     }
+    void Update()
+    {
+        if(isAlive) {
+            Move(); 
+            LookForPlayer();
+        } else {
+            SinkTimer();
+        }
+    }
+    /******************MOVING***************************/
     private void SetTarget() {
         targetPortal = RollTarget();
         target = targetPortal.transform;
@@ -45,17 +55,6 @@ public class OverworldNPCController : MonoBehaviour
         int index = Random.Range(0, townPortals.Count);
         return townPortals[index];
     }
-
-    void Update()
-    {
-        if(isAlive) {
-            Move(); 
-            LookForPlayer();
-        } else {
-            SinkTimer();
-        }
-    }
-    /******************MOVING***************************/
     private void Move() {
         if(!CanSeeLand() || !GetComponent<OverWorldNPC>().IsVulnerable()){
             if(!attacking) {
@@ -175,6 +174,7 @@ public class OverworldNPCController : MonoBehaviour
         lCollider.enabled = false;
         lCannon.enabled = false;
         rCannon.enabled = false;
+        myHullCollider.isTrigger = true;
     }
     public int GetLoot() { return loot; }
     public bool IsLootable() { return lootable; }
