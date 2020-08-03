@@ -12,14 +12,14 @@ public class Item{
         this.id = id;
         this.itemName = itemName;
         this.description = description;
-        //this.icon = Resources.Load<Sprite>("Sprites/Items/" + itemName);
+        this.icon = Resources.Load<Sprite>("Sprites/Items/" + itemName);
         this.stats = stats;
     }
     public Item(Item item) {
         this.id = item.id;
         this.itemName = item.itemName;
         this.description = item.description;
-        //this.icon = Resources.Load<Sprite>("Sprites/Items/" + item.itemName);
+        this.icon = Resources.Load<Sprite>("Sprites/Items/" + item.itemName);
         this.stats = item.stats;
     }
 }

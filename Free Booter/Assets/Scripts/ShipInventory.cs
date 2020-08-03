@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class ShipInventory : MonoBehaviour
 {
-    private void Start() {
-        GiveItem("Cannon Balls");
-        RemoveItem(1);
-    }
     public List<Item> shipItems = new List<Item>();
     public ItemDB itemDB;
+    public UIInventory shipInventoryUI;
+    private void Start() {
+        //GiveItem("Cannon Balls");
+        GiveItem(1);
+        GiveItem(0);
+        //RemoveItem(1);
+    }
     public void GiveItem(int id) {
         Item itemToAdd = itemDB.GetItem(id);
         shipItems.Add(itemToAdd);
+        shipInventoryUI.AddNewItem(itemToAdd);
+        Debug.Log("Added " + itemToAdd.itemName);
     }
     public void GiveItem(string itemName) {
         Item itemToAdd = itemDB.GetItem(itemName);
@@ -22,10 +27,10 @@ public class ShipInventory : MonoBehaviour
         return shipItems.Find(item => item.id == id);
     }
     public void RemoveItem(int id) {
-        Item item = CheckForItem(id);
-        if(item != null) {
-            shipItems.Remove(item);
-            Debug.Log("Removed " + item.itemName);
+        Item itemToRemove = CheckForItem(id);
+        if(itemToRemove != null) {
+            shipItems.Remove(itemToRemove);
+            shipInventoryUI.RemoveItem(itemToRemove);
         } else {
             Debug.Log("Item not found");
         }
