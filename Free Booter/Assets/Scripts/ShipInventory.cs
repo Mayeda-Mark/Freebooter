@@ -8,20 +8,29 @@ public class ShipInventory : MonoBehaviour
     public ItemDB itemDB;
     public UIInventory shipInventoryUI;
     private void Start() {
-        //GiveItem("Cannon Balls");
         GiveItem(1);
         GiveItem(0);
-        //RemoveItem(1);
+        shipInventoryUI.gameObject.SetActive(false);
+    }
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.I)) {
+            shipInventoryUI.gameObject.SetActive(!shipInventoryUI.gameObject.activeSelf);
+        }
+    }
+    private void DebugInventory() {
+        for(int i = 0; i < shipItems.Count; i++) {
+            Debug.Log(shipItems[i].itemName);
+        }
     }
     public void GiveItem(int id) {
         Item itemToAdd = itemDB.GetItem(id);
         shipItems.Add(itemToAdd);
         shipInventoryUI.AddNewItem(itemToAdd);
-        Debug.Log("Added " + itemToAdd.itemName);
     }
     public void GiveItem(string itemName) {
         Item itemToAdd = itemDB.GetItem(itemName);
         shipItems.Add(itemToAdd);
+        shipInventoryUI.AddNewItem(itemToAdd);
     }
     public Item CheckForItem(int id) {
         return shipItems.Find(item => item.id == id);
