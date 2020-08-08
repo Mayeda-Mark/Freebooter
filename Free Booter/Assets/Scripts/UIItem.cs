@@ -26,6 +26,31 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         }
     }
     public void OnPointerClick(PointerEventData eventData) {
+        int clickCount = eventData.clickCount;
+        if(clickCount == 2) {
+            DoubleClick();
+        }
+        if(clickCount == 1) {
+            SingleClick();
+        }
+    }
+    private void SingleClick() {
+        if(this.item != null) { // If this square is empty...
+            if(selectedItem.item != null) { // And you already have an item selected...
+                Item clone = new Item(selectedItem.item);
+                selectedItem.UpdateItem(this.item);
+                UpdateItem(clone);
+            } else { //You don't have an item selected...
+                // selectedItem.UpdateItem(this.item);
+                // UpdateItem(null);
+                Debug.Log("Equipped" + this.item.itemName);
+            }
+        } else if(selectedItem.item != null) { //If you already have an item selected...
+            UpdateItem(selectedItem.item);
+            selectedItem.UpdateItem(null);
+        }
+    }
+    private void DoubleClick() {
         if(this.item != null) {
             if(selectedItem.item != null) {
                 Item clone = new Item(selectedItem.item);

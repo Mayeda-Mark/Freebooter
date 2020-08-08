@@ -16,18 +16,25 @@ public class ItemDB : MonoBehaviour
     }
     void BuildDb() {
         items = new List<Item>{
-            new Item(0, "Cannon Balls", "Big balls of metal that you can hurl at other boats", 
+            new Item(0, "Cannon Balls", "Big balls of metal that you can hurl at other boats", 99, 
             new Dictionary<string, int> {
-                {"Cost", 20},
                 {"HullDamage", 20},
                 {"SailDamage", 5}
             }), 
-            new Item(1, "Chain Shot", "It's like a bolo, but for a boat", 
+            new Item(1, "Chain Shot", "It's like a bolo, but for a boat", 99,
             new Dictionary<string, int> {
-                {"Cost", 20},
                 {"HullDamage", 5},
                 {"SailDamage", 20}
-            })
+            }),
+            new Item(2, "Gold", "Sparkly orangish stuff that you can buy things with", 999, 
+            new Dictionary<string, int> {}),
+            new Item(3, "Rum", "The nectar of the Gods. Good on ham", 999,
+            new Dictionary<string, int> {}),
+            new Item(4, "Silk", "Soft fabric that can be traded for gold", 999,
+            new Dictionary<string, int> {}),
+            new Item(5, "Spices", "Things that make other things tase good", 999,
+            new Dictionary<string, int> {}),
+
         };
     }
 }

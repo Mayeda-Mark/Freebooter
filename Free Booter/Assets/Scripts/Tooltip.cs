@@ -8,8 +8,8 @@ public class Tooltip : MonoBehaviour
     private Text tooltipText;
     void Start() {
         tooltipText = GetComponentInChildren<Text>();
-        //tooltipText.gameObject.SetActive(true);
-        gameObject.SetActive(false);
+        tooltipText.gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
     public void GenerateTooltip (Item item) {
         string statText = "";

@@ -11,9 +11,11 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] float turnSpeed = 50f;
     [SerializeField] float reloadTime = 1.5f;
     [SerializeField] float sinkTime = 10f;
-    [SerializeField] int maxLoot = 100;
-    [SerializeField] int minLoot = 50;
-    int loot, startingHealth;
+    [SerializeField] int[] lootArray;
+    [SerializeField] int maxLoot, minLoot;
+    int lootQuantity;
+    Item loot;
+    int startingHealth;
     TownPortal targetPortal;
     Transform target;
     Rigidbody2D myRigidBody;
@@ -27,11 +29,12 @@ public class OverworldNPCController : MonoBehaviour
     
     void Start()
     {
-        loot = Random.Range(minLoot, maxLoot);
+        lootQuantity = Random.Range(minLoot, maxLoot);
+        int lootIndex = Random.Range(0, lootArray.Length);
+        loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
         myHullCollider = GetComponent<CapsuleCollider2D>();
-        //^^^MIGHT NOT NEED THIS. MAY NEED TO GO TO OVERWORLDNPC
         SetTarget();
     }
     void Update()
@@ -176,8 +179,9 @@ public class OverworldNPCController : MonoBehaviour
         rCannon.enabled = false;
         myHullCollider.isTrigger = true;
     }
-    public int GetLoot() { return loot; }
-    public bool IsLootable() { return lootable; }
+    public Item GetLoot()        { return loot;         }
+    public bool IsLootable()     { return lootable;     }
+    public int GetLootQuantity() { return lootQuantity; }
     public void Kill() {
         Destroy(gameObject);
     }

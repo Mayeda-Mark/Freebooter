@@ -6,16 +6,21 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 5f;
-    [SerializeField] float range = 10f;
-    [SerializeField] int damage = 10;
-    float distanceToClearShip = 0.5f;
+    [SerializeField] float range;
+    [SerializeField] int hullDamage;
+    [SerializeField] int sailDamage;
+    [SerializeField] int itemIndex;
+    float distanceToClearShip = 0.2f;
     bool canDamage = false;
+    Item item;
     Vector2 lastPosition;
     float distanceTravelled;
     Collider2D myCollider;
     // Start is called before the first frame update
     void Start()
     {
+        item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
+        SetStats();
         myCollider = GetComponent<Collider2D>();
     }
 
@@ -23,6 +28,10 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         Move();
+    }
+    private void SetStats() {
+        hullDamage = item.stats["HullDamage"];
+        sailDamage = item.stats["SailDamage"];
     }
 
     private void Move()
@@ -48,7 +57,7 @@ public class Projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D otherCollider) {
         if(canDamage && otherCollider.GetType() == typeof(CapsuleCollider2D)) {
-            otherCollider.GetComponent<Health>().DealDamage(damage);
+            otherCollider.GetComponent<Health>().DealDamage(hullDamage);
             DestroyProjectile();
         }
     }

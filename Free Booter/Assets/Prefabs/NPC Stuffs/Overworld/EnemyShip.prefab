@@ -461,8 +461,9 @@ MonoBehaviour:
   turnSpeed: 1.5
   reloadTime: 0.5
   sinkTime: 10
-  maxLoot: 50
-  minLoot: 25
+  lootArray: 00000000
+  maxLoot: 20
+  minLoot: 40
   landSpotter: {fileID: 4244720579567570706}
   lCollider: {fileID: 528646603338061636}
   visualRange: {fileID: 6482261582084274528}

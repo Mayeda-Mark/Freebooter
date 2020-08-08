@@ -20,14 +20,15 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
     [SerializeField] Text bootyText;
+    Inventory shipInventory;
     CapsuleCollider2D myCollider;
     Health myHealth;
     float stopped = 0f;
     int sails = 0;
     int booty = 0;
-    // Start is called before the first frame update
     void Start()
     {
+        shipInventory = GetComponent<Inventory>();
         ResetLootTimer();
         myHealth = GetComponent<Health>();
         myCollider = GetComponent<CapsuleCollider2D>();
@@ -113,8 +114,7 @@ public class PlayerShipController : MonoBehaviour
         }
         //LootCountdown();
         if(lootTimer <= 0 && otherCollider is CapsuleCollider2D) {
-                booty += lootableShip.GetLoot();
-                UpdateBootyDisplay();
+                shipInventory.GiveItem(lootableShip.GetLoot().id, lootableShip.GetLootQuantity());
                 lootableShip.Kill();
                 ResetLootTimer();
                 looting = false;
