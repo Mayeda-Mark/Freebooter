@@ -38,66 +38,57 @@ public class Inventory : MonoBehaviour
         int maxQuantity = itemDB.GetItem(id).GetMaxQuantity();
         int remainingQuantity = quantity;
         bool hasFinished = false;
+        bool hasFoundKey = false;
         foreach(var keyValue in quantities) {
-            if(id == keyValue.Key && !hasFinished) { //If you already have this in the inventory
-            //Check to see if the added quantity will be too much
+            if(id == keyValue.Key && !hasFinished) { 
+            hasFoundKey = true;
                 for(int i = 0; i < keyValue.Value.Count; i++) {
-                    if(remainingQuantity + keyValue.Value[i] > maxQuantity) {
+                    if(remainingQuantity + keyValue.Value[i] > maxQuantity && keyValue.Value[i] != maxQuantity) {
+                        Debug.Log("Topped off");
                         keyValue.Value[i] = maxQuantity;
                         remainingQuantity = remainingQuantity + keyValue.Value[i] - maxQuantity;
+            foreach(var keyValues in quantities) {
+                foreach(int value in keyValues.Value) {
+                    Debug.Log(value);
+                }
+            }
                         GiveQuantity(id, remainingQuantity);
+                    } else if (keyValue.Value.Count - 1 == i && keyValue.Value[i] == maxQuantity) {
+                        Debug.Log("The other one");
+                        AddToInventory(id);
+                        keyValue.Value.Add(remainingQuantity);
+                        hasFinished = true;
+            foreach(var keyValues in quantities) {
+                foreach(int value in keyValues.Value) {
+                    Debug.Log(value);
+                }
+            }
+                        return;
                     } else {
+                        Debug.Log("added quantity");
                         keyValue.Value[i] += remainingQuantity;
                         hasFinished = true;
+            foreach(var keyValues in quantities) {
+                foreach(int value in keyValues.Value) {
+                    Debug.Log(value);
+                }
+            }
                     }
                 }
             }
         }
-
-        /*******************************/
-        //THE PROBLEM COULD BE THAT IT IS TRYING TO WRITE OUTSIDE OF THE LIST BECAUSE WE AREN'T EXITING THE LOOP TO ADD TO THE LIST
-
-        // Dictionary<string, int> quantityToAdd = new Dictionary<string, int>{
-        //         {id.ToString(), quantity}
-        //     };
-        if(!hasFinished) {
-            // Dictionary<int, List<int>> quantityToAdd = new Dictionary<int, List<int>>{
-            //     {id, new List<int> { quantity }}
-            // };
+        if(!hasFinished && !hasFoundKey) {
+            Debug.Log("Created new Entry");
             List<int> valueList = new List<int>();
             valueList.Add(quantity);
             quantities.Add(id, valueList); 
-        }
-        // bool hasFoundItem = false;
-        // foreach(Dictionary<string, int> keyValue in quantities) {
-        //     string key = keyValue.Keys.ToString();
-        //     string value = keyValue.Values.ToString();
-        //     int intValue = Convert.ToInt32(value);
-        //     int maxQuantity = itemDB.GetItem(id).GetMaxQuantity();
-        //     if(id.ToString() == key && !hasFoundItem) { 
-        //         //Check to see if the added quantity will be too much
-        //         if(intValue + quantity > maxQuantity) { 
-        //             //If it is, Top it off and call the function again with the remainder
-        //             keyValue[key] = maxQuantity;
-        //             GiveQuantity(id, intValue + quantity - maxQuantity);
-        //         }else {//If it isn't, add the quantity to what is already there
-        //             keyValue[key] += quantity;
-        //             hasFoundItem = true;
-        //         }
-        //     } 
-        // }
-        // if(!hasFoundItem) { //If you make it through the loop without finding an item, add the item's quantity
-        // Dictionary<string, int> quantityToAdd = new Dictionary<string, int>{
-        //         {id.ToString(), quantity}
-        //     };
-        //     quantities.Add(quantityToAdd);
             AddToInventory(id);
             foreach(var keyValues in quantities) {
                 foreach(int value in keyValues.Value) {
                     Debug.Log(value);
                 }
             }
-        // }
+        }
     }
     private void AddToInventory(int id) {
         Item itemToAdd = itemDB.GetItem(id);
