@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public UIInventory shipInventoryUI;
     Tooltip tooltip;
     //Dictionary<int, int> inventoryQuantity = new Dictionary<int, int>();
-    List<Dictionary<string, int>> quantities = new List<Dictionary<string, int>>();
+    Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     private void Start() {
         GiveItem(0, 80);
         shipInventoryUI.gameObject.SetActive(false);
@@ -35,13 +35,46 @@ public class Inventory : MonoBehaviour
         //GiveQuantity(id, quantity);
     }
     public void GiveQuantity(int id, int quantity) {
+        int maxQuantity = itemDB.GetItem(id).GetMaxQuantity();
+        int remainingQuantity = quantity;
+        bool hasFinished = false;
+        foreach(var keyValue in quantities) {
+            if(id == keyValue.Key && !hasFinished) { //If you already have this in the inventory
+            //Check to see if the added quantity will be too much
+                for(int i = 0; i < keyValue.Value.Count; i++) {
+                    if(remainingQuantity + keyValue.Value[i] > maxQuantity) {
+                        keyValue.Value[i] = maxQuantity;
+                        remainingQuantity = remainingQuantity + keyValue.Value[i] - maxQuantity;
+                        GiveQuantity(id, remainingQuantity);
+                    } else {
+                        keyValue.Value[i] += remainingQuantity;
+                        hasFinished = true;
+                    }
+                }
+            }
+        }
+
+        /*******************************/
+        //THE PROBLEM COULD BE THAT IT IS TRYING TO WRITE OUTSIDE OF THE LIST BECAUSE WE AREN'T EXITING THE LOOP TO ADD TO THE LIST
+
+        // Dictionary<string, int> quantityToAdd = new Dictionary<string, int>{
+        //         {id.ToString(), quantity}
+        //     };
+        if(!hasFinished) {
+            // Dictionary<int, List<int>> quantityToAdd = new Dictionary<int, List<int>>{
+            //     {id, new List<int> { quantity }}
+            // };
+            List<int> valueList = new List<int>();
+            valueList.Add(quantity);
+            quantities.Add(id, valueList); 
+        }
         // bool hasFoundItem = false;
         // foreach(Dictionary<string, int> keyValue in quantities) {
         //     string key = keyValue.Keys.ToString();
         //     string value = keyValue.Values.ToString();
         //     int intValue = Convert.ToInt32(value);
         //     int maxQuantity = itemDB.GetItem(id).GetMaxQuantity();
-        //     if(id.ToString() == key && !hasFoundItem) { //If you already have this in the inventory
+        //     if(id.ToString() == key && !hasFoundItem) { 
         //         //Check to see if the added quantity will be too much
         //         if(intValue + quantity > maxQuantity) { 
         //             //If it is, Top it off and call the function again with the remainder
@@ -59,10 +92,11 @@ public class Inventory : MonoBehaviour
         //     };
         //     quantities.Add(quantityToAdd);
             AddToInventory(id);
-        //     foreach(Dictionary<string, int> keyValues in quantities) {
-        //         string key = keyValues.Keys.ToString();
-        //         Debug.Log(keyValues.Values.ToString());
-        //     }
+            foreach(var keyValues in quantities) {
+                foreach(int value in keyValues.Value) {
+                    Debug.Log(value);
+                }
+            }
         // }
     }
     private void AddToInventory(int id) {
