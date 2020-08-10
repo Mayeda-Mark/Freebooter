@@ -9,7 +9,6 @@ public class Inventory : MonoBehaviour
     public ItemDB itemDB;
     public UIInventory shipInventoryUI;
     Tooltip tooltip;
-    //Dictionary<int, int> inventoryQuantity = new Dictionary<int, int>();
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     private void Start() {
         GiveItem(0, 80);
@@ -44,50 +43,26 @@ public class Inventory : MonoBehaviour
             hasFoundKey = true;
                 for(int i = 0; i < keyValue.Value.Count; i++) {
                     if(remainingQuantity + keyValue.Value[i] > maxQuantity && keyValue.Value[i] != maxQuantity) {
-                        Debug.Log("Topped off");
                         keyValue.Value[i] = maxQuantity;
                         remainingQuantity = remainingQuantity + keyValue.Value[i] - maxQuantity;
-            foreach(var keyValues in quantities) {
-                foreach(int value in keyValues.Value) {
-                    Debug.Log(value);
-                }
-            }
                         GiveQuantity(id, remainingQuantity);
                     } else if (keyValue.Value.Count - 1 == i && keyValue.Value[i] == maxQuantity) {
-                        Debug.Log("The other one");
                         AddToInventory(id);
                         keyValue.Value.Add(remainingQuantity);
                         hasFinished = true;
-            foreach(var keyValues in quantities) {
-                foreach(int value in keyValues.Value) {
-                    Debug.Log(value);
-                }
-            }
                         return;
                     } else {
-                        Debug.Log("added quantity");
                         keyValue.Value[i] += remainingQuantity;
                         hasFinished = true;
-            foreach(var keyValues in quantities) {
-                foreach(int value in keyValues.Value) {
-                    Debug.Log(value);
-                }
-            }
                     }
                 }
             }
         }
         if(!hasFinished && !hasFoundKey) {
-            Debug.Log("Created new Entry");
             List<int> valueList = new List<int>();
             valueList.Add(quantity);
             quantities.Add(id, valueList); 
             AddToInventory(id);
-            foreach(var keyValues in quantities) {
-                foreach(int value in keyValues.Value) {
-                    Debug.Log(value);
-                }
-            }
         }
     }
     private void AddToInventory(int id) {
@@ -107,4 +82,5 @@ public class Inventory : MonoBehaviour
             Debug.Log("Item not found");
         }
     }
+    public Dictionary<int, List<int>> GetQuantities() { return quantities; }
 }

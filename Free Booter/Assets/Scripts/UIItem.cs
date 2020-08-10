@@ -8,9 +8,13 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 {
     public Item item;
     private Image spriteImage;
+    [SerializeField] Text quantityText;
     private UIItem selectedItem;
     private Tooltip tooltip;
+    Inventory inventory;
+
     private void Awake() {
+        inventory = FindObjectOfType<Inventory>();
         spriteImage = GetComponent<Image>();
         UpdateItem(null);
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
@@ -21,8 +25,25 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         if(this.item != null) {
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
+            int quantityValue = inventory.GetQuantities()[item.id][0];
+            quantityText.text = quantityValue.ToString();
+            quantityText.color = Color.white;
         } else {
             spriteImage.color = Color.clear;
+            quantityText.color = Color.clear;
+        }
+    }
+    public void UpdateItem(Item item, int index) {
+        this.item = item;
+        if(this.item != null) {
+            spriteImage.color = Color.white;
+            spriteImage.sprite = this.item.icon;
+            int quantityValue = inventory.GetQuantities()[item.id][index];
+            quantityText.text = quantityValue.ToString();
+            quantityText.color = Color.white;
+        } else {
+            spriteImage.color = Color.clear;
+            quantityText.color = Color.clear;
         }
     }
     public void OnPointerClick(PointerEventData eventData) {
@@ -41,8 +62,6 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
                 selectedItem.UpdateItem(this.item);
                 UpdateItem(clone);
             } else { //You don't have an item selected...
-                // selectedItem.UpdateItem(this.item);
-                // UpdateItem(null);
                 Debug.Log("Equipped" + this.item.itemName);
             }
         } else if(selectedItem.item != null) { //If you already have an item selected...
@@ -72,5 +91,14 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     }
     public void OnPointerExit(PointerEventData eventData2) {
         tooltip.gameObject.SetActive(false);
+    }
+    public void UpdateThisItem(int index) {
+        UpdateItem(this.item);
+    }
+    public int GetItemId() { return this.item.id; }
+    public bool HasItem() {
+        if(this.item != null) {
+            return true;
+        } else { return false; }
     }
 }
