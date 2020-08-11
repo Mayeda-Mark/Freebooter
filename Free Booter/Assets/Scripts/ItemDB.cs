@@ -26,15 +26,14 @@ public class ItemDB : MonoBehaviour
                 {"HullDamage", 5},
                 {"SailDamage", 20}
             }),
-            new Item(2, "Gold", "Sparkly orangish stuff that you can buy things with", 999, 
+            new Item(2, "Gold", "Sparkly orangish stuff that you can buy things with", 300  , 
             new Dictionary<string, int> {}),
-            new Item(3, "Rum", "The nectar of the Gods. Good on ham", 999,
+            new Item(3, "Rum", "The nectar of the Gods. Good on ham", 300 ,
             new Dictionary<string, int> {}),
-            new Item(4, "Silk", "Soft fabric that can be traded for gold", 999,
+            new Item(4, "Silk", "Soft fabric that can be traded for gold", 300 ,
             new Dictionary<string, int> {}),
-            new Item(5, "Spices", "Things that make other things tase good", 999,
+            new Item(5, "Spices", "Things that make other things tase good", 300 ,
             new Dictionary<string, int> {}),
-
         };
     }
 }

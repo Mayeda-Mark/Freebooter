@@ -419,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 145bd27f7bc9fb14e952e775703cad74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quantityText: {fileID: 0}
 --- !u!114 &439845424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85553,6 +85554,7 @@ GameObject:
   - component: {fileID: 1695020604}
   - component: {fileID: 1695020606}
   - component: {fileID: 1695020605}
+  - component: {fileID: 1695020607}
   m_Layer: 10
   m_Name: MinimapCamera
   m_TagString: Untagged
@@ -85625,6 +85627,27 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!50 &1695020607
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695020603}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!223 &1708550547 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 5151074810983034214, guid: b37a0f24a62dee8469dbf2b211999b5e,
