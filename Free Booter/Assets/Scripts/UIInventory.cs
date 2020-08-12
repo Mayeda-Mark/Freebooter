@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class UIInventory : MonoBehaviour
 {
-    public Dictionary<int, List<int>> slotQuantitiesIndexes = new Dictionary<int, List<int>>();
-
     public List<UIItem> uIItems = new List<UIItem>();
     public GameObject slotPrefab;
     public Transform slotPanel;
@@ -29,35 +27,37 @@ public class UIInventory : MonoBehaviour
     public void RemoveItem(Item item) {
         UpdateSlot(uIItems.FindIndex(i => i.item == item), null);
     }
-
-    
-        //I need to iterate through the items I have in my inventory and then assign indexes so that I can match them
-        // with their quantities list index
-        /* If I iterate through my dictionary, I could check the item.id in each slot against my Dictionary and then,
-        when they match up, I could insert the data nad then iterate the value.
-        */
     private void AssignQuantityIndex() {
-        for (int i = 0; i < numberOfSlots; i++) { // Iterate through the slots...
+        List<int> slotQuantitiesIndexes = new List<int>();
+        for (int i = 0; i < numberOfSlots; i++) { 
             if(uIItems[i].HasItem()) {
-                bool foundId = false;
-                int index = uIItems[i].GetItemId();
-                foreach(int key in slotQuantitiesIndexes.Keys) { //Iterate through the dictionary
-                    if(!foundId && key == index) { // If you haven't found a match yet, but then you find a match
-                        slotQuantitiesIndexes[key].Add(slotQuantitiesIndexes[key].Count); // Add an index
-                        foundId = true;
+                int itemId = uIItems[i].GetItemId();
+                bool hasFoundId = false;
+                foreach(int quantity in slotQuantitiesIndexes) {
+                    if(quantity == itemId) {
+                        hasFoundId = true;
                     }
                 }
-                if(!foundId) { // Otherwise, add to the dictionary
-                    slotQuantitiesIndexes.Add(index, new List<int>() {0});
+                if(!hasFoundId) {
+                    slotQuantitiesIndexes.Add(itemId);
                 }
             }
         }
-        foreach(int key in slotQuantitiesIndexes.Keys) {
-            int valueIndex = 0;
-            for (int i = 0; i < numberOfSlots; i++) {
+        foreach(int quantity in slotQuantitiesIndexes) {
+            int numberFound = 0;
+            bool hasFoundOne = false;
+            for(int i = 0; i < numberOfSlots; i++) {
                 if(uIItems[i].HasItem()) {
-                    if(uIItems[i].GetItemId() == key) {
-                        uIItems[i].UpdateThisItem(slotQuantitiesIndexes[key][valueIndex]);
+                    int itemId = uIItems[i].GetItemId();
+                    if(quantity == itemId && !hasFoundOne) {
+                        hasFoundOne = true;
+                        numberFound++;
+                        uIItems[i].UpdateThisItem(numberFound);
+                    }
+                    if(quantity == itemId && hasFoundOne) {
+                        //slotQuantitiesIndexes[key].Add(numberFound);
+                        numberFound++;
+                        uIItems[i].UpdateThisItem(numberFound);
                     }
                 }
             }

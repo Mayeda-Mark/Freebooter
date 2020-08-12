@@ -35,7 +35,6 @@ public class Inventory : MonoBehaviour
         GiveQuantity(id, quantity);
     }
     public void GiveQuantity(int id, int quantity) {
-        Debug.Log("Picked up " + quantity);
         int maxQuantity = itemDB.GetItem(id).GetMaxQuantity();
         int remainingQuantity = quantity;
         bool hasFinished = false;
@@ -45,7 +44,6 @@ public class Inventory : MonoBehaviour
             hasFoundKey = true; 
                 for(int i = 0; i < keyValue.Value.Count; i++) { 
                     if(remainingQuantity + keyValue.Value[i] > maxQuantity && keyValue.Value[i] != maxQuantity) {
-                        Debug.Log("Case 1");
                         remainingQuantity = quantity + keyValue.Value[i] - maxQuantity;
                         keyValue.Value[i] = maxQuantity;
                         GiveQuantity(id, remainingQuantity);

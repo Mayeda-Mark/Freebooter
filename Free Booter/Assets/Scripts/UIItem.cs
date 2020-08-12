@@ -93,8 +93,10 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         tooltip.gameObject.SetActive(false);
     }
     public void UpdateThisItem(int index) {
-        UpdateItem(this.item);
+        UpdateItem(this.item, index);
     }
+
+
     public int GetItemId() { return this.item.id; }
     public bool HasItem() {
         if(this.item != null) {
