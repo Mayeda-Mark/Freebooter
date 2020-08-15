@@ -8,12 +8,13 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 {
     public Item item;
     private Image spriteImage;
-    [SerializeField] Text quantityText;
+    Text quantityText;
     private UIItem selectedItem;
     private Tooltip tooltip;
     Inventory inventory;
 
     private void Awake() {
+        quantityText = transform.parent.GetComponentInChildren<Text>();
         inventory = FindObjectOfType<Inventory>();
         spriteImage = GetComponent<Image>();
         UpdateItem(null);
@@ -26,8 +27,8 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
             int quantityValue = inventory.GetQuantities()[item.id][0];
-            quantityText.text = quantityValue.ToString();
             quantityText.color = Color.white;
+            quantityText.text = quantityValue.ToString();
         } else {
             spriteImage.color = Color.clear;
             quantityText.color = Color.clear;
@@ -39,8 +40,8 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
             int quantityValue = inventory.GetQuantities()[item.id][index];
-            quantityText.text = quantityValue.ToString();
             quantityText.color = Color.white;
+            quantityText.text = quantityValue.ToString();
         } else {
             spriteImage.color = Color.clear;
             quantityText.color = Color.clear;
@@ -95,8 +96,8 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     public void UpdateThisItem(int index) {
         UpdateItem(this.item, index);
     }
-
-
+    public int GetSlotQuantity() { return inventory.GetQuantities()[item.id][0]; }
+    public int GetSlotQuantity(int index) { return inventory.GetQuantities()[item.id][index]; }
     public int GetItemId() { return this.item.id; }
     public bool HasItem() {
         if(this.item != null) {

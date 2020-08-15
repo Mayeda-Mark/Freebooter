@@ -90,4 +90,7 @@ public class Inventory : MonoBehaviour
         }
     }
     public Dictionary<int, List<int>> GetQuantities() { return quantities; }
+    public int GetQuantitiesByKeyIndex(int key, int index) {
+        return quantities[key][index];
+    }
 }

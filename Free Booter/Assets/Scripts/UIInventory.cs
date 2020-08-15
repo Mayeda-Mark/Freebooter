@@ -5,13 +5,16 @@ using UnityEngine;
 public class UIInventory : MonoBehaviour
 {
     public List<UIItem> uIItems = new List<UIItem>();
+    public GameObject quantityText;
     public GameObject slotPrefab;
     public Transform slotPanel;
     public int numberOfSlots = 16;
     private void Awake() {
         for (int i = 0; i < numberOfSlots; i++) {
             GameObject instance = Instantiate(slotPrefab);
+            //GameObject instanceText = Instantiate(quantityText);
             instance.transform.SetParent(slotPanel);
+            //instanceText.transform.SetParent(slotPanel);
             uIItems.Add(instance.GetComponentInChildren<UIItem>());
         }
     }
@@ -51,13 +54,15 @@ public class UIInventory : MonoBehaviour
                     int itemId = uIItems[i].GetItemId();
                     if(quantity == itemId && !hasFoundOne) {
                         hasFoundOne = true;
-                        numberFound++;
                         uIItems[i].UpdateThisItem(numberFound);
+                        Debug.Log(numberFound);
+                        numberFound++;
                     }
                     if(quantity == itemId && hasFoundOne) {
                         //slotQuantitiesIndexes[key].Add(numberFound);
-                        numberFound++;
                         uIItems[i].UpdateThisItem(numberFound);
+                        Debug.Log(numberFound);
+                        numberFound++;
                     }
                 }
             }
