@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int health = 100;
+    [SerializeField] int maxHealth = 100;
+    int health;
+    void Start() {
+        ResetHealth();
+    }
     public void DealDamage(int damage) {
         health -= damage;
         if(health <= 0) {
@@ -16,4 +20,7 @@ public class Health : MonoBehaviour
         }
     }
     public int GetHealth() { return health; }
+    public void ResetHealth() {
+        health = maxHealth;
+    }
 }
