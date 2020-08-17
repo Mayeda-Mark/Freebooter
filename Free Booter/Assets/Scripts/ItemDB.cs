@@ -19,21 +19,34 @@ public class ItemDB : MonoBehaviour
             new Item(0, "Cannon Balls", "Big balls of metal that you can hurl at other boats", 99, 
             new Dictionary<string, int> {
                 {"HullDamage", 20},
-                {"SailDamage", 5}
+                {"SailDamage", 5},
+                {"BaseCost", 5},
+                {"QuantitySoldIn", 10}
             }), 
             new Item(1, "Chain Shot", "It's like a bolo, but for a boat", 99,
             new Dictionary<string, int> {
                 {"HullDamage", 5},
-                {"SailDamage", 20}
+                {"SailDamage", 20},
+                {"BaseCost", 5},
+                {"QuantitySoldIn", 10}
             }),
             new Item(2, "Gold", "Sparkly orangish stuff that you can buy things with", 300  , 
             new Dictionary<string, int> {}),
             new Item(3, "Rum", "The nectar of the Gods. Good on ham", 300 ,
-            new Dictionary<string, int> {}),
+            new Dictionary<string, int> {
+                {"BaseCost", 10},
+                {"QuantitySoldIn", 10}
+            }),
             new Item(4, "Silk", "Soft fabric that can be traded for gold", 300 ,
-            new Dictionary<string, int> {}),
+            new Dictionary<string, int> {
+                {"BaseCost", 20},
+                {"QuantitySoldIn", 10}
+            }),
             new Item(5, "Spices", "Things that make other things tase good", 300 ,
-            new Dictionary<string, int> {}),
+            new Dictionary<string, int> {
+                {"BaseCost", 30},
+                {"QuantitySoldIn", 10}
+            }),
         };
     }
 }
