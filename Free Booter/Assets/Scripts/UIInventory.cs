@@ -28,38 +28,36 @@ public class UIInventory : MonoBehaviour
         UpdateSlot(uIItems.FindIndex(i => i.item == item), null);
     }
     private void AssignQuantityIndex() {
-        List<int> slotQuantitiesIndexes = new List<int>();
-        for (int i = 0; i < numberOfSlots; i++) { 
-            if(uIItems[i].HasItem()) {
-                int itemId = uIItems[i].GetItemId();
-                bool hasFoundId = false;
-                foreach(int quantity in slotQuantitiesIndexes) {
-                    if(quantity == itemId) {
-                        hasFoundId = true;
+        List<int> slotQuantitiesIndexes = new List<int>(); // Make a list of all of the quantities indexes
+        for (int i = 0; i < numberOfSlots; i++) { //Iterate through each of your inventory slots
+            if(uIItems[i].HasItem()) { // If there's an item in the inventory slot
+                int itemId = uIItems[i].GetItemId(); // Get its Id
+                bool hasFoundId = false; // Make a bool set to false to signify wheter or not you've found the Id we're looking for
+                foreach(int quantity in slotQuantitiesIndexes) { // Now iterate through the slotQuanitiesIndexes
+                    if(quantity == itemId) { //If the index matches the Item id...
+                        hasFoundId = true; //You found the id, set the bool to false
                     }
                 }
-                if(!hasFoundId) {
-                    slotQuantitiesIndexes.Add(itemId);
+                if(!hasFoundId) { // If you get all the way through the loop without finding the id
+                    slotQuantitiesIndexes.Add(itemId); // Add it to the list
                 }
             }
         }
-        foreach(int quantity in slotQuantitiesIndexes) {
-            int numberFound = 0;
-            bool hasFoundOne = false;
-            for(int i = 0; i < numberOfSlots; i++) {
-                if(uIItems[i].HasItem()) {
-                    int itemId = uIItems[i].GetItemId();
-                    if(quantity == itemId && !hasFoundOne) {
-                        hasFoundOne = true;
-                        uIItems[i].UpdateThisItem(numberFound);
-                        Debug.Log(numberFound);
-                        numberFound++;
+        foreach(int quantity in slotQuantitiesIndexes) { // Iterate through the slotQauntitiesIndex list
+            int numberFound = 0; // declare an int with a value of 0 to signify the number of items of each item that you've found
+            bool hasFoundOne = false; // Set a bool to false to signify that you haven't found one of the item yet
+            for(int i = 0; i < numberOfSlots; i++) { // Iterate through yout inventory slots
+                if(uIItems[i].HasItem()) { // If there's something in that slot..
+                    int itemId = uIItems[i].GetItemId(); // Grab its id
+                    if(quantity == itemId && !hasFoundOne) { // If the id matches the index in the list and you haven't found one yet...
+                        hasFoundOne = true; // You found one
+                        uIItems[i].UpdateThisItem(numberFound); // Update that item with the number you have found (minus 1 to signify the index)
+                        //Debug.Log(numberFound);
+                        numberFound++; // Iterate the number found
                     }
-                    if(quantity == itemId && hasFoundOne) {
-                        //slotQuantitiesIndexes[key].Add(numberFound);
-                        uIItems[i].UpdateThisItem(numberFound);
-                        Debug.Log(numberFound);
-                        numberFound++;
+                    else if(quantity == itemId && hasFoundOne) { // If you match the item index and you have found on already
+                        uIItems[i].UpdateThisItem(numberFound); //Ipdate that item with the correct index
+                        numberFound++; // Iterate the index
                     }
                 }
             }

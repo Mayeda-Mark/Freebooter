@@ -16,7 +16,7 @@ public class MerchantMenu : MonoBehaviour
     Inventory inventory;
     Button checkout;
     ItemDB itemDB;
-    int numSellSlots, numBuySlots;
+    int numSellSlots, numBuySlots = 0;
     bool buy = true;
     private void Awake() // May need to be Start instead of Awake
     {
@@ -24,9 +24,8 @@ public class MerchantMenu : MonoBehaviour
         checkout = GetComponent<Button>();
         itemDB = FindObjectOfType<ItemDB>();
         numBuySlots = itemIdsForSale.Count;
-        numSellSlots = inventory.shipItems.Count;
         SetUpForBuy();
-        SetUpForSale();
+        //SetUpForSale();
     }
     void Start() {
         buyInventoryPanel.gameObject.SetActive(false);
@@ -35,9 +34,9 @@ public class MerchantMenu : MonoBehaviour
         for(int i = 0; i < numBuySlots; i++) {
             buySellUIs[i].UpdateEntry(itemDB.GetItem(itemIdsForSale[i]));
         }
-        for(int i = 0; i < numSellSlots; i++) {
-            sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
-        }
+        // for(int i = 0; i < numSellSlots; i++) {
+        //     sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
+        // }
     }
     public void UpdateCartInfo(Item item, int cost, int quantity) {
         int costInCart = 0;
@@ -85,22 +84,37 @@ public class MerchantMenu : MonoBehaviour
         cart.text = cartText;
     }
     public void BuySellButton() {
+        foreach (int quantity in quantities) {
+            Debug.Log(quantity);
+        }
         if(buy) {
+            List<Item> purchasedItems = new List<Item>();
             int quantityIndex = 0;
             foreach(var key in shoppingCart.Keys) {
+                Debug.Log(quantityIndex);
                 inventory.GiveItem(key.id, quantities[quantityIndex]);
-                shoppingCart.Remove(key);
-                quantities.RemoveAt(quantityIndex);
-                quantityIndex ++;
+                //shoppingCart.Remove(key);
+                // quantities.RemoveAt(quantityIndex);
+                // quantityIndex ++;
+                purchasedItems.Add(key);
+            }
+            foreach(var item in purchasedItems) {
+                shoppingCart.Remove(item);
+            }
+            for(int i = quantities.Count - 1; i > 0; i--) {
+                quantities.RemoveAt(i);
             }
         }
     }
     public void BuyButtonClick() {
         buyInventoryPanel.gameObject.SetActive(true);
+        sellInventoryPanel.gameObject.SetActive(false);
         cart.gameObject.SetActive(true);
         buy = true;
     }
     public void SellButtonClick() {
+        SetUpForSale();
+        buyInventoryPanel.gameObject.SetActive(false);
         sellInventoryPanel.gameObject.SetActive(true);
         cart.gameObject.SetActive(true);
         buy = false;       
@@ -112,11 +126,27 @@ public class MerchantMenu : MonoBehaviour
             buySellUIs.Add(instance.GetComponentInChildren<BuySellUI>());
         }
     }
-    private void SetUpForSale() { // YOU'RE TRYING TO GET THE SELL PANEL TO WORK
-        for(int i = 0; i < numSellSlots; i++) {
-            GameObject instance = Instantiate(buySellPrefab);
-            instance.transform.SetParent(buyInventoryPanel);
-            sellUIs.Add(instance.GetComponentInChildren<BuySellUI>());
+    private void SetUpForSale() { 
+        numSellSlots = inventory.shipItems.Count;
+        if(sellUIs.Count == 0) {
+            for(int i = 0; i < numSellSlots; i++) {
+                GameObject instance = Instantiate(buySellPrefab);
+                instance.transform.SetParent(sellInventoryPanel);
+                sellUIs.Add(instance.GetComponentInChildren<BuySellUI>());
+            }
+        } else if(sellUIs.Count < numSellSlots) {
+            for(int j = sellUIs.Count; j < numSellSlots; j++) {
+                GameObject instance = Instantiate(buySellPrefab);
+                instance.transform.SetParent(sellInventoryPanel);
+                sellUIs.Add(instance.GetComponentInChildren<BuySellUI>());
+            }
+        } else {
+            Debug.Log("You need to figure out how to destroy some of these...");
+        }
+        for(int i = 0; i < numSellSlots; i++) { // FIGURE OUT HOW TO SKIP GOLD IN INVENTORY
+            if(sellUIs[i].GetItem() != inventory.ReturnByIndex(i)) {
+                sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
+            }
         }
     }
 }

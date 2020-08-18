@@ -39,7 +39,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         if(this.item != null) {
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
-            int quantityValue = inventory.GetQuantities()[item.id][index];
+            int quantityValue = inventory.GetQuantitiesByKeyIndex(this.item.id, index);
             quantityText.color = Color.white;
             quantityText.text = quantityValue.ToString();
         } else {

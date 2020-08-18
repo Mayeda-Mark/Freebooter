@@ -42,4 +42,5 @@ public class BuySellUI : MonoBehaviour
             }
         }
     }
+    public Item GetItem() { return item; }
 }
