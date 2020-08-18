@@ -80,6 +80,9 @@ public class Inventory : MonoBehaviour
     public Item CheckForItem(int id) {
         return shipItems.Find(item => item.id == id);
     }
+    public Item ReturnByIndex(int index) {
+        return shipItems[index];
+    }
     public void RemoveItem(int id) {
         Item itemToRemove = CheckForItem(id);
         if(itemToRemove != null) {
@@ -92,5 +95,26 @@ public class Inventory : MonoBehaviour
     public Dictionary<int, List<int>> GetQuantities() { return quantities; }
     public int GetQuantitiesByKeyIndex(int key, int index) {
         return quantities[key][index];
+    }
+    public int GetTotalGold() {
+        int totalGold = 0;
+        if(quantities[2] != null) {
+            foreach(int pile in quantities[2]) {
+                totalGold += pile;
+            }
+        }
+        return totalGold;
+    }
+    public void DecreaseQuantity(int id, int amount) {
+        quantities[id][quantities[id].Count - 1] -= amount;
+        if(quantities[id][quantities[id].Count - 1] <=0) {
+            int remaiingAmount = quantities[id][quantities[id].Count - 1] * -1;
+            if(quantities[id].Count == 1) {
+                quantities.Remove(id);
+                return;
+            }
+            quantities[id].RemoveAt(quantities[id].Count - 1);
+            DecreaseQuantity(id, remaiingAmount);
+        }
     }
 }
