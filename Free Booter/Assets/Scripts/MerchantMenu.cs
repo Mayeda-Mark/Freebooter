@@ -10,8 +10,9 @@ public class MerchantMenu : MonoBehaviour
     public List<int> itemIdsForSale;
     Dictionary<Item, int> shoppingCart = new Dictionary<Item, int>();
     List<int> quantities = new List<int>();
-    public List<BuySellUI> buySellUIs = new List<BuySellUI>();
+    public List<BuySellUI> buyUIs = new List<BuySellUI>();
     public List<BuySellUI> sellUIs = new List<BuySellUI>();
+    Dictionary<int, List<int>> quantitiesFromInventory = new Dictionary<int, List<int>>();
     public Text cart;
     Inventory inventory;
     Button checkout;
@@ -21,21 +22,18 @@ public class MerchantMenu : MonoBehaviour
     private void Awake() // May need to be Start instead of Awake
     {
         inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
+        quantitiesFromInventory = inventory.GetQuantities();
         checkout = GetComponent<Button>();
         itemDB = FindObjectOfType<ItemDB>();
         numBuySlots = itemIdsForSale.Count;
-        SetUpForBuy();
-        //SetUpForSale();
     }
     void Start() {
         buyInventoryPanel.gameObject.SetActive(false);
         sellInventoryPanel.gameObject.SetActive(false);
         cart.gameObject.SetActive(false);
-        for(int i = 0; i < numBuySlots; i++) {
-            buySellUIs[i].UpdateEntry(itemDB.GetItem(itemIdsForSale[i]));
-        }
-        // for(int i = 0; i < numSellSlots; i++) {
-        //     sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
+        SetUpForBuy();
+        // for(int i = 0; i < numBuySlots; i++) {
+        //     buyUIs[i].UpdateEntry(itemDB.GetItem(itemIdsForSale[i]));
         // }
     }
     public void UpdateCartInfo(Item item, int cost, int quantity) {
@@ -112,19 +110,23 @@ public class MerchantMenu : MonoBehaviour
         cart.gameObject.SetActive(true);
         buy = true;
     }
+    private void SetUpForBuy() {
+        for(int i = 0; i < numBuySlots; i++) {
+            GameObject instance = Instantiate(buySellPrefab);
+            instance.transform.SetParent(buyInventoryPanel);
+            buyUIs.Add(instance.GetComponentInChildren<BuySellUI>());
+        }
+        for(int i = 0; i < numBuySlots; i++) {
+            buyUIs[i].UpdateEntry(itemDB.GetItem(itemIdsForSale[i]));
+        }
+        UpdateBuyTextBox();
+    }
     public void SellButtonClick() {
         SetUpForSale();
         buyInventoryPanel.gameObject.SetActive(false);
         sellInventoryPanel.gameObject.SetActive(true);
         cart.gameObject.SetActive(true);
         buy = false;       
-    }
-    private void SetUpForBuy() {
-        for(int i = 0; i < numBuySlots; i++) {
-            GameObject instance = Instantiate(buySellPrefab);
-            instance.transform.SetParent(buyInventoryPanel);
-            buySellUIs.Add(instance.GetComponentInChildren<BuySellUI>());
-        }
     }
     private void SetUpForSale() { 
         numSellSlots = inventory.shipItems.Count;
@@ -140,13 +142,57 @@ public class MerchantMenu : MonoBehaviour
                 instance.transform.SetParent(sellInventoryPanel);
                 sellUIs.Add(instance.GetComponentInChildren<BuySellUI>());
             }
-        } else {
-            Debug.Log("You need to figure out how to destroy some of these...");
+        } else if(sellUIs.Count > numSellSlots){
+            for(int k = sellUIs.Count - 1; k > numSellSlots; k--) {
+                sellUIs.RemoveAt(k);
+            }
         }
         for(int i = 0; i < numSellSlots; i++) { // FIGURE OUT HOW TO SKIP GOLD IN INVENTORY
             if(sellUIs[i].GetItem() != inventory.ReturnByIndex(i)) {
                 sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
             }
         }
+        UpdateSellTextBox();
+    }
+    public bool isBuy() { return buy; }
+    public List<int> GetQuantitiesByKey(int key) {
+        return quantitiesFromInventory[key];
+    }
+    private void UpdateBuyTextBox() {
+        for (int i = 0; i < numBuySlots; i++) {
+            string priceString = "Price: " + buyUIs[i].item.stats["BaseCost"].ToString();
+            string quantityString = buyUIs[i].item.stats["QuantitySoldIn"].ToString();
+            string textBox = string.Format("{0} X {1}\n{2}", buyUIs[i].item.itemName, quantityString, priceString);
+            buyUIs[i].UpdateText(textBox);
+        }
+    }
+    private void UpdateSellTextBox() {
+        for (int i = 0; i < numSellSlots; i++) {
+            string priceString = "Price: " + sellUIs[i].item.stats["BaseCost"].ToString();
+            string quantityString = sellUIs[i].item.stats["QuantitySoldIn"].ToString();
+            int totalQuantity = 0;
+            int id = sellUIs[i].item.id;
+            List<int> quantityInInventory = inventory.GetQuantitiesByKey(id);
+            // for(int j = 0; i < quantityInInventory.Count; j++) {
+            //     Debug.Log(j);
+            //     /*totalQuantity +=*/ Debug.Log(quantityInInventory[j]);
+            // }
+            foreach(int stack in quantityInInventory) {
+                Debug.Log(stack);
+                totalQuantity += stack;
+            }
+            string stock = "Quantity: " + totalQuantity.ToString();
+            Debug.Log(stock);
+            string textBox = string.Format("{0} X {1}\n{2}\n{3}", sellUIs[i].item.itemName, quantityString, priceString, stock);
+            sellUIs[i].UpdateText(textBox);
+        }
     }
 }
+
+/*THINGS TO DO BEFORE NEXT BUILD IS FINISHED: 
+    FIGURE OUT WORK AROUND FOR NULL REFERENCE IN SELL MENU REFRESH
+    FIGURE OUT HOW TO HAVE GOLD NOT INTERFERE WITH THE MERCHANT MENUS
+    PLUG IN GOLD TO THE MERCHANT MENUS
+    PLUG GOLD INTO REPAIR SHIP
+    MAKE FLOATING TEXT BOX FOR NOT ENOUGH GOLD
+*/

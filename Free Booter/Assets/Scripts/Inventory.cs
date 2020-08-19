@@ -96,6 +96,9 @@ public class Inventory : MonoBehaviour
     public int GetQuantitiesByKeyIndex(int key, int index) {
         return quantities[key][index];
     }
+    public List<int> GetQuantitiesByKey(int key) {
+        return quantities[key];
+    }
     public int GetTotalGold() {
         int totalGold = 0;
         if(quantities[2] != null) {
