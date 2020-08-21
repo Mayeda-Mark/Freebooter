@@ -122,6 +122,7 @@ public class MerchantMenu : MonoBehaviour
         UpdateBuyTextBox();
     }
     public void SellButtonClick() {
+        //inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         SetUpForSale();
         buyInventoryPanel.gameObject.SetActive(false);
         sellInventoryPanel.gameObject.SetActive(true);
@@ -129,6 +130,7 @@ public class MerchantMenu : MonoBehaviour
         buy = false;       
     }
     private void SetUpForSale() { 
+        //inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         numSellSlots = inventory.shipItems.Count;
         if(sellUIs.Count == 0) {
             for(int i = 0; i < numSellSlots; i++) {
@@ -148,12 +150,20 @@ public class MerchantMenu : MonoBehaviour
             }
         }
         for(int i = 0; i < numSellSlots; i++) { // FIGURE OUT HOW TO SKIP GOLD IN INVENTORY
-            if(sellUIs[i].GetItem() != inventory.ReturnByIndex(i)) {
-                sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
-            }
+            //if(sellUIs[i].GetItem() != inventory.ReturnByIndex(i)) {
+                if(inventory.ReturnByIndex(i) != null) {
+                    sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
+                }
+            //}
         }
+        //DebugSellUIS();
         UpdateSellTextBox();
     }
+    // private void DebugSellUIS() {
+    //     for(int i = 0; i < sellUIs.Count; i++) {
+    //         Debug.Log(i);
+    //     }
+    // }
     public bool isBuy() { return buy; }
     public List<int> GetQuantitiesByKey(int key) {
         return quantitiesFromInventory[key];
@@ -178,11 +188,9 @@ public class MerchantMenu : MonoBehaviour
             //     /*totalQuantity +=*/ Debug.Log(quantityInInventory[j]);
             // }
             foreach(int stack in quantityInInventory) {
-                Debug.Log(stack);
                 totalQuantity += stack;
             }
             string stock = "Quantity: " + totalQuantity.ToString();
-            Debug.Log(stock);
             string textBox = string.Format("{0} X {1}\n{2}\n{3}", sellUIs[i].item.itemName, quantityString, priceString, stock);
             sellUIs[i].UpdateText(textBox);
         }

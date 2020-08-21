@@ -16,8 +16,8 @@ public class BuySellUI : MonoBehaviour
     {
         //inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         merchantMenu = GetComponentInParent<MerchantMenu>();
-        descriptonText = GetComponent<Text>();
-        spriteImage = GetComponent<Image>();
+        //descriptonText = GetComponent<Text>();
+        //spriteImage = GetComponent<Image>();
         costOfItem = this.item.stats["BaseCost"];
     } //TRY CHANGING THE TEXT BOX FROM TMERCHANTMENU
     public void UpdateEntry(Item item) {
@@ -42,6 +42,7 @@ public class BuySellUI : MonoBehaviour
         //UpdateTextBox();
     }
     public void UpdateText(string textBox) {
+        Debug.Log(textBox);
         descriptonText.text = textBox;
     }
     // private void UpdateTextBox() {
