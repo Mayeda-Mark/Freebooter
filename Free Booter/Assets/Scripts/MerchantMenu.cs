@@ -59,6 +59,53 @@ public class MerchantMenu : MonoBehaviour
         }    
         DisplayCart();
     }
+    public void UpdateCartForSale(Item item, int cost, int quantity) {
+        Debug.Log("Called sale cart");
+        int amountOfItem = 0;
+        List<int> amountPlayerHas = inventory.GetQuantitiesByKey(item.id);
+        foreach(int stack in amountPlayerHas) {
+            amountOfItem += stack;
+        }
+        int maxCost = amountOfItem * cost;
+        Debug.Log(amountOfItem);
+        Debug.Log(maxCost);
+        int costInCart = 0;
+        int quantityIndex = 0;
+        bool foundItemInCart = false;
+        foreach(var key in shoppingCart.Keys) { //CHECK YOUR SHOPPING CART FOR THE ITEM KEYS
+            if(item == key) { // IF YOU FIND IT
+                foundItemInCart = true; // SET BOOL TO TRUE
+                costInCart = shoppingCart[key];  // ASSOCIATE THE COST IN THE CART WITH THE KEY
+                quantities[quantityIndex] = quantity; // ASSOCIATE THE QUANTITY WITH THE KEY
+            }
+            if(!foundItemInCart) {
+                quantityIndex ++; // OTHERWISE ITERATE THE QUANTITY INDEX
+            }
+        }
+        if(!foundItemInCart) { // IF YOU MAKE IT THROUGH THE DICTIONARY WITHOUT FINDING THE KEY
+            shoppingCart.Add(item, cost); // ADD IT
+            quantities.Add(item.stats["QuantitySoldIn"]); // ADD IT TO THE QUANTITY LIST TOO
+        } else{ // IF YOU MAKE IT THROUGH THE LOOP AND HAVE FOUND THE ITEM...
+            if(costInCart + cost < maxCost) {
+                shoppingCart[item] = (costInCart + cost);
+            } else {
+                Debug.Log("Called");
+                shoppingCart[item] = maxCost;
+            }
+            if(quantity < amountOfItem) {
+                quantities[quantityIndex] = quantity;
+            } else{
+                quantities[quantityIndex] = amountOfItem;
+                foreach(BuySellUI ui in sellUIs) {
+                    if(item == ui.item) {
+                        ui.SetQuantityInCart(amountOfItem);
+                    }
+                }
+            } // ADD THE COST IN THE CART TO WHAT IS ALREADY IN THERE // UPDATE THE VALUE IN THE QUANTITY LIST
+            // TODO: make sure the player can't add more than what they currently have in their inventory
+        }
+        DisplayCart();    
+    }
     public void RemoveItemFromCart(Item item, int cost) {
         int quantityIndex = 0;
         foreach(var key in shoppingCart.Keys) {
@@ -82,18 +129,11 @@ public class MerchantMenu : MonoBehaviour
         cart.text = cartText;
     }
     public void BuySellButton() {
-        foreach (int quantity in quantities) {
-            Debug.Log(quantity);
-        }
         if(buy) {
             List<Item> purchasedItems = new List<Item>();
             int quantityIndex = 0;
             foreach(var key in shoppingCart.Keys) {
-                Debug.Log(quantityIndex);
                 inventory.GiveItem(key.id, quantities[quantityIndex]);
-                //shoppingCart.Remove(key);
-                // quantities.RemoveAt(quantityIndex);
-                // quantityIndex ++;
                 purchasedItems.Add(key);
             }
             foreach(var item in purchasedItems) {
@@ -102,6 +142,8 @@ public class MerchantMenu : MonoBehaviour
             for(int i = quantities.Count - 1; i > 0; i--) {
                 quantities.RemoveAt(i);
             }
+        } else {
+
         }
     }
     public void BuyButtonClick() {
@@ -131,7 +173,7 @@ public class MerchantMenu : MonoBehaviour
     }
     private void SetUpForSale() { 
         //inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
-        numSellSlots = inventory.shipItems.Count;
+        numSellSlots = inventory.GetCountLessGold();
         if(sellUIs.Count == 0) {
             for(int i = 0; i < numSellSlots; i++) {
                 GameObject instance = Instantiate(buySellPrefab);
@@ -198,8 +240,7 @@ public class MerchantMenu : MonoBehaviour
 }
 
 /*THINGS TO DO BEFORE NEXT BUILD IS FINISHED: 
-    FIGURE OUT WORK AROUND FOR NULL REFERENCE IN SELL MENU REFRESH
-    FIGURE OUT HOW TO HAVE GOLD NOT INTERFERE WITH THE MERCHANT MENUS
+    SET UP SELL MENU TO REMOVE FROM INVENTORY
     PLUG IN GOLD TO THE MERCHANT MENUS
     PLUG GOLD INTO REPAIR SHIP
     MAKE FLOATING TEXT BOX FOR NOT ENOUGH GOLD

@@ -19,7 +19,7 @@ public class BuySellUI : MonoBehaviour
         //descriptonText = GetComponent<Text>();
         //spriteImage = GetComponent<Image>();
         costOfItem = this.item.stats["BaseCost"];
-    } //TRY CHANGING THE TEXT BOX FROM TMERCHANTMENU
+    }
     public void UpdateEntry(Item item) {
         this.item = item;
         spriteImage.sprite = this.item.icon;
@@ -42,7 +42,6 @@ public class BuySellUI : MonoBehaviour
         //UpdateTextBox();
     }
     public void UpdateText(string textBox) {
-        Debug.Log(textBox);
         descriptonText.text = textBox;
     }
     // private void UpdateTextBox() {
@@ -67,7 +66,15 @@ public class BuySellUI : MonoBehaviour
             costInCart += this.item.stats["BaseCost"];
             quantityInCart += this.item.stats["QuantitySoldIn"];
             merchantMenu.UpdateCartInfo(this.item, costOfItem, quantityInCart);
+        } else {
+            costInCart += this.item.stats["BaseCost"];
+            quantityInCart += this.item.stats["QuantitySoldIn"];
+            merchantMenu.UpdateCartForSale(/*this.item.stats["BaseCost"], this.item.stats["QuantitySoldIn"]*/this.item, costOfItem, quantityInCart);
+            // merchantMenu.UpdateCartInfo(this.item, costOfItem, quantityInCart);
         }
+    }
+    public void SetQuantityInCart(int quantityInCart) {
+        this.quantityInCart = quantityInCart;
     }
     public void RemoveFromCart() {
         if(merchantMenu.isBuy()) {

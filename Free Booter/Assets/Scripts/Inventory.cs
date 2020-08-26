@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     private void Start() {
         GiveItem(0, 80);
+        GiveItem(2, 100);
         shipInventoryUI.gameObject.SetActive(false);
     }
     private void Update() {
@@ -81,7 +82,13 @@ public class Inventory : MonoBehaviour
         return shipItems.Find(item => item.id == id);
     }
     public Item ReturnByIndex(int index) {
-        return shipItems[index];
+        List<Item> copyList = new List<Item>();
+        for(int i = 0; i < shipItems.Count; i++) {
+            if(shipItems[i].id != 2) {
+                copyList.Add(shipItems[i]);
+            }
+        }
+        return copyList[index];
     }
     public void RemoveItem(int id) {
         Item itemToRemove = CheckForItem(id);
@@ -107,6 +114,15 @@ public class Inventory : MonoBehaviour
             }
         }
         return totalGold;
+    }
+    public int GetCountLessGold() {
+        int count = 0;
+        for(int i = 0; i < shipItems.Count; i++) {
+            if(shipItems[i].id != 2) {
+                count ++;
+            }
+        }
+        return count;
     }
     public void DecreaseQuantity(int id, int amount) {
         quantities[id][quantities[id].Count - 1] -= amount;
