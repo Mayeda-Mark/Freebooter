@@ -32,9 +32,6 @@ public class MerchantMenu : MonoBehaviour
         sellInventoryPanel.gameObject.SetActive(false);
         cart.gameObject.SetActive(false);
         SetUpForBuy();
-        // for(int i = 0; i < numBuySlots; i++) {
-        //     buyUIs[i].UpdateEntry(itemDB.GetItem(itemIdsForSale[i]));
-        // }
     }
     public void UpdateCartInfo(Item item, int cost, int quantity) {
         int costInCart = 0;
@@ -60,15 +57,12 @@ public class MerchantMenu : MonoBehaviour
         DisplayCart();
     }
     public void UpdateCartForSale(Item item, int cost, int quantity) {
-        Debug.Log("Called sale cart");
         int amountOfItem = 0;
         List<int> amountPlayerHas = inventory.GetQuantitiesByKey(item.id);
         foreach(int stack in amountPlayerHas) {
             amountOfItem += stack;
         }
         int maxCost = amountOfItem * cost;
-        Debug.Log(amountOfItem);
-        Debug.Log(maxCost);
         int costInCart = 0;
         int quantityIndex = 0;
         bool foundItemInCart = false;
@@ -89,7 +83,6 @@ public class MerchantMenu : MonoBehaviour
             if(costInCart + cost < maxCost) {
                 shoppingCart[item] = (costInCart + cost);
             } else {
-                Debug.Log("Called");
                 shoppingCart[item] = maxCost;
             }
             if(quantity < amountOfItem) {
@@ -129,22 +122,24 @@ public class MerchantMenu : MonoBehaviour
         cart.text = cartText;
     }
     public void BuySellButton() {
-        if(buy) {
-            List<Item> purchasedItems = new List<Item>();
-            int quantityIndex = 0;
-            foreach(var key in shoppingCart.Keys) {
+        List<Item> transactionItems = new List<Item>();
+        int quantityIndex = 0;
+        foreach(var key in shoppingCart.Keys) {
+            if(buy) {
                 inventory.GiveItem(key.id, quantities[quantityIndex]);
-                purchasedItems.Add(key);
+                buyInventoryPanel.gameObject.SetActive(false);
+            } else {
+                inventory.DecreaseQuantity(key.id, quantities[quantityIndex]);
+                sellInventoryPanel.gameObject.SetActive(false);
             }
-            foreach(var item in purchasedItems) {
-                shoppingCart.Remove(item);
-            }
-            for(int i = quantities.Count - 1; i > 0; i--) {
-                quantities.RemoveAt(i);
-            }
-        } else {
-
+            transactionItems.Add(key);
         }
+        foreach(var item in transactionItems) {
+            shoppingCart.Remove(item);
+        }
+        for(int i = quantities.Count - 1; i > 0; i--) {
+            quantities.RemoveAt(i);
+        } 
     }
     public void BuyButtonClick() {
         buyInventoryPanel.gameObject.SetActive(true);
@@ -187,7 +182,8 @@ public class MerchantMenu : MonoBehaviour
                 sellUIs.Add(instance.GetComponentInChildren<BuySellUI>());
             }
         } else if(sellUIs.Count > numSellSlots){
-            for(int k = sellUIs.Count - 1; k > numSellSlots; k--) {
+            for(int k = sellUIs.Count - 1; k >= numSellSlots; k--) {
+                sellUIs[k].KillSelf();
                 sellUIs.RemoveAt(k);
             }
         }
@@ -240,7 +236,7 @@ public class MerchantMenu : MonoBehaviour
 }
 
 /*THINGS TO DO BEFORE NEXT BUILD IS FINISHED: 
-    SET UP SELL MENU TO REMOVE FROM INVENTORY
+    REFRESH INVENTORY IN SELL
     PLUG IN GOLD TO THE MERCHANT MENUS
     PLUG GOLD INTO REPAIR SHIP
     MAKE FLOATING TEXT BOX FOR NOT ENOUGH GOLD

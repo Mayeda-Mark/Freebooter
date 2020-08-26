@@ -90,4 +90,7 @@ public class BuySellUI : MonoBehaviour
         }
     }
     public Item GetItem() { return item; }
+    public void KillSelf() {
+        Destroy(gameObject);
+    }
 }

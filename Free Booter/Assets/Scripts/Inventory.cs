@@ -130,10 +130,17 @@ public class Inventory : MonoBehaviour
             int remaiingAmount = quantities[id][quantities[id].Count - 1] * -1;
             if(quantities[id].Count == 1) {
                 quantities.Remove(id);
+                RemoveItem(id);
                 return;
             }
             quantities[id].RemoveAt(quantities[id].Count - 1);
             DecreaseQuantity(id, remaiingAmount);
         }
+    }
+    public void AddGold(int amount) {
+        GiveQuantity(2, amount);
+    }
+    public void RemoveGold(int amount) {
+        DecreaseQuantity(2, amount);
     }
 }
