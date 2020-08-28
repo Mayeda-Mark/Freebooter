@@ -11,10 +11,10 @@ public class BuySellUI : MonoBehaviour
     int costInCart, quantityInCart = 0;
     int costOfItem;
     MerchantMenu merchantMenu;
-    //Inventory inventory;
+    Inventory inventory;
     void Start()
     {
-        //inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
+        inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         merchantMenu = GetComponentInParent<MerchantMenu>();
         //descriptonText = GetComponent<Text>();
         //spriteImage = GetComponent<Image>();
@@ -76,18 +76,32 @@ public class BuySellUI : MonoBehaviour
     public void SetQuantityInCart(int quantityInCart) {
         this.quantityInCart = quantityInCart;
     }
+    public void SetCostInCart(int costInCart) {
+        this.costInCart = costInCart;
+    }
     public void RemoveFromCart() {
-        if(merchantMenu.isBuy()) {
+        // if(merchantMenu.isBuy()) {
             if(costInCart > 0) {
                 costInCart -= costOfItem;
                 quantityInCart -= this.item.stats["QuantitySoldIn"];
-                if(costInCart == 0) {
+                if(costInCart <= 0) {
+                    costInCart = 0;
+                    if(!merchantMenu.isBuy()) {
+                        merchantMenu.UpdateSellTextBox();
+                    }
                     merchantMenu.RemoveItemFromCart(this.item, 0);
                 } else {
                     merchantMenu.UpdateCartInfo(this.item, costOfItem * -1, quantityInCart);
                 }
             }
-        }
+        // } else {
+        //     if(costInCart > 0) {
+        //         int amountInInventory = inventory.GetTotalQuantity(this.item.id);
+        //         if(amountInInventory - this.item.stats["QuantitySoldIn"] < 0) {
+        //         } else{
+        //         }
+        //     }
+        // }
     }
     public Item GetItem() { return item; }
     public void KillSelf() {

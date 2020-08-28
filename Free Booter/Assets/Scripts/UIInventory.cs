@@ -56,7 +56,7 @@ public class UIInventory : MonoBehaviour
                         numberFound++; // Iterate the number found
                     }
                     else if(quantity == itemId && hasFoundOne) { // If you match the item index and you have found on already
-                        uIItems[i].UpdateThisItem(numberFound); //Ipdate that item with the correct index
+                        uIItems[i].UpdateThisItem(numberFound); //Update that item with the correct index
                         numberFound++; // Iterate the index
                     }
                 }

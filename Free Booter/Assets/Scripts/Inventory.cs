@@ -106,6 +106,13 @@ public class Inventory : MonoBehaviour
     public List<int> GetQuantitiesByKey(int key) {
         return quantities[key];
     }
+    public int GetTotalQuantity(int key) {
+        int total = 0;
+        foreach(int stack in quantities[key]) {
+            total += stack;
+        }
+        return total;
+    }
     public int GetTotalGold() {
         int totalGold = 0;
         if(quantities[2] != null) {
