@@ -13,14 +13,13 @@ public class MerchantMenu : MonoBehaviour
     public List<BuySellUI> buyUIs = new List<BuySellUI>();
     public List<BuySellUI> sellUIs = new List<BuySellUI>();
     Dictionary<int, List<int>> quantitiesFromInventory = new Dictionary<int, List<int>>();
-    public Text cart;
+    public Text cart, alertBox;
     int cartTotal = 0;
     Inventory inventory;
     Button checkout;
     ItemDB itemDB;
     int numSellSlots, numBuySlots = 0;
-    bool buy, cartEmpty
-     = true;
+    bool buy, cartEmpty = true;
     private void Awake() // May need to be Start instead of Awake
     {
         inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
@@ -30,6 +29,7 @@ public class MerchantMenu : MonoBehaviour
         numBuySlots = itemIdsForSale.Count;
     }
     void Start() {
+        alertBox.gameObject.SetActive(false);
         buyInventoryPanel.gameObject.SetActive(false);
         sellInventoryPanel.gameObject.SetActive(false);
         //cart.gameObject.SetActive(false);
@@ -37,10 +37,14 @@ public class MerchantMenu : MonoBehaviour
         SetUpForBuy();
     }
     public void UpdateCartInfo(Item item, int cost, int quantity) {
+        // GET HOW MUCH GOLD THE PLAYER HAS AND COMPARE IT AGAINST HOW MUCH THEY WANT TO SPEND. IF WHAT THEY WANT TO SPEND EXCEEDS THE AMOUNT OF GOLD THEY HAVE, DON'T ADD ANYTHING TO THE CART AND SET THE BUYSELL VALUES BACK TO WHAT THEY WERE BEFORE THE BUTTON WAS PRESSED
+        int playerGold = inventory.GetTotalGold();
         int costInCart = 0;
+        int totalCostInCart = 0;
         int quantityIndex = 0;
         bool foundItemInCart = false;
         foreach(var key in shoppingCart.Keys) {
+            totalCostInCart += shoppingCart[key];
             if(item == key) {
                 foundItemInCart = true;
                 costInCart = shoppingCart[key];
@@ -54,8 +58,20 @@ public class MerchantMenu : MonoBehaviour
             shoppingCart.Add(item, cost);
             quantities.Add(item.stats["QuantitySoldIn"]);
         } else{
-            shoppingCart[item] = (costInCart + cost);
-            quantities[quantityIndex] = quantity;
+            if(totalCostInCart + cost <= playerGold) {
+                alertBox.gameObject.SetActive(false);
+                shoppingCart[item] = (costInCart + cost);
+                quantities[quantityIndex] = quantity;
+            } else {
+                alertBox.gameObject.SetActive(true);
+                foreach(BuySellUI ui in buyUIs) {
+                    if(item == ui.item) {
+                        Debug.Log("called");
+                        ui.SetQuantityInCart(quantities[quantityIndex]);
+                        ui.SetCostInCart(costInCart);
+                    }
+                }
+            }
         }    
         if(!buy) {
             UpdateSellTextBox();
@@ -97,6 +113,7 @@ public class MerchantMenu : MonoBehaviour
                 quantities[quantityIndex] = amountOfItem;
                 foreach(BuySellUI ui in sellUIs) {
                     if(item == ui.item) {
+                        Debug.Log("called");
                         ui.SetQuantityInCart(amountOfItem);
                         ui.SetCostInCart(maxCost);
                     }
@@ -126,7 +143,7 @@ public class MerchantMenu : MonoBehaviour
     }
     private void DisplayCart() {
         int totalCost = 0;
-        string cartText = "";
+        string cartText = "Gold: " + inventory.GetTotalGold() + "\n\n";
         foreach(var key in shoppingCart.Keys) {
             totalCost += shoppingCart[key];
             cartText += key.itemName + ":\t" + shoppingCart[key].ToString() + " Gold \n";
@@ -139,6 +156,7 @@ public class MerchantMenu : MonoBehaviour
         int quantityIndex = 0;
         foreach(var key in shoppingCart.Keys) {
             if(buy) {
+                inventory.RemoveGold(shoppingCart[key]);
                 inventory.GiveItem(key.id, quantities[quantityIndex]);
                 buyInventoryPanel.gameObject.SetActive(false);
             } else {
@@ -158,6 +176,7 @@ public class MerchantMenu : MonoBehaviour
         TurnOffCart();
     }
     public void BuyButtonClick() {
+        DisplayCart();
         buyInventoryPanel.gameObject.SetActive(true);
         sellInventoryPanel.gameObject.SetActive(false);
         cart.gameObject.SetActive(true);
@@ -283,8 +302,7 @@ public class MerchantMenu : MonoBehaviour
 }
 /*THINGS TO DO BEFORE NEXT BUILD IS FINISHED: 
     BUG: WHEN YOU DROP BELOW 0 ON AN ITEM'S QUANTITY, IT DOESN'T REMOVE IT FROM THE UI AND CAUSES AN ARGUMENTOUTOFRANGE ERROR - MIGHT NOT BE ABLE TO SPLIT QUANTITY, WHICH COULD KIND OF SUCK
-    BUG: wHEN YOU GET MORE THAN ONE INVENTORY SLOT OF AN ITEM, IT DUPLICATES IN THE SELL MENU AS WELL
-    BUG: ABLE TO DECREASE ITEMS PAST WHAT THE PLAYER CURRENTLY HAS IN SELL
+    BUG: wHEN YOU GET MORE THAN ONE INVENTORY SLOT OF AN ITEM, IT DUPLICATES IN THE SELL MENU AS WEL
     PLUG IN GOLD TO THE MERCHANT MENUS
     PLUG GOLD INTO REPAIR SHIP
     MAKE FLOATING TEXT BOX FOR NOT ENOUGH GOLD

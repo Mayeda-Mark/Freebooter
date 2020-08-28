@@ -63,11 +63,11 @@ public class BuySellUI : MonoBehaviour
     // }
     public void AddToCart() {
         if(merchantMenu.isBuy()) {
-            costInCart += this.item.stats["BaseCost"];
+            costInCart += costOfItem;
             quantityInCart += this.item.stats["QuantitySoldIn"];
             merchantMenu.UpdateCartInfo(this.item, costOfItem, quantityInCart);
         } else {
-            costInCart += this.item.stats["BaseCost"];
+            costInCart += costOfItem;
             quantityInCart += this.item.stats["QuantitySoldIn"];
             merchantMenu.UpdateCartForSale(/*this.item.stats["BaseCost"], this.item.stats["QuantitySoldIn"]*/this.item, costOfItem, quantityInCart);
             // merchantMenu.UpdateCartInfo(this.item, costOfItem, quantityInCart);
