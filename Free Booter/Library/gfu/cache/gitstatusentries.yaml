@@ -13,18 +13,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-08-28T10:26:18.996-07:00
-  initializedAtString: 2020-08-28T05:49:20.624-07:00
+  lastUpdatedAtString: 2020-08-29T10:21:43.286-07:00
+  initializedAtString: 2020-08-29T05:16:44.749-07:00
   entries:
-  - path: Free Booter\Assets\Scripts\BuySellUI.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\BuySellUI.cs
-    projectPath: Assets\Scripts\BuySellUI.cs
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Cannon Ball.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Projectiles\Cannon Ball.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Cannon Ball.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Town Controller.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Town Controller.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Town Controller.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\EnemyShip.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\EnemyShip.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\EnemyShip.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\MerchantShip.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Health.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Health.cs
+    projectPath: Assets\Scripts\Health.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory.cs
+    projectPath: Assets\Scripts\Inventory.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\MerchantMenu.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\MerchantMenu.cs
     projectPath: Assets\Scripts\MerchantMenu.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\OverworldNPCController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverworldNPCController.cs
+    projectPath: Assets\Scripts\OverworldNPCController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\playerHealthBar.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\playerHealthBar.cs
+    projectPath: Assets\Scripts\playerHealthBar.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\PlayerShipController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipController.cs
+    projectPath: Assets\Scripts\PlayerShipController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\TownController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\TownController.cs
+    projectPath: Assets\Scripts\TownController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -37,6 +101,18 @@ MonoBehaviour:
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\EditorInstance.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -76,6 +152,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -94,6 +182,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
@@ -103,6 +197,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -118,9 +218,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-055933a13d0b85b48bec8d45a84e6818
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-055933a13d0b85b48bec8d45a84e6818
-    projectPath: Temp\UnityTempFile-055933a13d0b85b48bec8d45a84e6818
+  - path: Free Booter\Temp\UnityTempFile-0085024213a8d20409e978ff1b7a785a
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-0085024213a8d20409e978ff1b7a785a
+    projectPath: Temp\UnityTempFile-0085024213a8d20409e978ff1b7a785a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -136,51 +236,51 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-0b33d7bb44ac7524698bf16b0bf2b755
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-0b33d7bb44ac7524698bf16b0bf2b755
-    projectPath: Temp\UnityTempFile-0b33d7bb44ac7524698bf16b0bf2b755
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-0e48bc509c2fa784a90b57b9f682c153
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-0e48bc509c2fa784a90b57b9f682c153
     projectPath: Temp\UnityTempFile-0e48bc509c2fa784a90b57b9f682c153
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Temp\UnityTempFile-11a193d39f7909b4caab4523fc2840b9
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-11a193d39f7909b4caab4523fc2840b9
+    projectPath: Temp\UnityTempFile-11a193d39f7909b4caab4523fc2840b9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-1381410a8780309469f29bb1785173d7
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1381410a8780309469f29bb1785173d7
+    projectPath: Temp\UnityTempFile-1381410a8780309469f29bb1785173d7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-13f35309e82f8c94aa5658fd4788bc8e
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-13f35309e82f8c94aa5658fd4788bc8e
     projectPath: Temp\UnityTempFile-13f35309e82f8c94aa5658fd4788bc8e
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-1716f2955dd63114b8e4bf11e668203d
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1716f2955dd63114b8e4bf11e668203d
-    projectPath: Temp\UnityTempFile-1716f2955dd63114b8e4bf11e668203d
+  - path: Free Booter\Temp\UnityTempFile-194d125cc4d60d8449095b4987355cdf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-194d125cc4d60d8449095b4987355cdf
+    projectPath: Temp\UnityTempFile-194d125cc4d60d8449095b4987355cdf
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-1a1f943c8df7e5b40ad29788dfb4aefd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1a1f943c8df7e5b40ad29788dfb4aefd
-    projectPath: Temp\UnityTempFile-1a1f943c8df7e5b40ad29788dfb4aefd
+  - path: Free Booter\Temp\UnityTempFile-1c6df1bfd443e814ebc500f9b2b681f1
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1c6df1bfd443e814ebc500f9b2b681f1
+    projectPath: Temp\UnityTempFile-1c6df1bfd443e814ebc500f9b2b681f1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-1ce55faffd8ccd147b9f9fc39e8d566a
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1ce55faffd8ccd147b9f9fc39e8d566a
-    projectPath: Temp\UnityTempFile-1ce55faffd8ccd147b9f9fc39e8d566a
+  - path: Free Booter\Temp\UnityTempFile-1e4024c2fefc3d943b41c600f4efd5ef
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1e4024c2fefc3d943b41c600f4efd5ef
+    projectPath: Temp\UnityTempFile-1e4024c2fefc3d943b41c600f4efd5ef
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-1dfcc7a253ef45b458c5327fd1c26919
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1dfcc7a253ef45b458c5327fd1c26919
-    projectPath: Temp\UnityTempFile-1dfcc7a253ef45b458c5327fd1c26919
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-24ab5255d7b7a374b866e28ec12952c9
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-24ab5255d7b7a374b866e28ec12952c9
-    projectPath: Temp\UnityTempFile-24ab5255d7b7a374b866e28ec12952c9
+  - path: Free Booter\Temp\UnityTempFile-1e5d1ffc2ddbdd44ca07abf179b0dcbf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-1e5d1ffc2ddbdd44ca07abf179b0dcbf
+    projectPath: Temp\UnityTempFile-1e5d1ffc2ddbdd44ca07abf179b0dcbf
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -196,45 +296,57 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-2d737ce0d175c914eaac61692a2abb30
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-2d737ce0d175c914eaac61692a2abb30
-    projectPath: Temp\UnityTempFile-2d737ce0d175c914eaac61692a2abb30
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-31641fda9127a5e46b3016883696e1d9
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-31641fda9127a5e46b3016883696e1d9
-    projectPath: Temp\UnityTempFile-31641fda9127a5e46b3016883696e1d9
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-3311723df9f3e0f42ac67888fe3c02a9
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-3311723df9f3e0f42ac67888fe3c02a9
     projectPath: Temp\UnityTempFile-3311723df9f3e0f42ac67888fe3c02a9
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-35b08f9771719634bac9f45babe7dc8a
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-35b08f9771719634bac9f45babe7dc8a
-    projectPath: Temp\UnityTempFile-35b08f9771719634bac9f45babe7dc8a
+  - path: Free Booter\Temp\UnityTempFile-37e15137113e9d846acb72cfe07d8221
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-37e15137113e9d846acb72cfe07d8221
+    projectPath: Temp\UnityTempFile-37e15137113e9d846acb72cfe07d8221
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-42e2b997080aaa842be8a54d0fdb7d52
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-42e2b997080aaa842be8a54d0fdb7d52
-    projectPath: Temp\UnityTempFile-42e2b997080aaa842be8a54d0fdb7d52
+  - path: Free Booter\Temp\UnityTempFile-3900b2980a9cf0f48acba9e63f211440
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-3900b2980a9cf0f48acba9e63f211440
+    projectPath: Temp\UnityTempFile-3900b2980a9cf0f48acba9e63f211440
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-4ba431a68e3be334da76f36ad9eea3f1
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-4ba431a68e3be334da76f36ad9eea3f1
-    projectPath: Temp\UnityTempFile-4ba431a68e3be334da76f36ad9eea3f1
+  - path: Free Booter\Temp\UnityTempFile-3f538af510d89fe47b7bbb0e897debd8
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-3f538af510d89fe47b7bbb0e897debd8
+    projectPath: Temp\UnityTempFile-3f538af510d89fe47b7bbb0e897debd8
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-4c3d1cbd7692ffd42829a193ac4931d2
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-4c3d1cbd7692ffd42829a193ac4931d2
-    projectPath: Temp\UnityTempFile-4c3d1cbd7692ffd42829a193ac4931d2
+  - path: Free Booter\Temp\UnityTempFile-400c8f241deee7e4e8600d0576322e4e
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-400c8f241deee7e4e8600d0576322e4e
+    projectPath: Temp\UnityTempFile-400c8f241deee7e4e8600d0576322e4e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-4254ed43bef0f6a4390d3d59c2e07150
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-4254ed43bef0f6a4390d3d59c2e07150
+    projectPath: Temp\UnityTempFile-4254ed43bef0f6a4390d3d59c2e07150
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-4addf1721839e9f4bab029e3ebeffe89
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-4addf1721839e9f4bab029e3ebeffe89
+    projectPath: Temp\UnityTempFile-4addf1721839e9f4bab029e3ebeffe89
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-4b93df537403dbe4380370d303eb6191
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-4b93df537403dbe4380370d303eb6191
+    projectPath: Temp\UnityTempFile-4b93df537403dbe4380370d303eb6191
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-4c8baac2f52037f4aab07fd32df50851
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-4c8baac2f52037f4aab07fd32df50851
+    projectPath: Temp\UnityTempFile-4c8baac2f52037f4aab07fd32df50851
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -250,33 +362,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-5aa11fa6f483fad4f94d4fad86a8aef8
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-5aa11fa6f483fad4f94d4fad86a8aef8
-    projectPath: Temp\UnityTempFile-5aa11fa6f483fad4f94d4fad86a8aef8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-5b24c7925be69ae44a52f19cdbb0ee25
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-5b24c7925be69ae44a52f19cdbb0ee25
-    projectPath: Temp\UnityTempFile-5b24c7925be69ae44a52f19cdbb0ee25
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-5cea21b48a64ecb42bc60b9f1a700f3f
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-5cea21b48a64ecb42bc60b9f1a700f3f
-    projectPath: Temp\UnityTempFile-5cea21b48a64ecb42bc60b9f1a700f3f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-5cf704aed95092f4d8ad975f2ee63710
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-5cf704aed95092f4d8ad975f2ee63710
-    projectPath: Temp\UnityTempFile-5cf704aed95092f4d8ad975f2ee63710
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-5e957fe6e58cade448ea1c870edaac28
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-5e957fe6e58cade448ea1c870edaac28
-    projectPath: Temp\UnityTempFile-5e957fe6e58cade448ea1c870edaac28
+  - path: Free Booter\Temp\UnityTempFile-5c78b884e9fefb34c8b03b0c55d3a332
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-5c78b884e9fefb34c8b03b0c55d3a332
+    projectPath: Temp\UnityTempFile-5c78b884e9fefb34c8b03b0c55d3a332
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -286,33 +374,57 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Temp\UnityTempFile-6055a2748c22bd241b61c21063e10ff6
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-6055a2748c22bd241b61c21063e10ff6
+    projectPath: Temp\UnityTempFile-6055a2748c22bd241b61c21063e10ff6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-67262abe6c605b245b83f70014bca43c
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-67262abe6c605b245b83f70014bca43c
     projectPath: Temp\UnityTempFile-67262abe6c605b245b83f70014bca43c
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-682c2865dbd74d94799ba90d8823e41c
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-682c2865dbd74d94799ba90d8823e41c
-    projectPath: Temp\UnityTempFile-682c2865dbd74d94799ba90d8823e41c
+  - path: Free Booter\Temp\UnityTempFile-69428df70e130954c9dcc78ea7f1e969
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-69428df70e130954c9dcc78ea7f1e969
+    projectPath: Temp\UnityTempFile-69428df70e130954c9dcc78ea7f1e969
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-68ea3cc4ca321654b952490e26d2fa5e
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-68ea3cc4ca321654b952490e26d2fa5e
-    projectPath: Temp\UnityTempFile-68ea3cc4ca321654b952490e26d2fa5e
+  - path: Free Booter\Temp\UnityTempFile-6d2e231ff61d76c47b53ec1614068107
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-6d2e231ff61d76c47b53ec1614068107
+    projectPath: Temp\UnityTempFile-6d2e231ff61d76c47b53ec1614068107
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-6f4cb239f4a8de14ea67acd86b161c25
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-6f4cb239f4a8de14ea67acd86b161c25
-    projectPath: Temp\UnityTempFile-6f4cb239f4a8de14ea67acd86b161c25
+  - path: Free Booter\Temp\UnityTempFile-6dac5a79b5f3e7948b5b79b95183bb5d
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-6dac5a79b5f3e7948b5b79b95183bb5d
+    projectPath: Temp\UnityTempFile-6dac5a79b5f3e7948b5b79b95183bb5d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-80f2ab0ba561cd94aadcc7a2609d3205
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-80f2ab0ba561cd94aadcc7a2609d3205
-    projectPath: Temp\UnityTempFile-80f2ab0ba561cd94aadcc7a2609d3205
+  - path: Free Booter\Temp\UnityTempFile-70efe5f796d3cf04ab9ceece9a44ea85
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-70efe5f796d3cf04ab9ceece9a44ea85
+    projectPath: Temp\UnityTempFile-70efe5f796d3cf04ab9ceece9a44ea85
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-76d6d281565ee44479966466a05ac202
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-76d6d281565ee44479966466a05ac202
+    projectPath: Temp\UnityTempFile-76d6d281565ee44479966466a05ac202
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-7be165cf4eea10448aa33e5573e6d165
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-7be165cf4eea10448aa33e5573e6d165
+    projectPath: Temp\UnityTempFile-7be165cf4eea10448aa33e5573e6d165
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-8086e07b11ddd5249a271bba5189a806
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-8086e07b11ddd5249a271bba5189a806
+    projectPath: Temp\UnityTempFile-8086e07b11ddd5249a271bba5189a806
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -328,39 +440,69 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-8890a7b875a28da4c81c742d9898ba1d
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-8890a7b875a28da4c81c742d9898ba1d
-    projectPath: Temp\UnityTempFile-8890a7b875a28da4c81c742d9898ba1d
+  - path: Free Booter\Temp\UnityTempFile-8820a609b9e668c498ef8d3126c6596f
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-8820a609b9e668c498ef8d3126c6596f
+    projectPath: Temp\UnityTempFile-8820a609b9e668c498ef8d3126c6596f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-89a2fa762ca91b04081bf6c129ad299a
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-89a2fa762ca91b04081bf6c129ad299a
-    projectPath: Temp\UnityTempFile-89a2fa762ca91b04081bf6c129ad299a
+  - path: Free Booter\Temp\UnityTempFile-89b249badcb9294408833d427e660d0b
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-89b249badcb9294408833d427e660d0b
+    projectPath: Temp\UnityTempFile-89b249badcb9294408833d427e660d0b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-8cbdd125c71b52c4fba51de6a68d94de
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-8cbdd125c71b52c4fba51de6a68d94de
-    projectPath: Temp\UnityTempFile-8cbdd125c71b52c4fba51de6a68d94de
+  - path: Free Booter\Temp\UnityTempFile-8d68f590fbc475440bb0e979f37d15a6
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-8d68f590fbc475440bb0e979f37d15a6
+    projectPath: Temp\UnityTempFile-8d68f590fbc475440bb0e979f37d15a6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-91ef315fde7d03f488d3ad9fd5dfedff
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-91ef315fde7d03f488d3ad9fd5dfedff
-    projectPath: Temp\UnityTempFile-91ef315fde7d03f488d3ad9fd5dfedff
+  - path: Free Booter\Temp\UnityTempFile-910727ad543e06848a8056045a62bcbc
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-910727ad543e06848a8056045a62bcbc
+    projectPath: Temp\UnityTempFile-910727ad543e06848a8056045a62bcbc
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-9906b04bdd0297a488049034c8a2d7de
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-9906b04bdd0297a488049034c8a2d7de
-    projectPath: Temp\UnityTempFile-9906b04bdd0297a488049034c8a2d7de
+  - path: Free Booter\Temp\UnityTempFile-93afd5b7d5222ff43bf6327f26d17cea
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-93afd5b7d5222ff43bf6327f26d17cea
+    projectPath: Temp\UnityTempFile-93afd5b7d5222ff43bf6327f26d17cea
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-9abbd47033965ef49bbf5b747dcd2c6b
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-9abbd47033965ef49bbf5b747dcd2c6b
-    projectPath: Temp\UnityTempFile-9abbd47033965ef49bbf5b747dcd2c6b
+  - path: Free Booter\Temp\UnityTempFile-95488de30965d8f488a3aa9bb4e38b03
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-95488de30965d8f488a3aa9bb4e38b03
+    projectPath: Temp\UnityTempFile-95488de30965d8f488a3aa9bb4e38b03
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-96c4a70e50dbf8f4a9fba7dd69e350a5
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-96c4a70e50dbf8f4a9fba7dd69e350a5
+    projectPath: Temp\UnityTempFile-96c4a70e50dbf8f4a9fba7dd69e350a5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-99ebbc892708a364a950212e6f293dac
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-99ebbc892708a364a950212e6f293dac
+    projectPath: Temp\UnityTempFile-99ebbc892708a364a950212e6f293dac
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-9aab8e0cf6223664b8182d837ddb553e
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-9aab8e0cf6223664b8182d837ddb553e
+    projectPath: Temp\UnityTempFile-9aab8e0cf6223664b8182d837ddb553e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-9b5da8116e25c1f4caa5f81093679822
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-9b5da8116e25c1f4caa5f81093679822
+    projectPath: Temp\UnityTempFile-9b5da8116e25c1f4caa5f81093679822
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-9bd85f44bac3c60489b2c5c954cc0816
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-9bd85f44bac3c60489b2c5c954cc0816
+    projectPath: Temp\UnityTempFile-9bd85f44bac3c60489b2c5c954cc0816
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -370,15 +512,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-9faab7838a582ce4d8ce478bc0316deb
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-9faab7838a582ce4d8ce478bc0316deb
-    projectPath: Temp\UnityTempFile-9faab7838a582ce4d8ce478bc0316deb
+  - path: Free Booter\Temp\UnityTempFile-9fd5184dcbd97c049bb62033e64bbe79
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-9fd5184dcbd97c049bb62033e64bbe79
+    projectPath: Temp\UnityTempFile-9fd5184dcbd97c049bb62033e64bbe79
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-a32920be847d5324b8306d52579a2531
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-a32920be847d5324b8306d52579a2531
-    projectPath: Temp\UnityTempFile-a32920be847d5324b8306d52579a2531
+  - path: Free Booter\Temp\UnityTempFile-a1a0942022c07b842b083dcc6792352b
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-a1a0942022c07b842b083dcc6792352b
+    projectPath: Temp\UnityTempFile-a1a0942022c07b842b083dcc6792352b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -388,6 +530,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Temp\UnityTempFile-a998000d9da9c3547a4ced164988409d
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-a998000d9da9c3547a4ced164988409d
+    projectPath: Temp\UnityTempFile-a998000d9da9c3547a4ced164988409d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-abe3463b8f2ffa44faef39939de9d57a
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-abe3463b8f2ffa44faef39939de9d57a
     projectPath: Temp\UnityTempFile-abe3463b8f2ffa44faef39939de9d57a
@@ -400,21 +548,27 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-af28b92f42ffe1a47a1bb74378eea8a7
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-af28b92f42ffe1a47a1bb74378eea8a7
-    projectPath: Temp\UnityTempFile-af28b92f42ffe1a47a1bb74378eea8a7
+  - path: Free Booter\Temp\UnityTempFile-acb552c60e6f76e48935e4c52ff1cdad
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-acb552c60e6f76e48935e4c52ff1cdad
+    projectPath: Temp\UnityTempFile-acb552c60e6f76e48935e4c52ff1cdad
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-b0f4bde2a19eafa4e9d34324b9ec28ab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-b0f4bde2a19eafa4e9d34324b9ec28ab
-    projectPath: Temp\UnityTempFile-b0f4bde2a19eafa4e9d34324b9ec28ab
+  - path: Free Booter\Temp\UnityTempFile-ad160016dab6d0248a674bbcb60f8870
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-ad160016dab6d0248a674bbcb60f8870
+    projectPath: Temp\UnityTempFile-ad160016dab6d0248a674bbcb60f8870
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-b2f194cef8fa6e345a5f8cb1f4172a82
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-b2f194cef8fa6e345a5f8cb1f4172a82
-    projectPath: Temp\UnityTempFile-b2f194cef8fa6e345a5f8cb1f4172a82
+  - path: Free Booter\Temp\UnityTempFile-af258657e6d96d749bb311919cb032f4
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-af258657e6d96d749bb311919cb032f4
+    projectPath: Temp\UnityTempFile-af258657e6d96d749bb311919cb032f4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-b93e6f37fbfa3cf45af179aac110c4c0
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-b93e6f37fbfa3cf45af179aac110c4c0
+    projectPath: Temp\UnityTempFile-b93e6f37fbfa3cf45af179aac110c4c0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -424,39 +578,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-c06f389e81f28824a9c46916a2184e3c
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-c06f389e81f28824a9c46916a2184e3c
-    projectPath: Temp\UnityTempFile-c06f389e81f28824a9c46916a2184e3c
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-c2c56b657b860d34b92ca767c5a9108a
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-c2c56b657b860d34b92ca767c5a9108a
-    projectPath: Temp\UnityTempFile-c2c56b657b860d34b92ca767c5a9108a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-c435083aeb71975458c294091fc8b825
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-c435083aeb71975458c294091fc8b825
     projectPath: Temp\UnityTempFile-c435083aeb71975458c294091fc8b825
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-c7654d7496b8ea946843002d7ceea5f8
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-c7654d7496b8ea946843002d7ceea5f8
-    projectPath: Temp\UnityTempFile-c7654d7496b8ea946843002d7ceea5f8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-ca2f02ff583742746be88e139bd5a41a
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-ca2f02ff583742746be88e139bd5a41a
-    projectPath: Temp\UnityTempFile-ca2f02ff583742746be88e139bd5a41a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-ce42b5240b5e5c449ad97591ea26afac
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-ce42b5240b5e5c449ad97591ea26afac
-    projectPath: Temp\UnityTempFile-ce42b5240b5e5c449ad97591ea26afac
+  - path: Free Booter\Temp\UnityTempFile-cebb917de085db24a91748e5ea9c4bad
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-cebb917de085db24a91748e5ea9c4bad
+    projectPath: Temp\UnityTempFile-cebb917de085db24a91748e5ea9c4bad
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -466,27 +596,39 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Temp\UnityTempFile-d612112c0570ef34e9652b113c37986b
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-d612112c0570ef34e9652b113c37986b
+    projectPath: Temp\UnityTempFile-d612112c0570ef34e9652b113c37986b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-d77b38b20635f3641932c9c9d82d88e0
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-d77b38b20635f3641932c9c9d82d88e0
     projectPath: Temp\UnityTempFile-d77b38b20635f3641932c9c9d82d88e0
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-d7df13f15cace8a43a42e7ac46eddd4f
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-d7df13f15cace8a43a42e7ac46eddd4f
-    projectPath: Temp\UnityTempFile-d7df13f15cace8a43a42e7ac46eddd4f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-dd8075772dc95a84c8be99804dc07667
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-dd8075772dc95a84c8be99804dc07667
     projectPath: Temp\UnityTempFile-dd8075772dc95a84c8be99804dc07667
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-e4653ce60950c5c4bb7f5d425344b0ef
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-e4653ce60950c5c4bb7f5d425344b0ef
-    projectPath: Temp\UnityTempFile-e4653ce60950c5c4bb7f5d425344b0ef
+  - path: Free Booter\Temp\UnityTempFile-e0deaede97087df448cb603fcf5e31fe
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-e0deaede97087df448cb603fcf5e31fe
+    projectPath: Temp\UnityTempFile-e0deaede97087df448cb603fcf5e31fe
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-e1b9998f0e45d6348856af91d41c2ab6
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-e1b9998f0e45d6348856af91d41c2ab6
+    projectPath: Temp\UnityTempFile-e1b9998f0e45d6348856af91d41c2ab6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-e7880bbc2798fe045951aa48cf8b149e
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-e7880bbc2798fe045951aa48cf8b149e
+    projectPath: Temp\UnityTempFile-e7880bbc2798fe045951aa48cf8b149e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -502,15 +644,57 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Temp\UnityTempFile-ee2308d7436daae419246b247424ee1b
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-ee2308d7436daae419246b247424ee1b
+    projectPath: Temp\UnityTempFile-ee2308d7436daae419246b247424ee1b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-f22e7189fc8564d499fac200e0457814
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-f22e7189fc8564d499fac200e0457814
     projectPath: Temp\UnityTempFile-f22e7189fc8564d499fac200e0457814
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Temp\UnityTempFile-f29e5bc16f9f8ad46b8243d3d7513b55
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-f29e5bc16f9f8ad46b8243d3d7513b55
+    projectPath: Temp\UnityTempFile-f29e5bc16f9f8ad46b8243d3d7513b55
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-f53bb31bca9939647a411f580795bcac
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-f53bb31bca9939647a411f580795bcac
+    projectPath: Temp\UnityTempFile-f53bb31bca9939647a411f580795bcac
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-f761bbbc228a0074e9ca5eeb00d1040f
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-f761bbbc228a0074e9ca5eeb00d1040f
+    projectPath: Temp\UnityTempFile-f761bbbc228a0074e9ca5eeb00d1040f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-f8b8c9654d1f9404a89e11b3b248c4f0
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-f8b8c9654d1f9404a89e11b3b248c4f0
     projectPath: Temp\UnityTempFile-f8b8c9654d1f9404a89e11b3b248c4f0
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Temp\UnityTempFile-f99958547a006b84382f3924d5f82d18
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-f99958547a006b84382f3924d5f82d18
+    projectPath: Temp\UnityTempFile-f99958547a006b84382f3924d5f82d18
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-fcc0a986192746d478e6701e276c64cf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-fcc0a986192746d478e6701e276c64cf
+    projectPath: Temp\UnityTempFile-fcc0a986192746d478e6701e276c64cf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Temp\UnityTempFile-fcc43ef0c85017547a2f89dc1d3b321f
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-fcc43ef0c85017547a2f89dc1d3b321f
+    projectPath: Temp\UnityTempFile-fcc43ef0c85017547a2f89dc1d3b321f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
