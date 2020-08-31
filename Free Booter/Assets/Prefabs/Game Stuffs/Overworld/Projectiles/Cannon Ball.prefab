@@ -45,11 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859c4edb4c9c849109fe863ee7cf5c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 7.5
+  projectileSpeed: 5
   range: 10
-  hullDamage: 0
-  sailDamage: 0
-  itemIndex: 0
+  damage: 10
 --- !u!212 &4180485456894371010
 SpriteRenderer:
   m_ObjectHideFlags: 0

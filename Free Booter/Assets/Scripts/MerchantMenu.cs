@@ -160,7 +160,6 @@ public class MerchantMenu : MonoBehaviour
                 inventory.GiveItem(key.id, quantities[quantityIndex]);
                 buyInventoryPanel.gameObject.SetActive(false);
             } else {
-                inventory.AddGold(shoppingCart[key]);
                 inventory.DecreaseQuantity(key.id, quantities[quantityIndex]);
                 sellInventoryPanel.gameObject.SetActive(false);
             }
@@ -178,7 +177,6 @@ public class MerchantMenu : MonoBehaviour
     }
     public void BuyButtonClick() {
         DisplayCart();
-        
         buyInventoryPanel.gameObject.SetActive(true);
         sellInventoryPanel.gameObject.SetActive(false);
         cart.gameObject.SetActive(true);
@@ -226,13 +224,21 @@ public class MerchantMenu : MonoBehaviour
                 sellUIs.RemoveAt(k);
             }
         }
-        for(int i = 0; i < numSellSlots; i++) {
-            if(inventory.ReturnByIndex(i) != null) {
-                sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
-            }
+        for(int i = 0; i < numSellSlots; i++) { // FIGURE OUT HOW TO SKIP GOLD IN INVENTORY
+            //if(sellUIs[i].GetItem() != inventory.ReturnByIndex(i)) {
+                if(inventory.ReturnByIndex(i) != null) {
+                    sellUIs[i].UpdateEntry(inventory.ReturnByIndex(i));
+                }
+            //}
         }
+        //DebugSellUIS();
         UpdateSellTextBox();
     }
+    // private void DebugSellUIS() {
+    //     for(int i = 0; i < sellUIs.Count; i++) {
+    //         Debug.Log(i);
+    //     }
+    // }
     public bool isBuy() { return buy; }
     public List<int> GetQuantitiesByKey(int key) {
         return quantitiesFromInventory[key];
@@ -296,6 +302,9 @@ public class MerchantMenu : MonoBehaviour
 }
 /*THINGS TO DO BEFORE NEXT BUILD IS FINISHED: 
     BUG: WHEN YOU DROP BELOW 0 ON AN ITEM'S QUANTITY, IT DOESN'T REMOVE IT FROM THE UI AND CAUSES AN ARGUMENTOUTOFRANGE ERROR - MIGHT NOT BE ABLE TO SPLIT QUANTITY, WHICH COULD KIND OF SUCK
+    BUG: wHEN YOU GET MORE THAN ONE INVENTORY SLOT OF AN ITEM, IT DUPLICATES IN THE SELL MENU AS WEL
+    PLUG IN GOLD TO THE MERCHANT MENUS
     PLUG GOLD INTO REPAIR SHIP
+    MAKE FLOATING TEXT BOX FOR NOT ENOUGH GOLD
     CLEAN UP YOUR CODE, PARTICULARLY THE UPDATE BUY/SELL CART FUNCTIONS
 */

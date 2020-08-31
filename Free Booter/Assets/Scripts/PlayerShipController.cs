@@ -25,6 +25,7 @@ public class PlayerShipController : MonoBehaviour
     Health myHealth;
     float stopped = 0f;
     int sails = 0;
+    int booty = 0;
     void Start()
     {
         shipInventory = GetComponent<Inventory>();
@@ -50,17 +51,15 @@ public class PlayerShipController : MonoBehaviour
     private void FireCannon()
     {
         if(Input.GetKeyUp(KeyCode.RightArrow)) {
-            if(!rReload && shipInventory.CanFireCannon()) {
+            if(!rReload) {
                 myCannons.FireRightCannon();
                 rReload = true;
-                shipInventory.FireCannonBall();
             }
         }
         if(Input.GetKeyUp(KeyCode.LeftArrow)) {
-            if(!lReload && shipInventory.CanFireCannon()) {
+            if(!lReload) {
                 myCannons.FireLeftCannon();
                 lReload = true;
-                shipInventory.FireCannonBall();
             }
         }
     }
@@ -137,9 +136,9 @@ public class PlayerShipController : MonoBehaviour
         lootTimer = lootTime;
     }
     private void UpdateHealthDisplay() {
-        healthText.text = "Health: " + myHealth.GetHealth().ToString();
+        healthText.text = myHealth.GetHealth().ToString();
     }
     private void UpdateBootyDisplay() {
-        bootyText.text = "" + shipInventory.GetTotalGold().ToString() + " Gold";
+        bootyText.text = booty.ToString();
     }
 }

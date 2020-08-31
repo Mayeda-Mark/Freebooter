@@ -44,8 +44,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   townCanvas: {fileID: 0}
-  townMenu: {fileID: 0}
-  merchantMenu: {fileID: 0}
-  repairCost: 100
-  alertText: {fileID: 0}
-  repairButtonText: {fileID: 0}
