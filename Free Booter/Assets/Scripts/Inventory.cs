@@ -10,9 +10,11 @@ public class Inventory : MonoBehaviour
     public UIInventory shipInventoryUI;
     Tooltip tooltip;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
-    private void Start() {
+    private void Awake() {
         GiveItem(0, 80);
         GiveItem(2, 100);
+    }
+    private void Start() {
         shipInventoryUI.gameObject.SetActive(false);
     }
     private void Update() {
@@ -82,10 +84,21 @@ public class Inventory : MonoBehaviour
         return shipItems.Find(item => item.id == id);
     }
     public Item ReturnByIndex(int index) {
+        bool itemFound;
+        List<int> keyArray = new List<int>();
         List<Item> copyList = new List<Item>();
         for(int i = 0; i < shipItems.Count; i++) {
-            if(shipItems[i].id != 2) {
-                copyList.Add(shipItems[i]);
+            itemFound = false;
+            foreach(int key in keyArray) {
+                if(key == shipItems[i].id) {
+                    itemFound = true;
+                }
+            }
+            if(!itemFound) {
+                keyArray.Add(shipItems[i].id);
+                if(shipItems[i].id != 2) {
+                    copyList.Add(shipItems[i]);
+                }
             }
         }
         return copyList[index];
@@ -124,8 +137,17 @@ public class Inventory : MonoBehaviour
     }
     public int GetCountLessGold() {
         int count = 0;
-        for(int i = 0; i < shipItems.Count; i++) {
-            if(shipItems[i].id != 2) {
+        List <int> keyArray = new List<int>();
+        bool itemFound;
+        foreach(Item item in shipItems) {
+            itemFound = false;
+            foreach(int key in keyArray) {
+                if(key == item.id) {
+                    itemFound = true;
+                }
+            }
+            if(!itemFound && item.id != 2) {
+                keyArray.Add(item.id);
                 count ++;
             }
         }
@@ -149,5 +171,11 @@ public class Inventory : MonoBehaviour
     }
     public void RemoveGold(int amount) {
         DecreaseQuantity(2, amount);
+    }
+    public void FireCannonBall() {
+        DecreaseQuantity(0, 1);
+    }
+    public bool CanFireCannon() {
+        return quantities[0] != null;
     }
 }

@@ -125,7 +125,9 @@ public class OverworldNPCController : MonoBehaviour
         Vector2 dir = target.position - transform.position;
         float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         if(shootLeft) {
-            shootAngle += 180;
+            shootAngle += 150;
+        } else {
+            shootAngle -= 30;
         }
         Quaternion rotation = Quaternion.Euler( 0, 0, shootAngle);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);

@@ -173,7 +173,7 @@ MonoBehaviour:
   damageSprites:
   - {fileID: 21300000, guid: 4a950e30d5cd72a4591641b718241fc2, type: 3}
   spawnDistance: 20
-  shipSpeed: 2.5
+  shipSpeed: 2
   turnSpeed: 1
   reloadTime: 0.5
   sinkTime: 10
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e713dc959944441ba19827388a53c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  maxHealth: 100
 --- !u!1 &769175046560332016
 GameObject:
   m_ObjectHideFlags: 0

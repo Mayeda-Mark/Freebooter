@@ -23,4 +23,5 @@ public class Health : MonoBehaviour
     public void ResetHealth() {
         health = maxHealth;
     }
+    public bool isHealthFull() { return health == maxHealth; }
 }
