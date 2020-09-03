@@ -44,6 +44,7 @@ public class PlayerShipController : MonoBehaviour
         Move();
         FireCannon();
         UpdateHealthDisplay();
+        UpdateBootyDisplay();
         LootCountdown();
         ReloadCountdowns();
     }
@@ -137,7 +138,7 @@ public class PlayerShipController : MonoBehaviour
         lootTimer = lootTime;
     }
     private void UpdateHealthDisplay() {
-        healthText.text = "Health: " + myHealth.GetHealth().ToString();
+        healthText.text = "" + myHealth.GetHealth().ToString() + " Health";
     }
     private void UpdateBootyDisplay() {
         bootyText.text = "" + shipInventory.GetTotalGold().ToString() + " Gold";

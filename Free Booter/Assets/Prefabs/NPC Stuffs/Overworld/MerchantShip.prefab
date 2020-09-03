@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAttacker: 0
-  projectile: {fileID: 4180485456894371011, guid: 8bf75d812e36e4ee98adc9b489e79faa,
+  projectile: {fileID: 4180485456894371011, guid: 572b5724ee5ed4b44b7f3d88e510b7f2,
     type: 3}
 --- !u!114 &7402953397468560024
 MonoBehaviour:
@@ -161,15 +161,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   townPortals:
-  - {fileID: 885343561695667143, guid: e067b490e7d761e47b5c9055e7b1dd60, type: 3}
-  - {fileID: 2114630486268830826, guid: 8ebaf195304d2dc42a0462df1c9984a4, type: 3}
-  - {fileID: 4241129389110695900, guid: ced2de43de4065a49a9ddc8bfc254263, type: 3}
-  - {fileID: 5222254721921989660, guid: 491b784bf16899a49b27874811e062be, type: 3}
-  - {fileID: 345335459849519645, guid: fe180b0d6e85230488de1ef2d7eeeb75, type: 3}
-  - {fileID: 3524394495101716662, guid: f4f8515362006f245a34252b4dd25afe, type: 3}
-  - {fileID: 6359146273797157144, guid: 5f77d36406c619f498619d0835bb8502, type: 3}
-  - {fileID: 1839745193964476276, guid: 69c7c3fa62f8a2a4a904a0ddcbae44eb, type: 3}
-  - {fileID: 8397689371320945120, guid: e3d9af80400ed5b4aaad413308973ab5, type: 3}
+  - {fileID: 9008134393844603400, guid: 88ffcedaf0f9dd3448be854c83da0a6a, type: 3}
+  - {fileID: 8469171960600937663, guid: 094936857a6e5f94aa6569628d0040d7, type: 3}
+  - {fileID: 8279037253620200237, guid: 35d349ee47a0f0c42a6319a033aebd48, type: 3}
+  - {fileID: 4565757374434482444, guid: b07d94ffd51b8b14e8db77fe848b127c, type: 3}
+  - {fileID: 295597384188278415, guid: 6f4721b7b4b330545a1d7662b8e167b6, type: 3}
+  - {fileID: 7954418166876898785, guid: 1e1bcdecb6d6d9b4f929acc0bf7d4812, type: 3}
+  - {fileID: 8402294039641283128, guid: 8bc98bde38fc1ed4ca1c8c760e21d7db, type: 3}
+  - {fileID: 4900811793817884644, guid: 63c6452100bf4d042b840d0c0241d460, type: 3}
+  - {fileID: 3965666568163162236, guid: e4be30fff171f7140ab0dd87c328a685, type: 3}
   damageSprites:
   - {fileID: 21300000, guid: 4a950e30d5cd72a4591641b718241fc2, type: 3}
   spawnDistance: 20
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f77d5b9fe7e49da9f31fdac84537a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 4180485456894371011, guid: 8bf75d812e36e4ee98adc9b489e79faa,
+  projectile: {fileID: 4180485456894371011, guid: 572b5724ee5ed4b44b7f3d88e510b7f2,
     type: 3}
   lCannon: {fileID: 2571098728635280892}
   rCannon: {fileID: 2571098729068027964}

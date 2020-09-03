@@ -10,12 +10,12 @@ public class Inventory : MonoBehaviour
     public UIInventory shipInventoryUI;
     Tooltip tooltip;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
-    private void Awake() {
-        GiveItem(0, 80);
-        GiveItem(2, 100);
-    }
+    // private void Awake() {
+    // }
     private void Start() {
         shipInventoryUI.gameObject.SetActive(false);
+        GiveItem(0, 80);
+        GiveItem(2, 100);
     }
     private void Update() {
         if(Input.GetKeyDown(KeyCode.I)) {
@@ -128,8 +128,10 @@ public class Inventory : MonoBehaviour
     }
     public int GetTotalGold() {
         int totalGold = 0;
-        if(quantities[2] != null) {
+        Item gold = CheckForItem(2);
+        if(gold != null) {
             foreach(int pile in quantities[2]) {
+                Debug.Log(pile);
                 totalGold += pile;
             }
         }
