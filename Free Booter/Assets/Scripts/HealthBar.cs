@@ -35,7 +35,7 @@ public class HealthBar : MonoBehaviour
     }
     public void CheckForDamage() {
         if(startingHealth > health.GetHealth()) {
-            parentScale.y = 1;
+            parentScale.y = 15;
             transform.parent.transform.localScale = parentScale;
             hasBeenDamaged = true;
         } if(health.GetHealth() <= 0) {
