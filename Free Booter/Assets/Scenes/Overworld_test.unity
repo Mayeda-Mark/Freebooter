@@ -92114,6 +92114,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4917214617066425075, guid: e03b77284a900e44aa564e93e09472c9,
+        type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4917214617401996512, guid: e03b77284a900e44aa564e93e09472c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -92218,6 +92223,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917214617401996514, guid: e03b77284a900e44aa564e93e09472c9,
+        type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917214617401996514, guid: e03b77284a900e44aa564e93e09472c9,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4917214617401996524, guid: e03b77284a900e44aa564e93e09472c9,
         type: 3}
