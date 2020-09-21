@@ -83,10 +83,10 @@ public class PlayerShipController : MonoBehaviour
     }
     private void Turn() {
         if(Input.GetKey("a")) {
-            myRigidBody.rotation += spinRate;
+            myRigidBody.rotation += spinRate * Time.deltaTime;
         }
         if(Input.GetKey("d")) {
-            myRigidBody.rotation -= spinRate;
+            myRigidBody.rotation -= spinRate * Time.deltaTime;
         }
     }
     private void SetSails() {
