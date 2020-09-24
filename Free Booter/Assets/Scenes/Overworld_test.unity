@@ -726,6 +726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainPrefab2D
       objectReference: {fileID: 0}
+    - target: {fileID: 191326, guid: b046278bb9b6e104790392b566667ba5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 465656, guid: b046278bb9b6e104790392b566667ba5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -86143,6 +86147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1102509113}
+  - component: {fileID: 1102509111}
   m_Layer: 0
   m_Name: Rain
   m_TagString: Untagged
@@ -86150,6 +86155,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1102509111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102509110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7e6772120660841800979898233b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areaWidthHeight: 200
+  intensity: 40
+  rainDropPrefab: {fileID: 0}
+  parent: {fileID: 0}
+  rt: {fileID: 0}
 --- !u!4 &1102509113
 Transform:
   m_ObjectHideFlags: 0
@@ -91611,6 +91633,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055830757}
   m_CullTransparentMesh: 0
+--- !u!1 &2071309423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071309425}
+  - component: {fileID: 2071309424}
+  m_Layer: 0
+  m_Name: RainDrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2071309424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071309423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05077597d3324d4aadfc4b9907afac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 40
+  rainColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 0.77254903}
+--- !u!4 &2071309425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071309423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.845706, y: 1.5404863, z: -18.283722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2127180167
 GameObject:
   m_ObjectHideFlags: 0

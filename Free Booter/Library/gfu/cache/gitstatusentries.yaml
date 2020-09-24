@@ -13,312 +13,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-09-21T12:12:06.403-07:00
-  initializedAtString: 2020-09-21T10:18:33.031-07:00
+  lastUpdatedAtString: 2020-09-24T14:16:17.718-07:00
+  initializedAtString: 2020-09-24T10:34:30.184-07:00
   entries:
-  - path: Free Booter\Assets\_TerrainAutoUpgrade\layer_CliffAlbedoSpecularcc0f254a2c535401.terrainlayer
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\_TerrainAutoUpgrade\layer_CliffAlbedoSpecularcc0f254a2c535401.terrainlayer
-    projectPath: Assets\_TerrainAutoUpgrade\layer_CliffAlbedoSpecularcc0f254a2c535401.terrainlayer
+  - path: Free Booter\Assets\Resources\Sprites\Misc\Raindrop.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Sprites\Misc\Raindrop.png
+    projectPath: Assets\Resources\Sprites\Misc\Raindrop.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\_TerrainAutoUpgrade\layer_GrassHillAlbedocc0f254a2c535401.terrainlayer
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\_TerrainAutoUpgrade\layer_GrassHillAlbedocc0f254a2c535401.terrainlayer
-    projectPath: Assets\_TerrainAutoUpgrade\layer_GrassHillAlbedocc0f254a2c535401.terrainlayer
+    indexStatus: 4
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Resources\Sprites\Misc\Rainfall.mat
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Sprites\Misc\Rainfall.mat
+    projectPath: Assets\Resources\Sprites\Misc\Rainfall.mat
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\_TerrainAutoUpgrade\layer_MudRockyAlbedoSpecularMudRockyNormalsb3407d0e55802f81.terrainlayer
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\_TerrainAutoUpgrade\layer_MudRockyAlbedoSpecularMudRockyNormalsb3407d0e55802f81.terrainlayer
-    projectPath: Assets\_TerrainAutoUpgrade\layer_MudRockyAlbedoSpecularMudRockyNormalsb3407d0e55802f81.terrainlayer
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\_TerrainAutoUpgrade\layer_SandAlbedocc0f254a2c535401.terrainlayer
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\_TerrainAutoUpgrade\layer_SandAlbedocc0f254a2c535401.terrainlayer
-    projectPath: Assets\_TerrainAutoUpgrade\layer_SandAlbedocc0f254a2c535401.terrainlayer
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Background.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Background.prefab
-    projectPath: Assets\RainMaker\Demo\Background.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\DemoScene.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\DemoScene.unity
-    projectPath: Assets\RainMaker\Demo\DemoScene.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\DemoScene2D.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\DemoScene2D.unity
-    projectPath: Assets\RainMaker\Demo\DemoScene2D.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\DemoSceneSimple.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\DemoSceneSimple.unity
-    projectPath: Assets\RainMaker\Demo\DemoSceneSimple.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\DemoSceneSimple3D.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\DemoSceneSimple3D.unity
-    projectPath: Assets\RainMaker\Demo\DemoSceneSimple3D.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\DemoScript.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\DemoScript.cs
-    projectPath: Assets\RainMaker\Demo\DemoScript.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\DemoScript2D.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\DemoScript2D.cs
-    projectPath: Assets\RainMaker\Demo\DemoScript2D.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs
-    projectPath: Assets\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\FlashlightCookie.tif
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\FlashlightCookie.tif
-    projectPath: Assets\RainMaker\Demo\FlashlightCookie.tif
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\GrayMaterial.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\GrayMaterial.mat
-    projectPath: Assets\RainMaker\Demo\GrayMaterial.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\NatureLandscape.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\NatureLandscape.png
-    projectPath: Assets\RainMaker\Demo\NatureLandscape.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\New Terrain.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\New
-      Terrain.asset
-    projectPath: Assets\RainMaker\Demo\New Terrain.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\PhysicsMaterialBall.physicsMaterial2D
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\PhysicsMaterialBall.physicsMaterial2D
-    projectPath: Assets\RainMaker\Demo\PhysicsMaterialBall.physicsMaterial2D
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\PhysicsMaterialGround.physicsMaterial2D
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\PhysicsMaterialGround.physicsMaterial2D
-    projectPath: Assets\RainMaker\Demo\PhysicsMaterialGround.physicsMaterial2D
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\BillboardTextures\GrassFrond01AlbedoAlpha.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\BillboardTextures\GrassFrond01AlbedoAlpha.psd
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\BillboardTextures\GrassFrond01AlbedoAlpha.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\BillboardTextures\GrassFrond02AlbedoAlpha.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\BillboardTextures\GrassFrond02AlbedoAlpha.psd
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\BillboardTextures\GrassFrond02AlbedoAlpha.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\CliffAlbedoSpecular.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\SurfaceTextures\CliffAlbedoSpecular.psd
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\CliffAlbedoSpecular.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\GrassHillAlbedo.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\SurfaceTextures\GrassHillAlbedo.psd
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\GrassHillAlbedo.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\GrassRockyAlbedo.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\SurfaceTextures\GrassRockyAlbedo.psd
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\GrassRockyAlbedo.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\MudRockyAlbedoSpecular.bmp
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\SurfaceTextures\MudRockyAlbedoSpecular.bmp
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\MudRockyAlbedoSpecular.bmp
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\MudRockyNormals.bmp
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\SurfaceTextures\MudRockyNormals.bmp
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\MudRockyNormals.bmp
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\SandAlbedo.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Demo\Standard
-      Assets\Environment\TerrainAssets\SurfaceTextures\SandAlbedo.psd
-    projectPath: Assets\RainMaker\Demo\Standard Assets\Environment\TerrainAssets\SurfaceTextures\SandAlbedo.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Editor\RainMakerEditor.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Editor\RainMakerEditor.cs
-    projectPath: Assets\RainMaker\Editor\RainMakerEditor.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Editor\RainMakerLogo.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Editor\RainMakerLogo.png
-    projectPath: Assets\RainMaker\Editor\RainMakerLogo.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\BaseRainScript.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\BaseRainScript.cs
-    projectPath: Assets\RainMaker\Prefab\BaseRainScript.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\rain_heavy.ogg
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\rain_heavy.ogg
-    projectPath: Assets\RainMaker\Prefab\rain_heavy.ogg
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\rain_light.ogg
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\rain_light.ogg
-    projectPath: Assets\RainMaker\Prefab\rain_light.ogg
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\rain_medium.ogg
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\rain_medium.ogg
-    projectPath: Assets\RainMaker\Prefab\rain_medium.ogg
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainCollision.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainCollision.cs
-    projectPath: Assets\RainMaker\Prefab\RainCollision.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainExplosionMaterial.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainExplosionMaterial.mat
-    projectPath: Assets\RainMaker\Prefab\RainExplosionMaterial.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainExplosionMaterial2D.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainExplosionMaterial2D.mat
-    projectPath: Assets\RainMaker\Prefab\RainExplosionMaterial2D.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainMaterial.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainMaterial.mat
-    projectPath: Assets\RainMaker\Prefab\RainMaterial.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainMaterial2D.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainMaterial2D.mat
-    projectPath: Assets\RainMaker\Prefab\RainMaterial2D.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainMistMaterial.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainMistMaterial.mat
-    projectPath: Assets\RainMaker\Prefab\RainMistMaterial.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainMistMaterial2D.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainMistMaterial2D.mat
-    projectPath: Assets\RainMaker\Prefab\RainMistMaterial2D.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainPrefab.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainPrefab.prefab
-    projectPath: Assets\RainMaker\Prefab\RainPrefab.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainPrefab2D.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainPrefab2D.prefab
-    projectPath: Assets\RainMaker\Prefab\RainPrefab2D.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainScript.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainScript.cs
-    projectPath: Assets\RainMaker\Prefab\RainScript.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainScript2D.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainScript2D.cs
-    projectPath: Assets\RainMaker\Prefab\RainScript2D.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainShader.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainShader.shader
-    projectPath: Assets\RainMaker\Prefab\RainShader.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainTexture.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainTexture.png
-    projectPath: Assets\RainMaker\Prefab\RainTexture.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\RainTexturePSD.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\RainTexturePSD.psd
-    projectPath: Assets\RainMaker\Prefab\RainTexturePSD.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Prefab\wind_normal1.ogg
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Prefab\wind_normal1.ogg
-    projectPath: Assets\RainMaker\Prefab\wind_normal1.ogg
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\RainMaker\Readme.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\RainMaker\Readme.txt
-    projectPath: Assets\RainMaker\Readme.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\PlayerShipController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipController.cs
-    projectPath: Assets\Scripts\PlayerShipController.cs
+    indexStatus: 4
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\RainDrop.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\RainDrop.cs
+    projectPath: Assets\Scripts\RainDrop.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\StormArea.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\StormArea.cs
+    projectPath: Assets\Scripts\StormArea.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -18271,15 +17998,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\EditorInstance.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\EditorInstance.json
-    projectPath: Library\EditorInstance.json
+  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
+  - path: Free Booter\Library\EditorInstance.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -18307,30 +18034,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\PlayerDataCache\Win\Data\globalgamemanagers
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\globalgamemanagers
-    projectPath: Library\PlayerDataCache\Win\Data\globalgamemanagers
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\PlayerDataCache\Win\Data\level0
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\level0
-    projectPath: Library\PlayerDataCache\Win\Data\level0
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\PlayerDataCache\Win\Data\Resources\unity_builtin_extra
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Resources\unity_builtin_extra
-    projectPath: Library\PlayerDataCache\Win\Data\Resources\unity_builtin_extra
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -18349,96 +18052,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\ShaderCache\0\07def989f7ddabdab8384af6682fe418.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\0\07def989f7ddabdab8384af6682fe418.bin
-    projectPath: Library\ShaderCache\0\07def989f7ddabdab8384af6682fe418.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\2\2c354120a34b25f90982bdd5cb515956.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\2\2c354120a34b25f90982bdd5cb515956.bin
-    projectPath: Library\ShaderCache\2\2c354120a34b25f90982bdd5cb515956.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\4\4c5cb8aa069f52c463f9b6ecb3907f73.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\4\4c5cb8aa069f52c463f9b6ecb3907f73.bin
-    projectPath: Library\ShaderCache\4\4c5cb8aa069f52c463f9b6ecb3907f73.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\4\4f75464225114acb8472d4103ead2948.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\4\4f75464225114acb8472d4103ead2948.bin
-    projectPath: Library\ShaderCache\4\4f75464225114acb8472d4103ead2948.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\6\6872ae8025255940a16ea06ee824f55c.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\6\6872ae8025255940a16ea06ee824f55c.bin
-    projectPath: Library\ShaderCache\6\6872ae8025255940a16ea06ee824f55c.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\6\6d8f0994852e71eb22c464b79e82cac9.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\6\6d8f0994852e71eb22c464b79e82cac9.bin
-    projectPath: Library\ShaderCache\6\6d8f0994852e71eb22c464b79e82cac9.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\9\937d785a43dc408a21b1798d68d2d179.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\9\937d785a43dc408a21b1798d68d2d179.bin
-    projectPath: Library\ShaderCache\9\937d785a43dc408a21b1798d68d2d179.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\a\a6047201bba51a2369984d17c0744832.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\a\a6047201bba51a2369984d17c0744832.bin
-    projectPath: Library\ShaderCache\a\a6047201bba51a2369984d17c0744832.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\b\b7e54ee71a663b5d7d0c7a6338ddcb30.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\b\b7e54ee71a663b5d7d0c7a6338ddcb30.bin
-    projectPath: Library\ShaderCache\b\b7e54ee71a663b5d7d0c7a6338ddcb30.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\c\c19de5016b615f4e64831b8474be4fde.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\c\c19de5016b615f4e64831b8474be4fde.bin
-    projectPath: Library\ShaderCache\c\c19de5016b615f4e64831b8474be4fde.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\d\d5db08df59af6b607e2cbeb825ae168e.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\d\d5db08df59af6b607e2cbeb825ae168e.bin
-    projectPath: Library\ShaderCache\d\d5db08df59af6b607e2cbeb825ae168e.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\EditorEncounteredVariants
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\EditorEncounteredVariants
-    projectPath: Library\ShaderCache\EditorEncounteredVariants
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ShaderCache\f\f0a7cf74ca977ecf5fe019ea321ed46a.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\f\f0a7cf74ca977ecf5fe019ea321ed46a.bin
-    projectPath: Library\ShaderCache\f\f0a7cf74ca977ecf5fe019ea321ed46a.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\f\f63fb247d178c212cc0366bc910c6446.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\f\f63fb247d178c212cc0366bc910c6446.bin
-    projectPath: Library\ShaderCache\f\f63fb247d178c212cc0366bc910c6446.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Library\ShaderCache\f\f8f5e55b314b7336b97ec2eee1d65e5c.bin
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\f\f8f5e55b314b7336b97ec2eee1d65e5c.bin
-    projectPath: Library\ShaderCache\f\f8f5e55b314b7336b97ec2eee1d65e5c.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
@@ -18475,12 +18088,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
@@ -18492,13 +18099,7 @@ MonoBehaviour:
     projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Temp\UnityLockfile
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityLockfile
-    projectPath: Temp\UnityLockfile
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    workTreeStatus: 5
   - path: Free Booter\Temp\UnityTempFile-076c7a2230d25a848bffcb5349b69e2d
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-076c7a2230d25a848bffcb5349b69e2d
     projectPath: Temp\UnityTempFile-076c7a2230d25a848bffcb5349b69e2d
@@ -18565,24 +18166,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-76bd99afd26915047bccb971f5389dd3
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-76bd99afd26915047bccb971f5389dd3
-    projectPath: Temp\UnityTempFile-76bd99afd26915047bccb971f5389dd3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-7727a8f17245b77448c56f8003bbd9be
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-7727a8f17245b77448c56f8003bbd9be
-    projectPath: Temp\UnityTempFile-7727a8f17245b77448c56f8003bbd9be
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Temp\UnityTempFile-7e4ac7d7368c1bb46823c2253891dad0
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-7e4ac7d7368c1bb46823c2253891dad0
-    projectPath: Temp\UnityTempFile-7e4ac7d7368c1bb46823c2253891dad0
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-8305f05da49eea1408817f80912b7b3e
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-8305f05da49eea1408817f80912b7b3e
     projectPath: Temp\UnityTempFile-8305f05da49eea1408817f80912b7b3e
@@ -18649,12 +18232,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Temp\UnityTempFile-e5c9604bbb72f7741a9b2f55e6cd2aed
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-e5c9604bbb72f7741a9b2f55e6cd2aed
-    projectPath: Temp\UnityTempFile-e5c9604bbb72f7741a9b2f55e6cd2aed
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Temp\UnityTempFile-e88fc2b19dc00ef41b7ff4fc55ae23b1
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Temp\UnityTempFile-e88fc2b19dc00ef41b7ff4fc55ae23b1
     projectPath: Temp\UnityTempFile-e88fc2b19dc00ef41b7ff4fc55ae23b1
