@@ -22,7 +22,7 @@ TagManager:
   - Projectiles
   - Background
   - Minimap
-  - 
+  - Weather
   - 
   - 
   - 
@@ -52,6 +52,9 @@ TagManager:
     locked: 0
   - name: Land
     uniqueID: 416527521
+    locked: 0
+  - name: Weather
+    uniqueID: 212159951
     locked: 0
   - name: UI
     uniqueID: 2392771849

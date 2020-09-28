@@ -13,12 +13,18 @@ public class RainDrop : MonoBehaviour
     public float length = 2; 
     float systemWidth, systemHeight;
     Transform lineCoords;
+    StormArea parent;
+    public Material rainMaterial;
+    LineRenderer lr;
+    //public Shader lineShader;
     //Transform vector;
-    RectTransform rt;
+    //RectTransform rt;
     void Start() {
-        rt = (RectTransform)stormSystem.transform;
-        systemWidth = rt.rect.width;
-        systemHeight = rt.rect.height;
+        parent = GetComponentInParent<StormArea>();
+        //rt = (RectTransform)stormSystem.transform;
+        systemWidth = parent.GetWidth();
+        systemHeight = parent.GetHeight();
+        lr = GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -30,20 +36,25 @@ public class RainDrop : MonoBehaviour
             //Create a splash
         }
     }
-    private void MoveRain() {
+    //private void MoveRain() {
+    //}
+    private void DrawRain(/*Vector3 startpos, Vector3 endPos*/)
+    {
         lineCoords = this.transform;
         lineCoords.position = new Vector3((this.transform.position.x - (this.transform.position.x + systemWidth / 2)) / (systemWidth / 2), this.transform.position.y - (this.transform.position.y + systemHeight / 2) / (systemHeight / 2), 0);
-    }
-    private void DrawRain(/*Vector3 startpos, Vector3 endPos*/) {
-        GameObject myLine = new GameObject();
-        myLine.transform.position = this.transform.position;
-        myLine.AddComponent<LineRenderer>();
-        LineRenderer lr = myLine.GetComponent<LineRenderer>();
-        lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
+        //GameObject myLine = new GameObject();
+        Vector3 startPos = new Vector3(this.transform.position.x - (lineCoords.position.x + systemWidth / 2) / (systemWidth / 2), (this.transform.position.y + lineCoords.position.y * Mathf.Pow(height, 2)));
+        Vector3 endPos = new Vector3(this.transform.position.x + lineCoords.position.x * Mathf.Pow(height + length, 1), this.transform.position.y + lineCoords.position.y * Mathf.Pow(height + length, 1));
+        //x+vectorx*sqr(height+length), y+vectory*sqr(height+length), 2);
+        //myLine.transform.position = startPos;
+        /*myLine.*///AddComponent<LineRenderer>();
+        /*LineRenderer*/ //lr = /*myLine.*/GetComponent<LineRenderer>();
+        lr.material = rainMaterial;//new Material(lineShader/*.Find("Particles/Alpha Blended Premultiply")*/);
         lr.SetColors(rainColor, rainColor);
         lr.SetWidth(rainWidth, rainWidth);
-        lr.SetPosition(0, startpos);
-        lr.SetPosition(1, endPos);
+        //lr.sortingLayerName = "Weather";
+        lr.SetPosition(0, /*startPos*/ new Vector3(0, 1, 0));
+        lr.SetPosition(1, /*endPos*/ new Vector3(0, 2, 0));
     }
 }
 /*
