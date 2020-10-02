@@ -17,7 +17,7 @@ public class StormArea : MonoBehaviour
         em.constantMax = maxIntensity;
         em.constantMin = minIntensity;
         windDir = UnityEngine.Random.Range(0f, 306f);
-        //this.transform.rotation.eulerAngles z = windDir;
+        //this.transform.rotation.eulerAngles z = windDir;51044
     }
 
     // Update is called once per frame
