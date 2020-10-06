@@ -131,7 +131,6 @@ public class Inventory : MonoBehaviour
         Item gold = CheckForItem(2);
         if(gold != null) {
             foreach(int pile in quantities[2]) {
-                Debug.Log(pile);
                 totalGold += pile;
             }
         }

@@ -86197,8 +86197,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1102509113}
   - component: {fileID: 1102509111}
+  - component: {fileID: 1102509112}
   m_Layer: 17
-  m_Name: Rain
+  m_Name: Storm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86221,7 +86222,35 @@ MonoBehaviour:
   numClouds: 20
   windDir: 0
   windIntensity: 0
-  cloudPrefab: {fileID: 0}
+  cloudPrefab: {fileID: 8029175639859466805, guid: 5c9f7000674a9a744962771b332ad3e0,
+    type: 3}
+  cam: {fileID: 1250363308}
+--- !u!61 &1102509112
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102509110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 3.2}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 42.666668, y: 42.666668}
+  m_EdgeRadius: 0
 --- !u!4 &1102509113
 Transform:
   m_ObjectHideFlags: 0
@@ -91059,6 +91088,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!20 &1250363308 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3621083943691265017, guid: f482935a3f7372947979e9a59d48b17c,
+    type: 3}
+  m_PrefabInstance: {fileID: 656614580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1252312046
 GameObject:
   m_ObjectHideFlags: 0
@@ -95887,7 +95922,6 @@ GameObject:
   - component: {fileID: 1736147463}
   - component: {fileID: 1736147465}
   - component: {fileID: 1736147464}
-  - component: {fileID: 1736147466}
   m_Layer: 17
   m_Name: RainGenerator
   m_TagString: Untagged
@@ -100631,24 +100665,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &1736147466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736147462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7e6772120660841800979898233b25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxIntensity: 500
-  minIntensity: 400
-  numClouds: 20
-  windDir: 0
-  windIntensity: 0
-  cloudPrefab: {fileID: 0}
 --- !u!1001 &1750411292
 PrefabInstance:
   m_ObjectHideFlags: 0

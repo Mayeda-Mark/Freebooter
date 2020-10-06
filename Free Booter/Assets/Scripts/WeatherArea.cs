@@ -8,7 +8,7 @@ public class WeatherArea : MonoBehaviour
     [SerializeField] Collider2D myCollider;
     [SerializeField] List<int> weatherIds;
     [SerializeField] WeatherDB weatherDb;
-    float weatherTimer;
+    float weatherTimer, currentWindDir, currentWindSpeed;
     int weatherIndex;
     bool playing = true;
     Weather currentWeather;
@@ -23,15 +23,22 @@ public class WeatherArea : MonoBehaviour
     {
         yield return new WaitForSeconds(weatherTimer);
         RollWeather();
-        //currentWeather = weatherDb.GetWeather(weatherIndex);
+        SetCurrentWeather();
     }
+
+    private void SetCurrentWeather()
+    {
+        currentWindSpeed = currentWeather.windVelocity;
+        currentWindDir = currentWeather.windDirection;
+    }
+
     private void RollWeather() {
         currentWeather = weatherDb.GetWeather(UnityEngine.Random.Range(0, weatherIds.Count));
         weatherTimer = UnityEngine.Random.Range(60f, 180f);
     }
     private void OnTriggerStay2D(Collider2D collision) {
         if(collision.GetComponent<PlayerShipController>()) {
-           Debug.Log("Weather: " + currentWeather.name);
+           //Debug.Log("Weather: " + currentWeather.name);
         }
     }
 }
