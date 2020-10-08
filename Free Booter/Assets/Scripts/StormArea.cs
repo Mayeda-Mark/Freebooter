@@ -9,7 +9,7 @@ public class StormArea : MonoBehaviour
     public int minIntensity = 200;
     public int numClouds = 20;
     public float windDir;
-    public float windIntensity;
+    public float windSpeed;
     ParticleSystem rainMaker;
     public GameObject cloudPrefab;
     GameObject cloudParent;
@@ -18,16 +18,21 @@ public class StormArea : MonoBehaviour
     Vector3 minBounds, maxBounds, cloudPosition;
     [SerializeField] Camera cam;
     int activeClouds = 0;
+    WeatherArea parent;
     void Start() {
-        rainMaker = GetComponent<ParticleSystem>();
-        var em = rainMaker.emission.rate;
-        em.mode = ParticleSystemCurveMode.Constant;
-        em.constantMax = maxIntensity;
-        em.constantMin = minIntensity;
+        //rainMaker = GetComponent<ParticleSystem>();
+        //var em = rainMaker.emission.rate;
+        //em.mode = ParticleSystemCurveMode.Constant;
+        //em.constantMax = maxIntensity;
+        //em.constantMin = minIntensity;
+        parent = GetComponentInParent<WeatherArea>();
+        windDir = parent.GetWindDir();
+        windSpeed = parent.GetWindSpeed();
         collider = GetComponent<Collider2D>();
-        windDir = UnityEngine.Random.Range(0f, 306f);
         minBounds = collider.bounds.min;
         maxBounds = collider.bounds.max;
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        //print(windSpeed);
         //this.transform.rotation.eulerAngles z = windDir;51044
     }
 
@@ -75,4 +80,6 @@ public class StormArea : MonoBehaviour
     {
         activeClouds--;
     }
+    public float GetWindDir() { return windDir; }
+    public float GetWindSpeed() { return windSpeed; }
 }

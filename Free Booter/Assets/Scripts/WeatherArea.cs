@@ -8,10 +8,12 @@ public class WeatherArea : MonoBehaviour
     [SerializeField] Collider2D myCollider;
     [SerializeField] List<int> weatherIds;
     [SerializeField] WeatherDB weatherDb;
+    [SerializeField] GameObject[] Conditions;
     float weatherTimer, currentWindDir, currentWindSpeed;
     int weatherIndex;
     bool playing = true;
     Weather currentWeather;
+    GameObject currentConditions;
     IEnumerator Start() {
         do
         {
@@ -24,6 +26,16 @@ public class WeatherArea : MonoBehaviour
         yield return new WaitForSeconds(weatherTimer);
         RollWeather();
         SetCurrentWeather();
+        SetConditions();
+    }
+
+    private void SetConditions()
+    {
+        if(currentConditions == null)
+        {
+            currentConditions = Instantiate(Conditions[0], transform.position, Quaternion.identity) as GameObject;
+            currentConditions.transform.parent = this.transform;
+        }
     }
 
     private void SetCurrentWeather()
@@ -33,7 +45,7 @@ public class WeatherArea : MonoBehaviour
     }
 
     private void RollWeather() {
-        currentWeather = weatherDb.GetWeather(UnityEngine.Random.Range(0, weatherIds.Count));
+        currentWeather = weatherDb.GetWeather(/*UnityEngine.Random.Range(0, weatherIds.Count - 1)*/4);
         weatherTimer = UnityEngine.Random.Range(60f, 180f);
     }
     private void OnTriggerStay2D(Collider2D collision) {
@@ -41,4 +53,6 @@ public class WeatherArea : MonoBehaviour
            //Debug.Log("Weather: " + currentWeather.name);
         }
     }
+    public float GetWindDir()   { return currentWindDir; }
+    public float GetWindSpeed() {  return currentWindSpeed;}
 }
