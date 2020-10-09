@@ -33,7 +33,7 @@ public class WeatherArea : MonoBehaviour
     {
         if(currentConditions == null)
         {
-            currentConditions = Instantiate(Conditions[0], transform.position, Quaternion.identity) as GameObject;
+            currentConditions = Instantiate(Conditions[3], transform.position, Quaternion.identity) as GameObject;
             currentConditions.transform.parent = this.transform;
         }
     }

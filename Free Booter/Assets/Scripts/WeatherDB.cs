@@ -22,7 +22,7 @@ public class WeatherDB : MonoBehaviour
             new Weather(1, "HeavyWind", Random.Range(2f, 5f), Random.Range(0f, 360f), 100f),
             new Weather(2, "LightFog", 0, Random.Range(0f, 360f), 80f),
             new Weather(3, "HeavyFog", 0, Random.Range(0f, 360f), 50f),
-            new Weather(4, "LightStorm", Random.Range(5f, 7f), Random.Range(0f, 360f), 90f),
+            new Weather(4, "LightStorm", Random.Range(0.5f, 2f), Random.Range(0f, 360f), 90f),
             new Weather(5, "HeavyStorm", Random.Range(0.5f, 2f), Random.Range(0f, 360f), 70f),
             new Weather(6, "Sun", 0, 0, 100f),
         };

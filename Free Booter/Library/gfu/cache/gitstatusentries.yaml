@@ -13,58 +13,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-10-08T12:35:31.962-07:00
-  initializedAtString: 2020-10-08T05:51:58.802-07:00
+  lastUpdatedAtString: 2020-10-09T11:08:19.577-07:00
+  initializedAtString: 2020-10-09T10:10:13.213-07:00
   entries:
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Overworld Cameras 1.prefab
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Overworld Cameras 1.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Overworld Cameras 1.prefab
+      Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Cloud.prefab
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Cloud.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Cloud.prefab
+      Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightFog.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\LightFog.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightFog.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
       Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
     projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\RainDrop.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\RainDrop.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\RainDrop.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Resources\Sprites\Weather\Clouds.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Sprites\Weather\Clouds.png
-    projectPath: Assets\Resources\Sprites\Weather\Clouds.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Resources\Sprites\Weather\Clouds2.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Sprites\Weather\Clouds2.png
-    projectPath: Assets\Resources\Sprites\Weather\Clouds2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Cloud.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Cloud.cs
-    projectPath: Assets\Scripts\Cloud.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\StormArea.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\StormArea.cs
-    projectPath: Assets\Scripts\StormArea.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -86,12 +62,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\Artifacts\6f\6f2a68264363710ac67f2b35154a5253
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Artifacts\6f\6f2a68264363710ac67f2b35154a5253
-    projectPath: Library\Artifacts\6f\6f2a68264363710ac67f2b35154a5253
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
@@ -137,12 +107,6 @@ MonoBehaviour:
   - path: Free Booter\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
