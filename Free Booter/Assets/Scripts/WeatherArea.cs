@@ -8,7 +8,7 @@ public class WeatherArea : MonoBehaviour
     [SerializeField] Collider2D myCollider;
     [SerializeField] List<int> weatherIds;
     [SerializeField] WeatherDB weatherDb;
-    [SerializeField] GameObject[] Conditions;
+    [SerializeField] GameObject[] conditions;
     float weatherTimer, currentWindDir, currentWindSpeed;
     int weatherIndex;
     bool playing = true;
@@ -23,6 +23,7 @@ public class WeatherArea : MonoBehaviour
     }
     private IEnumerator SetWeather()
     {
+        //weatherTimer = UnityEngine.Random.Range(10f, 20f);
         yield return new WaitForSeconds(weatherTimer);
         RollWeather();
         SetCurrentWeather();
@@ -33,8 +34,14 @@ public class WeatherArea : MonoBehaviour
     {
         if(currentConditions == null)
         {
-            currentConditions = Instantiate(Conditions[3], transform.position, Quaternion.identity) as GameObject;
+            currentConditions = Instantiate(conditions[currentWeather.id], transform.position, Quaternion.identity) as GameObject;
             currentConditions.transform.parent = this.transform;
+        } else
+        {
+            Destroy(currentConditions.gameObject);
+            GameObject newConditions = Instantiate(conditions[currentWeather.id], transform.position, Quaternion.identity) as GameObject;
+            newConditions.transform.parent = this.transform;
+            Destroy(newConditions.gameObject, weatherTimer);
         }
     }
 
@@ -42,11 +49,12 @@ public class WeatherArea : MonoBehaviour
     {
         currentWindSpeed = currentWeather.windVelocity;
         currentWindDir = currentWeather.windDirection;
+        print("Weather: " + currentWeather.name);
     }
 
     private void RollWeather() {
-        currentWeather = weatherDb.GetWeather(/*UnityEngine.Random.Range(0, weatherIds.Count - 1)*/4);
-        weatherTimer = UnityEngine.Random.Range(60f, 180f);
+        currentWeather = weatherDb.GetWeather(/*UnityEngine.Random.Range(0, weatherIds.Count)*/5);
+        weatherTimer = UnityEngine.Random.Range(10f, 20f);
     }
     private void OnTriggerStay2D(Collider2D collision) {
         if(collision.GetComponent<PlayerShipController>()) {

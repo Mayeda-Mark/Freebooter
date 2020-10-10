@@ -13,37 +13,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-10-09T11:08:19.577-07:00
-  initializedAtString: 2020-10-09T10:10:13.213-07:00
+  lastUpdatedAtString: 2020-10-10T15:47:40.126-07:00
+  initializedAtString: 2020-10-10T14:53:42.404-07:00
   entries:
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Cloud.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightFog.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\LightFog.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightFog.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+      Stuffs\Overworld\Weather\Cloud.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Cloud.prefab
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\Sunny.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\Sunny.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\Sunny.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\Wind.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\Wind.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\Wind.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\StormCloud.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\WindCloud.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Scripts\WeatherArea.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\WeatherArea.cs
     projectPath: Assets\Scripts\WeatherArea.cs
@@ -71,6 +78,12 @@ MonoBehaviour:
   - path: Free Booter\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -107,6 +120,12 @@ MonoBehaviour:
   - path: Free Booter\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
