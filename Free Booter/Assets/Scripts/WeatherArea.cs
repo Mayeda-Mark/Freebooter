@@ -49,11 +49,12 @@ public class WeatherArea : MonoBehaviour
     {
         currentWindSpeed = currentWeather.windVelocity;
         currentWindDir = currentWeather.windDirection;
-        print("Weather: " + currentWeather.name);
+        print("Wind Direction " + currentWeather.windDirection);
+        //print("Weather: " + currentWeather.name);
     }
 
     private void RollWeather() {
-        currentWeather = weatherDb.GetWeather(/*UnityEngine.Random.Range(0, weatherIds.Count)*/5);
+        currentWeather = weatherDb.GetWeather(UnityEngine.Random.Range(0, weatherIds.Count));
         weatherTimer = UnityEngine.Random.Range(10f, 20f);
     }
     private void OnTriggerStay2D(Collider2D collision) {

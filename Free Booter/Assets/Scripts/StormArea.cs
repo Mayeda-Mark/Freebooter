@@ -47,7 +47,10 @@ public class StormArea : MonoBehaviour
         for(int i = activeClouds/*cloudParent.transform.childCount*/; i < numClouds; i++)
         {
             RollCloudPosition();
-            GameObject newCloud = Instantiate(cloudPrefab, cloudPosition, Quaternion.identity) as GameObject;
+            Quaternion cloudDirection = transform.rotation;
+            cloudDirection.z = windDir;
+            print(cloudDirection.z);
+            GameObject newCloud = Instantiate(cloudPrefab, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))/*identity*/) as GameObject;
             newCloud.transform.parent = this.transform;
             //activeClouds.Add(newCloud);
             activeClouds++;
