@@ -13,9 +13,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-10-12T14:13:54.921-07:00
-  initializedAtString: 2020-10-12T09:01:20.129-07:00
+  lastUpdatedAtString: 2020-10-13T10:57:21.928-07:00
+  initializedAtString: 2020-10-13T09:28:30.484-07:00
   entries:
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyStorm.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightWind.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\LightWind.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightWind.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\Wind.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\Wind.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\Wind.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Free Booter\Assets\Scripts\StormArea.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\StormArea.cs
     projectPath: Assets\Scripts\StormArea.cs
@@ -43,12 +78,6 @@ MonoBehaviour:
   - path: Free Booter\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -82,6 +111,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -103,12 +138,6 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

@@ -4799,8 +4799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7e6772120660841800979898233b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxIntensity: 300
-  minIntensity: 200
+  maxWindSpeed: 3
+  minWindSpeed: 1
   numClouds: 30
   windDir: 0
   windSpeed: 0

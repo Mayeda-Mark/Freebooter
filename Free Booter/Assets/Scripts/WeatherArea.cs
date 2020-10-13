@@ -6,11 +6,8 @@ using UnityEngine;
 public class WeatherArea : MonoBehaviour
 {
     [SerializeField] Collider2D myCollider;
-    [SerializeField] List<int> weatherIds;
-    [SerializeField] WeatherDB weatherDb;
     [SerializeField] GameObject[] conditions;
     float weatherTimer, currentWindDir, currentWindSpeed;
-    int weatherIndex;
     bool playing = true;
     Weather currentWeather;
     GameObject currentConditions;
@@ -23,9 +20,7 @@ public class WeatherArea : MonoBehaviour
     }
     private IEnumerator SetWeather()
     {
-        //weatherTimer = UnityEngine.Random.Range(10f, 20f);
         yield return new WaitForSeconds(weatherTimer);
-        RollWeather();
         SetCurrentWeather();
         SetConditions();
     }
@@ -34,12 +29,12 @@ public class WeatherArea : MonoBehaviour
     {
         if(currentConditions == null)
         {
-            currentConditions = Instantiate(conditions[currentWeather.id], transform.position, Quaternion.identity) as GameObject;
+            currentConditions = Instantiate(conditions[UnityEngine.Random.Range(0, conditions.Length)], transform.position, Quaternion.identity) as GameObject;
             currentConditions.transform.parent = this.transform;
         } else
         {
             Destroy(currentConditions.gameObject);
-            GameObject newConditions = Instantiate(conditions[currentWeather.id], transform.position, Quaternion.identity) as GameObject;
+            GameObject newConditions = Instantiate(conditions[UnityEngine.Random.Range(0, conditions.Length)], transform.position, Quaternion.identity) as GameObject;
             newConditions.transform.parent = this.transform;
             Destroy(newConditions.gameObject, weatherTimer);
         }
@@ -47,21 +42,12 @@ public class WeatherArea : MonoBehaviour
 
     private void SetCurrentWeather()
     {
-        currentWindSpeed = currentWeather.windVelocity;
-        currentWindDir = currentWeather.windDirection;
-        print("Wind Direction " + currentWeather.windDirection);
-        //print("Weather: " + currentWeather.name);
-    }
-
-    private void RollWeather() {
-        currentWeather = weatherDb.GetWeather(UnityEngine.Random.Range(0, weatherIds.Count));
+        currentWindDir = UnityEngine.Random.Range(0f, 360f);
         weatherTimer = UnityEngine.Random.Range(10f, 20f);
     }
     private void OnTriggerStay2D(Collider2D collision) {
         if(collision.GetComponent<PlayerShipController>()) {
-           //Debug.Log("Weather: " + currentWeather.name);
         }
     }
     public float GetWindDir()   { return currentWindDir; }
-    public float GetWindSpeed() {  return currentWindSpeed;}
 }

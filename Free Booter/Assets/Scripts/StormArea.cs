@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class StormArea : MonoBehaviour
 {
-    public int maxIntensity = 300;
-    public int minIntensity = 200;
+    public float maxWindSpeed = 5f;
+    public float minWindSpeed = 2f;
     public int numClouds = 20;
     public float windDir;
     public float windSpeed;
@@ -27,7 +27,7 @@ public class StormArea : MonoBehaviour
         //em.constantMin = minIntensity;
         parent = GetComponentInParent<WeatherArea>();
         windDir = parent.GetWindDir();
-        windSpeed = parent.GetWindSpeed();
+        windSpeed = UnityEngine.Random.Range(minWindSpeed, maxWindSpeed);//parent.GetWindSpeed();
         collider = GetComponent<Collider2D>();
         minBounds = collider.bounds.min;
         maxBounds = collider.bounds.max;
