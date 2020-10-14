@@ -14,10 +14,17 @@ public class WeatherArea : MonoBehaviour
     IEnumerator Start() {
         do
         {
+            CheckForPlayer();
             yield return StartCoroutine("SetWeather");
         }
         while (playing);
     }
+
+    /*private void CheckForPlayer()
+    {
+        if(myCollider.IsTouchingLayers(LayerMask.GetMask("Pla")))
+    }*/
+
     private IEnumerator SetWeather()
     {
         yield return new WaitForSeconds(weatherTimer);
@@ -46,8 +53,15 @@ public class WeatherArea : MonoBehaviour
         weatherTimer = UnityEngine.Random.Range(10f, 20f);
     }
     private void OnTriggerStay2D(Collider2D collision) {
-        if(collision.GetComponent<PlayerShipController>()) {
+        var player = collision.GetComponent<PlayerShipController>();
+        if(player) {
+            ApplyForce(player.GetComponentInParent<Rigidbody2D>());
+            //player.GetComponent<Rigidbody2D>().AddForce()
         }
+    }
+    private void ApplyForce(Rigidbody2D rigidbody) {
+        float slope = Mathf.Tan(currentWindDir);
+        float xSlope = slope; //FIGURE OUT HOW TO ADD FORCE
     }
     public float GetWindDir()   { return currentWindDir; }
 }
