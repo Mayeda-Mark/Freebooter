@@ -19,6 +19,7 @@ public class StormArea : MonoBehaviour
     [SerializeField] Camera cam;
     int activeClouds = 0;
     WeatherArea parent;
+    AreaEffector2D areaEffector;
     void Start() {
         //rainMaker = GetComponent<ParticleSystem>();
         //var em = rainMaker.emission.rate;
@@ -32,8 +33,19 @@ public class StormArea : MonoBehaviour
         minBounds = collider.bounds.min;
         maxBounds = collider.bounds.max;
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        areaEffector = GetComponent<AreaEffector2D>();
+        //areaEffector.forceAngle = windDir;
+        areaEffector.forceMagnitude = windSpeed;
+        if(windDir < 90)
+        {
+            areaEffector.forceAngle = (360f - (windDir - 90f));
+        } else
+        {
+            areaEffector.forceAngle = windDir - 90;
+        }
         //print(windSpeed);
         //this.transform.rotation.eulerAngles z = windDir;51044
+        // FIGURE THIS OUT
     }
 
     // Update is called once per frame
