@@ -26,7 +26,8 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] BoxCollider2D landSpotter, lCollider;
     [SerializeField] CircleCollider2D visualRange, cannonRange;
     [SerializeField] EdgeCollider2D lCannon, rCannon;
-    
+    bool underWind = false;
+
     void Start()
     {
         lootQuantity = Random.Range(minLoot, maxLoot);
@@ -187,4 +188,6 @@ public class OverworldNPCController : MonoBehaviour
     public void Kill() {
         Destroy(gameObject);
     }
+    public void SetUnderWind(bool isUnderWind) => underWind = isUnderWind;
+    public bool GetUnderWind() { return underWind; }
 }

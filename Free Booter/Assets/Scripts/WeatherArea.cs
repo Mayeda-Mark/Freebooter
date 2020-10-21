@@ -36,13 +36,13 @@ public class WeatherArea : MonoBehaviour
     {
         if(currentConditions == null)
         {
-            currentConditions = Instantiate(conditions[UnityEngine.Random.Range(0, conditions.Length)], transform.position, Quaternion.identity) as GameObject;
+            currentConditions = Instantiate(conditions[5/*UnityEngine.Random.Range(0, conditions.Length)*/], transform.position, Quaternion.identity) as GameObject;
             currentConditions.transform.parent = this.transform;
             //currentWindSpeed = GetWindSpeed();
         } else
         {
             Destroy(currentConditions.gameObject);
-            GameObject newConditions = Instantiate(conditions[UnityEngine.Random.Range(0, conditions.Length)], transform.position, Quaternion.identity) as GameObject;
+            GameObject newConditions = Instantiate(conditions[5/*UnityEngine.Random.Range(0, conditions.Length)*/], transform.position, Quaternion.identity) as GameObject;
             newConditions.transform.parent = this.transform;
             Destroy(newConditions.gameObject, weatherTimer);
         }
@@ -67,25 +67,31 @@ public class WeatherArea : MonoBehaviour
         weatherTimer = UnityEngine.Random.Range(10f, 20f);
     }
     private void OnTriggerStay2D(Collider2D collision) {
-        /*var player = collision.GetComponent<PlayerShipController>();
-        if(player) {
-            ApplyForce(player.GetComponentInParent<Rigidbody2D>());
-            //player.GetComponent<Rigidbody2D>().AddForce()
-        }*/
-    }
-    /*private void ApplyForce(Rigidbody2D rigidbody) {
-        *//*float slope = Mathf.Tan(currentWindDir);
-        float xSlope = slope; //FIGURE OUT HOW TO ADD FORCE*/
-        /*Vector3 dir = Quaternion.AngleAxis(currentWindDir, Vector3.right) * Vector3.right;
-        rigidbody.AddForce(dir *  *//*currentWindSpeed*//*);*//*
-        print(currentWindSpeed);
-        float xComponent = Mathf.Cos(currentWindDir * Mathf.PI / 360) * 0.2f;//currentWindSpeed;
-        float yComponent = Mathf.Sin(currentWindDir * Mathf.PI / 360) * 0.2f;//currentWindSpeed;
-        rigidbody.AddForce(new Vector3(xComponent, yComponent, 0));
-        if(rigidbody.velocity.y > 0.2f)
+        var player = collision.GetComponent<PlayerShipController>();
+        if (player && !player.GetUnderWind())
         {
-            rigidbody.velocity.y = 0.2f;
+            //player.MoveFromWind(currentWindDir, 2f);
+            ApplyForce(player.GetComponentInParent<Rigidbody2D>());
+            player.SetUnderWind(true);
+            //player.GetComponent<Rigidbody2D>().AddForce()
         }
-    }*/
+    }
+    private void ApplyForce(Rigidbody2D rigidbody)
+    {
+        print("Should just get called once");
+        /* float slope = Mathf.Tan(currentWindDir);
+         float xSlope = slope; //FIGURE OUT HOW TO ADD FORCE
+         Vector3 dir = Quaternion.AngleAxis(currentWindDir, Vector3.up) * Vector3.right;
+         rigidbody.AddForce(dir * 5f*//*currentWindSpeed*//*);*/
+
+        //print(currentWindSpeed);
+        float xComponent = Mathf.Cos(currentWindDir * Mathf.PI / 360) * 2f;//currentWindSpeed;
+        float yComponent = Mathf.Sin(currentWindDir * Mathf.PI / 360) * 2f;//currentWindSpeed;
+        rigidbody.AddForce(new Vector3(xComponent, yComponent, 0));
+        /* if (rigidbody.velocity.y > 0.2f)
+         {
+             rigidbody.velocity.y = 0.2f;
+         }*/
+    }
     public float GetWindDir()   { return currentWindDir; }
 }

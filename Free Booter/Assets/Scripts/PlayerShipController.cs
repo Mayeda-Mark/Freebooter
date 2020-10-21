@@ -16,6 +16,7 @@ public class PlayerShipController : MonoBehaviour
     bool rReload, lReload = false;
     [SerializeField] float lootTime = 3f;
     [SerializeField] float lootTimer;
+    bool underWind = false;
     bool looting = false;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
@@ -102,6 +103,13 @@ public class PlayerShipController : MonoBehaviour
         float moveSpeed = (shipSpeed * sails) * Time.deltaTime;
         myRigidBody.transform.position += transform.up * moveSpeed;
     }
+    public void MoveFromWind(float windDir, float windSpeed)
+    {
+        float xComponent = Mathf.Cos(windDir * Mathf.PI / 180) * windSpeed;
+        float yComponent = Mathf.Sin(windDir * Mathf.PI / 180) * windSpeed;
+        Vector2 windVelocity = new Vector2(xComponent, yComponent);
+        myRigidBody.velocity = windVelocity;
+    }
     //private void OnTriggerEnter2D(Collider2D otherCollider) {
     //    OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
     //    if(lootableShip && lootableShip.IsLootable() && otherCollider is CapsuleCollider2D) {
@@ -143,4 +151,6 @@ public class PlayerShipController : MonoBehaviour
     private void UpdateBootyDisplay() {
         bootyText.text = "" + shipInventory.GetTotalGold().ToString() + " Gold";
     }
+    public void SetUnderWind(bool isUnderWind) => underWind = isUnderWind;
+    public bool GetUnderWind() { return underWind; }
 }

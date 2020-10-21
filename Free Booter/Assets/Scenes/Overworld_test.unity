@@ -90866,6 +90866,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2190582240179415414, guid: 427e23b844d39b245be0d281e1880c04,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2190582240179415415, guid: 427e23b844d39b245be0d281e1880c04,
         type: 3}
       propertyPath: healthText
