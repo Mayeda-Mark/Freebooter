@@ -26,19 +26,14 @@ public class Cloud : MonoBehaviour
 
     private void Move()
     {
-        //print(transform.position.y);
         transform.Translate(Vector2.up * cloudSpeed * Time.deltaTime);
         var position = transform.position;
-        //print(parent.GetMaxBounds().y);
         if(position.x < parent.GetMinBounds().x || position.x > parent.GetMaxBounds().x ||
            position.y < parent.GetMinBounds().y || position.y > parent.GetMaxBounds().y)
         {
-            //print("called!");
             Vector3 viewPos = parent.GetCamera().WorldToViewportPoint(position);
-            //print(viewPos.y);
             if ((viewPos.x > 1.05 || viewPos.x < -0.05) || (viewPos.y > 1.05 || viewPos.y < -0.05))
             {
-                //print("I'm out!");
                 parent.RemoveCLoud();
                 Destroy(gameObject);
             }
