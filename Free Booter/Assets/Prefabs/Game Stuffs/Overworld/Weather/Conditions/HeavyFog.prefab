@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 425161498652058620}
   - component: {fileID: 425161498652058595}
   - component: {fileID: 425161498652058621}
+  - component: {fileID: 35371830118754420}
   m_Layer: 17
   m_Name: HeavyFog
   m_TagString: Untagged
@@ -4806,3 +4807,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &35371830118754420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425161498652058593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7e6772120660841800979898233b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxWindSpeed: 0
+  minWindSpeed: 0
+  numClouds: 0
+  windDir: 0
+  windSpeed: 0
+  cloudPrefab: {fileID: 0}
+  cam: {fileID: 0}

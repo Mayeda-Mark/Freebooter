@@ -8,13 +8,15 @@ public class Cloud : MonoBehaviour
     [SerializeField] Sprite[] cloudSprites;
     float cloudSpeed;
     StormArea parent;
+    SpriteRenderer cloudSprite;
     // Start is called before the first frame update
     void Start()
     {
         parent = GetComponentInParent<StormArea>();
         cloudSpeed = UnityEngine.Random.Range(parent.GetWindSpeed() - 0.25f, parent.GetWindSpeed() + 0.25f);
         int index = UnityEngine.Random.Range(0, cloudSprites.Length - 1);
-        GetComponent<SpriteRenderer>().sprite = cloudSprites[index];
+        cloudSprite = GetComponent<SpriteRenderer>();
+        cloudSprite.sprite= cloudSprites[index];
         //print(parent.GetWindSpeed());
     }
 
@@ -37,6 +39,20 @@ public class Cloud : MonoBehaviour
                 parent.RemoveCLoud();
                 Destroy(gameObject);
             }
+        }
+    }
+    public void Kill()
+    {
+        StartCoroutine("FadeOut");
+    }
+    public IEnumerator FadeOutCloud(float aValue, float aTime)
+    {
+        float alpha = cloudSprite.color.a;
+        for(float t = 0.0f; t < 1.0; t += Time.deltaTime / aTime)
+        {
+            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t));
+            cloudSprite.color = newColor;
+            yield return null;
         }
     }
 }

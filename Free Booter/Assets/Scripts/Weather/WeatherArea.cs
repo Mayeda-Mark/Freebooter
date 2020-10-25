@@ -85,23 +85,8 @@ public class WeatherArea : MonoBehaviour
     private void ApplyForce(Rigidbody2D rigidbody)
     {
         print("Should just get called once");
-        /*float slope = Mathf.Tan(currentWindDir);
-        float xSlope = slope; //FIGURE OUT HOW TO ADD FORCE*/
-
-        //SUBTRACT 90 FROM THE WIND DIRECTION
         Vector3 dir = Quaternion.AngleAxis(currentWindDir - 270f, Vector3.forward) * Vector3.right;
         rigidbody.AddForce(dir * 50f/*currentWindSpeed*/);
-
-        /*
-        //print(currentWindSpeed);
-        float xComponent = Mathf.Cos(currentWindDir * Mathf.PI / 360) * 2f;//currentWindSpeed;
-        float yComponent = Mathf.Sin(currentWindDir * Mathf.PI / 360) * 2f;//currentWindSpeed;
-        rigidbody.AddForce(new Vector3(xComponent, yComponent, 0));
-        /*
-        /* if (rigidbody.velocity.y > 0.2f)
-         {
-             rigidbody.velocity.y = 0.2f;
-         }*/
     }
     public float GetWindDir()   { return currentWindDir; }
 }

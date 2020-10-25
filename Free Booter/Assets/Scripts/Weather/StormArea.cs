@@ -10,47 +10,25 @@ public class StormArea : MonoBehaviour
     public int numClouds = 20;
     public float windDir;
     public float windSpeed;
-    ParticleSystem rainMaker;
+    ParticleSystem fogMachine;
     public GameObject cloudPrefab;
     GameObject cloudParent;
     const string CLOUD_PARENT_NAME = "Clouds";
     Collider2D collider;
     Vector3 minBounds, maxBounds, cloudPosition;
-    [SerializeField] Camera cam;
+    Camera cam;
     int activeClouds = 0;
     WeatherArea parent;
-    //AreaEffector2D areaEffector;
+    List<GameObject> clouds = new List<GameObject>();
     void Start() {
-        //rainMaker = GetComponent<ParticleSystem>();
-        //var em = rainMaker.emission.rate;
-        //em.mode = ParticleSystemCurveMode.Constant;
-        //em.constantMax = maxIntensity;
-        //em.constantMin = minIntensity;
         parent = GetComponentInParent<WeatherArea>();
         windDir = parent.GetWindDir();
-        windSpeed = UnityEngine.Random.Range(minWindSpeed, maxWindSpeed);//parent.GetWindSpeed();
+        windSpeed = UnityEngine.Random.Range(minWindSpeed, maxWindSpeed);
         collider = GetComponent<Collider2D>();
         minBounds = collider.bounds.min;
         maxBounds = collider.bounds.max;
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
-        //areaEffector = GetComponent<AreaEffector2D>();
-        //areaEffector.forceAngle = windDir;
-        //areaEffector.forceMagnitude = 0.25f/*windSpeed*/;
-        /*if(windDir < 90)
-        {
-            areaEffector.forceAngle = (360f - (windDir - 90f));
-        } else
-        {
-            areaEffector.forceAngle = windDir - 90;
-        }*/
-        //areaEffector.forceAngle = 0;
-
-        //print(windSpeed);
-        //this.transform.rotation.eulerAngles z = windDir;51044
-        // FIGURE THIS OUT
     }
-
-    // Update is called once per frame
     void Update() {
         SpawnClouds();
     }
@@ -62,6 +40,7 @@ public class StormArea : MonoBehaviour
             RollCloudPosition();
             GameObject newCloud = Instantiate(cloudPrefab, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))) as GameObject;
             newCloud.transform.parent = this.transform;
+            clouds.Add(newCloud);
             activeClouds++;
         }
     }
@@ -84,6 +63,28 @@ public class StormArea : MonoBehaviour
         {
             cloudParent = new GameObject(CLOUD_PARENT_NAME);
         }
+    }
+    public void Kill()
+    {
+        fogMachine = GetComponent<ParticleSystem>();
+        if(fogMachine !=null)
+        {
+            StartCoroutine("FadeOut");
+        } else
+        {
+            foreach(GameObject cloud in clouds)
+            {
+                cloud.GetComponent<Cloud>().Kill();
+            }
+        }
+    }
+    IEnumerator FadeOut(float aValue, float aTime)
+    {
+        foreach(GameObject cloudObj in clouds)
+        {
+            SpriteRenderer cloudSprite = cloudObj.GetComponent<SpriteRenderer>() ;
+        }
+        yield return null;
     }
     public Vector3 GetMinBounds() { return minBounds; }
     public Vector3 GetMaxBounds() { return maxBounds; }

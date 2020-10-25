@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5116676565942984764}
+  - component: {fileID: -4737531221141601587}
   m_Layer: 0
   m_Name: Sunny
   m_TagString: Untagged
@@ -30,3 +31,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4737531221141601587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560125889309216522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7e6772120660841800979898233b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxWindSpeed: 0
+  minWindSpeed: 0
+  numClouds: 0
+  windDir: 0
+  windSpeed: 0
+  cloudPrefab: {fileID: 0}
+  cam: {fileID: 0}
