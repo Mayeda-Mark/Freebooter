@@ -9,18 +9,17 @@ public class Cloud : MonoBehaviour
     float cloudSpeed;
     StormArea parent;
     SpriteRenderer cloudSprite;
-    // Start is called before the first frame update
+    Animator animator;
     void Start()
     {
+        animator = GetComponent<Animator>();
+        animator.SetBool("FadeOut", false);
         parent = GetComponentInParent<StormArea>();
         cloudSpeed = UnityEngine.Random.Range(parent.GetWindSpeed() - 0.25f, parent.GetWindSpeed() + 0.25f);
         int index = UnityEngine.Random.Range(0, cloudSprites.Length - 1);
         cloudSprite = GetComponent<SpriteRenderer>();
         cloudSprite.sprite= cloudSprites[index];
-        //print(parent.GetWindSpeed());
     }
-
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -43,16 +42,7 @@ public class Cloud : MonoBehaviour
     }
     public void Kill()
     {
-        StartCoroutine("FadeOut");
-    }
-    public IEnumerator FadeOutCloud(float aValue, float aTime)
-    {
-        float alpha = cloudSprite.color.a;
-        for(float t = 0.0f; t < 1.0; t += Time.deltaTime / aTime)
-        {
-            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t));
-            cloudSprite.color = newColor;
-            yield return null;
-        }
+        print("Calling Kill");
+        animator.SetBool("FadeOut", true);
     }
 }

@@ -40,14 +40,14 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7888668352487919617}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
-  prewarm: 1
+  looping: 0
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -864,7 +864,7 @@ ParticleSystem:
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 1
       scalar: 1000
       minScalar: 10
       maxCurve:
@@ -881,12 +881,12 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
+          value: 0
+          inSlope: -4.105287
+          outSlope: -4.105287
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.07570988
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -4804,9 +4804,8 @@ MonoBehaviour:
   numClouds: 30
   windDir: 0
   windSpeed: 0
-  cloudPrefab: {fileID: 8029175639859466805, guid: 5c9f7000674a9a744962771b332ad3e0,
+  cloudPrefab: {fileID: 8029175639859466805, guid: db79bf97703450841b5dc3246a50a909,
     type: 3}
-  cam: {fileID: 0}
 --- !u!61 &7888668352978478655
 BoxCollider2D:
   m_ObjectHideFlags: 0

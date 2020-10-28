@@ -10,7 +10,7 @@ public class StormArea : MonoBehaviour
     public int numClouds = 20;
     public float windDir;
     public float windSpeed;
-    ParticleSystem fogMachine;
+    ParticleSystem fogMachine, rainMaker;
     public GameObject cloudPrefab;
     GameObject cloudParent;
     const string CLOUD_PARENT_NAME = "Clouds";
@@ -22,11 +22,30 @@ public class StormArea : MonoBehaviour
     List<GameObject> clouds = new List<GameObject>();
     void Start() {
         parent = GetComponentInParent<WeatherArea>();
+        rainMaker = GetComponentInChildren<ParticleSystem>();
+        fogMachine = GetComponent<ParticleSystem>();
+        if(rainMaker != null)
+        {
+            rainMaker.Stop();
+            var rainMain = rainMaker.main;
+            rainMain.duration = parent.GetWeatherTimer();
+            rainMaker.Play();
+        }
+        if(fogMachine != null)
+        {
+            fogMachine.Stop();
+            var fogMain = fogMachine.main;
+            fogMain.duration = parent.GetWeatherTimer();
+            fogMachine.Play();
+        }
         windDir = parent.GetWindDir();
         windSpeed = UnityEngine.Random.Range(minWindSpeed, maxWindSpeed);
         collider = GetComponent<Collider2D>();
-        minBounds = collider.bounds.min;
-        maxBounds = collider.bounds.max;
+        if(collider != null)
+        {
+            minBounds = collider.bounds.min;
+            maxBounds = collider.bounds.max;
+        }
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
     void Update() {
@@ -66,25 +85,13 @@ public class StormArea : MonoBehaviour
     }
     public void Kill()
     {
-        fogMachine = GetComponent<ParticleSystem>();
-        if(fogMachine !=null)
+        if(clouds.Count > 0)
         {
-            StartCoroutine("FadeOut");
-        } else
-        {
-            foreach(GameObject cloud in clouds)
+            for(int i = 0; i < clouds.Count; i++)
             {
-                cloud.GetComponent<Cloud>().Kill();
+                clouds[i].GetComponent<Cloud>().Kill();
             }
-        }
-    }
-    IEnumerator FadeOut(float aValue, float aTime)
-    {
-        foreach(GameObject cloudObj in clouds)
-        {
-            SpriteRenderer cloudSprite = cloudObj.GetComponent<SpriteRenderer>() ;
-        }
-        yield return null;
+        } 
     }
     public Vector3 GetMinBounds() { return minBounds; }
     public Vector3 GetMaxBounds() { return maxBounds; }
