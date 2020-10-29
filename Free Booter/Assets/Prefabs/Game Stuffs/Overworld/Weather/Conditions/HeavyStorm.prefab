@@ -4806,6 +4806,7 @@ MonoBehaviour:
   windSpeed: 0
   cloudPrefab: {fileID: 8029175639859466805, guid: db79bf97703450841b5dc3246a50a909,
     type: 3}
+  cloudTag: Storm Cloud
 --- !u!61 &7888668352978478655
 BoxCollider2D:
   m_ObjectHideFlags: 0

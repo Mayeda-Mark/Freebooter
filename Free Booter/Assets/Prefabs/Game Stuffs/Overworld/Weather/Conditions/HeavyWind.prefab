@@ -51,6 +51,7 @@ MonoBehaviour:
   windSpeed: 0
   cloudPrefab: {fileID: 8029175639859466805, guid: 853a2e7acab7623448e55d4f14c97181,
     type: 3}
+  cloudTag: Wind Cloud
 --- !u!61 &7888668352978478655
 BoxCollider2D:
   m_ObjectHideFlags: 0

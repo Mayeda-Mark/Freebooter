@@ -30,7 +30,10 @@ public class WeatherArea : MonoBehaviour
     {
         if(myCollider.IsTouchingLayers(LayerMask.GetMask("Pla")))
     }*/
-
+    void Update()
+    {
+        //ScaleDownWind(); FIGURE OUT HOW TO DO THIS
+    }
     private IEnumerator SetWeather()
     {
         yield return new WaitForSeconds(weatherTimer);
@@ -44,13 +47,21 @@ public class WeatherArea : MonoBehaviour
         print("Called transition");
         weatherCondition.GetComponent<StormArea>().Kill();
     }
+    private IEnumerator EndCondition(GameObject weatherCondition)
+    {
+        yield return new WaitForSeconds(weatherTimer);
+        print("Called EndCondition");
+        weatherCondition.SetActive(false);
+    }
 
     private void SetConditions()
     {
         GameObject newCondition = pooler.SpawnFromPool(GetConditionTag(), transform.position, Quaternion.identity);
         newCondition.transform.parent = this.transform;
+        newCondition.GetComponent<StormArea>().SetUpParent();
+        currentWindSpeed = newCondition.GetComponent<StormArea>().GetWindSpeed();
         StartCoroutine(Transition(newCondition));
-
+        StartCoroutine(EndCondition(newCondition));
         /*if(currentConditions == null)
         {
             currentConditions = Instantiate(conditions[5*//*UnityEngine.Random.Range(0, conditions.Length)*//*], transform.position, Quaternion.identity) as GameObject;
@@ -93,6 +104,10 @@ public class WeatherArea : MonoBehaviour
         print(currentWindDir);
     }
     private void OnTriggerStay2D(Collider2D collision) {
+        if(currentWindSpeed > 0)
+        {
+            isWindy = true;
+        }
         var player = collision.GetComponent<PlayerShipController>();
         if (player && !player.GetUnderWind())
         {
@@ -105,8 +120,10 @@ public class WeatherArea : MonoBehaviour
     }
     private void ApplyForce(Rigidbody2D rigidbody)
     {
+        print("Should only be called once");
         Vector3 dir = Quaternion.AngleAxis(currentWindDir - 270f, Vector3.forward) * Vector3.right;
-        rigidbody.AddForce(dir * 50f/*currentWindSpeed*/);
+        rigidbody.AddForce(dir * (currentWindSpeed * 20));
+
     }
     public float GetWindDir() { return currentWindDir; }
     public float GetWeatherTimer() { return weatherTimer; }

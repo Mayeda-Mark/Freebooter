@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StormArea : MonoBehaviour
+public class StormArea : MonoBehaviour, IPooledObject
 {
     public float maxWindSpeed = 5f;
     public float minWindSpeed = 2f;
@@ -11,7 +11,7 @@ public class StormArea : MonoBehaviour
     public float windDir;
     public float windSpeed;
     ParticleSystem fogMachine, rainMaker;
-    public GameObject cloudPrefab;
+    //public GameObject cloudPrefab;
     GameObject cloudParent;
     const string CLOUD_PARENT_NAME = "Clouds";
     Collider2D collider;
@@ -20,25 +20,13 @@ public class StormArea : MonoBehaviour
     int activeClouds = 0;
     WeatherArea parent;
     List<GameObject> clouds = new List<GameObject>();
-    void Start() {
-        parent = GetComponentInParent<WeatherArea>();
+    [SerializeField] String cloudTag;
+    Pooler pooler;
+    public void OnObjectSpawn() {
+        pooler = FindObjectOfType<Pooler>();
         rainMaker = GetComponentInChildren<ParticleSystem>();
         fogMachine = GetComponent<ParticleSystem>();
-        if(rainMaker != null)
-        {
-            rainMaker.Stop();
-            var rainMain = rainMaker.main;
-            rainMain.duration = parent.GetWeatherTimer();
-            rainMaker.Play();
-        }
-        if(fogMachine != null)
-        {
-            fogMachine.Stop();
-            var fogMain = fogMachine.main;
-            fogMain.duration = parent.GetWeatherTimer();
-            fogMachine.Play();
-        }
-        windDir = parent.GetWindDir();
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         windSpeed = UnityEngine.Random.Range(minWindSpeed, maxWindSpeed);
         collider = GetComponent<Collider2D>();
         if(collider != null)
@@ -46,7 +34,25 @@ public class StormArea : MonoBehaviour
             minBounds = collider.bounds.min;
             maxBounds = collider.bounds.max;
         }
-        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+    }
+    public void SetUpParent()
+    {
+        parent = GetComponentInParent<WeatherArea>();
+        if (rainMaker != null)
+        {
+            rainMaker.Stop();
+            var rainMain = rainMaker.main;
+            rainMain.duration = parent.GetWeatherTimer() - 1.5f;
+            rainMaker.Play();
+        }
+        if (fogMachine != null)
+        {
+            fogMachine.Stop();
+            var fogMain = fogMachine.main;
+            fogMain.duration = parent.GetWeatherTimer() - 1.5f;
+            fogMachine.Play();
+        }
+        windDir = parent.GetWindDir();
     }
     void Update() {
         SpawnClouds();
@@ -56,9 +62,11 @@ public class StormArea : MonoBehaviour
     {
         for(int i = activeClouds; i < numClouds; i++)
         {
+            print(cloudTag);
             RollCloudPosition();
-            GameObject newCloud = Instantiate(cloudPrefab, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))) as GameObject;
+            GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); /*Instantiate(cloudPrefab, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))) as GameObject;*/
             newCloud.transform.parent = this.transform;
+            newCloud.GetComponent<Cloud>().SetUpParent();
             clouds.Add(newCloud);
             activeClouds++;
         }
@@ -66,7 +74,7 @@ public class StormArea : MonoBehaviour
 
     private void RollCloudPosition() 
     {
-        cloudPosition = new Vector2(UnityEngine.Random.Range(minBounds.x, maxBounds.x), UnityEngine.Random.Range(minBounds.y, maxBounds.y));
+        cloudPosition = new Vector3(UnityEngine.Random.Range(minBounds.x, maxBounds.x), UnityEngine.Random.Range(minBounds.y, maxBounds.y), 0);
         Vector3 viewPos = cam.WorldToViewportPoint(cloudPosition);
         if(viewPos.x < 1.05 && viewPos.x > -0.05 && viewPos.y < 1.05 && viewPos.y > -0.05)
         {

@@ -42,13 +42,13 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425161498652058593}
   serializedVersion: 6
-  lengthInSec: 0.5
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -117,7 +117,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 25
+      scalar: 4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -866,8 +866,8 @@ ParticleSystem:
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 200
+      minMaxState: 1
+      scalar: 1000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -879,17 +879,26 @@ ParticleSystem:
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
         - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
+          time: 0.82104915
+          value: 0.6861144
+          inSlope: -1.6180339
+          outSlope: -1.6180339
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: -3.154227
+          outSlope: -3.154227
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.047318637
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -4825,4 +4834,3 @@ MonoBehaviour:
   windDir: 0
   windSpeed: 0
   cloudPrefab: {fileID: 0}
-  cam: {fileID: 0}

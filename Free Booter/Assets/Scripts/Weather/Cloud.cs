@@ -3,19 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cloud : MonoBehaviour
+public class Cloud : MonoBehaviour, IPooledObject
 {
     [SerializeField] Sprite[] cloudSprites;
     float cloudSpeed;
     StormArea parent;
     SpriteRenderer cloudSprite;
     Animator animator;
-    void Start()
+    Pooler pooler;
+    public void OnObjectSpawn()
     {
         animator = GetComponent<Animator>();
         animator.SetBool("FadeOut", false);
-        parent = GetComponentInParent<StormArea>();
-        cloudSpeed = UnityEngine.Random.Range(parent.GetWindSpeed() - 0.25f, parent.GetWindSpeed() + 0.25f);
+        /*parent = GetComponentInParent<StormArea>();
+        cloudSpeed = UnityEngine.Random.Range(parent.GetWindSpeed() - 0.25f, parent.GetWindSpeed() + 0.25f);*/
         int index = UnityEngine.Random.Range(0, cloudSprites.Length - 1);
         cloudSprite = GetComponent<SpriteRenderer>();
         cloudSprite.sprite= cloudSprites[index];
@@ -24,7 +25,11 @@ public class Cloud : MonoBehaviour
     {
         Move();
     }
-
+    public void SetUpParent()
+    {
+        parent = GetComponentInParent<StormArea>();
+        cloudSpeed = UnityEngine.Random.Range(parent.GetWindSpeed() - 0.25f, parent.GetWindSpeed() + 0.25f);
+    }
     private void Move()
     {
         transform.Translate(Vector2.up * cloudSpeed * Time.deltaTime);
@@ -36,7 +41,9 @@ public class Cloud : MonoBehaviour
             if ((viewPos.x > 1.05 || viewPos.x < -0.05) || (viewPos.y > 1.05 || viewPos.y < -0.05))
             {
                 parent.RemoveCLoud();
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                //transform.parent = pooler.transform;
+                this.gameObject.SetActive(false);
             }
         }
     }

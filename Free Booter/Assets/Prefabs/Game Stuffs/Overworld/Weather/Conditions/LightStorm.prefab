@@ -40,14 +40,14 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7888668352487919617}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
-  prewarm: 1
+  looping: 0
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -864,8 +864,8 @@ ParticleSystem:
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 500
+      minMaxState: 1
+      scalar: 1000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -881,12 +881,12 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
+          value: 0
+          inSlope: -4.105287
+          outSlope: -4.105287
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.07570988
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -4765,7 +4765,6 @@ GameObject:
   - component: {fileID: 7888668352978478654}
   - component: {fileID: 7888668352978478640}
   - component: {fileID: 7888668352978478655}
-  - component: {fileID: 4675751394542950285}
   m_Layer: 17
   m_Name: LightStorm
   m_TagString: Untagged
@@ -4805,9 +4804,7 @@ MonoBehaviour:
   numClouds: 20
   windDir: 0
   windSpeed: 0
-  cloudPrefab: {fileID: 8029175639859466805, guid: 5c9f7000674a9a744962771b332ad3e0,
-    type: 3}
-  cam: {fileID: 0}
+  cloudTag: Storm Cloud
 --- !u!61 &7888668352978478655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4834,23 +4831,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 42.666668, y: 42.666668}
   m_EdgeRadius: 0
---- !u!249 &4675751394542950285
-AreaEffector2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7888668352978478641}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGlobalAngle: 1
-  m_ForceAngle: 0
-  m_ForceMagnitude: 10
-  m_ForceVariation: 0
-  m_ForceTarget: 0
-  m_Drag: 0
-  m_AngularDrag: 0

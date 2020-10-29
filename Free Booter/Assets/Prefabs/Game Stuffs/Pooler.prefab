@@ -69,3 +69,11 @@ MonoBehaviour:
   - tag: Sunny
     prefab: {fileID: 560125889309216522, guid: d5b20ac375b852f4fa9dc098003226b4, type: 3}
     size: 5
+  - tag: Storm Cloud
+    prefab: {fileID: 8029175639859466805, guid: db79bf97703450841b5dc3246a50a909,
+      type: 3}
+    size: 90
+  - tag: Wind Cloud
+    prefab: {fileID: 8029175639859466805, guid: 853a2e7acab7623448e55d4f14c97181,
+      type: 3}
+    size: 50
