@@ -11,7 +11,6 @@ public class StormArea : MonoBehaviour, IPooledObject
     public float windDir;
     public float windSpeed;
     ParticleSystem fogMachine, rainMaker;
-    //public GameObject cloudPrefab;
     GameObject cloudParent;
     const string CLOUD_PARENT_NAME = "Clouds";
     Collider2D collider;
@@ -62,9 +61,8 @@ public class StormArea : MonoBehaviour, IPooledObject
     {
         for(int i = activeClouds; i < numClouds; i++)
         {
-            print(cloudTag);
             RollCloudPosition();
-            GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); /*Instantiate(cloudPrefab, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))) as GameObject;*/
+            GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); 
             newCloud.transform.parent = this.transform;
             newCloud.GetComponent<Cloud>().SetUpParent();
             clouds.Add(newCloud);

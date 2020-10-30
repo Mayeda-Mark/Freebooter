@@ -6,7 +6,6 @@ using UnityEngine;
 public class WeatherArea : MonoBehaviour
 {
     [SerializeField] Collider2D myCollider;
-    //[SerializeField] GameObject[] conditions;
     [SerializeField] String[] conditionTags;
     float weatherTimer, currentWindDir, currentWindSpeed;
     bool playing = true;
@@ -15,42 +14,31 @@ public class WeatherArea : MonoBehaviour
     GameObject currentConditions;
     float transitionTimer = 3.0f;
     Pooler pooler;
+    Dictionary<Rigidbody2D, Vector3> objectsUnderWind = new Dictionary<Rigidbody2D, Vector3>();
     IEnumerator Start() {
         pooler = FindObjectOfType<Pooler>();
         do
         {
-            //SetCurrentWeather();
-            //CheckForPlayer();
             yield return StartCoroutine("SetWeather");
         }
         while (playing);
-    }
-
-    /*private void CheckForPlayer()
-    {
-        if(myCollider.IsTouchingLayers(LayerMask.GetMask("Pla")))
-    }*/
-    void Update()
-    {
-        //ScaleDownWind(); FIGURE OUT HOW TO DO THIS
     }
     private IEnumerator SetWeather()
     {
         yield return new WaitForSeconds(weatherTimer);
         SetCurrentWeather();
         SetConditions();
-        //StartCoroutine("Transition");
     }
     private IEnumerator Transition(GameObject weatherCondition)
     {
         yield return new WaitForSeconds(weatherTimer - transitionTimer);
-        print("Called transition");
+        EndWind();
         weatherCondition.GetComponent<StormArea>().Kill();
     }
+
     private IEnumerator EndCondition(GameObject weatherCondition)
     {
         yield return new WaitForSeconds(weatherTimer);
-        print("Called EndCondition");
         weatherCondition.SetActive(false);
     }
 
@@ -60,54 +48,24 @@ public class WeatherArea : MonoBehaviour
         newCondition.transform.parent = this.transform;
         newCondition.GetComponent<StormArea>().SetUpParent();
         currentWindSpeed = newCondition.GetComponent<StormArea>().GetWindSpeed();
+        if (currentWindSpeed > 0)
+        {
+            isWindy = true;
+        }
         StartCoroutine(Transition(newCondition));
         StartCoroutine(EndCondition(newCondition));
-        /*if(currentConditions == null)
-        {
-            currentConditions = Instantiate(conditions[5*//*UnityEngine.Random.Range(0, conditions.Length)*//*], transform.position, Quaternion.identity) as GameObject;
-            currentConditions.transform.parent = this.transform;
-            currentWindSpeed = GetWindSpeed();
-        } else
-        {
-            //Destroy(currentConditions.gameObject);
-            GameObject newConditions = Instantiate(conditions[5*//*UnityEngine.Random.Range(0, conditions.Length)*//*], transform.position, Quaternion.identity) as GameObject;
-            currentConditions = null;
-            currentConditions = newConditions;
-            //newConditions.transform.parent = this.transform;
-            //currentWindSpeed = GetWindSpeed();
-            //Destroy(newConditions.gameObject, weatherTimer);
-        }*/
     }
     private String GetConditionTag()
     {
         int index = UnityEngine.Random.Range(0, conditionTags.Length);
         return conditionTags[index];
     }
-    /*private float GetWindSpeed()
-    { // REDO THIS
-        StormArea childStormArea = GetComponentInChildren<StormArea>();
-        if (childStormArea != null)
-        {
-            isWindy = true;
-            return childStormArea.GetWindSpeed();
-        }
-        else
-        {
-            return 0;
-        }
-    }
-*/
     private void SetCurrentWeather()
     {
         currentWindDir = UnityEngine.Random.Range(0f, 360f);
         weatherTimer = UnityEngine.Random.Range(10f, 20f);
-        print(currentWindDir);
     }
     private void OnTriggerStay2D(Collider2D collision) {
-        if(currentWindSpeed > 0)
-        {
-            isWindy = true;
-        }
         var player = collision.GetComponent<PlayerShipController>();
         if (player && !player.GetUnderWind())
         {
@@ -123,7 +81,29 @@ public class WeatherArea : MonoBehaviour
         print("Should only be called once");
         Vector3 dir = Quaternion.AngleAxis(currentWindDir - 270f, Vector3.forward) * Vector3.right;
         rigidbody.AddForce(dir * (currentWindSpeed * 20));
-
+        bool foundObject = false;
+        foreach(Rigidbody2D boat in objectsUnderWind.Keys)
+        {
+            foundObject = true;
+        }
+        if(!foundObject)
+        {
+            objectsUnderWind.Add(rigidbody, dir);
+        }
+    }
+    private void EndWind()
+    {
+        isWindy = false;
+        foreach (Rigidbody2D rigidbody in objectsUnderWind.Keys)
+        {
+            rigidbody.AddForce(-(objectsUnderWind[rigidbody] * (currentWindSpeed * 20)));
+            PlayerShipController player = rigidbody.GetComponent<PlayerShipController>();
+            if (player != null)
+            {
+                player.SetUnderWind(false);
+            }
+        }
+        objectsUnderWind.Clear();
     }
     public float GetWindDir() { return currentWindDir; }
     public float GetWeatherTimer() { return weatherTimer; }

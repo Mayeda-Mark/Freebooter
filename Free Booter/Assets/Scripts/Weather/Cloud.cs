@@ -15,8 +15,6 @@ public class Cloud : MonoBehaviour, IPooledObject
     {
         animator = GetComponent<Animator>();
         animator.SetBool("FadeOut", false);
-        /*parent = GetComponentInParent<StormArea>();
-        cloudSpeed = UnityEngine.Random.Range(parent.GetWindSpeed() - 0.25f, parent.GetWindSpeed() + 0.25f);*/
         int index = UnityEngine.Random.Range(0, cloudSprites.Length - 1);
         cloudSprite = GetComponent<SpriteRenderer>();
         cloudSprite.sprite= cloudSprites[index];
@@ -41,15 +39,12 @@ public class Cloud : MonoBehaviour, IPooledObject
             if ((viewPos.x > 1.05 || viewPos.x < -0.05) || (viewPos.y > 1.05 || viewPos.y < -0.05))
             {
                 parent.RemoveCLoud();
-                //Destroy(gameObject);
-                //transform.parent = pooler.transform;
                 this.gameObject.SetActive(false);
             }
         }
     }
     public void Kill()
     {
-        print("Calling Kill");
         animator.SetBool("FadeOut", true);
     }
 }
