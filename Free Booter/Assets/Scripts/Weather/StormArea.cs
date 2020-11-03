@@ -21,7 +21,9 @@ public class StormArea : MonoBehaviour, IPooledObject
     List<GameObject> clouds = new List<GameObject>();
     [SerializeField] String cloudTag;
     Pooler pooler;
+    bool spawningClouds;
     public void OnObjectSpawn() {
+        spawningClouds = true;
         pooler = FindObjectOfType<Pooler>();
         rainMaker = GetComponentInChildren<ParticleSystem>();
         fogMachine = GetComponent<ParticleSystem>();
@@ -41,14 +43,14 @@ public class StormArea : MonoBehaviour, IPooledObject
         {
             rainMaker.Stop();
             var rainMain = rainMaker.main;
-            rainMain.duration = parent.GetWeatherTimer() - 1.5f;
+            rainMain.duration = parent.GetWeatherTimer() - 10.0f;
             rainMaker.Play();
         }
         if (fogMachine != null)
         {
             fogMachine.Stop();
             var fogMain = fogMachine.main;
-            fogMain.duration = parent.GetWeatherTimer() - 1.5f;
+            fogMain.duration = parent.GetWeatherTimer() - 10.0f;
             fogMachine.Play();
         }
         windDir = parent.GetWindDir();
@@ -61,12 +63,16 @@ public class StormArea : MonoBehaviour, IPooledObject
     {
         for(int i = activeClouds; i < numClouds; i++)
         {
-            RollCloudPosition();
-            GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); 
-            newCloud.transform.parent = this.transform;
-            newCloud.GetComponent<Cloud>().SetUpParent();
-            clouds.Add(newCloud);
-            activeClouds++;
+            if(spawningClouds)
+            {
+                RollCloudPosition();
+                GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); 
+                newCloud.transform.parent = this.transform;
+                newCloud.GetComponent<Cloud>().SetUpParent();
+                clouds.Add(newCloud);
+                activeClouds++;
+
+            }
         }
     }
 
@@ -74,7 +80,7 @@ public class StormArea : MonoBehaviour, IPooledObject
     {
         cloudPosition = new Vector3(UnityEngine.Random.Range(minBounds.x, maxBounds.x), UnityEngine.Random.Range(minBounds.y, maxBounds.y), 0);
         Vector3 viewPos = cam.WorldToViewportPoint(cloudPosition);
-        if(viewPos.x < 1.05 && viewPos.x > -0.05 && viewPos.y < 1.05 && viewPos.y > -0.05)
+        if(viewPos.x < 1.1 && viewPos.x > -0.1 && viewPos.y < 1.1 && viewPos.y > -0.1)
         {
             RollCloudPosition(); 
             return;
@@ -91,6 +97,7 @@ public class StormArea : MonoBehaviour, IPooledObject
     }
     public void Kill()
     {
+        spawningClouds = false;
         if(clouds.Count > 0)
         {
             for(int i = 0; i < clouds.Count; i++)

@@ -12,7 +12,7 @@ public class WeatherArea : MonoBehaviour
     bool isWindy = false;
     Weather currentWeather;
     GameObject currentConditions;
-    float transitionTimer = 3.0f;
+    float transitionTimer = 10.0f;
     Pooler pooler;
     Dictionary<Rigidbody2D, Vector3> objectsUnderWind = new Dictionary<Rigidbody2D, Vector3>();
     IEnumerator Start() {
@@ -63,7 +63,7 @@ public class WeatherArea : MonoBehaviour
     private void SetCurrentWeather()
     {
         currentWindDir = UnityEngine.Random.Range(0f, 360f);
-        weatherTimer = UnityEngine.Random.Range(10f, 20f);
+        weatherTimer = UnityEngine.Random.Range(120f, 180f); // WEATHER TIMER HERE!!!
     }
     private void OnTriggerStay2D(Collider2D collision) {
         var player = collision.GetComponent<PlayerShipController>();
@@ -78,7 +78,6 @@ public class WeatherArea : MonoBehaviour
     }
     private void ApplyForce(Rigidbody2D rigidbody)
     {
-        print("Should only be called once");
         Vector3 dir = Quaternion.AngleAxis(currentWindDir - 270f, Vector3.forward) * Vector3.right;
         rigidbody.AddForce(dir * (currentWindSpeed * 20));
         bool foundObject = false;

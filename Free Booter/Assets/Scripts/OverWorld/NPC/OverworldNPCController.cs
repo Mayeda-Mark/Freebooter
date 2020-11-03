@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class OverworldNPCController : MonoBehaviour
 {
-    [SerializeField] List<TownPortal> townPortals;
-    [SerializeField] Sprite[] damageSprites;
+    [SerializeField] List<TownPortal> townPortals = default;
+    [SerializeField] Sprite[] damageSprites = default;
     [SerializeField] float spawnDistance = 20f;
     [SerializeField] float shipSpeed = 2f;
     [SerializeField] float turnSpeed = 50f;
