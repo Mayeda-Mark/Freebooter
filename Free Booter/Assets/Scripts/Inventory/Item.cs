@@ -7,9 +7,9 @@ public class Item{
     public string itemName;
     public string description;
     public Sprite icon;
-    int maxQuantity;
+    public int maxQuantity;
     public Dictionary<string, int> stats = new Dictionary<string, int>();
-    bool equipable;
+    public bool equipable;
     public Item(int id, string itemName, string description, int maxQuantity, Dictionary<string, int> stats, bool equipable) {
         this.id = id;
         this.itemName = itemName;

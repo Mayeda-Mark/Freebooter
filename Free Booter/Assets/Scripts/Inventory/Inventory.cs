@@ -9,10 +9,12 @@ public class Inventory : MonoBehaviour
     public ItemDB itemDB;
     public UIInventory shipInventoryUI;
     Tooltip tooltip;
+    ToolbarUI toolbarUI;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     // private void Awake() {
     // }
     private void Start() {
+        toolbarUI = FindObjectOfType<ToolbarUI>();
         shipInventoryUI.gameObject.SetActive(false);
         GiveItem(0, 80);
         GiveItem(2, 100);
@@ -29,6 +31,7 @@ public class Inventory : MonoBehaviour
     }
     public void GiveItem(int id, int quantity) {
         GiveQuantity(id, quantity);
+        toolbarUI.UpdateToolbar();
     }
     public void GiveItem(string itemName, int quantity) {
         Item itemToAdd = itemDB.GetItem(itemName);
@@ -166,6 +169,7 @@ public class Inventory : MonoBehaviour
             quantities[id].RemoveAt(quantities[id].Count - 1);
             DecreaseQuantity(id, remaiingAmount);
         }
+        toolbarUI.UpdateToolbar();
     }
     public void AddGold(int amount) {
         GiveQuantity(2, amount);
@@ -178,5 +182,9 @@ public class Inventory : MonoBehaviour
     }
     public bool CanFireCannon() {
         return quantities[0] != null;
+    }
+    public List<Item> GetInventory()
+    {
+        return shipItems;
     }
 }

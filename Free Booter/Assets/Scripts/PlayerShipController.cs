@@ -18,6 +18,7 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float lootTimer;
     bool underWind = false;
     bool looting = false;
+    Item equippedItem;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
     [SerializeField] Text bootyText;
