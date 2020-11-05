@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class Cannons : MonoBehaviour
 {
+    //[SerializeField] Dictionary<string, GameObject> projectiles = new Dictionary<string, GameObject>();
     [SerializeField] GameObject projectile, lCannon, rCannon;
     GameObject projectileParent;
     const string PROJECTILE_PARENT_NAME = "Projectiles";
-    // Start is called before the first frame update
     float rCannonRotation;
+    Pooler pooler;
     void Start()
     {
+        pooler = FindObjectOfType<Pooler>();
         CreateProjectileParent();
     }
     private void CreateProjectileParent()
@@ -22,17 +24,12 @@ public class Cannons : MonoBehaviour
             projectileParent = new GameObject(PROJECTILE_PARENT_NAME);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-    public void FireRightCannon() {
-        GameObject newProjectile = Instantiate(projectile, rCannon.transform.position, rCannon.transform.rotation) as GameObject;
+    public void FireRightCannon(string equippedProjectile) {
+        GameObject newProjectile = pooler.SpawnFromPool(equippedProjectile, rCannon.transform.position, rCannon.transform.rotation);/*Instantiate(projectile, rCannon.transform.position, rCannon.transform.rotation) as GameObject;*/
         newProjectile.transform.parent = projectileParent.transform;
     }
-    public void FireLeftCannon() {
-        GameObject newProjectile = Instantiate(projectile, lCannon.transform.position, lCannon.transform.rotation) as GameObject;
+    public void FireLeftCannon(string equippedProjectile) {
+        GameObject newProjectile = pooler.SpawnFromPool(equippedProjectile, lCannon.transform.position, lCannon.transform.rotation)/*Instantiate(projectile, lCannon.transform.position, lCannon.transform.rotation) as GameObject*/;
         newProjectile.transform.parent = projectileParent.transform;
     }
 }

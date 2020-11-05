@@ -11,17 +11,31 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     public Item item;
     private Image spriteImage;
     PlayerShipController player;
+    [SerializeField] Image parentImage = default;
+    Color selectedItemColor = new Color();
+    Color emptyItemColor = new Color();
+    Color defaultColor = new Color();
+    Color mouseOverColor = new Color();
+    ToolbarUI toolbarUI;
     //Text quantityText;
     //public Text keyboardShortcut;
     Inventory inventory;
+    bool equipped;
     private void Awake()
     {
+        //parentImage = GetComponentInParent<Image>();
+        ColorUtility.TryParseHtmlString("#FFFF00", out selectedItemColor);
+        ColorUtility.TryParseHtmlString("#575757", out emptyItemColor);
+        ColorUtility.TryParseHtmlString("#AB843A", out defaultColor);
+        ColorUtility.TryParseHtmlString("#DDAA4A", out mouseOverColor);
         player = FindObjectOfType<PlayerShipController>();
         spriteImage = GetComponent<Image>();
         inventory = FindObjectOfType<Inventory>();
         UpdateItem(null);
+        parentImage.color = defaultColor;
+        toolbarUI = FindObjectOfType<ToolbarUI>();
     }
-    void Start()
+    /*void Start()
     {
         
     }
@@ -30,7 +44,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     void Update()
     {
 
-    }
+    }*/
     public void UpdateItem(Item item)
     {
         this.item = item;
@@ -56,13 +70,34 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
 
     public void EquipItem(Item item)
     {
-        throw new NotImplementedException();
+        //ADD IF STATEMENT CHECKING FOR QUANTITY > 0
+        parentImage.color = selectedItemColor;
+        player.EquipItem(item.itemName);
+        equipped = true;
+        toolbarUI.UnequipAllButThis(item);
+    }
+    public void Unequip()
+    {
+        equipped = false;
+        parentImage.color = default;
     }
     #endregion
     #region Enter
-    public void OnPointerEnter(PointerEventData eventData1) { }
+    public void OnPointerEnter(PointerEventData eventData1)
+    {
+        if (!equipped)
+        {
+            parentImage.color = mouseOverColor;
+        }
+    }
     #endregion
     #region Exit
-    public void OnPointerExit(PointerEventData eventData2) { }
+    public void OnPointerExit(PointerEventData eventData2)
+    {
+        if (!equipped)
+        {
+            parentImage.color = defaultColor;
+        }
+    }
     #endregion
 }

@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 64360295}
   - component: {fileID: 64360296}
   m_Layer: 5
-  m_Name: ToolbarPanel
+  m_Name: SlotPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,15 +244,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 10
+    m_Left: 15
     m_Right: 10
-    m_Top: 10
+    m_Top: 25
     m_Bottom: 10
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 50, y: 50}
-  m_Spacing: {x: 10, y: 10}
+  m_Spacing: {x: 20, y: 10}
   m_Constraint: 2
   m_ConstraintCount: 1
 --- !u!1 &100594213
@@ -90605,7 +90605,7 @@ RectTransform:
   m_GameObject: {fileID: 1546366258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.7434919, z: 1}
   m_Children:
   - {fileID: 64360295}
   m_Father: {fileID: 538527224}
@@ -90613,7 +90613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: -155}
+  m_AnchoredPosition: {x: 2.5, y: -176}
   m_SizeDelta: {x: 432.61426, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546366260
@@ -90628,6 +90628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3afa706263bb91949a89c77f706c2f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toolbarItems: []
+  slotPrefab: {fileID: 9194543070397677895, guid: aa37027f3d4d45241a4975604bab43e8,
+    type: 3}
+  slotPanel: {fileID: 64360295}
+  numberOfSlots: 6
 --- !u!114 &1546366261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91743,6 +91748,43 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pooler
+      objectReference: {fileID: 0}
+    - target: {fileID: 730024275888288991, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70,
+        type: 3}
+      propertyPath: pools.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 730024275888288991, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70,
+        type: 3}
+      propertyPath: pools.Array.data[9].tag
+      value: Cannon Balls
+      objectReference: {fileID: 0}
+    - target: {fileID: 730024275888288991, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70,
+        type: 3}
+      propertyPath: pools.Array.data[9].prefab
+      value: 
+      objectReference: {fileID: 4180485456894371011, guid: 572b5724ee5ed4b44b7f3d88e510b7f2,
+        type: 3}
+    - target: {fileID: 730024275888288991, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70,
+        type: 3}
+      propertyPath: pools.Array.data[9].size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 730024275888288991, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70,
+        type: 3}
+      propertyPath: pools.Array.data[10].tag
+      value: Chain Shot
+      objectReference: {fileID: 0}
+    - target: {fileID: 730024275888288991, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70,
+        type: 3}
+      propertyPath: pools.Array.data[10].prefab
+      value: 
+      objectReference: {fileID: 4180485456894371011, guid: 6423bb0d297091a46bc2e17c0150da73,
+        type: 3}
+    - target: {fileID: 730024275888288991, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70,
+        type: 3}
+      propertyPath: pools.Array.data[10].size
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74d2c7ee9adfbe34ba6eb77756ff9a70, type: 3}

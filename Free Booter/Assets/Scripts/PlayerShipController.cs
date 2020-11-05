@@ -18,7 +18,7 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float lootTimer;
     bool underWind = false;
     bool looting = false;
-    Item equippedItem;
+    string equippedItem;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
     [SerializeField] Text bootyText;
@@ -54,14 +54,14 @@ public class PlayerShipController : MonoBehaviour
     {
         if(Input.GetKeyUp(KeyCode.RightArrow)) {
             if(!rReload && shipInventory.CanFireCannon()) {
-                myCannons.FireRightCannon();
+                myCannons.FireRightCannon(equippedItem);
                 rReload = true;
                 shipInventory.FireCannonBall();
             }
         }
         if(Input.GetKeyUp(KeyCode.LeftArrow)) {
             if(!lReload && shipInventory.CanFireCannon()) {
-                myCannons.FireLeftCannon();
+                myCannons.FireLeftCannon(equippedItem);
                 lReload = true;
                 shipInventory.FireCannonBall();
             }
@@ -82,6 +82,10 @@ public class PlayerShipController : MonoBehaviour
                 lReload = false;
             }
         }
+    }
+    public void EquipItem(string projectile)
+    {
+        equippedItem = projectile;
     }
     private void Turn() {
         if(Input.GetKey("a")) {

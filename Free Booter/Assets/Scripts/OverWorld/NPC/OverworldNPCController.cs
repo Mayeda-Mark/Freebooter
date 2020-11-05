@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +14,8 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] float sinkTime = 10f;
     [SerializeField] int[] lootArray;
     [SerializeField] int maxLoot, minLoot;
+    [SerializeField] string[] projectiles;
+    string equippedItem;
     int lootQuantity;
     Item loot;
     int startingHealth;
@@ -30,8 +33,8 @@ public class OverworldNPCController : MonoBehaviour
 
     void Start()
     {
-        lootQuantity = Random.Range(minLoot, maxLoot);
-        int lootIndex = Random.Range(0, lootArray.Length);
+        lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
+        int lootIndex = UnityEngine.Random.Range(0, lootArray.Length);
         loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -47,6 +50,7 @@ public class OverworldNPCController : MonoBehaviour
             SinkTimer();
         }
     }
+    #region Movement
     /******************MOVING***************************/
     private void SetTarget() {
         targetPortal = RollTarget();
@@ -56,7 +60,7 @@ public class OverworldNPCController : MonoBehaviour
         }
     }
     private TownPortal RollTarget() {
-        int index = Random.Range(0, townPortals.Count);
+        int index = UnityEngine.Random.Range(0, townPortals.Count);
         return townPortals[index];
     }
     private void Move() {
@@ -76,6 +80,8 @@ public class OverworldNPCController : MonoBehaviour
         Quaternion rotation = Quaternion.Euler( 0, 0, angle - 90f);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
     }
+    #endregion
+    #region Navigation
     /******************NAVIGATING***************************/
     private bool CanSeeTown() {
         return landSpotter.IsTouchingLayers(LayerMask.GetMask("Portals"));
@@ -93,6 +99,8 @@ public class OverworldNPCController : MonoBehaviour
             myRigidBody.rotation += turnSpeed;
         }
     }
+    #endregion
+    #region Combat
     /******************ATTACKING***************************/
     private void LookForPlayer() {
         if(GetComponent<OverWorldNPC>().IsNPCAttacker()){
@@ -115,7 +123,7 @@ public class OverworldNPCController : MonoBehaviour
         }
     }
     private void RollDirOfAttack(){
-        int randomizer = Random.Range(0, 10);
+        int randomizer = UnityEngine.Random.Range(0, 10);
         if(randomizer % 2 == 1) {
             shootLeft = true;
         } else {
@@ -136,18 +144,26 @@ public class OverworldNPCController : MonoBehaviour
     private void FireAtPlayer() {
         if(lCannon.IsTouchingLayers(LayerMask.GetMask("Player")) && !lReload) {
             playerInSights = true;
-            myCannons.FireLeftCannon();
+            EquipProjectile();
+            myCannons.FireLeftCannon(equippedItem);
             StartCoroutine("ReloadLeft");
             lReload = true;
         } else if(rCannon.IsTouchingLayers(LayerMask.GetMask("Player")) &&!rReload) {
             playerInSights = true;
-            myCannons.FireRightCannon();
+            EquipProjectile();
+            myCannons.FireRightCannon(equippedItem);
             StartCoroutine("ReloadRight");
             rReload = true;
         } else {
             playerInSights = false;
         }
     }
+
+    private void EquipProjectile()
+    {
+        equippedItem = projectiles[UnityEngine.Random.Range(0, projectiles.Length)];
+    }
+
     private IEnumerator ReloadLeft() {
         yield return new WaitForSeconds(reloadTime);
         lReload = false;
@@ -156,6 +172,8 @@ public class OverworldNPCController : MonoBehaviour
         yield return new WaitForSeconds(reloadTime);
         rReload = false;
     }
+    #endregion
+    #region Death
     /******************DEATH***************************/
     public void Death() {
         GetComponent<SpriteRenderer>().sprite = damageSprites[0];
@@ -182,6 +200,7 @@ public class OverworldNPCController : MonoBehaviour
         rCannon.enabled = false;
         myHullCollider.isTrigger = true;
     }
+    #endregion
     public Item GetLoot()        { return loot;         }
     public bool IsLootable()     { return lootable;     }
     public int GetLootQuantity() { return lootQuantity; }

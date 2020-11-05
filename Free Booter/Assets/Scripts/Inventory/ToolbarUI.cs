@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,16 +23,30 @@ public class ToolbarUI : MonoBehaviour
             toolbarItems.Add(instance.GetComponentInChildren<ToolbarItem>());
         }
     }
-    /*void Start()
+    private void EquipFirstItem()
     {
-        
+        UpdateToolbar();
+        bool foundFirst = false;
+        foreach(Item item in toolbarInventory.Keys)
+        {
+            if(toolbarInventory[item] > 0 && !foundFirst)
+            {
+                toolbarItems[toolbarItems.FindIndex(i => i.item == item)].EquipItem(item);
+                foundFirst = true;
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
-    }*/
+        EquipFirstItem();
+    }
+/*
+// Update is called once per frame
+void Update()
+{
+
+}*/
     public void UpdateToolbar()
     {
         foreach (Item item in inventoryItems)
@@ -43,7 +58,10 @@ public class ToolbarUI : MonoBehaviour
                 {
                     if(item == existingItem)
                     {
+                        int totalQuantity = inventory.GetTotalQuantity(item.id);
+                        //toolbarInventory[existingItem] = totalQuantity;
                         hasFoundItem = true;
+                        UpdateExistingItem(item);
                     }
                 }
                 if(!hasFoundItem)
@@ -55,6 +73,10 @@ public class ToolbarUI : MonoBehaviour
             }
         }
     }
+    public void UpdateExistingItem(Item item)
+    {
+        UpdateSlot(toolbarItems.FindIndex(i => i.item == item), item);
+    }
     public void AddNewItem(Item item)
     {
         UpdateSlot(toolbarItems.FindIndex(i => i.item == null), item);
@@ -63,6 +85,18 @@ public class ToolbarUI : MonoBehaviour
     {
         UpdateSlot(toolbarItems.FindIndex(i => i.item == item), null);
     }
+
+    internal void UnequipAllButThis(Item item)
+    {
+        foreach(ToolbarItem slot in toolbarItems)
+        {
+            if(slot.item != item)
+            {
+                slot.Unequip();
+            }
+        }
+    }
+
     public void UpdateSlot(int slot, Item item)
     {
         toolbarItems[slot].UpdateItem(item);
