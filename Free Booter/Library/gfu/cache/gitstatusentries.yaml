@@ -13,18 +13,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-07T10:08:02.225-08:00
+  lastUpdatedAtString: 2020-11-07T12:29:51.496-08:00
   initializedAtString: 2020-11-07T09:24:45.607-08:00
   entries:
-  - path: Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
-    projectPath: Assets\Scripts\Inventory\ToolbarItem.cs
+  - path: Free Booter\Assets\Animations\Chain Shot.controller
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\Chain
+      Shot.controller
+    projectPath: Assets\Animations\Chain Shot.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\ChainShotSpin.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\ChainShotSpin.anim
+    projectPath: Assets\Animations\ChainShotSpin.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Chain Shot.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Projectiles\Chain Shot.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Chain Shot.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
-    projectPath: Assets\Scripts\Inventory\ToolbarUI.cs
+  - path: Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
+    projectPath: Assets\Scripts\Inventory\ToolbarItem.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -46,18 +60,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -70,15 +72,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
+  - path: Free Booter\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -97,12 +93,6 @@ MonoBehaviour:
   - path: Free Booter\Library\SourceAssetDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

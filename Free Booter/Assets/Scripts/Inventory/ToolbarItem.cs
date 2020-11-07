@@ -69,12 +69,6 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
             isActive = false;
             spriteImage.color = Color.clear;
             /*quantityText.color = Color.clear;*/
-            parentImage.color = emptyItemColor;
-        }
-        if(!isActive)
-        {
-            print("This should be called 4 times");
-            parentImage.color = emptyItemColor;
         }
     }
     #region Click
