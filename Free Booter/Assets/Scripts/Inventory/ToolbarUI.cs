@@ -23,7 +23,7 @@ public class ToolbarUI : MonoBehaviour
             toolbarItems.Add(instance.GetComponentInChildren<ToolbarItem>());
         }
     }
-    private void EquipFirstItem()
+    public void EquipFirstItem()
     {
         UpdateToolbar();
         bool foundFirst = false;

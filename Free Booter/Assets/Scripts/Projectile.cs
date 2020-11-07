@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class Projectile : MonoBehaviour, IPooledObject
 {
     [SerializeField] float projectileSpeed = 5f;
     [SerializeField] float range;
@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
     float distanceTravelled;
     Collider2D myCollider;
     // Start is called before the first frame update
-    void Start()
+    public void OnObjectSpawn()
     {
         item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
         SetStats();
@@ -53,7 +53,8 @@ public class Projectile : MonoBehaviour
         return Vector2.Distance(lastPosition, transform.position) + distanceTravelled;
     }
     public void DestroyProjectile() {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D otherCollider) {
         if(canDamage && otherCollider.GetType() == typeof(CapsuleCollider2D)) {

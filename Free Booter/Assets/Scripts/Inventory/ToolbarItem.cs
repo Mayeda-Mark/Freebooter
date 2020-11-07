@@ -21,6 +21,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     //public Text keyboardShortcut;
     Inventory inventory;
     bool equipped;
+    bool isActive = false;
     private void Awake()
     {
         //parentImage = GetComponentInParent<Image>();
@@ -50,22 +51,39 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         this.item = item;
         if (this.item != null)
         {
+            print("This should be called twice");
+            isActive = true;
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
             int quantityValue = inventory.GetQuantities()[item.id][0];
             /*quantityText.color = Color.white;
             quantityText.text = quantityValue.ToString();*/
+            if(!equipped)
+            {
+                parentImage.color = defaultColor;
+            }
+ 
         }
         else
         {
+            isActive = false;
             spriteImage.color = Color.clear;
             /*quantityText.color = Color.clear;*/
+            parentImage.color = emptyItemColor;
+        }
+        if(!isActive)
+        {
+            print("This should be called 4 times");
+            parentImage.color = emptyItemColor;
         }
     }
     #region Click
     public void OnPointerClick(PointerEventData eventData)
     {
-        EquipItem(item);
+        if(isActive)
+        {
+            EquipItem(item);
+        }
     }
 
     public void EquipItem(Item item)
@@ -85,7 +103,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     #region Enter
     public void OnPointerEnter(PointerEventData eventData1)
     {
-        if (!equipped)
+        if (!equipped && isActive)
         {
             parentImage.color = mouseOverColor;
         }
@@ -94,7 +112,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     #region Exit
     public void OnPointerExit(PointerEventData eventData2)
     {
-        if (!equipped)
+        if (!equipped &&isActive)
         {
             parentImage.color = defaultColor;
         }
