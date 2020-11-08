@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +27,9 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] Text bootyText;
     Inventory shipInventory;
     CapsuleCollider2D myCollider;
+    [SerializeField]Sails mySails;
     Health myHealth;
+    Health sailHealth;
     float stopped = 0f;
     int sails = 0;
     void Start()
@@ -39,6 +42,7 @@ public class PlayerShipController : MonoBehaviour
         rReloadTime = reloadTime;
         lReloadTIme = reloadTime;
         UpdateBootyDisplay();
+        sailHealth = mySails.sailHealth;
     }
 
     void Update()
@@ -107,7 +111,7 @@ public class PlayerShipController : MonoBehaviour
         sails = Mathf.Clamp(sails, 0, 3);
     }
     private void Move() {
-        float moveSpeed = (shipSpeed * sails) * Time.deltaTime;
+        float moveSpeed = ((shipSpeed * sails * GetSailHealth()) + shipSpeed) * Time.deltaTime;
         myRigidBody.transform.position += transform.up * moveSpeed;
     }
     public void MoveFromWind(float windDir, float windSpeed)
@@ -117,9 +121,9 @@ public class PlayerShipController : MonoBehaviour
         Vector2 windVelocity = new Vector2(xComponent, yComponent);
         myRigidBody.velocity = windVelocity;
     }
-    private float SailHealth()
+    private float GetSailHealth()
     {
-        return 0; //START HERE!
+        return sailHealth.GetHealth() / 100; //START HERE!
     }
     //private void OnTriggerEnter2D(Collider2D otherCollider) {
     //    OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
@@ -164,4 +168,8 @@ public class PlayerShipController : MonoBehaviour
     }
     public void SetUnderWind(bool isUnderWind) => underWind = isUnderWind;
     public bool GetUnderWind() { return underWind; }
+    internal void Kill()
+    {
+        throw new NotImplementedException();
+    }
 }

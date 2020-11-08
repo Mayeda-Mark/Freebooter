@@ -51,7 +51,6 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         this.item = item;
         if (this.item != null)
         {
-            print("This should be called twice");
             isActive = true;
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;

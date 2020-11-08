@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] int maxHealth = 100;
+    [SerializeField] bool forSails = false;
     int health;
     void Start() {
         ResetHealth();
@@ -12,10 +13,10 @@ public class Health : MonoBehaviour
     public void DealDamage(int damage) {
         health -= damage;
         if(health <= 0) {
-            if(GetComponent<OverWorldNPC>()) {
+            if(GetComponent<OverWorldNPC>() && !forSails) {
                 GetComponent<OverworldNPCController>().Death();
-            } else{
-                Destroy(gameObject);
+            } else if(GetComponent<PlayerShipController>() && !forSails){
+                GetComponent<PlayerShipController>().Kill();
             }
         }
     }

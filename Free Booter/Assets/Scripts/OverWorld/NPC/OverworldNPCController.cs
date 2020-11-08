@@ -30,9 +30,11 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] CircleCollider2D visualRange, cannonRange;
     [SerializeField] EdgeCollider2D lCannon, rCannon;
     bool underWind = false;
-
+    [SerializeField] Sails mySails;
+    Health sailHealth;
     void Start()
     {
+        sailHealth = mySails.sailHealth;
         lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
         int lootIndex = UnityEngine.Random.Range(0, lootArray.Length);
         loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);
@@ -72,7 +74,8 @@ public class OverworldNPCController : MonoBehaviour
             TurnAwayFromLand();
         }
         float moveSpeed = shipSpeed * Time.deltaTime;
-        transform.position += transform.up * moveSpeed;
+        float sailHealthSpeedCorrection = (float)sailHealth.GetHealth() / 100;
+        transform.position += (transform.up * (moveSpeed * sailHealthSpeedCorrection + (moveSpeed / 3)));
     }
     private void TurnTowardsTarget() {
         Vector2 dir = target.position - transform.position;

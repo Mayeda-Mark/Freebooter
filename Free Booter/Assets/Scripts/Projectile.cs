@@ -59,6 +59,7 @@ public class Projectile : MonoBehaviour, IPooledObject
     private void OnTriggerEnter2D(Collider2D otherCollider) {
         if(canDamage && otherCollider.GetType() == typeof(CapsuleCollider2D)) {
             otherCollider.GetComponent<Health>().DealDamage(hullDamage);
+            otherCollider.GetComponentInChildren<Sails>().sailHealth.DealDamage(sailDamage);
             DestroyProjectile();
         }
     }
