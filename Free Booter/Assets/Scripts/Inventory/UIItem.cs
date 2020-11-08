@@ -15,8 +15,8 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     private void Awake() {
         quantityText = transform.parent.GetComponentInChildren<Text>();
-        inventory = FindObjectOfType<Inventory>();
         spriteImage = GetComponent<Image>();
+        inventory = FindObjectOfType<Inventory>();
         UpdateItem(null);
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();

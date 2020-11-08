@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class PlayerShipController : MonoBehaviour
 {
 	Rigidbody2D myRigidBody;
+    #region Movement Vars
     [SerializeField] float spinRate = 0.3f;
     [SerializeField] float fullSail = 3f;
     [SerializeField] float halfSail = 2f;
     [SerializeField] float quarterSail = 1f;
     [SerializeField] float shipSpeed = 0.3f;
+    #endregion
     [SerializeField] float reloadTime = 0.5f;
     float rReloadTime, lReloadTIme;
     bool rReload, lReload = false;
@@ -114,6 +116,10 @@ public class PlayerShipController : MonoBehaviour
         float yComponent = Mathf.Sin(windDir * Mathf.PI / 180) * windSpeed;
         Vector2 windVelocity = new Vector2(xComponent, yComponent);
         myRigidBody.velocity = windVelocity;
+    }
+    private float SailHealth()
+    {
+        return 0; //START HERE!
     }
     //private void OnTriggerEnter2D(Collider2D otherCollider) {
     //    OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();
