@@ -21,7 +21,8 @@ public class PlayerShipController : MonoBehaviour
     [SerializeField] float lootTimer;
     bool underWind = false;
     bool looting = false;
-    string equippedItem;
+    ItemDB itemDb;
+    Item equippedItem;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
     [SerializeField] Text bootyText;
@@ -34,6 +35,7 @@ public class PlayerShipController : MonoBehaviour
     int sails = 0;
     void Start()
     {
+        itemDb = FindObjectOfType<ItemDB>();
         shipInventory = GetComponent<Inventory>();
         ResetLootTimer();
         myHealth = GetComponent<Health>();
@@ -60,16 +62,16 @@ public class PlayerShipController : MonoBehaviour
     {
         if(Input.GetKeyUp(KeyCode.RightArrow)) {
             if(!rReload && shipInventory.CanFireCannon()) {
-                myCannons.FireRightCannon(equippedItem);
+                myCannons.FireRightCannon(equippedItem.itemName);
                 rReload = true;
-                shipInventory.FireCannonBall();
+                shipInventory.DecreaseQuantity(equippedItem.id, 1);
             }
         }
         if(Input.GetKeyUp(KeyCode.LeftArrow)) {
             if(!lReload && shipInventory.CanFireCannon()) {
-                myCannons.FireLeftCannon(equippedItem);
+                myCannons.FireLeftCannon(equippedItem.itemName);
                 lReload = true;
-                shipInventory.FireCannonBall();
+                shipInventory.DecreaseQuantity(equippedItem.id, 1);
             }
         }
     }
@@ -91,7 +93,7 @@ public class PlayerShipController : MonoBehaviour
     }
     public void EquipItem(string projectile)
     {
-        equippedItem = projectile;
+        equippedItem = itemDb.GetItem(projectile);
     }
     private void Turn() {
         if(Input.GetKey("a")) {

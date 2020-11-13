@@ -17,7 +17,8 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     Color defaultColor = new Color();
     Color mouseOverColor = new Color();
     ToolbarUI toolbarUI;
-    //Text quantityText;
+    [SerializeField] Text slotNumber;
+    [SerializeField] Text quantityText;
     //public Text keyboardShortcut;
     Inventory inventory;
     bool equipped;
@@ -46,6 +47,14 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     {
 
     }*/
+    public void SetSlotNumer(int number)
+    {
+        slotNumber.text = number.ToString();
+    }
+    public void SetQuantity(int number)
+    {
+        quantityText.text = number.ToString();
+    }
     public void UpdateItem(Item item)
     {
         this.item = item;
@@ -54,9 +63,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
             isActive = true;
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
-            int quantityValue = inventory.GetQuantities()[item.id][0];
-            /*quantityText.color = Color.white;
-            quantityText.text = quantityValue.ToString();*/
+            quantityText.color = Color.white;
             if(!equipped)
             {
                 parentImage.color = defaultColor;
@@ -67,7 +74,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         {
             isActive = false;
             spriteImage.color = Color.clear;
-            /*quantityText.color = Color.clear;*/
+            quantityText.color = Color.clear;
         }
     }
     #region Click

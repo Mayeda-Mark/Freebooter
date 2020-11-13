@@ -10,19 +10,33 @@ public class WeatherArea : MonoBehaviour
     float weatherTimer, currentWindDir, currentWindSpeed;
     bool playing = true;
     bool isWindy = false;
+    public bool hasStarted = false;
     Weather currentWeather;
     GameObject currentConditions;
     float transitionTimer = 10.0f;
     Pooler pooler;
     Dictionary<Rigidbody2D, Vector3> objectsUnderWind = new Dictionary<Rigidbody2D, Vector3>();
-    IEnumerator Start() {
+    /*private void*/private IEnumerator Start() {
         pooler = FindObjectOfType<Pooler>();
+        //StartCoroutine(StartWeather());
+        do
+        {
+            print("Started weather");
+            yield return StartCoroutine("SetWeather");
+        }
+        while (playing);
+    }
+
+    public IEnumerator StartWeather()
+    {
+        hasStarted = true;
         do
         {
             yield return StartCoroutine("SetWeather");
         }
         while (playing);
     }
+
     private IEnumerator SetWeather()
     {
         yield return new WaitForSeconds(weatherTimer);

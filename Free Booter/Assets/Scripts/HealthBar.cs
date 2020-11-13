@@ -6,7 +6,7 @@ public class HealthBar : MonoBehaviour
 {
     Vector3 localScale;
     Vector3 parentScale;
-    Health health;
+    [SerializeField] Health health;
     int startingHealth;
     bool hasBeenDamaged = false;
     // Start is called before the first frame update
@@ -14,7 +14,7 @@ public class HealthBar : MonoBehaviour
     {
         parentScale = transform.parent.transform.localScale;
         localScale = transform.localScale;
-        health = GetComponentInParent(typeof(Health)) as Health;
+        //health = GetComponentInParent(typeof(Health)) as Health;
         startingHealth = health.GetHealth();
         parentScale.y = 0;
         transform.parent.transform.localScale = parentScale;

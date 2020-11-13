@@ -40,13 +40,77 @@ public class ToolbarUI : MonoBehaviour
     void Start()
     {
         EquipFirstItem();
+        SetSlotNumbers();
     }
-/*
-// Update is called once per frame
-void Update()
-{
 
-}*/
+    private void SetSlotNumbers()
+    {
+        for(int i = 0; i < toolbarItems.Count - 1; i++)
+        {
+            toolbarItems[i].SetSlotNumer(i + 1);
+        }
+    }
+    private void UpdateQuantities()
+    {
+        for(int i = 0; i < toolbarItems.Count - 1; i ++)
+        {
+            if(toolbarItems[i].item != null)
+            {
+                toolbarItems[i].SetQuantity(inventory.GetTotalQuantity(toolbarItems[i].item.id));
+            }
+        }
+    }
+    void Update()
+    {
+        KeyboardListener();
+    }
+
+    private void KeyboardListener()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if(toolbarItems[0].item != null)
+            {
+                toolbarItems[0].EquipItem(toolbarItems[0].item);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (toolbarItems[1].item != null)
+            {
+                toolbarItems[1].EquipItem(toolbarItems[1].item);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (toolbarItems[2].item != null)
+            {
+                toolbarItems[2].EquipItem(toolbarItems[2].item);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            if (toolbarItems[3].item != null)
+            {
+                toolbarItems[3].EquipItem(toolbarItems[3].item);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            if (toolbarItems[4].item != null)
+            {
+                toolbarItems[4].EquipItem(toolbarItems[4].item);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            if (toolbarItems[5].item != null)
+            {
+                toolbarItems[5].EquipItem(toolbarItems[5].item);
+            }
+        }
+    }
+
     public void UpdateToolbar()
     {
         foreach (Item item in inventoryItems)
@@ -72,6 +136,7 @@ void Update()
                 }
             }
         }
+        UpdateQuantities();
     }
     public void UpdateExistingItem(Item item)
     {
