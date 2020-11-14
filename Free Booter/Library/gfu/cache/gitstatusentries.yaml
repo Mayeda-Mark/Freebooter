@@ -13,83 +13,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-12T15:50:27.784-08:00
-  initializedAtString: 2020-11-10T08:44:26.716-08:00
+  lastUpdatedAtString: 2020-11-14T12:26:32.088-08:00
+  initializedAtString: 2020-11-14T10:31:32.722-08:00
   entries:
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Sails.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Sails.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Sails.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\WeatherDetector.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\WeatherDetector.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\WeatherDetector.prefab
+  - path: Free Booter\Assets\Animations\IntroAnimation.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\IntroAnimation.anim
+    projectPath: Assets\Animations\IntroAnimation.anim
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\ToolbarSlot.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\ToolbarSlot.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\ToolbarSlot.prefab
+  - path: Free Booter\Assets\Fonts\digital-7 (italic).ttf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\digital-7
+      (italic).ttf
+    projectPath: Assets\Fonts\digital-7 (italic).ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Fonts\digital-7 (mono italic).ttf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\digital-7
+      (mono italic).ttf
+    projectPath: Assets\Fonts\digital-7 (mono italic).ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Fonts\digital-7 (mono).ttf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\digital-7
+      (mono).ttf
+    projectPath: Assets\Fonts\digital-7 (mono).ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Fonts\digital-7.ttf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\digital-7.ttf
+    projectPath: Assets\Fonts\digital-7.ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\EnemyShip.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\EnemyShip.prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\EnemyShip.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\MerchantShip.prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\HealthBar.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\HealthBar.cs
-    projectPath: Assets\Scripts\HealthBar.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
-    projectPath: Assets\Scripts\Inventory\ToolbarItem.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
-    projectPath: Assets\Scripts\Inventory\ToolbarUI.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\PlayerShipController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipController.cs
-    projectPath: Assets\Scripts\PlayerShipController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\ToDo.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
-    projectPath: Assets\Scripts\ToDo.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Weather\WeatherArea.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\WeatherArea.cs
-    projectPath: Assets\Scripts\Weather\WeatherArea.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Weather\WeatherDetector.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\WeatherDetector.cs
-    projectPath: Assets\Scripts\Weather\WeatherDetector.cs
+  - path: Free Booter\Assets\Scenes\Splash.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Splash.unity
+    projectPath: Assets\Scenes\Splash.unity
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -114,6 +82,12 @@ MonoBehaviour:
   - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\EditorSnapSettings.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\EditorSnapSettings.asset
+    projectPath: Library\EditorSnapSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -147,27 +121,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\SceneVisibilityState.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -177,39 +133,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-7c99e8f1e309e5e498.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-7c99e8f1e309e5e498.json
-    projectPath: Library\StateCache\SceneView\91733e-7c99e8f1e309e5e498.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
