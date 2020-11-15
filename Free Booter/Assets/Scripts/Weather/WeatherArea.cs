@@ -11,7 +11,6 @@ public class WeatherArea : MonoBehaviour
     bool playing = true;
     bool isWindy = false;
     public bool hasStarted = false;
-    Weather currentWeather;
     GameObject currentConditions;
     float transitionTimer = 10.0f;
     Pooler pooler;
