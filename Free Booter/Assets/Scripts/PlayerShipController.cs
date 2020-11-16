@@ -33,8 +33,11 @@ public class PlayerShipController : MonoBehaviour
     Health sailHealth;
     float stopped = 0f;
     int sails = 0;
+    bool lightFog, heavyFog = false;
+    Animator animator;
     void Start()
     {
+        animator = GetComponent<Animator>();
         itemDb = FindObjectOfType<ItemDB>();
         shipInventory = GetComponent<Inventory>();
         ResetLootTimer();
@@ -181,5 +184,9 @@ public class PlayerShipController : MonoBehaviour
     internal void Kill()
     {
         throw new NotImplementedException();
+    }
+    public void SetWeatherState(string state, bool trueFalse)
+    {
+        animator.SetBool(state, trueFalse);
     }
 }

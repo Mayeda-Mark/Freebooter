@@ -9,18 +9,18 @@ public class WeatherArea : MonoBehaviour
     [SerializeField] String[] conditionTags;
     float weatherTimer, currentWindDir, currentWindSpeed;
     bool playing = true;
-    bool isWindy, playerInArea = false;
+    bool isWindy, playerInArea, tansitioningFromFog = false;
     public bool hasStarted = false;
     GameObject currentConditions;
     float transitionTimer = 10.0f;
     Pooler pooler;
+    string currentConditionsName;
     Dictionary<Rigidbody2D, Vector3> objectsUnderWind = new Dictionary<Rigidbody2D, Vector3>();
     /*private void*/private IEnumerator Start() {
         pooler = FindObjectOfType<Pooler>();
         //StartCoroutine(StartWeather());
         do
         {
-            print("Started weather");
             yield return StartCoroutine("SetWeather");
         }
         while (playing);
@@ -45,6 +45,10 @@ public class WeatherArea : MonoBehaviour
     private IEnumerator Transition(GameObject weatherCondition)
     {
         yield return new WaitForSeconds(weatherTimer - transitionTimer);
+        if(currentConditionsName == "Heavy Fog" || currentConditionsName == "Light Fog")
+        {
+            tansitioningFromFog = true;
+        }
         ExitWind();
         weatherCondition.GetComponent<StormArea>().Kill();
     }
@@ -57,7 +61,9 @@ public class WeatherArea : MonoBehaviour
 
     private void SetConditions()
     {
-        GameObject newCondition = pooler.SpawnFromPool(GetConditionTag(), transform.position, Quaternion.identity);
+        tansitioningFromFog = false;
+        currentConditionsName = GetConditionTag();
+        GameObject newCondition = pooler.SpawnFromPool(currentConditionsName, transform.position, Quaternion.identity);
         newCondition.transform.parent = this.transform;
         newCondition.GetComponent<StormArea>().SetUpParent();
         currentWindSpeed = newCondition.GetComponent<StormArea>().GetWindSpeed();
@@ -91,6 +97,13 @@ public class WeatherArea : MonoBehaviour
         if (player)
         {
             playerInArea = true;
+            if ((currentConditionsName == "Heavy Fog" && !tansitioningFromFog) || (currentConditionsName == "Light Fog" && !tansitioningFromFog))
+            {
+                player.SetWeatherState(currentConditionsName, true);
+            } else if (tansitioningFromFog)
+            {
+                player.SetWeatherState(currentConditionsName, false);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -107,6 +120,10 @@ public class WeatherArea : MonoBehaviour
         if(player)
         {
             playerInArea = true;
+            if (currentConditionsName == "Heavy Fog" || currentConditionsName == "Light Fog")
+            {
+                player.SetWeatherState(currentConditionsName, true);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -116,6 +133,10 @@ public class WeatherArea : MonoBehaviour
         {
             playerInArea = false;
             ExitWind();
+            if(currentConditionsName == "Heavy Fog" || currentConditionsName == "Light Fog")
+            {
+                player.SetWeatherState(currentConditionsName, false);
+            }
         }
     }
 

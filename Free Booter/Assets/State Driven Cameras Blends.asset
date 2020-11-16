@@ -17,7 +17,7 @@ MonoBehaviour:
     m_To: CM vcam1
     m_Blend:
       m_Style: 1
-      m_Time: 2
+      m_Time: 7
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
@@ -28,7 +28,7 @@ MonoBehaviour:
     m_To: Lgt Fog Cam
     m_Blend:
       m_Style: 1
-      m_Time: 2
+      m_Time: 7
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_To: Hvy Fog Cam
     m_Blend:
       m_Style: 1
-      m_Time: 2
+      m_Time: 7
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
