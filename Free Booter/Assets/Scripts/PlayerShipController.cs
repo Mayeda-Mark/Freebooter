@@ -113,7 +113,15 @@ public class PlayerShipController : MonoBehaviour
         sails = Mathf.Clamp(sails, 0, 3);
     }
     private void Move() {
-        float moveSpeed = ((shipSpeed * sails * GetSailHealth()) + shipSpeed) * Time.deltaTime;
+        float moveSpeed = 0f;
+        if( sails > 0)
+        {
+            moveSpeed = ((shipSpeed * sails * GetSailHealth()) + shipSpeed) * Time.deltaTime;
+        }
+        else
+        {
+
+        }
         myRigidBody.transform.position += transform.up * moveSpeed;
     }
     public void MoveFromWind(float windDir, float windSpeed)

@@ -14,7 +14,7 @@ public class StormArea : MonoBehaviour, IPooledObject
     GameObject cloudParent;
     const string CLOUD_PARENT_NAME = "Clouds";
     Collider2D collider;
-    Vector3 minBounds, maxBounds, cloudPosition;
+    [SerializeField] Vector3 minBounds, maxBounds, cloudPosition;
     Camera cam;
     int activeClouds = 0;
     WeatherArea parent;
@@ -63,10 +63,11 @@ public class StormArea : MonoBehaviour, IPooledObject
     {
         for(int i = activeClouds; i < numClouds; i++)
         {
-            if(spawningClouds)
+            if(spawningClouds && parent.GetPlayerInArea())
             {
                 RollCloudPosition();
-                GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); 
+                Vector3 correctedPosition = transform.TransformPoint(cloudPosition);
+                GameObject newCloud = pooler.SpawnFromPool(cloudTag, correctedPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); 
                 newCloud.transform.parent = this.transform;
                 newCloud.GetComponent<Cloud>().SetUpParent();
                 clouds.Add(newCloud);

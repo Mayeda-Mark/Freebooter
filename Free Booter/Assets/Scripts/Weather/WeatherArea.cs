@@ -9,7 +9,7 @@ public class WeatherArea : MonoBehaviour
     [SerializeField] String[] conditionTags;
     float weatherTimer, currentWindDir, currentWindSpeed;
     bool playing = true;
-    bool isWindy = false;
+    bool isWindy, playerInArea = false;
     public bool hasStarted = false;
     GameObject currentConditions;
     float transitionTimer = 10.0f;
@@ -45,7 +45,7 @@ public class WeatherArea : MonoBehaviour
     private IEnumerator Transition(GameObject weatherCondition)
     {
         yield return new WaitForSeconds(weatherTimer - transitionTimer);
-        EndWind();
+        ExitWind();
         weatherCondition.GetComponent<StormArea>().Kill();
     }
 
@@ -88,7 +88,51 @@ public class WeatherArea : MonoBehaviour
                 player.SetUnderWind(true);
             }
         }
+        if (player)
+        {
+            playerInArea = true;
+        }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var player = collision.GetComponent<PlayerShipController>();
+        if (player && !player.GetUnderWind())
+        {
+            if (isWindy)
+            {
+                ApplyForce(player.GetComponentInParent<Rigidbody2D>());
+                player.SetUnderWind(true);
+            }
+        }
+        if(player)
+        {
+            playerInArea = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        var player = collision.GetComponent<PlayerShipController>();
+        if(player)
+        {
+            playerInArea = false;
+            ExitWind();
+        }
+    }
+
+    private void ExitWind()
+    {
+        foreach (Rigidbody2D rigidbody in objectsUnderWind.Keys)
+        {
+            rigidbody.AddForce(-(objectsUnderWind[rigidbody] * (currentWindSpeed * 20)));
+            PlayerShipController player = rigidbody.GetComponent<PlayerShipController>();
+            if (player != null)
+            {
+                player.SetUnderWind(false);
+            }
+        }
+        objectsUnderWind.Clear();
+    }
+
     private void ApplyForce(Rigidbody2D rigidbody)
     {
         Vector3 dir = Quaternion.AngleAxis(currentWindDir - 270f, Vector3.forward) * Vector3.right;
@@ -119,4 +163,5 @@ public class WeatherArea : MonoBehaviour
     }
     public float GetWindDir() { return currentWindDir; }
     public float GetWeatherTimer() { return weatherTimer; }
+    public bool GetPlayerInArea() { return playerInArea; }
 }
