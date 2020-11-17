@@ -33,8 +33,12 @@ public class StormArea : MonoBehaviour, IPooledObject
         if(collider != null)
         {
             minBounds = collider.bounds.min;
+            //minBounds = transform.TransformPoint(minBounds);
             maxBounds = collider.bounds.max;
+            //maxBounds = transform.TransformPoint(maxBounds);
         }
+        print("" + minBounds.x + ", " + maxBounds.x);
+        //Vector3 correctedPosition = transform.TransformPoint(cloudPosition);
     }
     public void SetUpParent()
     {
@@ -66,8 +70,8 @@ public class StormArea : MonoBehaviour, IPooledObject
             if(spawningClouds && parent.GetPlayerInArea())
             {
                 RollCloudPosition();
-                Vector3 correctedPosition = transform.TransformPoint(cloudPosition);
-                GameObject newCloud = pooler.SpawnFromPool(cloudTag, correctedPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); 
+                //Vector3 correctedPosition = transform.TransformPoint(cloudPosition);
+                GameObject newCloud = pooler.SpawnFromPool(cloudTag, /*correctedPosition*/cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir))); 
                 newCloud.transform.parent = this.transform;
                 newCloud.GetComponent<Cloud>().SetUpParent();
                 clouds.Add(newCloud);
@@ -80,10 +84,16 @@ public class StormArea : MonoBehaviour, IPooledObject
     private void RollCloudPosition() 
     {
         cloudPosition = new Vector3(UnityEngine.Random.Range(minBounds.x, maxBounds.x), UnityEngine.Random.Range(minBounds.y, maxBounds.y), 0);
-        Vector3 viewPos = cam.WorldToViewportPoint(cloudPosition);
-        if(viewPos.x < 1.1 && viewPos.x > -0.1 && viewPos.y < 1.1 && viewPos.y > -0.1)
+        cloudPosition = transform.TransformPoint(cloudPosition);
+        Vector3 viewPos = cam.WorldToViewportPoint(cloudPosition/*correctedPosition*/);
+        //viewPos = transform.TransformPoint(viewPos);
+        if((viewPos.x < 1.1 && viewPos.x > -0.1) && (viewPos.y < 1.1 && viewPos.y > -0.1))
         {
             RollCloudPosition(); 
+            return;
+        } else
+        {
+        print("" + viewPos.x + ", " + viewPos.y);
             return;
         }
     }

@@ -13,31 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-16T10:59:49.486-08:00
-  initializedAtString: 2020-11-16T06:46:16.905-08:00
+  lastUpdatedAtString: 2020-11-17T11:10:03.783-08:00
+  initializedAtString: 2020-11-17T09:30:36.948-08:00
   entries:
-  - path: Free Booter\Assets\Animations\PlayerShip.controller
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\PlayerShip.controller
-    projectPath: Assets\Animations\PlayerShip.controller
+  - path: Free Booter\Assets\Scripts\Weather\Cloud.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\Cloud.cs
+    projectPath: Assets\Scripts\Weather\Cloud.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\PlayerShipController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipController.cs
-    projectPath: Assets\Scripts\PlayerShipController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Weather\WeatherArea.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\WeatherArea.cs
-    projectPath: Assets\Scripts\Weather\WeatherArea.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\State Driven Cameras Blends.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\State
-      Driven Cameras Blends.asset
-    projectPath: Assets\State Driven Cameras Blends.asset
+  - path: Free Booter\Assets\Scripts\Weather\StormArea.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\StormArea.cs
+    projectPath: Assets\Scripts\Weather\StormArea.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -50,6 +37,18 @@ MonoBehaviour:
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\expandedItems
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -71,9 +70,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
+  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
