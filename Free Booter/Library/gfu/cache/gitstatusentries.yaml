@@ -13,9 +13,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-17T11:10:03.783-08:00
-  initializedAtString: 2020-11-17T09:30:36.948-08:00
+  lastUpdatedAtString: 2020-11-21T09:00:40.898-08:00
+  initializedAtString: 2020-11-21T08:27:25.324-08:00
   entries:
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightWind.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\Conditions\LightWind.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightWind.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\StormCloud.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\WeatherController.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\WeatherController.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\WeatherController.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Weather\WindCloud.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Weather\Cloud.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\Cloud.cs
     projectPath: Assets\Scripts\Weather\Cloud.cs
@@ -97,6 +139,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

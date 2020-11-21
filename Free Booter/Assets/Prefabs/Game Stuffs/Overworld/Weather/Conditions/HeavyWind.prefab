@@ -49,8 +49,9 @@ MonoBehaviour:
   numClouds: 5
   windDir: 0
   windSpeed: 0
-  cloudPrefab: {fileID: 8029175639859466805, guid: 853a2e7acab7623448e55d4f14c97181,
-    type: 3}
+  minBounds: {x: 0, y: 0, z: 0}
+  maxBounds: {x: 0, y: 0, z: 0}
+  cloudPosition: {x: 0, y: 0, z: 0}
   cloudTag: Wind Cloud
 --- !u!61 &7888668352978478655
 BoxCollider2D:
@@ -63,7 +64,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
