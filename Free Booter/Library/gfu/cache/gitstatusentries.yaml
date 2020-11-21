@@ -13,84 +13,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-21T09:00:40.898-08:00
+  lastUpdatedAtString: 2020-11-21T10:14:32.715-08:00
   initializedAtString: 2020-11-21T08:27:25.324-08:00
   entries:
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyWind.prefab
+  - path: Free Booter\Assets\Fonts\JackPirate_PERSONAL_USE_ONLY.ttf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\JackPirate_PERSONAL_USE_ONLY.ttf
+    projectPath: Assets\Fonts\JackPirate_PERSONAL_USE_ONLY.ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY.ttf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY.ttf
+    projectPath: Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY.ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\MusicManager.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\MusicManager.cs
+    projectPath: Assets\MusicManager.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Resources\Images\v0.1 bg.jpg
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Images\v0.1
+      bg.jpg
+    projectPath: Assets\Resources\Images\v0.1 bg.jpg
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\ToDo.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
+    projectPath: Assets\Scripts\ToDo.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightStorm.prefab
+  - path: Free Booter\Assets\SoundManager.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\SoundManager.cs
+    projectPath: Assets\SoundManager.cs
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightWind.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\LightWind.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightWind.prefab
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Sounds\Music\Pirate1_Theme1.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\Pirate1_Theme1.mp3
+    projectPath: Assets\Sounds\Music\Pirate1_Theme1.mp3
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\StormCloud.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Sounds\Music\thunderchild.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\thunderchild.mp3
+    projectPath: Assets\Sounds\Music\thunderchild.mp3
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\WeatherController.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\WeatherController.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\WeatherController.prefab
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Sounds\SFX\DeathFlash.flac
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\DeathFlash.flac
+    projectPath: Assets\Sounds\SFX\DeathFlash.flac
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\WindCloud.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Sounds\SFX\rumble.flac
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\rumble.flac
+    projectPath: Assets\Sounds\SFX\rumble.flac
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Weather\Cloud.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\Cloud.cs
-    projectPath: Assets\Scripts\Weather\Cloud.cs
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Sounds\SFX\synthetic_explosion_1.flac
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\synthetic_explosion_1.flac
+    projectPath: Assets\Sounds\SFX\synthetic_explosion_1.flac
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Weather\StormArea.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\StormArea.cs
-    projectPath: Assets\Scripts\Weather\StormArea.cs
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Sounds\SFX\Waves Crashing on Rock Beach.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\Waves
+      Crashing on Rock Beach.mp3
+    projectPath: Assets\Sounds\SFX\Waves Crashing on Rock Beach.mp3
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ArtifactDB
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
-    projectPath: Library\ArtifactDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -106,15 +108,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -142,9 +138,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
