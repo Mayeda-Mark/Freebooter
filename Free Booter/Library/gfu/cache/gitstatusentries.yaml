@@ -13,232 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-21T16:49:35.847-08:00
-  initializedAtString: 2020-11-21T15:59:10.252-08:00
+  lastUpdatedAtString: 2020-11-23T10:48:04.854-08:00
+  initializedAtString: 2020-11-23T10:48:04.854-08:00
   entries:
-  - path: Free Booter\Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY SDF.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY
-      SDF.asset
-    projectPath: Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY SDF.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scenes\Start.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Start.unity
-    projectPath: Assets\Scenes\Start.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Documentation\TextMesh Pro User Guide 2016.pdf
-    projectPath: Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Fonts\LiberationSans - OFL.txt
-    projectPath: Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Fonts\LiberationSans.ttf
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Fonts\LiberationSans.ttf
-    projectPath: Assets\TextMesh Pro\Fonts\LiberationSans.ttf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
-      SDF - Drop Shadow.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Fonts & Materials\LiberationSans SDF - Drop Shadow.mat
-    projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
-      - Drop Shadow.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
-      SDF - Fallback.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Fonts & Materials\LiberationSans SDF - Fallback.asset
-    projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
-      - Fallback.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
-      SDF - Outline.mat
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Fonts & Materials\LiberationSans SDF - Outline.mat
-    projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
-      - Outline.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
-      SDF.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
-    projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\LineBreaking Following Characters.txt
-    projectPath: Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\LineBreaking Leading Characters.txt
-    projectPath: Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_Bitmap.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_SDF Overlay.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_SDF.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_SDF-Mobile.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_SDF-Surface.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMP_Sprite.shader
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMPro.cginc
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMPro_Properties.cginc
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Shaders\TMPro_Surface.cginc
-    projectPath: Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Sprite Assets\EmojiOne.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Sprite Assets\EmojiOne.asset
-    projectPath: Assets\TextMesh Pro\Resources\Sprite Assets\EmojiOne.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\Style Sheets\Default Style Sheet.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\Style Sheets\Default Style Sheet.asset
-    projectPath: Assets\TextMesh Pro\Resources\Style Sheets\Default Style Sheet.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Resources\TMP Settings.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Resources\TMP Settings.asset
-    projectPath: Assets\TextMesh Pro\Resources\TMP Settings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Sprites\EmojiOne Attribution.txt
-    projectPath: Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Sprites\EmojiOne.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Sprites\EmojiOne.json
-    projectPath: Assets\TextMesh Pro\Sprites\EmojiOne.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\TextMesh Pro\Sprites\EmojiOne.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\TextMesh
-      Pro\Sprites\EmojiOne.png
-    projectPath: Assets\TextMesh Pro\Sprites\EmojiOne.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -257,75 +34,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\expandedItems
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
     projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gitstatusentries.yaml
-    projectPath: Library\gfu\cache\gitstatusentries.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ScriptMapper
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptMapper
-    projectPath: Library\ScriptMapper
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ShaderCache\EditorEncounteredVariants
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\EditorEncounteredVariants
-    projectPath: Library\ShaderCache\EditorEncounteredVariants
+  - path: Free Booter\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe2.log
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe2.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe3.log
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe3.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe3.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -338,18 +61,6 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\ProjectSettings\EditorBuildSettings.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\EditorBuildSettings.asset
-    projectPath: ProjectSettings\EditorBuildSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
