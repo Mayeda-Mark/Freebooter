@@ -4,15 +4,54 @@ using UnityEngine;
 
 public class StartMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Canvas versionNotesCanvas;
+    [SerializeField] GameObject newCanvas;
+    [SerializeField] GameObject differentCanvas;
+    [SerializeField] GameObject controlsCanvas;
+    GameObject openCanvas;
+    LevelLoader levelLoader;
+    private void Start()
     {
-        
+        FindObjectOfType<MusicManager>().ChangeTrack("MenuTrack");
+        levelLoader = FindObjectOfType<LevelLoader>();
+        newCanvas.SetActive(false);
+        differentCanvas.SetActive(false);
+        controlsCanvas.SetActive(false);
+        versionNotesCanvas.gameObject.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void OpenVersionNotes()
     {
-        
+        versionNotesCanvas.gameObject.SetActive(true);
+    }
+    public void CloseVersionNotes()
+    {
+        versionNotesCanvas.gameObject.SetActive(false);
+    }
+    public void OpenNew()
+    {
+        newCanvas.SetActive(true);
+        openCanvas = newCanvas;
+    }
+    public void OpenDifferent()
+    {
+        differentCanvas.SetActive(true);
+        openCanvas = differentCanvas;
+    }
+    public void OpenControls()
+    {
+        controlsCanvas.SetActive(true);
+        openCanvas = controlsCanvas;
+    }
+    public void BackToVersionNotes()
+    {
+        openCanvas.SetActive(false);
+    }
+    public void StartGame()
+    {
+        levelLoader.LoadOverworld();
+    }
+    public void Options()
+    {
+        levelLoader.LoadOptions();
     }
 }

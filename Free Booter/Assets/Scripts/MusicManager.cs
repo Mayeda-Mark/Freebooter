@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField] Dictionary<string, AudioSource> tracks = new Dictionary<string, AudioSource>();
-
+    [SerializeField] AudioClip[] tracks;
+    //[SerializeField] List<AudioClip> tracks = new List<AudioClip>();
+    [SerializeField] AudioSource source;
     bool isPlaying = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        DontDestroyOnLoad(this);
+        //source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -18,8 +20,16 @@ public class MusicManager : MonoBehaviour
     {
         
     }
-    public void ChangeTrack()
+    public void ChangeTrack(string track)
     {
-
+        print("Called!");
+        foreach(AudioClip clip in tracks)
+        {
+            if(clip.name == track)
+            {
+                source.clip = clip;
+                source.Play();
+            }
+        }
     }
 }

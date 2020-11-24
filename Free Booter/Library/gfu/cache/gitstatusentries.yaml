@@ -13,9 +13,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-24T07:21:52.731-08:00
+  lastUpdatedAtString: 2020-11-24T12:34:51.199-08:00
   initializedAtString: 2020-11-24T06:28:11.648-08:00
   entries:
+  - path: Free Booter\Assets\Resources\Images\WDWPOTCDeadMansCove.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Images\WDWPOTCDeadMansCove.png
+    projectPath: Assets\Resources\Images\WDWPOTCDeadMansCove.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Options.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Options.unity
+    projectPath: Assets\Scenes\Options.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Splash.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Splash.unity
+    projectPath: Assets\Scenes\Splash.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scenes\Start.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Start.unity
     projectPath: Assets\Scenes\Start.unity
@@ -28,6 +46,42 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\MusicManager.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\MusicManager.cs
+    projectPath: Assets\Scripts\MusicManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\OptionsController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OptionsController.cs
+    projectPath: Assets\Scripts\OptionsController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\PlayerPrefsController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerPrefsController.cs
+    projectPath: Assets\Scripts\PlayerPrefsController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\StartMenu.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\StartMenu.cs
+    projectPath: Assets\Scripts\StartMenu.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Sounds\Music\MenuTrack.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\MenuTrack.mp3
+    projectPath: Assets\Sounds\Music\MenuTrack.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Sounds\Music\thunderchild.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\thunderchild.mp3
+    projectPath: Assets\Sounds\Music\thunderchild.mp3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -40,15 +94,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
+  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -64,15 +112,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
+  - path: Free Booter\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -103,6 +151,18 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\ProjectSettings\EditorBuildSettings.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\EditorBuildSettings.asset
+    projectPath: ProjectSettings\EditorBuildSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
