@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-23T10:48:04.854-08:00
-  initializedAtString: 2020-11-23T10:48:04.854-08:00
+  lastUpdatedAtString: 2020-11-24T07:21:52.731-08:00
+  initializedAtString: 2020-11-24T06:28:11.648-08:00
   entries:
+  - path: Free Booter\Assets\Scenes\Start.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Start.unity
+    projectPath: Assets\Scenes\Start.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\LevelLoader.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\LevelLoader.cs
+    projectPath: Assets\Scripts\LevelLoader.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -40,15 +52,39 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
+  - path: Free Booter\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+  - path: Free Booter\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -61,6 +97,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
