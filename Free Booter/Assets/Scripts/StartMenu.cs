@@ -10,9 +10,12 @@ public class StartMenu : MonoBehaviour
     [SerializeField] GameObject controlsCanvas;
     GameObject openCanvas;
     LevelLoader levelLoader;
+    MusicManager music;
     private void Start()
     {
-        FindObjectOfType<MusicManager>().ChangeTrack("MenuTrack");
+        music = FindObjectOfType<MusicManager>();
+        music.ChangeTrack("MenuTrack");
+        music.SetMaintainMusic(true);
         levelLoader = FindObjectOfType<LevelLoader>();
         newCanvas.SetActive(false);
         differentCanvas.SetActive(false);
@@ -48,6 +51,8 @@ public class StartMenu : MonoBehaviour
     }
     public void StartGame()
     {
+        music.SetMaintainMusic(false);
+        //music.StopMusic();
         levelLoader.LoadOverworld();
     }
     public void Options()

@@ -6,13 +6,17 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField] AudioClip[] tracks;
     //[SerializeField] List<AudioClip> tracks = new List<AudioClip>();
-    [SerializeField] AudioSource source;
+    /*[SerializeField]*/ AudioSource source;
     bool isPlaying = false;
+    PlayerPrefsController prefs;
+    bool maintainMusic;
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(this);
-        //source = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
+        source.volume = PlayerPrefsController.GetMasterVolume();
+        //prefs = FindObjectOfType<PlayerPrefsController>();
     }
 
     // Update is called once per frame
@@ -22,14 +26,30 @@ public class MusicManager : MonoBehaviour
     }
     public void ChangeTrack(string track)
     {
-        print("Called!");
+        if(isPlaying && !maintainMusic)
+        {
+            source.Stop();
+            isPlaying = false;
+        }
         foreach(AudioClip clip in tracks)
         {
-            if(clip.name == track)
+            if(clip.name == track && !maintainMusic)
             {
                 source.clip = clip;
                 source.Play();
+                isPlaying = true;
             }
         }
+    }
+    public void SetVolume(float volume)
+    {
+        source.volume = volume;
+    }
+    public void SetMaintainMusic(bool set) { maintainMusic = set; }
+    public void StopMusic()
+    {
+        source.Stop();
+        isPlaying = false;
+        maintainMusic = false;
     }
 }

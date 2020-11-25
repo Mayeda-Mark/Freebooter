@@ -10,6 +10,11 @@ public class PlayerPrefsController : MonoBehaviour
     const float MIN_VOLUME = 0f;
     const float MAX_DIFFICULTY = 1f;
     const float MIN_DIFFICULTY = 0f;
+    private void Start()
+    {
+        SetMasterVolume(0.5f);
+        DontDestroyOnLoad(this);
+    }
     public static void SetMasterVolume(float volume)
     {
         if (volume >= MIN_VOLUME && volume <= MAX_VOLUME)

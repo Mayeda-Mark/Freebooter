@@ -13,12 +13,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-24T12:34:51.199-08:00
-  initializedAtString: 2020-11-24T06:28:11.648-08:00
+  lastUpdatedAtString: 2020-11-25T09:47:42.923-08:00
+  initializedAtString: 2020-11-25T05:34:34.662-08:00
   entries:
-  - path: Free Booter\Assets\Resources\Images\WDWPOTCDeadMansCove.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Images\WDWPOTCDeadMansCove.png
-    projectPath: Assets\Resources\Images\WDWPOTCDeadMansCove.png
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Music Manager.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Music Manager.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Music Manager.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Options Controller.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Options Controller.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Options Controller.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\OverworldController.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\OverworldController.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\OverworldController.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Player Prefs Controller.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Player Prefs Controller.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Player Prefs Controller.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sound Manager.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Sound Manager.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Sound Manager.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -26,8 +55,14 @@ MonoBehaviour:
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Options.unity
     projectPath: Assets\Scenes\Options.unity
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scenes\Splash.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Splash.unity
     projectPath: Assets\Scenes\Splash.unity
@@ -37,6 +72,12 @@ MonoBehaviour:
   - path: Free Booter\Assets\Scenes\Start.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Start.unity
     projectPath: Assets\Scenes\Start.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Cannons.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Cannons.cs
+    projectPath: Assets\Scripts\Cannons.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -56,32 +97,50 @@ MonoBehaviour:
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OptionsController.cs
     projectPath: Assets\Scripts\OptionsController.cs
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\OverworldController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverworldController.cs
+    projectPath: Assets\Scripts\OverworldController.cs
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Free Booter\Assets\Scripts\PlayerPrefsController.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerPrefsController.cs
     projectPath: Assets\Scripts\PlayerPrefsController.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\SoundManager.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\SoundManager.cs
+    projectPath: Assets\Scripts\SoundManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\StartMenu.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\StartMenu.cs
     projectPath: Assets\Scripts\StartMenu.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Sounds\Music\MenuTrack.mp3
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\MenuTrack.mp3
-    projectPath: Assets\Sounds\Music\MenuTrack.mp3
+  - path: Free Booter\Assets\Sounds\Music\OverworldDefault.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\OverworldDefault.mp3
+    projectPath: Assets\Sounds\Music\OverworldDefault.mp3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Sounds\Music\thunderchild.mp3
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\thunderchild.mp3
-    projectPath: Assets\Sounds\Music\thunderchild.mp3
+  - path: Free Booter\Assets\Sounds\Music\Pirate1_Theme1.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\Music\Pirate1_Theme1.mp3
+    projectPath: Assets\Sounds\Music\Pirate1_Theme1.mp3
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Free Booter\Assets\Sounds\SFX\rumble.mp3
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\rumble.mp3
+    projectPath: Assets\Sounds\SFX\rumble.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -94,9 +153,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
+  - path: Free Booter\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\expandedItems
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -112,15 +177,27 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\InspectorExpandedItems.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
+  - path: Free Booter\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -157,12 +234,6 @@ MonoBehaviour:
   - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\ProjectSettings\EditorBuildSettings.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\EditorBuildSettings.asset
-    projectPath: ProjectSettings\EditorBuildSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

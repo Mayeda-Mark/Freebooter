@@ -23,7 +23,7 @@ public class OptionsController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*var musicPlayer = FindObjectOfType<MusicPlayer>();
+        var musicPlayer = FindObjectOfType<MusicManager>();
         if (musicPlayer)
         {
             musicPlayer.SetVolume(volumeSlider.value);
@@ -31,7 +31,7 @@ public class OptionsController : MonoBehaviour
         else
         {
             Debug.LogWarning("No music player found!");
-        }*/
+        }
         //DisplayDifficulty();
         DisplayVolume();
     }
@@ -55,5 +55,9 @@ public class OptionsController : MonoBehaviour
     {
         int volumeInt = Mathf.RoundToInt(volumeSlider.value * 100);
         volumeDisplay.text = volumeInt.ToString();
+    }
+    public void BackButton()
+    {
+        FindObjectOfType<LevelLoader>().LoadMainMenu();
     }
 }

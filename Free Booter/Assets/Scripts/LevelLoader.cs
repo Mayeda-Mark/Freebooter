@@ -41,13 +41,13 @@ public class LevelLoader : MonoBehaviour
 
     internal void LoadOverworld()
     {
-        print("Load Overworld");
+        SceneManager.LoadScene("Overworld_test");
     }
 
     public void LoadMainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Start Screen");
+        SceneManager.LoadScene("Start");
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
     public void QuitGame()

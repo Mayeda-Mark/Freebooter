@@ -11,8 +11,10 @@ public class Cannons : MonoBehaviour
     const string PROJECTILE_PARENT_NAME = "Projectiles";
     float rCannonRotation;
     Pooler pooler;
+    SoundManager soundManager;
     void Start()
     {
+        soundManager = FindObjectOfType<SoundManager>();
         pooler = FindObjectOfType<Pooler>();
         CreateProjectileParent();
     }
@@ -27,9 +29,15 @@ public class Cannons : MonoBehaviour
     public void FireRightCannon(string equippedProjectile) {
         GameObject newProjectile = pooler.SpawnFromPool(equippedProjectile, rCannon.transform.position, rCannon.transform.rotation);/*Instantiate(projectile, rCannon.transform.position, rCannon.transform.rotation) as GameObject;*/
         newProjectile.transform.parent = projectileParent.transform;
+        MakeSound();
     }
     public void FireLeftCannon(string equippedProjectile) {
         GameObject newProjectile = pooler.SpawnFromPool(equippedProjectile, lCannon.transform.position, lCannon.transform.rotation)/*Instantiate(projectile, lCannon.transform.position, lCannon.transform.rotation) as GameObject*/;
         newProjectile.transform.parent = projectileParent.transform;
+        MakeSound();
+    }
+    private void MakeSound()
+    {
+        soundManager.PlaySound("rumble");
     }
 }
