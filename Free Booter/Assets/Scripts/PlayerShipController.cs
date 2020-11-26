@@ -179,8 +179,15 @@ public class PlayerShipController : MonoBehaviour
     public bool GetUnderWind() { return underWind; }
     internal void Kill()
     {
-        throw new NotImplementedException();
+        StartCoroutine(LoadDeath());
     }
+
+    IEnumerator LoadDeath()
+    {
+        yield return new WaitForSeconds(3f);
+        FindObjectOfType<LevelLoader>().LoadDeathScreen();
+    }
+
     public void SetWeatherState(string state, bool trueFalse)
     {
         animator.SetBool(state, trueFalse);

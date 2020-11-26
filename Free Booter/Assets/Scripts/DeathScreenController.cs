@@ -7,6 +7,7 @@ public class DeathScreenController : MonoBehaviour
     LevelLoader levelLoader;
     void Start()
     {
+        FindObjectOfType<MusicManager>().ChangeTrack("Death");
         levelLoader = FindObjectOfType<LevelLoader>();
     }
     public void Main()
@@ -16,5 +17,9 @@ public class DeathScreenController : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+    public void Restart()
+    {
+        levelLoader.LoadOverworld();
     }
 }

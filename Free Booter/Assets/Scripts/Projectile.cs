@@ -19,6 +19,7 @@ public class Projectile : MonoBehaviour, IPooledObject
     // Start is called before the first frame update
     public void OnObjectSpawn()
     {
+        canDamage = false;
         item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
         SetStats();
         myCollider = GetComponent<Collider2D>();

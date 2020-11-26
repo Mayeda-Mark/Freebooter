@@ -22,8 +22,16 @@ public class PlayerShipHealthBars : MonoBehaviour
     void Update()
     {
         hullLocalScale.x = ((float)playerHullHealth.GetHealth() / 100f);
+        if(playerHullHealth.GetHealth() <= 0)
+        {
+            hullLocalScale.x = 0;
+        }
         hullHealth.transform.localScale = hullLocalScale;
         sailLocalScale.x = ((float)playerSailsHealth.GetHealth() / 100f);
+        if(playerSailsHealth.GetHealth() <= 0)
+        {
+            sailLocalScale.x = 0;
+        }
         sailHealth.transform.localScale = sailLocalScale;
     }
 }

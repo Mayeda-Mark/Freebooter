@@ -290,7 +290,9 @@ MonoBehaviour:
   lootArray: 00000000
   maxLoot: 20
   minLoot: 40
-  projectiles: []
+  projectiles:
+  - Cannon Balls
+  - Chain Shot
   landSpotter: {fileID: 4244720579567570706}
   lCollider: {fileID: 528646603338061636}
   visualRange: {fileID: 6482261582084274528}
@@ -452,6 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   forSails: 0
+  health: 0
 --- !u!1 &8682879045464581533
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class TownController : MonoBehaviour
     [SerializeField] int repairCost = 100;
     [SerializeField] Text alertText;
     [SerializeField] Text repairButtonText;
+    [SerializeField] Health sailHealth;
     void Start() {
         repairButtonText.text = "Repair Ship: " + repairCost.ToString() + " Gold";
         playerHealth = FindObjectOfType<PlayerShipController>().GetComponent<Health>();
@@ -40,12 +41,13 @@ public class TownController : MonoBehaviour
         merchantMenu.gameObject.SetActive(false);
     }
     public void RepairShip() {
-        if(playerHealth.isHealthFull()) {
+        if(playerHealth.isHealthFull() && sailHealth.isHealthFull()) {
             alertText.gameObject.SetActive(true);
             alertText.text = "Ship health already full";
         } else if(inventory.GetTotalGold() >= repairCost) {
             alertText.gameObject.SetActive(false);
             playerHealth.ResetHealth();
+            sailHealth.ResetHealth();
             inventory.RemoveGold(repairCost);
         } else {
             alertText.gameObject.SetActive(true);

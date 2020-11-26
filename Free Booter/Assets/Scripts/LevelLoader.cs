@@ -60,4 +60,9 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene("Options");
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
+
+    internal void LoadDeathScreen()
+    {
+        SceneManager.LoadScene("Death");
+    }
 }
