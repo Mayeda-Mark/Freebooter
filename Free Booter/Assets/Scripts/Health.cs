@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int maxHealth = 100;
     [SerializeField] bool forSails = false;
-    int health;
+    [SerializeField] int health;
     void Start() {
         ResetHealth();
     }
