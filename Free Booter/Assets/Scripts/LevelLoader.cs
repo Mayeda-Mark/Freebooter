@@ -41,6 +41,7 @@ public class LevelLoader : MonoBehaviour
 
     internal void LoadOverworld()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Overworld_test");
     }
 

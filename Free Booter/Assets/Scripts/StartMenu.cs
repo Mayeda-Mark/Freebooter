@@ -59,4 +59,8 @@ public class StartMenu : MonoBehaviour
     {
         levelLoader.LoadOptions();
     }
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

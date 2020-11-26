@@ -13,36 +13,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-26T08:42:28.554-08:00
+  lastUpdatedAtString: 2020-11-26T10:02:30.702-08:00
   initializedAtString: 2020-11-26T07:17:19.144-08:00
   entries:
-  - path: Free Booter\Assets\Resources\Square.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Square.png
-    projectPath: Assets\Resources\Square.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Health.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Health.cs
-    projectPath: Assets\Scripts\Health.cs
+  - path: Free Booter\Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY SDF.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY
+      SDF.asset
+    projectPath: Assets\Fonts\JackPirateAlt_PERSONAL_USE_ONLY SDF.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\PlayerShipController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipController.cs
-    projectPath: Assets\Scripts\PlayerShipController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\PlayerShipHealthBars.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipHealthBars.cs
-    projectPath: Assets\Scripts\PlayerShipHealthBars.cs
+  - path: Free Booter\Assets\Prefabs\Pause Canvas.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Pause
+      Canvas.prefab
+    projectPath: Assets\Prefabs\Pause Canvas.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\ToDo.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
-    projectPath: Assets\Scripts\ToDo.cs
+  - path: Free Booter\Assets\Resources\Images\walk_the_plank.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Images\walk_the_plank.png
+    projectPath: Assets\Resources\Images\walk_the_plank.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Options.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Options.unity
+    projectPath: Assets\Scenes\Options.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\LevelLoader.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\LevelLoader.cs
+    projectPath: Assets\Scripts\LevelLoader.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\OverworldController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverworldController.cs
+    projectPath: Assets\Scripts\OverworldController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\StartMenu.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\StartMenu.cs
+    projectPath: Assets\Scripts\StartMenu.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -58,18 +78,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -79,30 +87,6 @@ MonoBehaviour:
   - path: Free Booter\Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\gittrackingstatus.yaml
-    projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -118,15 +102,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\SourceAssetDB
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SourceAssetDB
-    projectPath: Library\SourceAssetDB
+  - path: Free Booter\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-d0b9ea372883bc9429.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-d0b9ea372883bc9429.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-d0b9ea372883bc9429.json
+  - path: Free Booter\Library\SourceAssetDB
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -139,12 +123,6 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
