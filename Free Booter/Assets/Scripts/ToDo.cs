@@ -31,9 +31,9 @@ public class ToDo : MonoBehaviour
             PATCH NOTES BUTTON -- CHECK
             CONTROLS BUTTON -- CHECK
         SET UP PAUSE MENU
-            RESTART GAME
-            EXIT GAME
-    SET UP DEATH SCREEN
+            RESTART GAME -- CHECK
+            EXIT GAME -- CHECK
+    SET UP DEATH SCREEN -- CHECK
     SET UP SOUNDS -- CHECK
     */
 }
