@@ -53,8 +53,8 @@ public class OverworldController : MonoBehaviour
     {
         Application.Quit();
     }
-    public void Main()
+    /*public void Main()
     {
         levelLoader.LoadMainMenu();
-    }
+    }*/
 }
