@@ -35,10 +35,13 @@ public class PlayerShipController : MonoBehaviour
     int sails = 0;
     bool lightFog, heavyFog = false;
     Animator animator;
+    private void Awake()
+    {
+        itemDb = FindObjectOfType<ItemDB>();
+    }
     void Start()
     {
         animator = GetComponent<Animator>();
-        itemDb = FindObjectOfType<ItemDB>();
         shipInventory = GetComponent<Inventory>();
         ResetLootTimer();
         myHealth = GetComponent<Health>();

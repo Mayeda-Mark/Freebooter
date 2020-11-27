@@ -23,24 +23,24 @@ public class ToolbarUI : MonoBehaviour
             toolbarItems.Add(instance.GetComponentInChildren<ToolbarItem>());
         }
     }
-    public void EquipFirstItem()
-    {
-        UpdateToolbar();
-        bool foundFirst = false;
-        foreach(Item item in toolbarInventory.Keys)
-        {
-            if(toolbarInventory[item] > 0 && !foundFirst)
-            {
-                toolbarItems[toolbarItems.FindIndex(i => i.item == item)].EquipItem(item);
-                foundFirst = true;
-            }
-        }
-    }
 
     void Start()
     {
         EquipFirstItem();
         SetSlotNumbers();
+    }
+    public void EquipFirstItem()
+    {
+        UpdateToolbar();
+        bool foundFirst = false;
+        foreach (Item item in toolbarInventory.Keys)
+        {
+            if (toolbarInventory[item] > 0 && !foundFirst)
+            {
+                toolbarItems[toolbarItems.FindIndex(i => i.item == item)].EquipItem(item);
+                foundFirst = true;
+            }
+        }
     }
 
     private void SetSlotNumbers()

@@ -23,6 +23,8 @@ public class Projectile : MonoBehaviour, IPooledObject
         item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
         SetStats();
         myCollider = GetComponent<Collider2D>();
+        distanceTravelled = 0;
+        //lastPosition = this.transform.position;
     }
 
     // Update is called once per frame
