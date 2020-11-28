@@ -10,10 +10,10 @@ public class DeathScreenController : MonoBehaviour
         FindObjectOfType<MusicManager>().ChangeTrack("Death");
         levelLoader = FindObjectOfType<LevelLoader>();
     }
-    public void Main()
+    /*public void Main()
     {
         levelLoader.LoadMainMenu();
-    }
+    }*/
     public void Quit()
     {
         Application.Quit();
