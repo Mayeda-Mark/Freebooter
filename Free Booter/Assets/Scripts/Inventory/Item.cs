@@ -10,25 +10,23 @@ public class Item{
     public int maxQuantity;
     public Dictionary<string, int> stats = new Dictionary<string, int>();
     public bool equipable, unique;
-    public Item(int id, string itemName, string description, int maxQuantity, Dictionary<string, int> stats, bool equipable, bool unique) {
+    public Item(int id, string itemName, string description, Sprite icon, int maxQuantity, Dictionary<string, int> stats, bool equipable) {
         this.id = id;
         this.itemName = itemName;
         this.description = description;
-        this.icon = Resources.Load<Sprite>("Sprites/Items/" + itemName);
+        this.icon = icon;//Resources.Load<Sprite>("Sprites/Items/" + itemName);
         this.maxQuantity = maxQuantity;
         this.stats = stats;
         this.equipable = equipable;
-        this.unique = unique;
     }
     public Item(Item item) {
         this.id = item.id;
         this.itemName = item.itemName;
         this.description = item.description;
-        this.icon = Resources.Load<Sprite>("Sprites/Items/" + item.itemName);
+        this.icon = item.icon;//Resources.Load<Sprite>("Sprites/Items/" + item.itemName);
         this.maxQuantity = item.maxQuantity;
         this.stats = item.stats;
         this.equipable = item.equipable;
-        this.unique = item.unique;
     }
     public int GetMaxQuantity()  { return maxQuantity;  }
 }

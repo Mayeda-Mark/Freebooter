@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-12-02T10:58:26.975-08:00
-  initializedAtString: 2020-12-02T09:25:26.345-08:00
+  lastUpdatedAtString: 2020-12-05T00:28:53.366-08:00
+  initializedAtString: 2020-12-04T23:30:35.939-08:00
   entries:
-  - path: Free Booter\Assets\Resources\Sprites\Items\Treasure Map.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Sprites\Items\Treasure
-      Map.png
-    projectPath: Assets\Resources\Sprites\Items\Treasure Map.png
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\ItemDB.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\ItemDB.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\ItemDB.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Inventory\Item.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Item.cs
     projectPath: Assets\Scripts\Inventory\Item.cs
@@ -35,6 +41,24 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Map.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Map.cs
+    projectPath: Assets\Scripts\Map.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\MapController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\MapController.cs
+    projectPath: Assets\Scripts\MapController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\MapDB.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\MapDB.cs
+    projectPath: Assets\Scripts\MapDB.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Scripts\ToDo.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
     projectPath: Assets\Scripts\ToDo.cs
@@ -56,6 +80,12 @@ MonoBehaviour:
   - path: Free Booter\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\expandedItems
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -83,9 +113,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -101,12 +137,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\SourceAssetDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
@@ -116,6 +146,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
