@@ -23,35 +23,35 @@ public class ItemDB : MonoBehaviour
                 {"SailDamage", 5},
                 {"BaseCost", 5},
                 {"QuantitySoldIn", 10}
-            }, true), 
+            }, true, false), 
             new Item(1, "Chain Shot", "It's like a bolo, but for a boat", icons[1], 99,
             new Dictionary<string, int> {
                 {"HullDamage", 5},
                 {"SailDamage", 20},
                 {"BaseCost", 5},
                 {"QuantitySoldIn", 10}
-            }, true),
+            }, true, false),
             new Item(2, "Gold", "Sparkly orangish stuff that you can buy things with", icons[2], 300 , 
-            new Dictionary<string, int> {}, false),
+            new Dictionary<string, int> {}, false, false),
             new Item(3, "Rum", "The nectar of the Gods. Good on ham", icons[3], 300,
             new Dictionary<string, int> {
                 {"BaseCost", 10},
                 {"QuantitySoldIn", 10}
-            }, false),
+            }, false, false),
             new Item(4, "Silk", "Soft fabric that can be traded for gold", icons[4], 300,
             new Dictionary<string, int> {
                 {"BaseCost", 20},
                 {"QuantitySoldIn", 10}
-            }, false),
+            }, false, false),
             new Item(5, "Spices", "Things that make other things tase good", icons[5], 300,
             new Dictionary<string, int> {
                 {"BaseCost", 30},
                 {"QuantitySoldIn", 10}
-            }, false),
+            }, false, false),
             new Item(6, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1, 
             new Dictionary<string, int> {
                 {"MapIndex", 0 }
-            }, false),
+            }, false, true),
         };
     }
 }

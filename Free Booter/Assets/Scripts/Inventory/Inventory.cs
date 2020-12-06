@@ -11,14 +11,17 @@ public class Inventory : MonoBehaviour
     Tooltip tooltip;
     ToolbarUI toolbarUI;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
+    MapController mapController;
     // private void Awake() {
     // }
     private void Start() {
+        mapController = FindObjectOfType<MapController>();
         toolbarUI = FindObjectOfType<ToolbarUI>();
         shipInventoryUI.gameObject.SetActive(false);
         GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
+        GiveItem(6, 1);
     }
     private void Update() {
         if(Input.GetKeyDown(KeyCode.I)) {
@@ -33,6 +36,11 @@ public class Inventory : MonoBehaviour
     public void GiveItem(int id, int quantity) {
         GiveQuantity(id, quantity);
         toolbarUI.UpdateToolbar();
+        Item givenItem = CheckForItem(id);
+        if(givenItem.map)
+        {
+            mapController.UnlockFromMap(givenItem.stats["MapIndex"]);
+        }
     }
     public void GiveItem(string itemName, int quantity) {
         Item itemToAdd = itemDB.GetItem(itemName);

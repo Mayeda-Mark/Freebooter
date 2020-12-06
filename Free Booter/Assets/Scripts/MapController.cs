@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    MapDB mapDB;
+    private void Awake()
+    {
+        mapDB = GetComponent<MapDB>();
+    }
     void Start()
     {
-        
     }
-
-    // Update is called once per frame
-    void Update()
+    public void UnlockFromMap(int mapId)
     {
-        
+        Map map = mapDB.GetMap(mapId);
+        GameObject target = map.unlockable;
+        if(map.isTreasureMap)
+        {
+            target.SetActive(true);
+        }
     }
 }
