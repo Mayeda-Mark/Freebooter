@@ -12,12 +12,12 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] float turnSpeed = 50f;
     [SerializeField] float reloadTime = 1.5f;
     [SerializeField] float sinkTime = 10f;
-    [SerializeField] int[] lootArray;
-    [SerializeField] int maxLoot, minLoot;
+    /*[SerializeField] int[] lootArray;
+    [SerializeField] int maxLoot, minLoot;*/
     [SerializeField] string[] projectiles;
     string equippedItem;
-    int lootQuantity;
-    Item loot;
+    /*int lootQuantity;
+    Item loot;*/
     int startingHealth;
     TownPortal targetPortal;
     Transform target;
@@ -32,12 +32,14 @@ public class OverworldNPCController : MonoBehaviour
     bool underWind = false;
     [SerializeField] Sails mySails;
     Health sailHealth;
+    LootTable lootTable;
     void Start()
     {
+        lootTable = GetComponent<LootTable>();
         sailHealth = mySails.sailHealth;
-        lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
+        /*lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
         int lootIndex = UnityEngine.Random.Range(0, lootArray.Length);
-        loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);
+        loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);*/
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
         myHullCollider = GetComponent<CapsuleCollider2D>();
@@ -204,9 +206,13 @@ public class OverworldNPCController : MonoBehaviour
         myHullCollider.isTrigger = true;
     }
     #endregion
-    public Item GetLoot()        { return loot;         }
+   /* public Item GetLoot()        { return loot;         }
+    public int GetLootQuantity() { return lootQuantity; }*/
     public bool IsLootable()     { return lootable;     }
-    public int GetLootQuantity() { return lootQuantity; }
+    public void GiveLoot()
+    {
+        lootTable.awardLoot();
+    }
     public void Kill() {
         Destroy(gameObject);
     }

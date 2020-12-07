@@ -154,7 +154,8 @@ public class PlayerShipController : MonoBehaviour
         }
         //LootCountdown();
         if(lootTimer <= 0 && otherCollider is CapsuleCollider2D) {
-                shipInventory.GiveItem(lootableShip.GetLoot().id, lootableShip.GetLootQuantity());
+            /*shipInventory.GiveItem(lootableShip.GetLoot().id, lootableShip.GetLootQuantity());*/
+                lootableShip.GiveLoot();
                 lootableShip.Kill();
                 ResetLootTimer();
                 looting = false;

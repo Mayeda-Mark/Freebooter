@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 2126063279}
   - component: {fileID: 5447734292655877708}
   - component: {fileID: 495044171101677666}
+  - component: {fileID: 2454175099160412066}
   m_Layer: 11
   m_Name: EnemyShip
   m_TagString: Untagged
@@ -287,9 +288,6 @@ MonoBehaviour:
   turnSpeed: 1.5
   reloadTime: 0.5
   sinkTime: 10
-  lootArray: 00000000
-  maxLoot: 20
-  minLoot: 40
   projectiles:
   - Cannon Balls
   - Chain Shot
@@ -455,6 +453,30 @@ MonoBehaviour:
   maxHealth: 100
   forSails: 0
   health: 0
+--- !u!114 &2454175099160412066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057446276290088784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7449043157e70b948a7ef841915ad71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+  - itemName: Cannon Balls
+    itemId: 0
+    lootProbability: 55
+  - itemName: Chain Shot
+    itemId: 1
+    lootProbability: 40
+  - itemName: Map
+    itemId: 6
+    lootProbability: 5
+  maxLoot: 25
+  minLoot: 75
 --- !u!1 &8682879045464581533
 GameObject:
   m_ObjectHideFlags: 0

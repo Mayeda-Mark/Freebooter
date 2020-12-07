@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 2571098728426961029}
   - component: {fileID: 7508729637281099878}
   - component: {fileID: 2697832817362302536}
+  - component: {fileID: 104722380711144155}
   m_Layer: 11
   m_Name: MerchantShip
   m_TagString: Untagged
@@ -178,9 +179,6 @@ MonoBehaviour:
   turnSpeed: 1
   reloadTime: 0.5
   sinkTime: 10
-  lootArray: 02000000030000000400000005000000
-  maxLoot: 100
-  minLoot: 200
   projectiles: []
   landSpotter: {fileID: 1821185202933436728}
   lCollider: {fileID: 2663951623932299630}
@@ -343,6 +341,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   forSails: 0
+  health: 0
+--- !u!114 &104722380711144155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702662266821890426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7449043157e70b948a7ef841915ad71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+  - itemName: Rum
+    itemId: 3
+    lootProbability: 40
+  - itemName: Silk
+    itemId: 4
+    lootProbability: 30
+  - itemName: Spices
+    itemId: 5
+    lootProbability: 20
+  - itemName: Map
+    itemId: 6
+    lootProbability: 10
+  maxLoot: 25
+  minLoot: 75
 --- !u!1 &2571098727462969595
 GameObject:
   m_ObjectHideFlags: 0
