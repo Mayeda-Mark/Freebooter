@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] AudioClip[] sounds;
+    [System.Serializable]
+    public class SoundTable
+    {
+        public string tag;
+        public AudioClip clip;
+    }
+    [SerializeField] List<SoundTable> sounds;
     AudioSource source;
     private void Start()
     {
@@ -13,13 +19,16 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySound(string sound)
     {
-        foreach(AudioClip clip in sounds)
+        var tableSound = sounds.Find(index => index.tag == sound);
+        source.clip = tableSound.clip;
+        source.Play();
+        /*foreach(AudioClip clip in sounds)
         {
             if(clip.name == sound)
             {
                 source.clip = clip;
                 source.Play();
             }
-        }
+        }*/
     }
 }

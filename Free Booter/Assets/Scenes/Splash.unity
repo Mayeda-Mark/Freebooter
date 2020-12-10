@@ -965,6 +965,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7910764649353081917, guid: 59544a07eba569e45978e4e1c03b83bf,
+        type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d8c8498ea8d1fa438b858de35ce1444, type: 3}
+    - target: {fileID: 7910764649353081917, guid: 59544a07eba569e45978e4e1c03b83bf,
+        type: 3}
+      propertyPath: sounds.Array.data[0].tag
+      value: rumble
+      objectReference: {fileID: 0}
     - target: {fileID: 7910764649353081918, guid: 59544a07eba569e45978e4e1c03b83bf,
         type: 3}
       propertyPath: m_Name

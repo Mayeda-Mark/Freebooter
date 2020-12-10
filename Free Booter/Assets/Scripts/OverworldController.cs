@@ -10,10 +10,14 @@ public class OverworldController : MonoBehaviour
     bool isPaused = false;
     LevelLoader levelLoader;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         levelLoader = FindObjectOfType<LevelLoader>();
         music = FindObjectOfType<MusicManager>();
+    }
+    void Start()
+    {
+        print("Calling Start");
         music.ChangeTrack("OverworldDefault");
         pauseMenu.SetActive(false);
     }

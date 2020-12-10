@@ -52,7 +52,7 @@ public class StartMenu : MonoBehaviour
     public void StartGame()
     {
         music.SetMaintainMusic(false);
-        //music.StopMusic();
+        music.StopMusic();
         levelLoader.LoadOverworld();
     }
     public void Options()

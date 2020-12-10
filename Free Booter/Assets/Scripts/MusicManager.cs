@@ -32,15 +32,20 @@ public class MusicManager : MonoBehaviour
     }
     public void ChangeTrack(string track)
     {
+        print("Calling change track");
         if(isPlaying && !maintainMusic)
         {
             source.Stop();
             isPlaying = false;
         }
-        var trackToFind = tracks.Find(index => index.trackName == track);
-        source.clip = trackToFind.clip;
-        source.Play();
-        isPlaying = true;
+        if(!maintainMusic)
+        {
+            var trackToFind = tracks.Find(index => index.trackName == track);
+            source.clip = trackToFind.clip;
+            print(trackToFind.trackName);
+            source.Play();
+            isPlaying = true;
+        }
         /*foreach(AudioClip clip in tracks)
         {
             if(clip.name == track && !maintainMusic)
