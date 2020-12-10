@@ -9,8 +9,8 @@ public class Item{
     public Sprite icon;
     public int maxQuantity;
     public Dictionary<string, int> stats = new Dictionary<string, int>();
-    public bool equipable, map;
-    public Item(int id, string itemName, string description, Sprite icon, int maxQuantity, Dictionary<string, int> stats, bool equipable, bool map) {
+    public bool equipable, isAMap, isUnique;
+    public Item(int id, string itemName, string description, Sprite icon, int maxQuantity, Dictionary<string, int> stats, bool equipable, bool map, bool isUnique) {
         this.id = id;
         this.itemName = itemName;
         this.description = description;
@@ -18,7 +18,8 @@ public class Item{
         this.maxQuantity = maxQuantity;
         this.stats = stats;
         this.equipable = equipable;
-        this.map = map;
+        this.isAMap = map;
+        this.isUnique = isUnique;
     }
     public Item(Item item) {
         this.id = item.id;
@@ -28,7 +29,8 @@ public class Item{
         this.maxQuantity = item.maxQuantity;
         this.stats = item.stats;
         this.equipable = item.equipable;
-        this.map = item.map;
+        this.isAMap = item.isAMap;
+        this.isUnique = item.isUnique;
     }
     public int GetMaxQuantity()  { return maxQuantity;  }
 }

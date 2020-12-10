@@ -36,12 +36,13 @@ public class LootTable : MonoBehaviour
     {
         int randomNumber = UnityEngine.Random.Range(0, total);
         int quantityToGive = UnityEngine.Random.Range(minLoot, maxLoot);
+        print(randomNumber);
         foreach(var id in table)
         {
             if(randomNumber <= id.lootProbability)
             {
                 Item itemToGive = itemDB.GetItem(id.itemId);
-                if(itemToGive.map)
+                if(itemToGive.isAMap)
                 {
                     Item existingMap = inventory.CheckForItem(id.itemId);
                     if(existingMap != null)
@@ -51,12 +52,16 @@ public class LootTable : MonoBehaviour
                     }
                     else
                     {
+                        print("Giving Map");
                         inventory.GiveItem(id.itemId, 1);
+                        return;
                     }
                 } 
                 else
                 {
+                    print("Giving " + itemToGive.itemName);
                     inventory.GiveItem(id.itemId, quantityToGive);
+                    return;
                 }
             }
             else

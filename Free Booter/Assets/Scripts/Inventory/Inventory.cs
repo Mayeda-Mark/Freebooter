@@ -36,7 +36,7 @@ public class Inventory : MonoBehaviour
         GiveQuantity(id, quantity);
         toolbarUI.UpdateToolbar();
         Item givenItem = CheckForItem(id);
-        if(givenItem.map)
+        if(givenItem.isAMap)
         {
             mapController.UnlockFromMap(givenItem.stats["MapIndex"]);
         }

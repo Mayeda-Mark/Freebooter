@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField] AudioClip[] tracks;
+    [System.Serializable]
+    public class TableTrack
+    {
+        public string trackName;
+        public AudioClip clip;
+    }
+    public List<TableTrack> tracks;
     //[SerializeField] List<AudioClip> tracks = new List<AudioClip>();
     /*[SerializeField]*/ AudioSource source;
     bool isPlaying = false;
@@ -31,7 +37,11 @@ public class MusicManager : MonoBehaviour
             source.Stop();
             isPlaying = false;
         }
-        foreach(AudioClip clip in tracks)
+        var trackToFind = tracks.Find(index => index.trackName == track);
+        source.clip = trackToFind.clip;
+        source.Play();
+        isPlaying = true;
+        /*foreach(AudioClip clip in tracks)
         {
             if(clip.name == track && !maintainMusic)
             {
@@ -39,7 +49,7 @@ public class MusicManager : MonoBehaviour
                 source.Play();
                 isPlaying = true;
             }
-        }
+        }*/
     }
     public void SetVolume(float volume)
     {

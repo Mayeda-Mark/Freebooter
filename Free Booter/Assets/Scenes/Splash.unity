@@ -731,6 +731,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 5305429445084086219, guid: f2f04d1b230da384daec6c79731a9415,
+        type: 3}
+      propertyPath: tracks.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 574b0c48b61923741b1ba221e06e4ce1, type: 3}
+    - target: {fileID: 5305429445084086219, guid: f2f04d1b230da384daec6c79731a9415,
+        type: 3}
+      propertyPath: tracks.Array.data[0].trackName
+      value: OverworldDefault
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305429445084086219, guid: f2f04d1b230da384daec6c79731a9415,
+        type: 3}
+      propertyPath: tracks.Array.data[1].trackName
+      value: MenuTrack
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305429445084086219, guid: f2f04d1b230da384daec6c79731a9415,
+        type: 3}
+      propertyPath: tracks.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b52f26615ed61744cb2636eea69c9c9e, type: 3}
+    - target: {fileID: 5305429445084086219, guid: f2f04d1b230da384daec6c79731a9415,
+        type: 3}
+      propertyPath: tracks.Array.data[2].trackName
+      value: Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305429445084086219, guid: f2f04d1b230da384daec6c79731a9415,
+        type: 3}
+      propertyPath: tracks.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c7098ea7406e7d4880822e96c56c271, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2f04d1b230da384daec6c79731a9415, type: 3}
 --- !u!1 &1018139229
