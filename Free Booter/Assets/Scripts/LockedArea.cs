@@ -6,6 +6,7 @@ public class LockedArea : MonoBehaviour
 {
     [SerializeField] Collider2D borderCollider;
     [SerializeField] ParticleSystem fogOfWar;
+    [SerializeField] TownPortal[] towmPortals;
     void Start()
     {
         

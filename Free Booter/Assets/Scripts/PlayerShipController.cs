@@ -132,7 +132,7 @@ public class PlayerShipController : MonoBehaviour
     internal void ExitLockedArea()
     {
         myRigidBody.rotation += 180;
-    }s
+    }
     public void MoveFromWind(float windDir, float windSpeed)
     {
         float xComponent = Mathf.Cos(windDir * Mathf.PI / 180) * windSpeed;
