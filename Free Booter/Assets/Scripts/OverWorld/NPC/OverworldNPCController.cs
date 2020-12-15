@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OverworldNPCController : MonoBehaviour
+public class OverworldNPCController : MonoBehaviour, IPooledObject
 {
     [SerializeField] List<TownPortal> townPortals = default;
     [SerializeField] Sprite[] damageSprites = default;
@@ -31,20 +31,45 @@ public class OverworldNPCController : MonoBehaviour
     [SerializeField] EdgeCollider2D lCannon, rCannon;
     bool underWind = false;
     [SerializeField] Sails mySails;
-    Health sailHealth;
+    Health sailHealth, myHealth;
     LootTable lootTable;
-    void Start()
+    private void Awake()
     {
         lootTable = GetComponent<LootTable>();
         sailHealth = mySails.sailHealth;
-        /*lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
+        myHealth = GetComponent<Health>();
+        myCannons = GetComponent<Cannons>();
+        myRigidBody = GetComponent<Rigidbody2D>();
+        myHullCollider = GetComponent<CapsuleCollider2D>();
+        //SetTarget();
+    }
+    public void OnObjectSpawn()
+    {
+        /*lootTable = GetComponent<LootTable>();
+        sailHealth = mySails.sailHealth;
+        myCannons = GetComponent<Cannons>();
+        myRigidBody = GetComponent<Rigidbody2D>();
+        myHullCollider = GetComponent<CapsuleCollider2D>();*/
+        sailHealth.ResetHealth();
+        myHealth.ResetHealth();
+        GetComponent<SpriteRenderer>().sprite = damageSprites[0];
+        SetTarget();
+        EnableExtraColliders();
+        isAlive = true;
+    }
+    /*void Start()
+    {
+        lootTable = GetComponent<LootTable>();
+        sailHealth = mySails.sailHealth;
+        myHealth = GetComponent<Health>();
+        *//*lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
         int lootIndex = UnityEngine.Random.Range(0, lootArray.Length);
-        loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);*/
+        loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);*//*
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
         myHullCollider = GetComponent<CapsuleCollider2D>();
         SetTarget();
-    }
+    }*/
     void Update()
     {
         if(isAlive) {
@@ -181,7 +206,7 @@ public class OverworldNPCController : MonoBehaviour
     #region Death
     /******************DEATH***************************/
     public void Death() {
-        GetComponent<SpriteRenderer>().sprite = damageSprites[0];
+        GetComponent<SpriteRenderer>().sprite = damageSprites[1];
         lootable = true;
         isAlive = false;
         DisableExtraColliders();
@@ -192,7 +217,8 @@ public class OverworldNPCController : MonoBehaviour
         if(lootable) {
             sinkTime -= Time.deltaTime;
             if(sinkTime <= 0) {
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
@@ -204,6 +230,16 @@ public class OverworldNPCController : MonoBehaviour
         lCannon.enabled = false;
         rCannon.enabled = false;
         myHullCollider.isTrigger = true;
+    }
+    private void EnableExtraColliders()
+    {
+        landSpotter.enabled = true;
+        visualRange.enabled = true;
+        cannonRange.enabled = true;
+        lCollider.enabled = true;
+        lCannon.enabled = true;
+        rCannon.enabled = true;
+        myHullCollider.isTrigger = false;
     }
     #endregion
    /* public Item GetLoot()        { return loot;         }

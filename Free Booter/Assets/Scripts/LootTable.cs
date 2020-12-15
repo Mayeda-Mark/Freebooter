@@ -8,11 +8,12 @@ public class LootTable : MonoBehaviour
     public class TableItem
     {
         public string itemName;
-        public int itemId;
+        public int[] itemIds;
         public int lootProbability;
     }
     //public Dictionary<int /*item id*/, int /*probability*/> table;
     public List<TableItem> table;
+
     Inventory inventory;
     ItemDB itemDB;
     [SerializeField] int maxLoot;
@@ -39,12 +40,14 @@ public class LootTable : MonoBehaviour
         print(randomNumber);
         foreach(var id in table)
         {
+            int index = GetItemId(id.itemIds.Length);
             if(randomNumber <= id.lootProbability)
             {
-                Item itemToGive = itemDB.GetItem(id.itemId);
+                Item itemToGive = itemDB.GetItem(id.itemIds[index]);
                 if(itemToGive.isAMap)
                 {
-                    Item existingMap = inventory.CheckForItem(id.itemId);
+                    //RANDOMIZE MAPS
+                    Item existingMap = inventory.CheckForItem(id.itemIds[index]);
                     if(existingMap != null)
                     {
                         awardLoot();
@@ -53,14 +56,14 @@ public class LootTable : MonoBehaviour
                     else
                     {
                         print("Giving Map");
-                        inventory.GiveItem(id.itemId, 1);
+                        inventory.GiveItem(id.itemIds[index], 1);
                         return;
                     }
                 } 
                 else
                 {
                     print("Giving " + itemToGive.itemName);
-                    inventory.GiveItem(id.itemId, quantityToGive);
+                    inventory.GiveItem(id.itemIds[index], quantityToGive);
                     return;
                 }
             }
@@ -69,5 +72,19 @@ public class LootTable : MonoBehaviour
                 randomNumber -= id.lootProbability;
             }
         }
+    }
+    private int GetItemId(int count) { return Random.Range(0, count); }
+    private int[] RandomizeArray(int[] array)
+    {
+        int[] shuffledArray;
+        for(int i = 0; i < array.Length; i++)
+        {
+            do
+            {
+
+            }
+            while ();
+        }
+        return shuffledArray;
     }
 }

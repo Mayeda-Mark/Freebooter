@@ -5,14 +5,18 @@ using UnityEngine;
 public class OverworldNPCSpawner : MonoBehaviour
 {
     [SerializeField] List<TownPortal> townPortals;
-    [SerializeField] List<OverWorldNPC> NPCs;
+    //[SerializeField] List<OverWorldNPC> NPCs;
+    [SerializeField] string[] NPCs;
     [SerializeField] float spawnDelay = 10f;
     [SerializeField] bool spawning = true;
     GameObject overworldNPCParent;
     const string NPC_PARENT_NAME = "Overworld NPCs";
+    Pooler pooler;
+    [SerializeField] int Debug = default;
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        pooler = FindObjectOfType<Pooler>();
         do{
             yield return StartCoroutine(SpawnShip());
         }
@@ -20,9 +24,10 @@ public class OverworldNPCSpawner : MonoBehaviour
     }
     private IEnumerator SpawnShip() {
         CreateNPCParent();
-        int protalIndex = GetPortalIndex();
+        int portalIndex = GetPortalIndex();
         int NPCIndex = GetNPCIndex();
-        var newNPC = Instantiate(NPCs[NPCIndex], townPortals[protalIndex].transform.position, Quaternion.identity);
+        Debug = NPCIndex;
+        var newNPC = pooler.SpawnFromPool(NPCs[NPCIndex], townPortals[portalIndex].transform.position, Quaternion.identity);/*Instantiate(NPCs[NPCIndex], townPortals[protalIndex].transform.position, Quaternion.identity);*/
         StartCoroutine(newNPC.GetComponent<OverWorldNPC>().Spawn());
         newNPC.transform.parent = overworldNPCParent.transform;
         yield return new WaitForSeconds(spawnDelay);
@@ -31,7 +36,7 @@ public class OverworldNPCSpawner : MonoBehaviour
         return Random.Range(0, townPortals.Count);
     }
     private int GetNPCIndex() {
-        return Random.Range(0, NPCs.Count);
+        return Random.Range(0, NPCs.Length);
     }
     private void CreateNPCParent()
     {
@@ -41,9 +46,11 @@ public class OverworldNPCSpawner : MonoBehaviour
             overworldNPCParent = new GameObject(NPC_PARENT_NAME);
         }
     }
-    // Update is called once per frame
-    void Update()
+    public void AddPortals(TownPortal[] portalsToAdd)
     {
-        
+        foreach(TownPortal portal in portalsToAdd)
+        {
+            townPortals.Add(portal);
+        }
     }
 }
