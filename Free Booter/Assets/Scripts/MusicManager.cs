@@ -32,7 +32,6 @@ public class MusicManager : MonoBehaviour
     }
     public void ChangeTrack(string track)
     {
-        print("Calling change track");
         if(isPlaying && !maintainMusic)
         {
             source.Stop();

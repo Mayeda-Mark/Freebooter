@@ -6,23 +6,18 @@ public class LockedArea : MonoBehaviour
 {
     [SerializeField] Collider2D borderCollider;
     [SerializeField] ParticleSystem fogOfWar;
-    [SerializeField] TownPortal[] towmPortals;
+    [SerializeField] TownPortal[] townPortals;
+    OverworldNPCSpawner spawner;
     void Start()
     {
-        
+        spawner = FindObjectOfType<OverworldNPCSpawner>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     [System.Obsolete]
     public void UnlockArea()
     {
         fogOfWar.loop = false;
         borderCollider.gameObject.SetActive(false);
+        spawner.AddPortals(townPortals);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

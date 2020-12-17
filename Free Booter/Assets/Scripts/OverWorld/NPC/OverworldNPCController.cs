@@ -250,7 +250,8 @@ public class OverworldNPCController : MonoBehaviour, IPooledObject
         lootTable.awardLoot();
     }
     public void Kill() {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
     public void SetUnderWind(bool isUnderWind) => underWind = isUnderWind;
     public bool GetUnderWind() { return underWind; }

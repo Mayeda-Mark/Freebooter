@@ -17,7 +17,6 @@ public class OverworldController : MonoBehaviour
     }
     void Start()
     {
-        print("Calling Start");
         music.ChangeTrack("OverworldDefault");
         pauseMenu.SetActive(false);
     }

@@ -48,9 +48,49 @@ public class ItemDB : MonoBehaviour
                 {"BaseCost", 30},
                 {"QuantitySoldIn", 10}
             }, false, false, false),
-            new Item(6, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1, 
+            new Item(6, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
             new Dictionary<string, int> {
                 {"MapIndex", 0 }
+            }, false, true, true),
+            new Item(7, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 1 }
+            }, false, true, true),
+            new Item(8, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 2 }
+            }, false, true, true),
+            new Item(9, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 3 }
+            }, false, true, true),
+            new Item(10, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 4 }
+            }, false, true, true),
+            new Item(11, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 5 }
+            }, false, true, true),
+            new Item(12, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 6 }
+            }, false, true, true),
+            new Item(13, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 7 }
+            }, false, true, true),
+            new Item(14, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 8 }
+            }, false, true, true),
+            new Item(15, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 9 }
+            }, false, true, true),
+            new Item(16, "Treasure Map", "A graphical description of the best route to take to get to some treasure", icons[6], 1,
+            new Dictionary<string, int> {
+                {"MapIndex", 10 }
             }, false, true, true),
         };
     }

@@ -34,6 +34,15 @@ public class MapDB : MonoBehaviour
         maps = new List<Map>
         {
             new Map(0, true, unlockables[0]),
+            new Map(1, true, unlockables[1]),
+            new Map(2, true, unlockables[2]),
+            new Map(3, true, unlockables[3]),
+            new Map(4, true, unlockables[4]),
+            new Map(5, true, unlockables[5]),
+            new Map(6, true, unlockables[6]),
+            new Map(7, true, unlockables[7]),
+            new Map(8, false, unlockables[8]),
+            new Map(9, false, unlockables[9]),
         };
     }
      

@@ -12,6 +12,8 @@ public class MapController : MonoBehaviour
     void Start()
     {
     }
+
+    [System.Obsolete]
     public void UnlockFromMap(int mapId)
     {
         Map map = mapDB.GetMap(mapId);
@@ -19,6 +21,9 @@ public class MapController : MonoBehaviour
         if(map.isTreasureMap)
         {
             target.SetActive(true);
+        } else
+        {
+            target.GetComponent<LockedArea>().UnlockArea();
         }
     }
 }
