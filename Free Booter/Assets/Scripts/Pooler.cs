@@ -17,19 +17,11 @@ public class Pooler : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-    #endregion
-
-    public List<Pool> pools;
-    public Dictionary<string, Queue<GameObject>> poolDictionary;
-    // Start is called before the first frame update
-    void Start()
-    {
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
-        foreach(Pool pool in pools)
+        foreach (Pool pool in pools)
         {
             Queue<GameObject> objectPool = new Queue<GameObject>();
-            for(int i = 0; i < pool.size; i++)
+            for (int i = 0; i < pool.size; i++)
             {
                 GameObject obj = Instantiate(pool.prefab);
                 obj.SetActive(false);
@@ -38,6 +30,27 @@ public class Pooler : MonoBehaviour
             }
             poolDictionary.Add(pool.tag, objectPool);
         }
+    }
+    #endregion
+
+    public List<Pool> pools;
+    public Dictionary<string, Queue<GameObject>> poolDictionary;
+    // Start is called before the first frame update
+    void Start()
+    {
+       /* poolDictionary = new Dictionary<string, Queue<GameObject>>();
+        foreach (Pool pool in pools)
+        {
+            Queue<GameObject> objectPool = new Queue<GameObject>();
+            for (int i = 0; i < pool.size; i++)
+            {
+                GameObject obj = Instantiate(pool.prefab);
+                obj.SetActive(false);
+                obj.transform.parent = this.transform;
+                objectPool.Enqueue(obj);
+            }
+            poolDictionary.Add(pool.tag, objectPool);
+        }*/
     }
     public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
     {

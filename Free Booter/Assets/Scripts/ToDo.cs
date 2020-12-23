@@ -37,5 +37,7 @@ public class ToDo : MonoBehaviour
     UnityEngine.Events.InvokableCall.Invoke () (at <3dc54541a2574ac7826a004a212a4332>:0)
     UnityEngine.Events.UnityEvent.Invoke () (at <3dc54541a2574ac7826a004a212a4332>:0)
     UnityEngine.UI.Button.Press () (at C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:68)
+
+    SPAWNER IS ONLY RESPAWNING SHIPS THAT I HAVE KILLED BEFORE.
     */
 }

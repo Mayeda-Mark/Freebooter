@@ -16,6 +16,7 @@ public class OverWorldNPC : MonoBehaviour
     public void Kill() {
         if(vulnerable) {
             Destroy(gameObject);
+            //gameObject.SetActive(false);
         }
     }
     public bool IsVulnerable() { return vulnerable; }

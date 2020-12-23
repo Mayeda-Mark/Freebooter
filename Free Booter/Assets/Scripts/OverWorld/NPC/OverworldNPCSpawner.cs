@@ -5,8 +5,8 @@ using UnityEngine;
 public class OverworldNPCSpawner : MonoBehaviour
 {
     [SerializeField] List<TownPortal> townPortals;
-    //[SerializeField] List<OverWorldNPC> NPCs;
-    [SerializeField] string[] NPCs;
+    [SerializeField] List<OverWorldNPC> NPCs;
+    //[SerializeField] string[] NPCs;
     [SerializeField] float spawnDelay = 10f;
     [SerializeField] bool spawning = true;
     GameObject overworldNPCParent;
@@ -14,9 +14,12 @@ public class OverworldNPCSpawner : MonoBehaviour
     Pooler pooler;
     [SerializeField] int Debug = default;
     // Start is called before the first frame update
-    IEnumerator Start()
+    private void Awake()
     {
         pooler = FindObjectOfType<Pooler>();
+    }
+    IEnumerator Start()
+    {
         do{
             yield return StartCoroutine(SpawnShip());
         }
@@ -26,8 +29,8 @@ public class OverworldNPCSpawner : MonoBehaviour
         CreateNPCParent();
         int portalIndex = GetPortalIndex();
         int NPCIndex = GetNPCIndex();
-        Debug = NPCIndex;
-        var newNPC = pooler.SpawnFromPool(NPCs[NPCIndex], townPortals[portalIndex].transform.position, Quaternion.identity);/*Instantiate(NPCs[NPCIndex], townPortals[protalIndex].transform.position, Quaternion.identity);*/
+        //Debug = NPCIndex;
+        var newNPC = /*pooler.SpawnFromPool(NPCs[NPCIndex], townPortals[portalIndex].transform.position, Quaternion.identity);*/Instantiate(NPCs[NPCIndex], townPortals[portalIndex].transform.position, Quaternion.identity);
         StartCoroutine(newNPC.GetComponent<OverWorldNPC>().Spawn());
         newNPC.transform.parent = overworldNPCParent.transform;
         yield return new WaitForSeconds(spawnDelay);
@@ -36,7 +39,7 @@ public class OverworldNPCSpawner : MonoBehaviour
         return Random.Range(0, townPortals.Count);
     }
     private int GetNPCIndex() {
-        return Random.Range(0, NPCs.Length);
+        return Random.Range(0, NPCs./*Length*/Count);
     }
     private void CreateNPCParent()
     {

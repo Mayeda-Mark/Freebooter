@@ -117503,6 +117503,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8411850708701837350, guid: fc04098d45ac76542b570c666d05c462,
         type: 3}
+      propertyPath: NPCs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411850708701837350, guid: fc04098d45ac76542b570c666d05c462,
+        type: 3}
       propertyPath: townPortals.Array.data[0]
       value: 
       objectReference: {fileID: 6883062993188652678}
@@ -117549,12 +117554,13 @@ PrefabInstance:
     - target: {fileID: 8411850708701837350, guid: fc04098d45ac76542b570c666d05c462,
         type: 3}
       propertyPath: NPCs.Array.data[0]
-      value: MerchantShip
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 5750742694513617603, guid: 7c99e8f1e309e5e498be9a52410541b6,
+        type: 3}
     - target: {fileID: 8411850708701837350, guid: fc04098d45ac76542b570c666d05c462,
         type: 3}
       propertyPath: NPCs.Array.data[1]
-      value: MerchantShip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc04098d45ac76542b570c666d05c462, type: 3}
