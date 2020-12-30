@@ -24,6 +24,7 @@ public class LockedArea : MonoBehaviour
         var player = collision.GetComponent<PlayerShipController>();
         if(player)
         {
+            print("Bloop!");
             player.ExitLockedArea();
         }
     }

@@ -13,42 +13,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-12-23T15:41:09.650-08:00
-  initializedAtString: 2020-12-23T14:32:35.459-08:00
+  lastUpdatedAtString: 2020-12-30T11:14:51.611-08:00
+  initializedAtString: 2020-12-30T10:19:06.202-08:00
   entries:
-  - path: Free Booter\Assets\Scripts\OverWorld\NPC\OverWorldNPC.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverWorld\NPC\OverWorldNPC.cs
-    projectPath: Assets\Scripts\OverWorld\NPC\OverWorldNPC.cs
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\MerchantShip.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\OverWorld\NPC\OverworldNPCController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverWorld\NPC\OverworldNPCController.cs
-    projectPath: Assets\Scripts\OverWorld\NPC\OverworldNPCController.cs
+  - path: Free Booter\Assets\Scripts\LockedArea.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\LockedArea.cs
+    projectPath: Assets\Scripts\LockedArea.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\OverWorld\NPC\OverworldNPCSpawner.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverWorld\NPC\OverworldNPCSpawner.cs
-    projectPath: Assets\Scripts\OverWorld\NPC\OverworldNPCSpawner.cs
+  - path: Free Booter\Assets\Scripts\LootTable.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\LootTable.cs
+    projectPath: Assets\Scripts\LootTable.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Pooler.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Pooler.cs
-    projectPath: Assets\Scripts\Pooler.cs
+  - path: Free Booter\Assets\Scripts\PlayerShipController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipController.cs
+    projectPath: Assets\Scripts\PlayerShipController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\ToDo.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
     projectPath: Assets\Scripts\ToDo.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\TownPortal.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\TownPortal.cs
-    projectPath: Assets\Scripts\TownPortal.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -100,6 +95,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -127,18 +134,6 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

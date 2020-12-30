@@ -46,10 +46,45 @@ public class LootTable : MonoBehaviour
                 Item itemToGive = itemDB.GetItem(id.itemIds[index]);
                 if(itemToGive.isAMap)
                 {
-                    bool noUniqueMap = false;
+                    List<int> mapsTriedToGive = new List<int>();
+                    bool mapAlreadyInInventory = false;
+                    do
+                    {
+                        Item existingMap = inventory.CheckForItem(id.itemIds[index]);
+                        if (existingMap != null)
+                        {
+                            mapAlreadyInInventory = true;
+                            index = GetItemId(id.itemIds.Length);
+                        } else
+                        {
+                            mapAlreadyInInventory = false;
+                            inventory.GiveItem(id.itemIds[index], 1);
+                            return;
+                        }
+                        bool mapInList = false;
+                        foreach(int map in mapsTriedToGive)
+                        {
+                            if(map == id.itemIds[index])
+                            {
+                                mapInList = true;
+                            }
+                        }
+                        if(!mapInList)
+                        {
+                            mapsTriedToGive.Add(id.itemIds[index]);
+                        }
+                        if(mapsTriedToGive.Count == id.itemIds.Length)
+                        {
+                            awardLoot();
+                            return;
+                        }
+                    } while (mapAlreadyInInventory);
+
+                   /* bool noUniqueMap = false;
                     int[] randomizedIndexes = RandomizeArray(id.itemIds);
                     foreach(int arrayIndex in randomizedIndexes)
                     {
+                        print("Array Index: " + arrayIndex);
                         Item existingMap = inventory.CheckForItem(id.itemIds[arrayIndex]);
                         if (existingMap != null)
                         {
@@ -64,7 +99,8 @@ public class LootTable : MonoBehaviour
                     {
                         awardLoot();
                         return;
-                    }
+                    }*/
+
                     //RANDOMIZE MAPS
                     /*Item existingMap = inventory.CheckForItem(id.itemIds[index]);
                     if(existingMap != null)
@@ -104,7 +140,7 @@ public class LootTable : MonoBehaviour
             do
             {
                 foundIndex = false;
-                index = Random.Range(0, array.Length);
+                index = Random.Range(0, array.Length - 1);
                 foreach(int item in usedIndexes)
                 {
                     if(index == item)
@@ -113,7 +149,7 @@ public class LootTable : MonoBehaviour
                     }
                 }
             }
-            while (foundIndex);
+            while (!foundIndex);
             usedIndexes.Add(index);
             shuffledArray[i] = array[index];
         }

@@ -35,6 +35,7 @@ public class PlayerShipController : MonoBehaviour
     int sails = 0;
     bool lightFog, heavyFog = false;
     Animator animator;
+    public bool isColliding = false;
     private void Awake()
     {
         itemDb = FindObjectOfType<ItemDB>();
@@ -129,10 +130,22 @@ public class PlayerShipController : MonoBehaviour
         }
         myRigidBody.transform.position += transform.up * moveSpeed;
     }
-    internal void ExitLockedArea()
+    public void ExitLockedArea()
     {
+        if(isColliding)
+        {
+            return;
+        }
+        isColliding = true;
         myRigidBody.rotation += 180;
+        StartCoroutine(ResetExit());
     }
+    IEnumerator ResetExit()
+    {
+        yield return new WaitForEndOfFrame();
+        isColliding = false;
+    }
+
     public void MoveFromWind(float windDir, float windSpeed)
     {
         float xComponent = Mathf.Cos(windDir * Mathf.PI / 180) * windSpeed;
