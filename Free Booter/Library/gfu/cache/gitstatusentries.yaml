@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-12-30T11:14:51.611-08:00
-  initializedAtString: 2020-12-30T10:19:06.202-08:00
+  lastUpdatedAtString: 2021-01-07T09:34:51.645-08:00
+  initializedAtString: 2021-01-07T09:34:51.645-08:00
   entries:
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\MerchantShip.prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\MerchantShip.prefab
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -29,21 +28,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\LootTable.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\LootTable.cs
-    projectPath: Assets\Scripts\LootTable.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\PlayerShipController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\PlayerShipController.cs
-    projectPath: Assets\Scripts\PlayerShipController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\ToDo.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
     projectPath: Assets\Scripts\ToDo.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Weather\WeatherArea.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\WeatherArea.cs
+    projectPath: Assets\Scripts\Weather\WeatherArea.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Weather\WeatherDetector.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Weather\WeatherDetector.cs
+    projectPath: Assets\Scripts\Weather\WeatherDetector.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -101,12 +100,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -125,9 +118,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

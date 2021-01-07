@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeatherArea : MonoBehaviour
+public class WeatherArea : MonoBehaviour, IPooledObject
 {
     [SerializeField] Collider2D myCollider;
     [SerializeField] String[] conditionTags;
@@ -16,7 +16,7 @@ public class WeatherArea : MonoBehaviour
     Pooler pooler;
     string currentConditionsName;
     Dictionary<Rigidbody2D, Vector3> objectsUnderWind = new Dictionary<Rigidbody2D, Vector3>();
-    /*private void*/private IEnumerator Start() {
+    /*private void*//*private IEnumerator Start() {
         pooler = FindObjectOfType<Pooler>();
         //StartCoroutine(StartWeather());
         do
@@ -24,8 +24,15 @@ public class WeatherArea : MonoBehaviour
             yield return StartCoroutine("SetWeather");
         }
         while (playing);
+    }*/
+    private void Awake()
+    {
+        pooler = FindObjectOfType<Pooler>();
     }
-
+    public void OnObjectSpawn()
+    {
+        StartCoroutine(StartWeather());
+    }
     public IEnumerator StartWeather()
     {
         hasStarted = true;
