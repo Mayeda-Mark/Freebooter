@@ -35,7 +35,7 @@ public class OverworldNPCController : MonoBehaviour/*, IPooledObject*/
     Health sailHealth, myHealth;
     LootTable lootTable;
     OverWorldNPC npc;
-    /*private void Awake()
+    private void Awake()
     {
         npc = GetComponent<OverWorldNPC>();
         startingSinkTime = sinkTime;
@@ -45,16 +45,16 @@ public class OverworldNPCController : MonoBehaviour/*, IPooledObject*/
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
         myHullCollider = GetComponent<CapsuleCollider2D>();
-        //SetTarget();
+        SetTarget();
     }
     public void OnObjectSpawn()
     {
         gameObject.SetActive(true);
-        *//*lootTable = GetComponent<LootTable>();
+        lootTable = GetComponent<LootTable>();
         sailHealth = mySails.sailHealth;
         myCannons = GetComponent<Cannons>();
         myRigidBody = GetComponent<Rigidbody2D>();
-        myHullCollider = GetComponent<CapsuleCollider2D>();*//*
+        myHullCollider = GetComponent<CapsuleCollider2D>();
         ResetSinkTime();
         sailHealth.ResetHealth();
         myHealth.ResetHealth();
@@ -62,22 +62,22 @@ public class OverworldNPCController : MonoBehaviour/*, IPooledObject*/
         SetTarget();
         EnableExtraColliders();
         isAlive = true;
-    }*/
-
-    void Start()
-    {
-        npc = GetComponent<OverWorldNPC>();
-        lootTable = GetComponent<LootTable>();
-        sailHealth = mySails.sailHealth;
-        myHealth = GetComponent<Health>();
-        //lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
-        //int lootIndex = UnityEngine.Random.Range(0, lootArray.Length);
-        //loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);
-        myCannons = GetComponent<Cannons>();
-        myRigidBody = GetComponent<Rigidbody2D>();
-        myHullCollider = GetComponent<CapsuleCollider2D>();
-        SetTarget();
     }
+    /*
+        void Start()
+        {
+            npc = GetComponent<OverWorldNPC>();
+            lootTable = GetComponent<LootTable>();
+            sailHealth = mySails.sailHealth;
+            myHealth = GetComponent<Health>();
+            //lootQuantity = UnityEngine.Random.Range(minLoot, maxLoot);
+            //int lootIndex = UnityEngine.Random.Range(0, lootArray.Length);
+            //loot = FindObjectOfType<ItemDB>().GetItem(lootArray[lootIndex]);
+            myCannons = GetComponent<Cannons>();
+            myRigidBody = GetComponent<Rigidbody2D>();
+            myHullCollider = GetComponent<CapsuleCollider2D>();
+            SetTarget();
+        }*/
     void Update()
     {
         if(isAlive) {
@@ -227,7 +227,8 @@ public class OverworldNPCController : MonoBehaviour/*, IPooledObject*/
             if(sinkTime <= 0) {
                 //Destroy(gameObject);
                 //gameObject.SetActive(false);
-                npc.Kill();
+                //npc.Kill();
+                Kill();
             }
         }
     }
@@ -259,8 +260,11 @@ public class OverworldNPCController : MonoBehaviour/*, IPooledObject*/
         lootTable.awardLoot();
     }
     public void Kill() {
-        npc.Kill();
-        //gameObject.SetActive(false);
+        //npc.Kill();
+        if(npc.vulnerable)
+        {
+            gameObject.SetActive(false);
+        }
         //Destroy(gameObject);
     }
     public void SetUnderWind(bool isUnderWind) => underWind = isUnderWind;

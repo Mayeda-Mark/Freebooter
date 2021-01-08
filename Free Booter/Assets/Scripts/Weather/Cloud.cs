@@ -42,7 +42,7 @@ public class Cloud : MonoBehaviour, IPooledObject
             if ((viewPos.x > 1.05 || viewPos.x < -0.05) || (viewPos.y > 1.05 || viewPos.y < -0.05))
             {
                 parent.RemoveCLoud();
-                this.gameObject.SetActive(false);
+                /*this.*/gameObject.SetActive(false);
             }
         }
     }
