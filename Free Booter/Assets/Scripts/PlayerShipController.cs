@@ -155,7 +155,7 @@ public class PlayerShipController : MonoBehaviour
     }
     private float GetSailHealth()
     {
-        return sailHealth.GetHealth() / 100; //START HERE!
+        return (float)sailHealth.GetHealth() / 100; //START HERE!
     }
     //private void OnTriggerEnter2D(Collider2D otherCollider) {
     //    OverworldNPCController lootableShip = otherCollider.GetComponent<OverworldNPCController>();

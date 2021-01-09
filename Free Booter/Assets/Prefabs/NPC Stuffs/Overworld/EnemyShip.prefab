@@ -259,6 +259,7 @@ MonoBehaviour:
   isAttacker: 1
   projectile: {fileID: 4180485456894371011, guid: 572b5724ee5ed4b44b7f3d88e510b7f2,
     type: 3}
+  vulnerable: 0
 --- !u!114 &4977306962804057266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,14 +469,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   table:
   - itemName: Cannon Balls
-    itemId: 0
-    lootProbability: 55
+    itemIds: 
+    lootProbability: 50
   - itemName: Chain Shot
-    itemId: 1
+    itemIds: 
     lootProbability: 40
   - itemName: Map
-    itemId: 6
-    lootProbability: 5
+    itemIds: 060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000
+    lootProbability: 10
   maxLoot: 25
   minLoot: 75
 --- !u!1 &8682879045464581533

@@ -357,18 +357,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   table:
-  - itemName: Rum
-    itemIds: 03000000
-    lootProbability: 1
-  - itemName: Silk
-    itemIds: 04000000
-    lootProbability: 1
+  - itemName: Rum/Silk
+    itemIds: 0300000004000000
+    lootProbability: 55
   - itemName: Spices
     itemIds: 05000000
-    lootProbability: 1
-  - itemName: Map
-    itemIds: 060000000e0000000f000000
-    lootProbability: 97
+    lootProbability: 30
+  - itemName: Maps
+    itemIds: 060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000
+    lootProbability: 15
   maxLoot: 25
   minLoot: 75
 --- !u!1 &2571098727462969595

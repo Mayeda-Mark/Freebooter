@@ -6,16 +6,19 @@ public class HiddenPortal : MonoBehaviour
 {
     //Collider2D collider;
     [SerializeField] string targetScene = default;
+    Inventory inventory;
     private void Awake()
     {
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
+        inventory = FindObjectOfType<Inventory>();
     }
     void Start()
     {
+        inventory.GiveItem(2, 500);
         //collider = GetComponent<Collider2D>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Found it!");
+
     }
 }
