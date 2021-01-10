@@ -871,7 +871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &391878673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1167,18 +1167,20 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "What's different?\n\nShip speed changes:\n\t-Every ship moves a little
-    bit faster. This was the easiest way to ad a minimum speed.\n\nSlight AI changes:\n\t-The
-    AI ships now aim at the player slightly differently. This was done to make it
-    harder to hide outside of the enemy ship's range.\n\nUI Changes: A blue bar has
-    been added to the enemy ship health bars to signify the ship's sail health. Additionally,
-    the player's health has been changed to show health as a bar rather than as text."
+  m_Text: "What's different?\n\nGame map:\n\t- The game map has been expanded to
+    have a locked area on the west side of the map which can be unlocked by picking
+    up a treasure map.\n\nLoot Drops:\n\t- Loot rewards when collecting loot from
+    a sunk ship have been randomized with weighted probabilities.\n\nPlayer ship
+    speed with damaged sails:\n\t- Fixed a bug where any amound of sail damage registered
+    as the sails being completely destroyed. Sails now produce speed proportional
+    to the amount of health they have.\n\nMenu buttons:\n\t- Added buttons in the
+    pause menu and death screen that take you back to the main menu."
 --- !u!222 &577764034
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1704,23 +1706,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "What's new?\nWeather System:\n\t-There are 6 weather systems scattered
-    across the game map. Each one changes to random weather conditions at random
-    time intervals.Each weather condition has a different effect on your boat and
-    the game. The weather conditions and their efffects are:\n\t\t- Sunny: Basically,
-    the default. No effects on your ship or the game.\n\t\t- Light/Heavy Wind: Pushes
-    your boat slightly off course.\n\t\t- Light/Heavy Fog: Obstructs your view. The
-    camera actually zooms in on your ship to further disrupt your vision.\n\t\t-Light/Heavy
-    Storms: Pushes your boat and obstructs your view.\n\nEquippable items/toolbar:\n\t-The
-    player can now equip different weapons. Equippable weapons are displayed in the
-    toolbar across the bottom of the screen. Items can be equipped either by clicking
-    on their coresponding icon or by pressing their hotkey on the keyboard.\n\nSail
-    health and chain shot:\n\t-Each ship now has a seperate health and healt bar
-    specifically for their sails. Damaging a ship's sails will slow the ship down
-    until it reaches its minimum speed.  Additionally, a new type of cannon ball
-    has been added to the game: the chain shot. Chain shot damages the target ship's
-    sails while doing very little damage to the target ship's hull.\n\nSounds:\n\t-The
-    game has sounds and music now. It needed them."
+  m_Text: "What's new?\n\nTreasure maps:\n\t-New items have been added; Treasure
+    Maps. Treasure maps can be collected as loot from sunken ships and unlock hidden
+    treasure and locked areas.\n\nHidden treasure:\n\t-Hidden treasure are areas
+    on the map which give the player 500 gold. Hidden treasure spots are invisible
+    until the player collects a treasure map from a sunken ship.\n\nLocked areas:\n\t-
+    There are two locked areas on the map which the player cannot see into or enter
+    until they collect the correct treasure map from a sunken ship."
 --- !u!222 &725484430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2065,7 +2057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &905425004
 RectTransform:
   m_ObjectHideFlags: 0
