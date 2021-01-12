@@ -141,7 +141,7 @@ public class PlayerShipController : MonoBehaviour
     }
     IEnumerator ResetExit()
     {
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(1);
         isColliding = false;
     }
 
