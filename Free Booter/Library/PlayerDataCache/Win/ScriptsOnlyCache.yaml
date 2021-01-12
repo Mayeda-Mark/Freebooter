@@ -1686,5 +1686,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Options.unity
   - Assets/Scenes/Overworld_test.unity
   - Assets/Scenes/Death.unity
-  playerPath: C:/Users/markr/OneDrive/Desktop/Freebooter/Builds/0.1.2... the real
-    one/Free Booter.exe
+  playerPath: C:/Users/markr/OneDrive/Desktop/Freebooter/Builds/Dev Build/Free Booter.exe

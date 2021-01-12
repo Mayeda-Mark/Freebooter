@@ -132,12 +132,11 @@ public class PlayerShipController : MonoBehaviour
     }
     public void ExitLockedArea()
     {
-        if(isColliding)
+        if(!isColliding)
         {
-            return;
+            myRigidBody.rotation += 180;
         }
         isColliding = true;
-        myRigidBody.rotation += 180;
         StartCoroutine(ResetExit());
     }
     IEnumerator ResetExit()
