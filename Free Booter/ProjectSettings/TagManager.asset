@@ -23,7 +23,7 @@ TagManager:
   - Background
   - Minimap
   - Weather
-  - 
+  - Ground
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Ocean
     uniqueID: 523155495
+    locked: 0
+  - name: Player
+    uniqueID: 1443925145
     locked: 0
   - name: Ships
     uniqueID: 1063570197
