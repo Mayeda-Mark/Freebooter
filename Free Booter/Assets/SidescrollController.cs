@@ -6,7 +6,7 @@ public class SidescrollController : MonoBehaviour
 {
     private void Awake()
     {
-        Physics2D.gravity = new Vector2(0, -9);
+        Physics2D.gravity = new Vector2(0, -10);
         
     }
     // Start is called before the first frame update

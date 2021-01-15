@@ -13,15 +13,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-14T12:35:45.143-08:00
-  initializedAtString: 2021-01-14T12:07:29.748-08:00
+  lastUpdatedAtString: 2021-01-15T10:48:48.343-08:00
+  initializedAtString: 2021-01-15T08:28:13.516-08:00
   entries:
+  - path: Free Booter\Assets\Animations\SideScroll\Player_Jump.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player_Jump.anim
+    projectPath: Assets\Animations\SideScroll\Player_Jump.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Player_Run.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player_Run.anim
+    projectPath: Assets\Animations\SideScroll\Player_Run.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Player_Sidescroll.controller
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player_Sidescroll.controller
+    projectPath: Assets\Animations\SideScroll\Player_Sidescroll.controller
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\PlayerSidescrollController.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\PlayerSidescrollController.cs
     projectPath: Assets\PlayerSidescrollController.cs
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll Cameras.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Sidescroll Cameras.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll Cameras.prefab
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
+    projectPath: Assets\Scenes\Sidescroll_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\SidescrollController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\SidescrollController.cs
+    projectPath: Assets\SidescrollController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\State Driven Cameras Blends.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\State
+      Driven Cameras Blends.asset
+    projectPath: Assets\State Driven Cameras Blends.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -88,9 +132,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\ProjectSettings\InputManager.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\InputManager.asset
-    projectPath: ProjectSettings\InputManager.asset
+  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\ProjectSettings\TagManager.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

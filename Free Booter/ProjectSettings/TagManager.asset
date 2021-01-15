@@ -44,6 +44,12 @@ TagManager:
   - name: Ocean
     uniqueID: 523155495
     locked: 0
+  - name: Background
+    uniqueID: 2853901285
+    locked: 0
+  - name: Foreground
+    uniqueID: 615451613
+    locked: 0
   - name: Player
     uniqueID: 1443925145
     locked: 0

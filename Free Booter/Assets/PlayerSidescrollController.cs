@@ -8,22 +8,48 @@ public class PlayerSidescrollController : MonoBehaviour
     [SerializeField] float jumpSpeed = 15f;
     [SerializeField] float climbSpeed = 8f;
     Rigidbody2D myRigidBody;
+    Animator myAnimator;
+    BoxCollider2D myFeet;
     // Start is called before the first frame update
     void Start()
     {
-        myRigidBody = GetComponentInChildren<Rigidbody2D>();
+        myRigidBody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponentInChildren<Animator>();
+        myFeet = GetComponentInChildren<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Run();
+        FlipSprite();
+        Jump();
     }
     private void Run()
     {
         float controlThrow = Input.GetAxis("Horizontal");
         Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
         myRigidBody.velocity = playerVelocity;
+    }
+    private void FlipSprite()
+    {
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        if (playerHasHorizontalSpeed)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
+        }
+        myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
+    }
+    private void Jump()
+    {
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
+        if (Input.GetButtonDown("Jump"))
+        {
+            Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
+            myRigidBody.velocity += jumpVelocity;
+        }
+        myAnimator.SetBool("isJumping", playerHasVerticalSpeed);
     }
     /*
      * public class Player : MonoBehaviour {
