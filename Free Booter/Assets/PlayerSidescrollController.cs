@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,26 +11,50 @@ public class PlayerSidescrollController : MonoBehaviour
     Rigidbody2D myRigidBody;
     Animator myAnimator;
     BoxCollider2D myFeet;
+    bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking;
     // Start is called before the first frame update
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-        myAnimator = GetComponentInChildren<Animator>();
-        myFeet = GetComponentInChildren<BoxCollider2D>();
+        myAnimator = GetComponent<Animator>();
+        myFeet = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        SetAnimationBools();
+        Attack();
+        Crouch();
         Run();
         FlipSprite();
         Jump();
+        EndFall();
     }
+
+    private void SetAnimationBools()
+    {
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
+        bool playerIsFalling = (myRigidBody.velocity.y) < 0;
+        isAttacking = Input.GetButton("Attack") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        isRunning = playerHasHorizontalSpeed && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
+        isFalling = playerIsFalling && !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
+    }
+
+    private void EndFall()
+    {
+        myAnimator.SetBool("isFalling", isFalling);
+    }
+
     private void Run()
     {
-        float controlThrow = Input.GetAxis("Horizontal");
-        Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
-        myRigidBody.velocity = playerVelocity;
+        if (!isAttacking)
+        {
+            float controlThrow = Input.GetAxis("Horizontal");
+            Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
+            myRigidBody.velocity = playerVelocity;
+        }
     }
     private void FlipSprite()
     {
@@ -38,7 +63,7 @@ public class PlayerSidescrollController : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
         }
-        myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
+        myAnimator.SetBool("isRunning", isRunning);
     }
     private void Jump()
     {
@@ -48,8 +73,39 @@ public class PlayerSidescrollController : MonoBehaviour
         {
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocity;
+            myAnimator.SetBool("isJumping", true);
         }
-        myAnimator.SetBool("isJumping", playerHasVerticalSpeed);
+    }
+    private void SetFalling()
+    {
+        myAnimator.SetBool("isJumping", false);
+        bool playerIsFalling = (myRigidBody.velocity.y) < 0;
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")));
+        myAnimator.SetBool("isFalling", playerIsFalling);
+    }
+    private void Crouch()
+    {
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        if(Input.GetButton("Crouch"))
+        {
+            isCrouching = true;
+        } else
+        {
+            isCrouching = false;
+        }
+        myAnimator.SetBool("isCrouching", isCrouching);
+    }
+    private void Attack()
+    {
+        /*if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        if(Input.GetButton("Attack"))
+        {
+            isAttacking = true;
+        } else
+        {
+            isAttacking = false;
+        }*/
+        myAnimator.SetBool("isAttacking", isAttacking);
     }
     /*
      * public class Player : MonoBehaviour {
