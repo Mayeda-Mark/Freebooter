@@ -32,7 +32,8 @@ public class PlayerSidescrollController : MonoBehaviour
         Jump();
         EndFall();
         Block();
-        CatchLedge();
+        /*CatchLedge();
+        ClimbLedge();*/
     }
 
 
@@ -41,14 +42,14 @@ public class PlayerSidescrollController : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         bool playerIsFalling = (myRigidBody.velocity.y) < 0;
-        isClimbingLedge = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge");
-        isHanging = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && !isClimbingLedge;
+        /*isClimbingLedge = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge");
+        isHanging = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && !isClimbingLedge;*/
         isAttacking = Input.GetButton("Attack") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
         isBlocking = Input.GetButton("Block") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
         isCrouching = Input.GetButton("Crouch") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
         isRunning = playerHasHorizontalSpeed && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
         isSliding = Input.GetButton("Crouch") && isRunning;
-        isFalling = playerIsFalling && !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        isFalling = playerIsFalling && !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));;
     }
 
     private void EndFall()
@@ -83,7 +84,7 @@ public class PlayerSidescrollController : MonoBehaviour
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocity;
             myAnimator.SetBool("isJumping", true);
-        }
+        } 
     }
     private void SetFalling()
     {
@@ -92,12 +93,15 @@ public class PlayerSidescrollController : MonoBehaviour
         if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")));
         myAnimator.SetBool("isFalling", playerIsFalling);
     }
-    private void CatchLedge()
+    
+    /*private void CatchLedge()
     {
         if(isHanging)
         {
             myRigidBody.gravityScale = 0;
             StopMovement();
+            Vector2 playerVelocity = new Vector2(0, 0);
+            myRigidBody.velocity = playerVelocity;
         }
         myAnimator.SetBool("isHanging", isHanging);
     }
@@ -108,6 +112,11 @@ public class PlayerSidescrollController : MonoBehaviour
             myAnimator.SetBool("isClimbingLedge", isClimbingLedge);
         }
     }
+    private void EndCLimbLedge()
+    {
+        myAnimator.SetBool("isClimbingLedge", false);
+        myRigidBody.gravityScale = 1;
+    }*/
     private void Crouch()
     {
         if(isRunning)
@@ -120,6 +129,8 @@ public class PlayerSidescrollController : MonoBehaviour
     }
     private void StopSlide()
     {
+        Vector2 playerVelocity = new Vector2(0, 0);
+        myRigidBody.velocity = playerVelocity;
         StopMovement();
         myAnimator.SetBool("isSliding", false);
     }
@@ -127,6 +138,8 @@ public class PlayerSidescrollController : MonoBehaviour
     {
         if(isAttacking)
         {
+            Vector2 playerVelocity = new Vector2(0, 0);
+            myRigidBody.velocity = playerVelocity;
             StopMovement();
         }
         myAnimator.SetBool("isAttacking", isAttacking);
@@ -135,6 +148,8 @@ public class PlayerSidescrollController : MonoBehaviour
     {
         if (isBlocking)
         {
+            Vector2 playerVelocity = new Vector2(0, 0);
+            myRigidBody.velocity = playerVelocity;
             StopMovement();
         }
         myAnimator.SetBool("isBlocking", isBlocking);
