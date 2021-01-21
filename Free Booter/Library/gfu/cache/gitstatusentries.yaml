@@ -13,100 +13,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-19T15:38:05.952-08:00
-  initializedAtString: 2021-01-19T11:06:11.716-08:00
+  lastUpdatedAtString: 2021-01-20T09:39:53.171-08:00
+  initializedAtString: 2021-01-20T09:19:45.547-08:00
   entries:
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Climb_Ledge.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Climb_Ledge.anim
-    projectPath: Assets\Animations\SideScroll\Player\Player_Climb_Ledge.anim
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Attack.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Attack.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Attack.anim
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
-    projectPath: Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Block.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Block.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Block.anim
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_earth_original.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\minotaur_spritesheets\minotaurus_spritesheet_earth_original.png
-    projectPath: Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_earth_original.png
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Crouch_Idle.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Crouch_Idle.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Crouch_Idle.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_frost.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\minotaur_spritesheets\minotaurus_spritesheet_frost.png
-    projectPath: Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_frost.png
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Fall.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Fall.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Fall.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_lava.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\minotaur_spritesheets\minotaurus_spritesheet_lava.png
-    projectPath: Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_lava.png
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Jump.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_lightning.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\minotaur_spritesheets\minotaurus_spritesheet_lightning.png
-    projectPath: Assets\Downloaded Assets\minotaur_spritesheets\minotaurus_spritesheet_lightning.png
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Run.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Run.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Run.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\minotaur_spritesheets\Readme.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\minotaur_spritesheets\Readme.txt
-    projectPath: Assets\Downloaded Assets\minotaur_spritesheets\Readme.txt
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Stand_Idle.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Stand_Idle.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Stand_Idle.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
     projectPath: Assets\Scenes\Sidescroll_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\PlayerSidescrollController.cs
-    projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollNPC.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\SidescrollNPC.cs
-    projectPath: Assets\Scripts\Side Scroll\SidescrollNPC.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -116,18 +73,6 @@ MonoBehaviour:
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -155,24 +100,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\SourceAssetDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
@@ -188,12 +115,6 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
