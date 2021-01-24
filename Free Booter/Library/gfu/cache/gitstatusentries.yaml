@@ -13,23 +13,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-23T09:50:00.555-08:00
-  initializedAtString: 2021-01-23T05:34:44.165-08:00
+  lastUpdatedAtString: 2021-01-24T10:57:32.165-08:00
+  initializedAtString: 2021-01-24T07:53:33.062-08:00
   entries:
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Sidescroll\Minotaur_Holder.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Side Scroll\HotZone.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\HotZone.cs
+    projectPath: Assets\Scripts\Side Scroll\HotZone.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\PlayerSidescrollController.cs
+    projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollEnemy.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\SidescrollEnemy.cs
     projectPath: Assets\Scripts\Side Scroll\SidescrollEnemy.cs
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollHealth.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\SidescrollHealth.cs
+    projectPath: Assets\Scripts\Side Scroll\SidescrollHealth.cs
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollNPC.cs
+  - path: Free Booter\Assets\Scripts\Side Scroll\TriggerArea.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\SidescrollNPC.cs
-    projectPath: Assets\Scripts\Side Scroll\SidescrollNPC.cs
+      Scroll\TriggerArea.cs
+    projectPath: Assets\Scripts\Side Scroll\TriggerArea.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\ToDo.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
+    projectPath: Assets\Scripts\ToDo.cs
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -39,12 +91,6 @@ MonoBehaviour:
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

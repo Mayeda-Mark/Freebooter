@@ -6,22 +6,26 @@ using UnityEngine;
 public class SidescrollEnemy : MonoBehaviour
 {
     #region Public Variables
-    public Transform rayCast, leftLimit, rightLimit;
-    public LayerMask rayCastMask;
-    public float rayCastLength;
+    public Transform leftLimit, rightLimit;
     public float attackDistance;
     public float moveSpeed;
     public float attackTimer;
+    [HideInInspector] public Transform target;
+    [HideInInspector] public bool inRange;
+    public GameObject hotZone, triggerArea;
     #endregion
     #region Private Variables
-    private RaycastHit2D hit;
-    private Transform target;
     private Animator anim;
     private float distance;
     private bool attackMode;
-    private bool inRange;
     private bool inCooldown;
     private float intTimer;
+
+    internal void Kill()
+    {
+        throw new NotImplementedException();
+    }
+
     private Rigidbody2D myRigidBody;
     #endregion
     private void Awake()
@@ -43,21 +47,7 @@ public class SidescrollEnemy : MonoBehaviour
         }
         if(inRange)
         {
-            hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, rayCastMask);
-            RayCastDebugger();
-        }
-        if(hit.collider != null)
-        {
             EnemyLogic();
-        }
-        else /*if (hit.collider == null)*/
-        {
-            print("Called!");
-            inRange = false;
-        }
-        if(inRange == false)
-        {
-            StopAttack();
         }
     }
 
@@ -108,27 +98,6 @@ public class SidescrollEnemy : MonoBehaviour
         attackMode = false;
         anim.SetBool("isAttacking", false);
     }
-    private void RayCastDebugger()
-    {
-        if(distance > attackDistance)
-        {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
-        }
-        else if(attackDistance > distance)
-        {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D trig)
-    {
-        if(trig.gameObject.tag == "Player")
-        {
-            target = trig.transform;
-            inRange = true;
-            FLip();
-        }
-    }
     public void TriggerCooling()
     {
         inCooldown = true;
@@ -137,7 +106,7 @@ public class SidescrollEnemy : MonoBehaviour
     {
         return transform.position.x > leftLimit.position.x && transform.position.x < rightLimit.position.x;
     }
-    private void SelectTarget()
+    public void SelectTarget()
     {
         float distanceToLeft = Vector2.Distance(transform.position, leftLimit.position);
         float distanceToRight = Vector2.Distance(transform.position, rightLimit.position);
@@ -152,7 +121,7 @@ public class SidescrollEnemy : MonoBehaviour
         FLip();
     }
 
-    private void FLip()
+    public void FLip()
     {
         /*bool enemyHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         if (enemyHasHorizontalSpeed)

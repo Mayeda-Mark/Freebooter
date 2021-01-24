@@ -13,6 +13,12 @@ public class PlayerSidescrollController : MonoBehaviour
     [SerializeField] BoxCollider2D myFeet, ledgeCatcher;
     //[SerializeField] BoxCollider2D frontOfBody;
     bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge;
+
+    internal void Death()
+    {
+        throw new NotImplementedException();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
