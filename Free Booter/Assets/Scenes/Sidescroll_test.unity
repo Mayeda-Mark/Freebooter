@@ -127,6 +127,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5398025945860881736}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &41356755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41356753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78c075ead1731742ac17e8c8c1cf700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
 --- !u!61 &41356759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2610,6 +2624,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42542744, y: 0.42528725}
   m_EdgeRadius: 0
+--- !u!1 &1324123549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5398025944285274843, guid: c1d2d58b91a07d245bf456a09ff1b57b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5398025945860881736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1324123552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324123549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c175a498660d66d46b7794058bba6956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &1333651282
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,11 +3265,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 78918487966158702, guid: 9730da6b88bb5b949bdaf9a84d78312c,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -1.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9730da6b88bb5b949bdaf9a84d78312c, type: 3}

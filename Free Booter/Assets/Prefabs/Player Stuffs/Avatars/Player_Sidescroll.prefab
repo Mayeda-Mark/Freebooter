@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911425585}
   - component: {fileID: 1911425586}
+  - component: {fileID: 991106598}
   m_Layer: 10
   m_Name: Attack Hitbox
   m_TagString: Untagged
@@ -61,6 +62,19 @@ PolygonCollider2D:
       - {x: 0.20517254, y: -0.97599643}
       - {x: 1.4363894, y: -0.6698675}
       - {x: 1.5492527, y: -0.33107036}
+--- !u!114 &991106598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911425584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c175a498660d66d46b7794058bba6956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &78918487966158700
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78918487966158701}
   - component: {fileID: 4666117469768580417}
+  - component: {fileID: 6539561139987107675}
   - component: {fileID: 78918487966158696}
   - component: {fileID: 78918487966158703}
   - component: {fileID: 78918487966158702}
@@ -116,6 +131,29 @@ MonoBehaviour:
   climbSpeed: 8
   myFeet: {fileID: 78918487966158702}
   ledgeCatcher: {fileID: 330146664}
+  isRunning: 0
+  isJumping: 0
+  isFalling: 0
+  isBlocking: 0
+  isCrouching: 0
+  isAttacking: 0
+  isSliding: 0
+  isHanging: 0
+  isClimbingLedge: 0
+--- !u!114 &6539561139987107675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78918487966158700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78c075ead1731742ac17e8c8c1cf700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
 --- !u!212 &78918487966158696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -199,7 +237,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026384711, y: -1.0556567}
+  m_Offset: {x: 0.026384711, y: -1.09}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}

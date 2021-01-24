@@ -12,7 +12,7 @@ public class PlayerSidescrollController : MonoBehaviour
     Animator myAnimator;
     [SerializeField] BoxCollider2D myFeet, ledgeCatcher;
     //[SerializeField] BoxCollider2D frontOfBody;
-    bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge;
+    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge;
 
     internal void Death()
     {

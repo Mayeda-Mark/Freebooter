@@ -13,38 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-24T10:57:32.165-08:00
-  initializedAtString: 2021-01-24T07:53:33.062-08:00
+  lastUpdatedAtString: 2021-01-24T12:16:06.196-08:00
+  initializedAtString: 2021-01-24T11:50:01.201-08:00
   entries:
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Attack.anim
+  - path: Free Booter\Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Player
+      Stuffs\Avatars\Player_Sidescroll.prefab
+    projectPath: Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Idle.anim
+  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
+    projectPath: Assets\Scenes\Sidescroll_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur_Walk.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Sidescroll\Minotaur_Holder.prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\HotZone.cs
+  - path: Free Booter\Assets\Scripts\Side Scroll\DamageDealer.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\HotZone.cs
-    projectPath: Assets\Scripts\Side Scroll\HotZone.cs
+      Scroll\DamageDealer.cs
+    projectPath: Assets\Scripts\Side Scroll\DamageDealer.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -52,33 +40,6 @@ MonoBehaviour:
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\PlayerSidescrollController.cs
     projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollEnemy.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\SidescrollEnemy.cs
-    projectPath: Assets\Scripts\Side Scroll\SidescrollEnemy.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollHealth.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\SidescrollHealth.cs
-    projectPath: Assets\Scripts\Side Scroll\SidescrollHealth.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\TriggerArea.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\TriggerArea.cs
-    projectPath: Assets\Scripts\Side Scroll\TriggerArea.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\ToDo.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
-    projectPath: Assets\Scripts\ToDo.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
