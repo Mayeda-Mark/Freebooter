@@ -13,9 +13,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-24T12:16:06.196-08:00
-  initializedAtString: 2021-01-24T11:50:01.201-08:00
+  lastUpdatedAtString: 2021-01-25T12:20:37.886-08:00
+  initializedAtString: 2021-01-25T05:17:56.307-08:00
   entries:
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Attack.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Attack.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Attack.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Block.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Block.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Block.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Fall.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Fall.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Fall.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Jump.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Run.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Run.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Run.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Slide.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Slide.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Slide.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Player
       Stuffs\Avatars\Player_Sidescroll.prefab
@@ -23,26 +59,13 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
-    projectPath: Assets\Scenes\Sidescroll_test.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\DamageDealer.cs
+  - path: Free Booter\Assets\Scripts\Side Scroll\DamageDetector.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\DamageDealer.cs
-    projectPath: Assets\Scripts\Side Scroll\DamageDealer.cs
+      Scroll\DamageDetector.cs
+    projectPath: Assets\Scripts\Side Scroll\DamageDetector.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\PlayerSidescrollController.cs
-    projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
