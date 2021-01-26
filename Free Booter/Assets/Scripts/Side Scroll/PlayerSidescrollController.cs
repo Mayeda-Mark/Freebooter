@@ -81,7 +81,7 @@ public class PlayerSidescrollController : MonoBehaviour
     private void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
-        if (playerHasHorizontalSpeed)
+        if (playerHasHorizontalSpeed && !knockBack)
         {
             transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
         }
@@ -192,6 +192,11 @@ public class PlayerSidescrollController : MonoBehaviour
             }
         }
         
+    }
+    public void KnockBack(float horizontal, float vertical)
+    {
+        SetKnockBack();
+        myRigidBody.AddForce(new Vector2(horizontal, vertical));
     }
     /*
 * public class Player : MonoBehaviour {

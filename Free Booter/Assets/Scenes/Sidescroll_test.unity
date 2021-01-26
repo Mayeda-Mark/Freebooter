@@ -1995,12 +1995,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42542744, y: 0.42528725}
   m_EdgeRadius: 0
---- !u!50 &606089650 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 4666117469768580419, guid: 9730da6b88bb5b949bdaf9a84d78312c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4744892880787862058}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &610548606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,18 +2167,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42542744, y: 0.42528725}
   m_EdgeRadius: 0
---- !u!114 &684638209 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4666117469768580417, guid: 9730da6b88bb5b949bdaf9a84d78312c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4744892880787862058}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80901752425b1024dac2853b6f8d8920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &837129014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,7 +2196,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 330146663}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &837129016
 BoxCollider2D:
@@ -2642,28 +2624,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1172779280 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6311199278945233369, guid: 9730da6b88bb5b949bdaf9a84d78312c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4744892880787862058}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1172779282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172779280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d770ffc8ae7d4954f81a59180f3c4b33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myRigidBody: {fileID: 606089650}
-  knockBackH: 500
-  knockBackV: 200
-  player: {fileID: 684638209}
 --- !u!1 &1222475024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,6 +2700,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  knockBack: 1
+  horizontalKnockback: 300
+  verticalKnockBack: 300
 --- !u!1 &1333651282
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,7 +2999,7 @@ PrefabInstance:
     - target: {fileID: 1386115562332308736, guid: 70adf567504c5c140bf61706ad3f60db,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.414516
+      value: 6.4145174
       objectReference: {fileID: 0}
     - target: {fileID: 1386115562332308737, guid: 70adf567504c5c140bf61706ad3f60db,
         type: 3}
@@ -3146,7 +3109,7 @@ PrefabInstance:
     - target: {fileID: 1386115564086196667, guid: 70adf567504c5c140bf61706ad3f60db,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.414516
+      value: 6.4145174
       objectReference: {fileID: 0}
     - target: {fileID: 2413037058587697823, guid: 70adf567504c5c140bf61706ad3f60db,
         type: 3}
@@ -3315,7 +3278,7 @@ PrefabInstance:
     - target: {fileID: 78918487966158701, guid: 9730da6b88bb5b949bdaf9a84d78312c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 78918487966158701, guid: 9730da6b88bb5b949bdaf9a84d78312c,
         type: 3}
@@ -3442,6 +3405,16 @@ PrefabInstance:
       propertyPath: myFeet
       value: 
       objectReference: {fileID: 837129016}
+    - target: {fileID: 4666117469768580417, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: knockBackTimer
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602321037399361605, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 78918487966158702, guid: 9730da6b88bb5b949bdaf9a84d78312c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9730da6b88bb5b949bdaf9a84d78312c, type: 3}
