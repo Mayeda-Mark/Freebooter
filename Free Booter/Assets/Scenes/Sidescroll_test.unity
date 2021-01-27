@@ -139,8 +139,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c78c075ead1731742ac17e8c8c1cf700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 40
   health: 0
+  sprite: {fileID: 41356757}
+--- !u!212 &41356757 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5398025945822408859, guid: c1d2d58b91a07d245bf456a09ff1b57b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5398025945860881736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!61 &41356759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2076,6 +2083,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.915944, y: 0.3}
   m_EdgeRadius: 0
+--- !u!212 &615684891 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 78918487966158696, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4744892880787862058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &622833409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3270,6 +3283,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 78918487966158696, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 78918487966158696, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 78918487966158696, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 78918487966158700, guid: 9730da6b88bb5b949bdaf9a84d78312c,
         type: 3}
       propertyPath: m_Name
@@ -3415,6 +3443,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6539561139987107675, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 615684891}
     m_RemovedComponents:
     - {fileID: 78918487966158702, guid: 9730da6b88bb5b949bdaf9a84d78312c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9730da6b88bb5b949bdaf9a84d78312c, type: 3}
@@ -3484,6 +3517,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398025945822408860, guid: c1d2d58b91a07d245bf456a09ff1b57b,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398025945822408860, guid: c1d2d58b91a07d245bf456a09ff1b57b,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398025945822408861, guid: c1d2d58b91a07d245bf456a09ff1b57b,
+        type: 3}
+      propertyPath: deathKickHorizontal
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398025945822408861, guid: c1d2d58b91a07d245bf456a09ff1b57b,
+        type: 3}
+      propertyPath: deathKickVertical
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 5398025945822408863, guid: c1d2d58b91a07d245bf456a09ff1b57b,
         type: 3}

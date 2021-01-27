@@ -16,7 +16,7 @@ public class HotZone : MonoBehaviour
     {
         if(inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Minotaur_Attack"))
         {
-            enemyParent.FLip();
+            enemyParent.Flip();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

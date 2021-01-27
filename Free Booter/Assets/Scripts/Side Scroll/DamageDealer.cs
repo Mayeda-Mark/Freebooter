@@ -12,10 +12,19 @@ public class DamageDealer : MonoBehaviour
     {
         SidescrollHealth targetHealth = collision.GetComponent<SidescrollHealth>();
         PlayerSidescrollController player = collision.GetComponent<PlayerSidescrollController>();
+        SidescrollEnemy enemy = collision.GetComponent<SidescrollEnemy>();
         if(targetHealth)
         {
             if(player == null || !player.isBlocking)
             {
+                /*if(player)
+                {
+                    player.ShowDamage();
+                }
+                if(enemy)
+                {
+                    enemy.ShowDamage();
+                }*/
                 targetHealth.DealDamage(damage);
                 if(knockBack)
                 {

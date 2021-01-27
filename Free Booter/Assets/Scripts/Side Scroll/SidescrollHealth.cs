@@ -6,6 +6,7 @@ public class SidescrollHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int health;
+    public SpriteRenderer sprite;
     void Start()
     {
         ResetHealth();
@@ -13,7 +14,10 @@ public class SidescrollHealth : MonoBehaviour
     public void DealDamage(int damage)
     {
         health -= damage;
-        if (health <= 0)
+        if(health > 0)
+        {
+            ShowDamage();
+        } else if (health <= 0)
         {
             if(GetComponent<PlayerSidescrollController>())
             {
@@ -31,4 +35,14 @@ public class SidescrollHealth : MonoBehaviour
         health = maxHealth;
     }
     public bool isHealthFull() { return health == maxHealth; }
+    public void ShowDamage()
+    {
+        StartCoroutine(ChangeSpriteColorForDamage());
+    }
+    IEnumerator ChangeSpriteColorForDamage()
+    {
+        sprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
+        yield return new WaitForSeconds(0.5f);
+        sprite.color = Color.white;
+    }
 }

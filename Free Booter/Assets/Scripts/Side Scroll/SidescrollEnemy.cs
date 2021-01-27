@@ -13,41 +13,45 @@ public class SidescrollEnemy : MonoBehaviour
     [HideInInspector] public Transform target;
     [HideInInspector] public bool inRange;
     public GameObject hotZone, triggerArea;
+    public float deathKickHorizontal, deathKickVertical;
     #endregion
     #region Private Variables
     private Animator anim;
     private float distance;
     private bool attackMode;
     private bool inCooldown;
+    private bool isAlive;
     private float intTimer;
-
-    internal void Kill()
-    {
-        throw new NotImplementedException();
-    }
-
     private Rigidbody2D myRigidBody;
+    private BoxCollider2D myCollider;
+    private SpriteRenderer mySprite;
     #endregion
     private void Awake()
     {
+        mySprite = GetComponent<SpriteRenderer>();
+        isAlive = true;
         SelectTarget();
         myRigidBody = GetComponent<Rigidbody2D>();
         intTimer = attackTimer;
         anim = GetComponent<Animator>();
+        myCollider = GetComponent<BoxCollider2D>();
     }
     void Update()
     {
-        if(!attackMode)
+        if(isAlive)
         {
-            Move();
-        }
-        if(!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Minotaur_Attack"))
-        {
-            SelectTarget();
-        }
-        if(inRange)
-        {
-            EnemyLogic();
+            if(!attackMode)
+            {
+                Move();
+            }
+            if(!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Minotaur_Attack"))
+            {
+                SelectTarget();
+            }
+            if(inRange)
+            {
+                EnemyLogic();
+            }
         }
     }
 
@@ -118,17 +122,11 @@ public class SidescrollEnemy : MonoBehaviour
         {
             target = rightLimit;
         }
-        FLip();
+        Flip();
     }
 
-    public void FLip()
+    public void Flip()
     {
-        /*bool enemyHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
-        if (enemyHasHorizontalSpeed)
-        {
-            transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
-        }*/
-
         Vector3 rotation = transform.eulerAngles;
         if (transform.position.x > target.position.x)
         {
@@ -139,5 +137,22 @@ public class SidescrollEnemy : MonoBehaviour
             rotation.y = 0f;
         }
         transform.eulerAngles = rotation;
+    }
+    /*public void ShowDamage()
+    {
+        StartCoroutine(ChangeSpriteColorForDamage());
+    }
+    IEnumerator ChangeSpriteColorForDamage()
+    {
+        mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
+        yield return new WaitForSeconds(0.5f);
+        mySprite.color = Color.white;
+    }*/
+    internal void Kill()
+    {
+        isAlive = false;
+        myRigidBody.AddForce(new Vector2(deathKickHorizontal, deathKickVertical));
+        myCollider.isTrigger = true;
+        mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
     }
 }

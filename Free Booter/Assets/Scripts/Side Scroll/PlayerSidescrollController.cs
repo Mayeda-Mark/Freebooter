@@ -14,7 +14,8 @@ public class PlayerSidescrollController : MonoBehaviour
     Animator myAnimator;
     [SerializeField] BoxCollider2D myFeet, ledgeCatcher;
     //[SerializeField] BoxCollider2D frontOfBody;
-    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack;
+    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove;
+    private SpriteRenderer mySprite;
 
     internal void Death()
     {
@@ -24,6 +25,7 @@ public class PlayerSidescrollController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mySprite = GetComponent<SpriteRenderer>();
         startingKnockBackTimer = knockBackTimer;
         knockBack = false;
         ResetKnockBackTimer();
@@ -62,6 +64,7 @@ public class PlayerSidescrollController : MonoBehaviour
         isRunning = playerHasHorizontalSpeed && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
         isSliding = Input.GetButton("Crouch") && isRunning;
         isFalling = playerIsFalling && !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));;
+        canMove = !isAttacking && !isBlocking && !knockBack && !isCrouching && !isHanging && !myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Attack");
     }
 
     private void EndFall()
@@ -71,7 +74,7 @@ public class PlayerSidescrollController : MonoBehaviour
 
     private void Run()
     {
-        if (!isAttacking && !isCrouching && !isHanging && !knockBack)
+        if (canMove)
         {
             float controlThrow = Input.GetAxis("Horizontal");
             Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
@@ -198,6 +201,16 @@ public class PlayerSidescrollController : MonoBehaviour
         SetKnockBack();
         myRigidBody.AddForce(new Vector2(horizontal, vertical));
     }
+    /*public void ShowDamage()
+    {
+        StartCoroutine(ChangeSpriteColorForDamage());
+    }
+    IEnumerator ChangeSpriteColorForDamage()
+    {
+        mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
+        yield return new WaitForSeconds(0.5f);
+        mySprite.color = Color.white;
+    }*/
     /*
 * public class Player : MonoBehaviour {
    //Config
