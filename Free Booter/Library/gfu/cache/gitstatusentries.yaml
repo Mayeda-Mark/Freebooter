@@ -13,20 +13,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-27T12:25:55.125-08:00
-  initializedAtString: 2021-01-27T07:59:16.371-08:00
+  lastUpdatedAtString: 2021-01-28T14:56:06.863-08:00
+  initializedAtString: 2021-01-28T11:02:28.980-08:00
   entries:
-  - path: Free Booter\Assets\Scripts\Side Scroll\DamageDealer.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\DamageDealer.cs
-    projectPath: Assets\Scripts\Side Scroll\DamageDealer.cs
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Jump.anim
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\HotZone.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\HotZone.cs
-    projectPath: Assets\Scripts\Side Scroll\HotZone.cs
+  - path: Free Booter\Assets\LedgeCatcher.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\LedgeCatcher.cs
+    projectPath: Assets\LedgeCatcher.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Player
+      Stuffs\Avatars\Player_Sidescroll.prefab
+    projectPath: Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -37,17 +42,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollEnemy.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\SidescrollEnemy.cs
-    projectPath: Assets\Scripts\Side Scroll\SidescrollEnemy.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollHealth.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\SidescrollHealth.cs
-    projectPath: Assets\Scripts\Side Scroll\SidescrollHealth.cs
+  - path: Free Booter\Assets\Scripts\ToDo.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
+    projectPath: Assets\Scripts\ToDo.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -114,6 +111,18 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

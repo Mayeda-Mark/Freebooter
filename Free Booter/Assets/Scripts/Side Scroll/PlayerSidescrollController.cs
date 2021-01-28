@@ -46,8 +46,8 @@ public class PlayerSidescrollController : MonoBehaviour
         EndFall();
         Block();
         KnockBackTimer();
-        /*CatchLedge();
-        ClimbLedge();*/
+        CatchLedge();
+        /*ClimbLedge();*/
     }
 
 
@@ -56,8 +56,8 @@ public class PlayerSidescrollController : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         bool playerIsFalling = (myRigidBody.velocity.y) < 0;
-        /*isClimbingLedge = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge");
-        isHanging = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && !isClimbingLedge;*/
+        /*isClimbingLedge = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge");*/
+        isHanging = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle")/*&& !isClimbingLedge*/;
         isAttacking = Input.GetButton("Attack") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
         isBlocking = Input.GetButton("Block") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
         isCrouching = Input.GetButton("Crouch") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
@@ -108,21 +108,25 @@ public class PlayerSidescrollController : MonoBehaviour
         if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")));
         myAnimator.SetBool("isFalling", playerIsFalling);
     }
-    
-    /*private void CatchLedge()
+
+    private void CatchLedge()
     {
-        if(isHanging)
+        print(isHanging);
+        if (isHanging)
         {
             myRigidBody.gravityScale = 0;
             StopMovement();
             Vector2 playerVelocity = new Vector2(0, 0);
             myRigidBody.velocity = playerVelocity;
-        }
+        } /*else if(!isHanging)
+        {
+            myRigidBody.gravityScale = 1;
+        }*/
         myAnimator.SetBool("isHanging", isHanging);
     }
-    private void ClimbLedge()
+    /*private void ClimbLedge()
     {
-        if(isClimbingLedge)
+        if (isClimbingLedge)
         {
             myAnimator.SetBool("isClimbingLedge", isClimbingLedge);
         }
