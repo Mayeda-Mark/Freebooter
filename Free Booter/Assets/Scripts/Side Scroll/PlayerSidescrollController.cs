@@ -14,8 +14,8 @@ public class PlayerSidescrollController : MonoBehaviour
     Animator myAnimator;
     [SerializeField] BoxCollider2D myFeet, ledgeCatcher;
     //[SerializeField] BoxCollider2D frontOfBody;
-    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove;
-    private SpriteRenderer mySprite;
+    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge;
+    //private SpriteRenderer mySprite;
 
     internal void Death()
     {
@@ -25,7 +25,8 @@ public class PlayerSidescrollController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mySprite = GetComponent<SpriteRenderer>();
+        canCatchLedge = true;
+        //mySprite = GetComponent<SpriteRenderer>();
         startingKnockBackTimer = knockBackTimer;
         knockBack = false;
         ResetKnockBackTimer();
@@ -47,7 +48,7 @@ public class PlayerSidescrollController : MonoBehaviour
         Block();
         KnockBackTimer();
         CatchLedge();
-        /*ClimbLedge();*/
+        ClimbLedge();
     }
 
 
@@ -56,8 +57,8 @@ public class PlayerSidescrollController : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         bool playerIsFalling = (myRigidBody.velocity.y) < 0;
-        /*isClimbingLedge = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge");*/
-        isHanging = !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle")/*&& !isClimbingLedge*/;
+        isClimbingLedge = (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge")) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Climb_Ledge");
+        isHanging = (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && canCatchLedge &&  ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge"))) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle")/*&& !isClimbingLedge*/;
         isAttacking = Input.GetButton("Attack") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
         isBlocking = Input.GetButton("Block") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
         isCrouching = Input.GetButton("Crouch") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
@@ -111,7 +112,6 @@ public class PlayerSidescrollController : MonoBehaviour
 
     private void CatchLedge()
     {
-        print(isHanging);
         if (isHanging)
         {
             myRigidBody.gravityScale = 0;
@@ -124,18 +124,20 @@ public class PlayerSidescrollController : MonoBehaviour
         }*/
         myAnimator.SetBool("isHanging", isHanging);
     }
-    /*private void ClimbLedge()
+    private void ClimbLedge()
     {
         if (isClimbingLedge)
         {
+            canCatchLedge = false;
             myAnimator.SetBool("isClimbingLedge", isClimbingLedge);
         }
     }
     private void EndCLimbLedge()
     {
+        canCatchLedge = true;
         myAnimator.SetBool("isClimbingLedge", false);
         myRigidBody.gravityScale = 1;
-    }*/
+    }
     private void Crouch()
     {
         if(isRunning)

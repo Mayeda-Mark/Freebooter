@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LedgeCatcher : MonoBehaviour
 {
+    public float xCorrection, yCorrection;
     private Rigidbody2D playerRigidBody;
 
     private void Start()
@@ -14,10 +15,15 @@ public class LedgeCatcher : MonoBehaviour
     {
         if(collision.CompareTag("Ledge"))
         {
-            if(playerRigidBody.transform.position.x > transform.position.x)
+            print("Found one!");
+            if(playerRigidBody.transform.position.x > collision.transform.position.x)
             {
-                Vector2 newPlayerPosition = 
-                playerRigidBody.transform.position
+                Vector2 newPlayerPosition = new Vector2(transform.position.x - xCorrection, transform.position.y - yCorrection);
+                playerRigidBody.transform.position = newPlayerPosition;
+            } else if(playerRigidBody.transform.position.x < collision.transform.position.x) 
+            {
+                Vector2 newPlayerPosition = new Vector2(transform.position.x + xCorrection, transform.position.y - yCorrection);
+                playerRigidBody.transform.position = newPlayerPosition;
             }
         }
     }
