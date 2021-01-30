@@ -3301,6 +3301,16 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 12d144fe63ba2c84781e4f730777cd9f, type: 2}
+    - target: {fileID: 4666117469768580417, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: xClimb
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666117469768580417, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: yClimb
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9730da6b88bb5b949bdaf9a84d78312c, type: 3}
 --- !u!1001 &5398025945860881736

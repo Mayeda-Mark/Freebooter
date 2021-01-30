@@ -9,12 +9,15 @@ public class PlayerSidescrollController : MonoBehaviour
     [SerializeField] float jumpSpeed = 15f;
     [SerializeField] float climbSpeed = 8f;
     [SerializeField] float knockBackTimer = 0.25f;
+    [SerializeField] float xClimb = 0.25f;
+    [SerializeField] float yClimb = 0.25f;
     float startingKnockBackTimer;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
     [SerializeField] BoxCollider2D myFeet, ledgeCatcher;
+    private bool MovingForClimb = false;
     //[SerializeField] BoxCollider2D frontOfBody;
-    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge;
+    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge, canClimb;
     //private SpriteRenderer mySprite;
 
     internal void Death()
@@ -57,6 +60,7 @@ public class PlayerSidescrollController : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         bool playerIsFalling = (myRigidBody.velocity.y) < 0;
+        canClimb = myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle");
         isClimbingLedge = (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge")) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Climb_Ledge");
         isHanging = (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && canCatchLedge &&  ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge"))) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle")/*&& !isClimbingLedge*/;
         isAttacking = Input.GetButton("Attack") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
@@ -126,11 +130,31 @@ public class PlayerSidescrollController : MonoBehaviour
     }
     private void ClimbLedge()
     {
-        if (isClimbingLedge)
+        if (canClimb && Input.GetButton("Climb Ledge"))
         {
+            print("Donezo!");
             canCatchLedge = false;
+            myAnimator.SetBool("isHanging", false);
             myAnimator.SetBool("isClimbingLedge", isClimbingLedge);
+            StartCoroutine(MovePlayerUpLedge());
         }
+    }
+    public IEnumerator MovePlayerUpLedge()
+    {
+        MovingForClimb = true;
+        float currentTime = 0;
+        float startX = transform.position.x;
+        float startY = transform.position.y;
+        while(currentTime < 0.4f && MovingForClimb)
+        {
+            currentTime += Time.deltaTime;
+            float currentX = Mathf.Lerp(startX, xClimb, currentTime / 2f);
+            float currentY = Mathf.Lerp(startY, yClimb, currentTime / 2f);
+            transform.position = new Vector2(currentX, currentY);
+            yield return null;
+        }
+        MovingForClimb = false;
+        yield break;
     }
     private void EndCLimbLedge()
     {
