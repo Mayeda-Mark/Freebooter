@@ -15,7 +15,6 @@ public class LedgeCatcher : MonoBehaviour
     {
         if(collision.CompareTag("Ledge"))
         {
-            print("Found one!");
             if(playerRigidBody.transform.position.x > collision.transform.position.x)
             {
                 Vector2 newPlayerPosition = new Vector2(transform.position.x - xCorrection, transform.position.y - yCorrection);
