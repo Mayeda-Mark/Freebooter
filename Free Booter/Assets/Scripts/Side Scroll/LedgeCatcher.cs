@@ -6,6 +6,7 @@ public class LedgeCatcher : MonoBehaviour
 {
     public float xCorrection, yCorrection;
     private Rigidbody2D playerRigidBody;
+    public bool touchingLedge;
 
     private void Start()
     {
@@ -15,6 +16,7 @@ public class LedgeCatcher : MonoBehaviour
     {
         if(collision.CompareTag("Ledge"))
         {
+            touchingLedge = true;
             if(playerRigidBody.transform.position.x > collision.transform.position.x)
             {
                 Vector2 newPlayerPosition = new Vector2(transform.position.x - xCorrection, transform.position.y - yCorrection);
@@ -25,5 +27,9 @@ public class LedgeCatcher : MonoBehaviour
                 playerRigidBody.transform.position = newPlayerPosition;
             }
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        touchingLedge = false;
     }
 }

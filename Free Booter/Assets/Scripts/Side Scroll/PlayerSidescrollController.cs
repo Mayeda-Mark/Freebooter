@@ -14,10 +14,11 @@ public class PlayerSidescrollController : MonoBehaviour
     float startingKnockBackTimer;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
-    [SerializeField] BoxCollider2D myFeet, ledgeCatcher;
+    [SerializeField] BoxCollider2D myFeet/*, ledgeCatcher*/;
     private bool MovingForClimb = false;
     //[SerializeField] BoxCollider2D frontOfBody;
     [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge, canClimb;
+    private LedgeCatcher ledgeCatcher;
     //private SpriteRenderer mySprite;
 
     internal void Death()
@@ -28,6 +29,7 @@ public class PlayerSidescrollController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ledgeCatcher = GetComponentInChildren<LedgeCatcher>();
         canCatchLedge = true;
         //mySprite = GetComponent<SpriteRenderer>();
         startingKnockBackTimer = knockBackTimer;
@@ -89,7 +91,7 @@ public class PlayerSidescrollController : MonoBehaviour
         } else if(!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             if(playerIsFalling) { isFalling = true; }
-            else if(ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle"))
+            else if(ledgeCatcher.touchingLedge/*ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge"))*/ || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle"))
             {
                 if(Input.GetButton("Climb Ledge")) { isClimbingLedge = true; }
                 else { isHanging = true; }
@@ -169,7 +171,7 @@ public class PlayerSidescrollController : MonoBehaviour
             print("CLimbing!");
             canCatchLedge = false;
             myAnimator.SetBool("isHanging", false);
-            myAnimator.SetBool("isClimbingLedge", isClimbingLedge);
+            myAnimator.SetBool("isClimbingLedge", true);
             StartCoroutine(MovePlayerUpLedge());
         }
     }
