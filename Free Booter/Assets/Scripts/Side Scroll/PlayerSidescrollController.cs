@@ -172,10 +172,10 @@ public class PlayerSidescrollController : MonoBehaviour
             canCatchLedge = false;
             myAnimator.SetBool("isHanging", false);
             myAnimator.SetBool("isClimbingLedge", true);
-            StartCoroutine(MovePlayerUpLedge());
+            StartCoroutine(MovePlayerUpLedge(transform.position));
         }
     }
-    public IEnumerator MovePlayerUpLedge()
+    public IEnumerator MovePlayerUpLedge(Vector2 position)
     {
         MovingForClimb = true;
         float currentTime = 0;
@@ -183,9 +183,13 @@ public class PlayerSidescrollController : MonoBehaviour
         float startY = transform.position.y;
         while(currentTime < 0.4f && MovingForClimb)
         {
+            float xSpot;
+            float ySpot = position.y + yClimb;
+            if(transform.localScale.x > 0) { xSpot = position.x - xClimb; }
+            else { xSpot = position.x + xClimb; }
             currentTime += Time.deltaTime;
-            float currentX = Mathf.Lerp(startX, xClimb, currentTime / 2f);
-            float currentY = Mathf.Lerp(startY, yClimb, currentTime / 2f);
+            float currentX = Mathf.Lerp(startX, xSpot, currentTime / 2f);
+            float currentY = Mathf.Lerp(startY, ySpot, currentTime / 2f);
             transform.position = new Vector2(currentX, currentY);
             yield return null;
         }

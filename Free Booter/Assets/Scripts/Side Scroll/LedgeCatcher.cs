@@ -17,11 +17,12 @@ public class LedgeCatcher : MonoBehaviour
         if(collision.CompareTag("Ledge"))
         {
             touchingLedge = true;
-            if(playerRigidBody.transform.position.x > collision.transform.position.x)
+            if (playerRigidBody.transform.position.x > collision.transform.position.x)
             {
                 Vector2 newPlayerPosition = new Vector2(transform.position.x - xCorrection, transform.position.y - yCorrection);
                 playerRigidBody.transform.position = newPlayerPosition;
-            } else if(playerRigidBody.transform.position.x < collision.transform.position.x) 
+            }
+            else if (playerRigidBody.transform.position.x < collision.transform.position.x)
             {
                 Vector2 newPlayerPosition = new Vector2(transform.position.x + xCorrection, transform.position.y - yCorrection);
                 playerRigidBody.transform.position = newPlayerPosition;
@@ -30,6 +31,9 @@ public class LedgeCatcher : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        touchingLedge = false;
+        if (collision.CompareTag("Ledge"))
+        {
+            touchingLedge = false;
+        }
     }
 }

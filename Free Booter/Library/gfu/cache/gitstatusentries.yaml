@@ -13,12 +13,813 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-02-03T10:34:27.762-08:00
-  initializedAtString: 2021-02-03T09:14:25.656-08:00
+  lastUpdatedAtString: 2021-02-05T09:23:23.813-08:00
+  initializedAtString: 2021-02-05T07:46:29.278-08:00
   entries:
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Fall.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Fall.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Fall.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Jump.anim
     projectPath: Assets\Animations\SideScroll\Player\Player_Jump.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Run.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Run.anim
+    projectPath: Assets\Animations\SideScroll\Player\Player_Run.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Downloaded Assets\PNG\chest2.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\PNG\chest2.png
+    projectPath: Assets\Downloaded Assets\PNG\chest2.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\magic1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\magic1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\magic1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\spell.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\spell.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\spell.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\swing.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\swing.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\swing.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\swing2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\swing2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\swing2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\swing3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\swing3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\swing3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\sword-unsheathe.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\sword-unsheathe2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\sword-unsheathe3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\sword-unsheathe4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\battle\sword-unsheathe5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\battle\sword-unsheathe5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\interface\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\interface\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\interface\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\interface\interface1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\interface\interface1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\interface\interface1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\interface\interface2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\interface\interface2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\interface\interface2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\interface\interface3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\interface\interface3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\interface\interface3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\interface\interface4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\interface\interface4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\interface\interface4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\interface\interface5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\interface\interface5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\interface\interface5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\interface\interface6.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\interface\interface6.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\interface\interface6.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\armor-light.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\armor-light.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\armor-light.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\beads.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\beads.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\beads.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\bottle.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\bottle.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\bottle.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\bubble.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\bubble.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\bubble.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\bubble2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\bubble2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\bubble2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\bubble3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\bubble3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\bubble3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\chainmail1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\chainmail1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\chainmail1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\chainmail2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\chainmail2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\chainmail2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\cloth.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\cloth.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\cloth.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\cloth-heavy.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\cloth-heavy.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\cloth-heavy.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\coin.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\coin.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\coin.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\coin2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\coin2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\coin2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\coin3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\coin3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\coin3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-ringing.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\metal-ringing.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-ringing.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-small1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\metal-small1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-small1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-small2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\metal-small2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-small2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-small3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\metal-small3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\metal-small3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\inventory\wood-small.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\inventory\wood-small.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\inventory\wood-small.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\burp.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\burp.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\burp.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\random1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\random1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\random1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\random2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\random2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\random2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\random3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\random3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\random3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\random4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\random4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\random4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\random5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\random5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\random5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\misc\random6.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\misc\random6.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\misc\random6.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\beetle\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\bite-small.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\beetle\bite-small.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\bite-small.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\bite-small2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\beetle\bite-small2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\bite-small2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\bite-small3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\beetle\bite-small3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\beetle\bite-small3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\giant\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\giant\giant1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\giant\giant2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\giant\giant3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\giant\giant4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\giant\giant5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\giant\giant5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr10.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr10.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr10.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr11.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr11.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr11.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr12.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr12.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr12.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr13.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr13.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr13.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr14.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr14.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr14.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr15.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr15.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr15.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr6.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr6.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr6.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr7.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr7.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr7.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr8.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr8.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr8.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr9.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\gutteral beast\mnstr9.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\gutteral beast\mnstr9.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\misc\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\misc\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\misc\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\misc\wolfman.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\misc\wolfman.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\misc\wolfman.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\ogre\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\ogre\ogre1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\ogre\ogre2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\ogre\ogre3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\ogre\ogre4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\ogre\ogre5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\ogre\ogre5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade10.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade10.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade10.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade11.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade11.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade11.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade12.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade12.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade12.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade13.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade13.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade13.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade14.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade14.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade14.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade15.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade15.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade15.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade6.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade6.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade6.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade7.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade7.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade7.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade8.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade8.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade8.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade9.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\shade\shade9.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\shade\shade9.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime1.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime1.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime1.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime10.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime10.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime10.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime2.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime2.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime2.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime3.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime3.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime3.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime4.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime4.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime4.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime5.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime5.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime5.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime6.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime6.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime6.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime7.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime7.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime7.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime8.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime8.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime8.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime9.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\NPC\slime\slime9.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\NPC\slime\slime9.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\world\.DS_Store
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\world\.DS_Store
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\world\.DS_Store
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\RPG Sound Pack\world\door.wav
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\RPG Sound Pack\world\door.wav
+    projectPath: Assets\Downloaded Assets\RPG Sound Pack\world\door.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\MaterialsTextures\Ramp.physicsMaterial2D
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\MaterialsTextures\Ramp.physicsMaterial2D
+    projectPath: Assets\MaterialsTextures\Ramp.physicsMaterial2D
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
+    projectPath: Assets\Scenes\Sidescroll_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -33,6 +834,13 @@ MonoBehaviour:
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\PlayerSidescrollController.cs
     projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\TriggerArea.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\TriggerArea.cs
+    projectPath: Assets\Scripts\Side Scroll\TriggerArea.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -51,6 +859,12 @@ MonoBehaviour:
   - path: Free Booter\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\expandedItems
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -84,6 +898,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -111,6 +931,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\ProjectSettings\TagManager.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

@@ -13,10 +13,8 @@ public class TriggerArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Entered!");
         if(collision.gameObject.CompareTag("Player"))
         {
-            print("Called!");
             gameObject.SetActive(false);
             enemyParent.target = collision.transform;
             enemyParent.inRange = true;
