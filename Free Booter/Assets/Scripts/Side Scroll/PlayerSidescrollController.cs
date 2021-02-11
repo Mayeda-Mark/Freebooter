@@ -79,7 +79,16 @@ public class PlayerSidescrollController : MonoBehaviour
         //isSliding = Input.GetButton("Crouch") && isRunning;
         //isFalling = playerIsFalling && !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));;
         //print(isHanging);
-        if(myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
+        if(!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            if(ledgeCatcher.touchingLedge/*ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge"))*/ || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle"))
+            {
+                if(Input.GetButton("Climb Ledge")) { isClimbingLedge = true; }
+                else { isHanging = true; }
+            } else if(playerIsFalling) { isFalling = true; }
+        }
+        else if(myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
+            print("Touching ground!");
             if(Input.GetButton("Attack")) { isAttacking = true; }
             else if(Input.GetButton("Block")) { isBlocking = true; }
             else if(Input.GetButton("Crouch")) { isCrouching = true; }
@@ -88,19 +97,10 @@ public class PlayerSidescrollController : MonoBehaviour
                 if(Input.GetButton("Crouch")) { isSliding = true; }
                 else { isRunning = true; }
             }
-        } else if(!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        {
-            if(playerIsFalling) { isFalling = true; }
-            else if(ledgeCatcher.touchingLedge/*ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge"))*/ || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle"))
-            {
-                if(Input.GetButton("Climb Ledge")) { isClimbingLedge = true; }
-                else { isHanging = true; }
-            }
-        }
+        } 
         canMove = !isAttacking && !isBlocking && !knockBack && !isCrouching && !isHanging && !myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Attack");
         canClimb = myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle");
     }
-
     private void EndFall()
     {
         myAnimator.SetBool("isFalling", isFalling);
@@ -147,20 +147,22 @@ public class PlayerSidescrollController : MonoBehaviour
         myAnimator.SetBool("isFalling", playerIsFalling);
     }
 
-    private void CatchLedge()
+    public void CatchLedge()
     {
         print("isHanging: " + isHanging);
         if (isHanging)
         {
+            print("Doing my thing");
             myRigidBody.gravityScale = 0;
             StopMovement();
             Vector2 playerVelocity = new Vector2(0, 0);
             myRigidBody.velocity = playerVelocity;
+            myAnimator.SetBool("isHanging", true/*isHanging*/);
         } /*else if(!isHanging)
         {
             myRigidBody.gravityScale = 1;
         }*/
-        myAnimator.SetBool("isHanging", isHanging);
+        else { myAnimator.SetBool("isHanging", false/*isHanging*/); }
         print(myAnimator.GetBool("isHanging"));
     }
     private void ClimbLedge()
@@ -170,7 +172,7 @@ public class PlayerSidescrollController : MonoBehaviour
             isHanging = false;
             print("CLimbing!");
             canCatchLedge = false;
-            myAnimator.SetBool("isHanging", false);
+            //myAnimator.SetBool("isHanging", false);
             myAnimator.SetBool("isClimbingLedge", true);
             StartCoroutine(MovePlayerUpLedge(transform.position));
         }
