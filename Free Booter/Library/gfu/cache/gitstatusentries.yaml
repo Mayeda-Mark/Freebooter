@@ -13,28 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-02-11T10:10:00.203-08:00
-  initializedAtString: 2021-02-11T09:33:53.610-08:00
+  lastUpdatedAtString: 2021-02-11T14:51:53.608-08:00
+  initializedAtString: 2021-02-11T14:47:20.101-08:00
   entries:
-  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
-    projectPath: Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Stand_Idle.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Stand_Idle.anim
-    projectPath: Assets\Animations\SideScroll\Player\Player_Stand_Idle.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\LedgeCatcher.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\LedgeCatcher.cs
-    projectPath: Assets\Scripts\Side Scroll\LedgeCatcher.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\PlayerSidescrollController.cs
@@ -57,12 +38,6 @@ MonoBehaviour:
   - path: Free Booter\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

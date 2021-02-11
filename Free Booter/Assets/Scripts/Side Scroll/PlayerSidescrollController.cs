@@ -37,7 +37,7 @@ public class PlayerSidescrollController : MonoBehaviour
         ResetKnockBackTimer();
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        myFeet = GetComponent<BoxCollider2D>();
+        //myFeet = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
