@@ -17,8 +17,10 @@ public class PlayerSidescrollController : MonoBehaviour
     [SerializeField] BoxCollider2D myFeet/*, ledgeCatcher*/;
     private bool MovingForClimb = false;
     //[SerializeField] BoxCollider2D frontOfBody;
-    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge, canClimb;
+    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge, canClimb, canFall;
     private LedgeCatcher ledgeCatcher;
+    public float startingFallTimer = 0.2f;
+    private float fallTimer;
     //private SpriteRenderer mySprite;
 
     internal void Death()
@@ -38,6 +40,7 @@ public class PlayerSidescrollController : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         //myFeet = GetComponent<BoxCollider2D>();
+        ResetFallTimer();
     }
 
     // Update is called once per frame
@@ -55,8 +58,6 @@ public class PlayerSidescrollController : MonoBehaviour
         ClimbLedge();
         CatchLedge();
     }
-
-
     private void SetAnimationBools()
     {
         isRunning = false;
@@ -81,6 +82,7 @@ public class PlayerSidescrollController : MonoBehaviour
         //print(isHanging);
         if(!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
+            FallTimer();
             if(ledgeCatcher.touchingLedge/*ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge"))*/ || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle"))
             {
                 if(Input.GetButton("Climb Ledge")) { isClimbingLedge = true; }
@@ -88,7 +90,7 @@ public class PlayerSidescrollController : MonoBehaviour
             } else if(playerIsFalling) { isFalling = true; }
         }
         else if(myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
-            print("Touching ground!");
+            ResetFallTimer();
             if(Input.GetButton("Attack")) { isAttacking = true; }
             else if(Input.GetButton("Block")) { isBlocking = true; }
             else if(Input.GetButton("Crouch")) { isCrouching = true; }
@@ -100,6 +102,19 @@ public class PlayerSidescrollController : MonoBehaviour
         } 
         canMove = !isAttacking && !isBlocking && !knockBack && !isCrouching && !isHanging && !myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Attack");
         canClimb = myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle");
+    }
+    private void ResetFallTimer()
+    {
+        fallTimer = startingFallTimer;
+        canFall = false;
+    }
+    private void FallTimer()
+    {
+        fallTimer -= Time.deltaTime;
+        if(fallTimer <= 0)
+        {
+            canFall = true;
+        }
     }
     private void EndFall()
     {
