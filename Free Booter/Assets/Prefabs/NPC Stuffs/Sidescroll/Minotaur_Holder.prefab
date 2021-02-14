@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5398025944285274844}
   - component: {fileID: 5398025944285274845}
+  - component: {fileID: 1324123552}
   m_Layer: 10
   m_Name: Attack Hitbox
   m_TagString: Untagged
@@ -87,6 +88,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.56635857, y: 0.6475811}
   m_EdgeRadius: 0
+--- !u!114 &1324123552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5398025944285274843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c175a498660d66d46b7794058bba6956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  knockBack: 1
+  horizontalKnockback: 300
+  verticalKnockBack: 300
 --- !u!1 &5398025944711549608
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +211,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.1885606, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -205,7 +222,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.614274, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &5398025945190637059
 MonoBehaviour:
@@ -264,7 +281,8 @@ GameObject:
   - component: {fileID: 5398025945822408860}
   - component: {fileID: 5398025945822408859}
   - component: {fileID: 5398025945822408858}
-  - component: {fileID: 5398025945822408863}
+  - component: {fileID: 41356759}
+  - component: {fileID: 41356755}
   m_Layer: 10
   m_Name: Minotaur
   m_TagString: Untagged
@@ -310,6 +328,8 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 5398025945956496304}
   triggerArea: {fileID: 5398025945190637056}
+  deathKickHorizontal: 200
+  deathKickVertical: 400
 --- !u!50 &5398025945822408860
 Rigidbody2D:
   serializedVersion: 4
@@ -323,9 +343,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 3
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -368,7 +388,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1443925145
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 3177784273770077749, guid: 96baf952ef5f91d4da4cfe4c81e16dc0,
     type: 3}
@@ -401,8 +421,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &5398025945822408863
-CapsuleCollider2D:
+--- !u!61 &41356759
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -414,9 +434,34 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.116265774, y: -0.21460056}
-  m_Size: {x: 1.283001, y: 1.8688498}
-  m_Direction: 0
+  m_Offset: {x: -0.10180426, y: -0.13807535}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 6, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2093782, y: 2.0239973}
+  m_EdgeRadius: 0
+--- !u!114 &41356755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5398025945822408857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78c075ead1731742ac17e8c8c1cf700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 40
+  health: 0
+  sprite: {fileID: 5398025945822408859}
 --- !u!1 &5398025945956496304
 GameObject:
   m_ObjectHideFlags: 0

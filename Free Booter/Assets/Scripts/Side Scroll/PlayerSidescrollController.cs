@@ -164,10 +164,8 @@ public class PlayerSidescrollController : MonoBehaviour
 
     public void CatchLedge()
     {
-        print("isHanging: " + isHanging);
         if (isHanging)
         {
-            print("Doing my thing");
             myRigidBody.gravityScale = 0;
             StopMovement();
             Vector2 playerVelocity = new Vector2(0, 0);
@@ -178,14 +176,12 @@ public class PlayerSidescrollController : MonoBehaviour
             myRigidBody.gravityScale = 1;
         }*/
         else { myAnimator.SetBool("isHanging", false/*isHanging*/); }
-        print(myAnimator.GetBool("isHanging"));
     }
     private void ClimbLedge()
     {
         if (canClimb && Input.GetButton("Climb Ledge"))
         {
             isHanging = false;
-            print("CLimbing!");
             canCatchLedge = false;
             //myAnimator.SetBool("isHanging", false);
             myAnimator.SetBool("isClimbingLedge", true);

@@ -14,7 +14,7 @@ public class HotZone : MonoBehaviour
     }
     private void Update()
     {
-        if(inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Minotaur_Attack"))
+        if(inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack"))
         {
             enemyParent.Flip();
         }

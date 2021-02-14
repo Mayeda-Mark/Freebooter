@@ -13,16 +13,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-02-12T09:31:15.859-08:00
-  initializedAtString: 2021-02-12T05:22:43.708-08:00
+  lastUpdatedAtString: 2021-02-14T06:08:13.174-08:00
+  initializedAtString: 2021-02-14T05:26:56.910-08:00
   entries:
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Treasure Chest.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Treasure Chest.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Treasure Chest.prefab
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror.controller
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror.controller
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Horror.controller
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror_Attack.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror_Attack.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Horror_Attack.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror_Idle.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror_Idle.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Horror_Idle.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror_Move.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Horror_Move.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Horror_Move.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Sidescroll\Minotaur_Holder.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
+    projectPath: Assets\Scenes\Sidescroll_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\HotZone.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\HotZone.cs
+    projectPath: Assets\Scripts\Side Scroll\HotZone.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\PlayerSidescrollController.cs
@@ -30,13 +73,13 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\TreasureChest.cs
+  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollEnemy.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\TreasureChest.cs
-    projectPath: Assets\Scripts\Side Scroll\TreasureChest.cs
+      Scroll\SidescrollEnemy.cs
+    projectPath: Assets\Scripts\Side Scroll\SidescrollEnemy.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -85,12 +128,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
-    projectPath: Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\InspectorExpandedItems.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
@@ -124,24 +161,6 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\ProjectSettings\InputManager.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\InputManager.asset
-    projectPath: ProjectSettings\InputManager.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\ProjectSettings\TagManager.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\TagManager.asset
-    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

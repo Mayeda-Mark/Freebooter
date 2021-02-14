@@ -44,7 +44,7 @@ public class SidescrollEnemy : MonoBehaviour
             {
                 Move();
             }
-            if(!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Minotaur_Attack"))
+            if(!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack"))
             {
                 SelectTarget();
             }
@@ -74,7 +74,7 @@ public class SidescrollEnemy : MonoBehaviour
     void Move()
     {
         anim.SetBool("isWalking", true);
-        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Minotaur_Attack"))
+        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack"))
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
