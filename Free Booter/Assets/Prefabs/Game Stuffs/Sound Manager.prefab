@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 8300000, guid: 5d8c8498ea8d1fa438b858de35ce1444, type: 3}
+  - tag: rumble
+    clip: {fileID: 8300000, guid: 5d8c8498ea8d1fa438b858de35ce1444, type: 3}
 --- !u!82 &1877335984891393929
 AudioSource:
   m_ObjectHideFlags: 0

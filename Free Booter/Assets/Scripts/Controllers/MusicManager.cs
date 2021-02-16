@@ -10,9 +10,12 @@ public class MusicManager : MonoBehaviour
         public string trackName;
         public AudioClip clip;
     }
-    public List<TableTrack> tracks;
+    public List<TableTrack> musicTracks = new List<TableTrack>();
+    public List<TableTrack> ambianceTracks = new List<TableTrack>();
     //[SerializeField] List<AudioClip> tracks = new List<AudioClip>();
-    /*[SerializeField]*/ AudioSource source;
+    /*[SerializeField]*/
+    public AudioSource musicAudioSource;
+    public AudioSource ambianceAudioSource;
     bool isPlaying = false;
     PlayerPrefsController prefs;
     bool maintainMusic;
@@ -20,8 +23,8 @@ public class MusicManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
-        source = GetComponent<AudioSource>();
-        source.volume = PlayerPrefsController.GetMasterVolume();
+        //musicSource = GetComponent<AudioSource>();
+        musicAudioSource.volume = PlayerPrefsController.GetMasterVolume();
         //prefs = FindObjectOfType<PlayerPrefsController>();
     }
 
@@ -34,15 +37,14 @@ public class MusicManager : MonoBehaviour
     {
         if(isPlaying && !maintainMusic)
         {
-            source.Stop();
+            musicAudioSource.Stop();
             isPlaying = false;
         }
         if(!maintainMusic)
         {
-            var trackToFind = tracks.Find(index => index.trackName == track);
-            source.clip = trackToFind.clip;
-            print(trackToFind.trackName);
-            source.Play();
+            var trackToFind = musicTracks.Find(index => index.trackName == track);
+            musicAudioSource.clip = trackToFind.clip;
+            musicAudioSource.Play();
             isPlaying = true;
         }
         /*foreach(AudioClip clip in tracks)
@@ -57,13 +59,44 @@ public class MusicManager : MonoBehaviour
     }
     public void SetVolume(float volume)
     {
-        source.volume = volume;
+        musicAudioSource.volume = volume;
     }
     public void SetMaintainMusic(bool set) { maintainMusic = set; }
     public void StopMusic()
     {
-        source.Stop();
+        musicAudioSource.Stop();
         isPlaying = false;
         maintainMusic = false;
+    }
+    public void ChangeAmbianceTrackWithoutFade(string tag)
+    {
+        var clipToPlay = ambianceTracks.Find(tracks => tracks.trackName == tag);
+        ambianceAudioSource.clip = clipToPlay.clip;
+        //ambianceAudioSource.volume = clipToPlay.volume;
+        ambianceAudioSource.Play();
+    }
+    public void ChangeAmbianceTrackForState(string state)
+    {
+        StartCoroutine(FadeOutAndPlayNextAmbianceTrack(state));
+    }
+
+    public IEnumerator FadeOutAndPlayNextAmbianceTrack(string state)
+    {
+        float currentTIme = 0;
+        float start = ambianceAudioSource.volume;
+        while (currentTIme < 2f)
+        {
+            currentTIme += Time.deltaTime;
+            ambianceAudioSource.volume = Mathf.Lerp(start, 0, currentTIme / 2f);
+            if (ambianceAudioSource.volume == 0)
+            {
+                ambianceAudioSource.Stop();
+                ChangeAmbianceTrackWithoutFade(state);
+                //musicAudioSource.volume = start;
+                //audioSource.Play();
+            }
+            yield return null;
+        }
+        yield break;
     }
 }
