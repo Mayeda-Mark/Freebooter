@@ -9592,7 +9592,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
+    oldSize: {x: 6.25, y: 6.25}
     newSize: {x: 6, y: 6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10136,7 +10136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4810587955465565726}
   m_Layer: 0
-  m_Name: Horror_Holder
+  m_Name: Golem_Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10166,7 +10166,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4810587955549194942}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b54ae79fed7eef148ba346c8cfff7bec, type: 3}
   m_Name: 
@@ -10242,10 +10242,10 @@ SpriteRenderer:
   m_SortingLayerID: 1443925145
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1251183615180328722, guid: 118cc1be4d235db43bd9cf4bd9318397,
+  m_Sprite: {fileID: -5688739654425014672, guid: 3447f08fad6bea548938362635e70d0a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6, y: 6}
@@ -10264,7 +10264,7 @@ Animator:
   m_GameObject: {fileID: 4810587955549194942}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 725efd3780f73cf4fb59aa4e5abc0c35, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d4856ebeca4fd046a0b9d628d31b0d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10288,13 +10288,37 @@ GameObject:
   - component: {fileID: 4810587955549194941}
   - component: {fileID: 588572686312634352}
   - component: {fileID: 588572686312634356}
+  - component: {fileID: 4810587955549194943}
   m_Layer: 11
-  m_Name: Horror
+  m_Name: Golem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4810587955549194943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4810587955549194942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2416654a7fef2ce4c97dedf854e96f6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLimit: {fileID: 4810587956643473550}
+  rightLimit: {fileID: 4810587957066617572}
+  attackDistance: 0
+  moveSpeed: 1
+  attackTimer: 2
+  target: {fileID: 0}
+  inRange: 0
+  hotZone: {fileID: 4810587955683543447}
+  triggerArea: {fileID: 4810587955916727335}
+  deathKickHorizontal: 0
+  deathKickVertical: 0
 --- !u!4 &4810587955683543444
 Transform:
   m_ObjectHideFlags: 0

@@ -6,13 +6,14 @@ public class LevelController : MonoBehaviour
 {
     public bool isSideScroll = default;
     public string levelMusic = default;
-    public string ambientNoise = default;
+    public string ambiantNoise = default;
     //SoundManager sound;
     MusicManager music;
     // Start is called before the first frame update
     void Start()
     {
         //sound = FindObjectOfType<SoundManager>();
+
         music = FindObjectOfType<MusicManager>();
         if(isSideScroll)
         {
@@ -25,9 +26,9 @@ public class LevelController : MonoBehaviour
         {
             music.ChangeTrack(levelMusic);
         }
-        if(ambientNoise != null)
+        if(ambiantNoise != null)
         {
-            music.ChangeAmbianceTrackWithoutFade(ambientNoise);
+            music.ChangeAmbianceTrackWithoutFade(ambiantNoise);
         }
     }
 

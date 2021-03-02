@@ -44,6 +44,7 @@ public class MusicManager : MonoBehaviour
         {
             var trackToFind = musicTracks.Find(index => index.trackName == track);
             musicAudioSource.clip = trackToFind.clip;
+            print(trackToFind.trackName);
             musicAudioSource.Play();
             isPlaying = true;
         }
@@ -75,6 +76,7 @@ public class MusicManager : MonoBehaviour
         //ambianceAudioSource.volume = clipToPlay.volume;
         ambianceAudioSource.Play();
     }
+
     public void ChangeAmbianceTrackForState(string state)
     {
         StartCoroutine(FadeOutAndPlayNextAmbianceTrack(state));
