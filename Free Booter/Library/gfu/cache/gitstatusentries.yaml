@@ -13,227 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-02T14:44:43.332-08:00
-  initializedAtString: 2021-03-02T10:45:23.782-08:00
+  lastUpdatedAtString: 2021-03-04T10:55:52.195-08:00
+  initializedAtString: 2021-03-04T09:21:49.414-08:00
   entries:
   - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem.controller
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem.controller
     projectPath: Assets\Animations\SideScroll\Enemies\Testers\Golem.controller
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Idle.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Idle.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Golem_Idle.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Projectile.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Projectile.anim
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Golem_Projectile.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\arm_projectile_glowing.ase
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\ASE files\arm_projectile_glowing.ase
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\arm_projectile_glowing.ase
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\Character.aseprite
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\ASE files\Character.aseprite
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\Character.aseprite
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\flatten_character.aseprite
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\ASE files\flatten_character.aseprite
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\flatten_character.aseprite
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\laser.ase
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\ASE files\laser.ase
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\laser.ase
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\layered_character.aseprite
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\ASE files\layered_character.aseprite
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\ASE files\layered_character.aseprite
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\PNG sheet\Character_sheet.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\PNG sheet\Character_sheet.png
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\PNG sheet\Character_sheet.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile.png
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile_glowing.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile_glowing.png
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile_glowing.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\Laser_sheet.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Mecha-stone Golem 0.1\weapon PNG\Laser_sheet.png
-    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\Laser_sheet.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Downloaded Assets\monster_sfx_pack\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\monster_sfx_pack\.DS_Store
-    projectPath: Assets\Downloaded Assets\monster_sfx_pack\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Socapex - Evol Online SFX - Punches
-      and hits\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Socapex - Evol Online SFX - Punches and hits\.DS_Store
-    projectPath: Assets\Downloaded Assets\Socapex - Evol Online SFX - Punches and
-      hits\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\battle\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\battle\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\battle\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\interface\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\interface\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\interface\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\inventory\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\inventory\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\inventory\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\misc\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\misc\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\misc\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\beetle\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\beetle\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\beetle\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\giant\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\giant\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\giant\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\gutteral
-      beast\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\gutteral beast\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\gutteral beast\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\misc\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\misc\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\misc\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\ogre\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\ogre\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\ogre\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\shade\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\shade\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\shade\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\slime\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\NPC\slime\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\NPC\slime\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Downloaded Assets\Sounds\RPG Sound Pack\world\.DS_Store
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Sounds\RPG Sound Pack\world\.DS_Store
-    projectPath: Assets\Downloaded Assets\Sounds\RPG Sound Pack\world\.DS_Store
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Sidescroll\Horror_Holder.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Sidescroll\Horror_Holder.prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Sidescroll\Horror_Holder.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Controllers\LevelController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\LevelController.cs
-    projectPath: Assets\Scripts\Controllers\LevelController.cs
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Controllers\MusicManager.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\MusicManager.cs
-    projectPath: Assets\Scripts\Controllers\MusicManager.cs
+  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
+    projectPath: Assets\Scenes\Sidescroll_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -242,8 +33,29 @@ MonoBehaviour:
       Scroll\GolemController.cs
     projectPath: Assets\Scripts\Side Scroll\GolemController.cs
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Side Scroll\HotZone.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\HotZone.cs
+    projectPath: Assets\Scripts\Side Scroll\HotZone.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\RangedAndMeleeController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\RangedAndMeleeController.cs
+    projectPath: Assets\Scripts\Side Scroll\RangedAndMeleeController.cs
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Side Scroll\TriggerArea.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\TriggerArea.cs
+    projectPath: Assets\Scripts\Side Scroll\TriggerArea.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB

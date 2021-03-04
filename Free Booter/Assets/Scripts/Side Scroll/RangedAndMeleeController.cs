@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GolemController : MonoBehaviour
+public class RangedAndMeleeController : MonoBehaviour
 {
     #region Public Variables
     public Transform leftLimit, rightLimit;
-    public float attackDistance;
+    public float meleeAttackDistance;
+    public float rangedAttackDistance;
     public float moveSpeed;
     public float attackTimer;
     [HideInInspector] public Transform target;
@@ -43,7 +44,7 @@ public class GolemController : MonoBehaviour
             {
                 Move();
             }
-            if (!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Golem_Attack"))
+            if (!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Melee") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Ranged"))
             {
                 SelectTarget();
             }
@@ -57,24 +58,25 @@ public class GolemController : MonoBehaviour
     private void EnemyLogic()
     {
         distance = Vector2.Distance(transform.position, target.position);
-        if (distance > attackDistance)
+        if (distance > rangedAttackDistance)
         {
             StopAttack();
         }
-        else if (attackDistance >= distance && !inCooldown)
+        else if (rangedAttackDistance >= distance && !inCooldown)
         {
             Attack();
         }
         if (inCooldown)
         {
             Cooldown();
-            anim.SetBool("isAttacking", false);
+            anim.SetBool("isAttackingMelee", false);
+            anim.SetBool("isAttackingRanged", false);
         }
     }
     void Move()
     {
         anim.SetBool("isWalking", true);
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack"))
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Melee") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Ranged"))
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
@@ -85,8 +87,16 @@ public class GolemController : MonoBehaviour
         attackTimer = intTimer;
         attackMode = true;
         anim.SetBool("isWalking", false);
-        anim.SetBool("isAttacking", true);
+        if(meleeAttackDistance >= distance && !inCooldown)
+        {
+            anim.SetBool("isAttackingMelee", true);
+        }else
+        {
+            anim.SetBool("isAttackingRanged", true);
+        }
     }
+
+
     void Cooldown()
     {
         attackTimer -= Time.deltaTime;
@@ -100,7 +110,8 @@ public class GolemController : MonoBehaviour
     {
         inCooldown = false;
         attackMode = false;
-        anim.SetBool("isAttacking", false);
+        anim.SetBool("isAttackingMelee", false);
+        anim.SetBool("isAttackingRanged", false);
     }
     public void TriggerCooling()
     {
