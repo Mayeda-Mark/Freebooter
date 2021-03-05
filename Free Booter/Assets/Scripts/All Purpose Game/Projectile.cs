@@ -9,7 +9,9 @@ public class Projectile : MonoBehaviour, IPooledObject
     [SerializeField] float range;
     [SerializeField] int hullDamage;
     [SerializeField] int sailDamage;
+    [SerializeField] int sideScrollDamage;
     [SerializeField] int itemIndex;
+    [SerializeField] bool sideScroll;
     float distanceToClearShip = 0.2f;
     bool canDamage = false;
     Item item;
@@ -20,7 +22,10 @@ public class Projectile : MonoBehaviour, IPooledObject
     public void OnObjectSpawn()
     {
         canDamage = false;
-        item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
+        if(!sideScroll)
+        {
+            item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
+        }
         SetStats();
         myCollider = GetComponent<Collider2D>();
         distanceTravelled = 0;
@@ -32,9 +37,13 @@ public class Projectile : MonoBehaviour, IPooledObject
     {
         Move();
     }
-    private void SetStats() {
-        hullDamage = item.stats["HullDamage"];
-        sailDamage = item.stats["SailDamage"];
+    private void SetStats()
+    {
+        if(!sideScroll)
+        {
+            hullDamage = item.stats["HullDamage"];
+            sailDamage = item.stats["SailDamage"];
+        }
     }
 
     private void Move()
@@ -48,7 +57,7 @@ public class Projectile : MonoBehaviour, IPooledObject
         if(distanceTravelled >= range) {
             DestroyProjectile();
         }
-        if(myCollider.IsTouchingLayers(LayerMask.GetMask("Land"))) {
+        if(myCollider.IsTouchingLayers(LayerMask.GetMask("Land")) || myCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
             DestroyProjectile();
         }
     }
@@ -61,8 +70,14 @@ public class Projectile : MonoBehaviour, IPooledObject
     }
     private void OnTriggerEnter2D(Collider2D otherCollider) {
         if(canDamage && otherCollider.GetType() == typeof(CapsuleCollider2D)) {
-            otherCollider.GetComponent<Health>().DealDamage(hullDamage);
-            otherCollider.GetComponentInChildren<Sails>().sailHealth.DealDamage(sailDamage);
+            if(!sideScroll)
+            {
+                otherCollider.GetComponent<Health>().DealDamage(hullDamage);
+                otherCollider.GetComponentInChildren<Sails>().sailHealth.DealDamage(sailDamage);
+            } else
+            {
+                otherCollider.GetComponent<SidescrollHealth>().DealDamage(sideScrollDamage);
+            }
             DestroyProjectile();
         }
     }

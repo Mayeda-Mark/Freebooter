@@ -104,6 +104,7 @@ public class SidescrollEnemy : MonoBehaviour
     }
     public void TriggerCooling()
     {
+        print("Called Cooling");
         inCooldown = true;
     }
     private bool InsideLimits()

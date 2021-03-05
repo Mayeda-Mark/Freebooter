@@ -13,28 +13,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-04T10:55:52.195-08:00
-  initializedAtString: 2021-03-04T09:21:49.414-08:00
+  lastUpdatedAtString: 2021-03-05T10:29:09.705-08:00
+  initializedAtString: 2021-03-05T07:35:27.912-08:00
   entries:
-  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem.controller
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem.controller
-    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Golem.controller
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Projectile.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Projectile.anim
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Golem_Projectile.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile.png
+    projectPath: Assets\Downloaded Assets\Mecha-stone Golem 0.1\weapon PNG\arm_projectile.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Cannon Ball.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Projectiles\Cannon Ball.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Cannon Ball.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Chain Shot.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Projectiles\Chain Shot.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Projectiles\Chain Shot.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Projectiles\Cannon Ball.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Projectiles\Cannon Ball.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Projectiles\Cannon Ball.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Projectiles\Chain Shot.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Projectiles\Chain Shot.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Projectiles\Chain Shot.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Projectiles\Golem Fist.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Projectiles\Golem Fist.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Projectiles\Golem Fist.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
     projectPath: Assets\Scenes\Sidescroll_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\GolemController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\GolemController.cs
-    projectPath: Assets\Scripts\Side Scroll\GolemController.cs
+  - path: Free Booter\Assets\Scripts\All Purpose Game\Projectile.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\Projectile.cs
+    projectPath: Assets\Scripts\All Purpose Game\Projectile.cs
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Side Scroll\HotZone.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\HotZone.cs
@@ -47,12 +95,12 @@ MonoBehaviour:
       Scroll\RangedAndMeleeController.cs
     projectPath: Assets\Scripts\Side Scroll\RangedAndMeleeController.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\TriggerArea.cs
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollEnemy.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\TriggerArea.cs
-    projectPath: Assets\Scripts\Side Scroll\TriggerArea.cs
+      Scroll\SidescrollEnemy.cs
+    projectPath: Assets\Scripts\Side Scroll\SidescrollEnemy.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -125,6 +173,12 @@ MonoBehaviour:
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

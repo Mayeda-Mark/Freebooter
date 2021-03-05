@@ -5,7 +5,8 @@ using UnityEngine;
 public class RangedAndMeleeController : MonoBehaviour
 {
     #region Public Variables
-    public Transform leftLimit, rightLimit;
+    public string projectile;
+    public Transform leftLimit, rightLimit, shooter;
     public float meleeAttackDistance;
     public float rangedAttackDistance;
     public float moveSpeed;
@@ -25,6 +26,7 @@ public class RangedAndMeleeController : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myCollider;
     private SpriteRenderer mySprite;
+    private Pooler pooler;
     #endregion
     private void Awake()
     {
@@ -35,6 +37,10 @@ public class RangedAndMeleeController : MonoBehaviour
         intTimer = attackTimer;
         anim = GetComponent<Animator>();
         myCollider = GetComponent<BoxCollider2D>();
+    }
+    private void Start()
+    {
+        pooler = FindObjectOfType<Pooler>();
     }
     void Update()
     {
@@ -150,6 +156,26 @@ public class RangedAndMeleeController : MonoBehaviour
         }
         transform.eulerAngles = rotation;
     }
+    public void FireProjectile()
+    {
+        Vector2 dir = target.position - transform.position;
+        float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        pooler.SpawnFromPool(projectile, shooter.position, Quaternion.Euler(0, 0, shootAngle + 270));
+    }
+    /*
+     * 
+    private void TurnToShoot() {
+        Vector2 dir = target.position - transform.position;
+        float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if(shootLeft) {
+            shootAngle += 150;
+        } else {
+            shootAngle -= 30;
+        }
+        Quaternion rotation = Quaternion.Euler( 0, 0, shootAngle);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
+    }
+     * */
     internal void Kill()
     {
         isAlive = false;

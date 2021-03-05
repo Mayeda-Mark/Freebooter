@@ -5,18 +5,26 @@ using UnityEngine;
 public class HotZone : MonoBehaviour
 {
     private SidescrollEnemy enemyParent;
+    private RangedAndMeleeController rangedAndMeleeParent;
     private bool inRange;
     private Animator anim;
     private void Awake()
     {
         enemyParent = GetComponentInParent<SidescrollEnemy>();
+        rangedAndMeleeParent = GetComponentInParent<RangedAndMeleeController>();
         anim = GetComponentInParent<Animator>();
     }
     private void Update()
     {
         if(inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Melee") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Ranged"))
         {
-            enemyParent.Flip();
+            if(enemyParent != null)
+            {
+                enemyParent.Flip();
+            } else if (rangedAndMeleeParent != null)
+            {
+                rangedAndMeleeParent.Flip();
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,9 +40,17 @@ public class HotZone : MonoBehaviour
         {
             inRange = false;
             gameObject.SetActive(false);
-            enemyParent.triggerArea.SetActive(true);
-            enemyParent.inRange = false;
-            enemyParent.SelectTarget();
+            if(enemyParent != null)
+            {
+                enemyParent.triggerArea.SetActive(true);
+                enemyParent.inRange = false;
+                enemyParent.SelectTarget();
+            } else if(rangedAndMeleeParent != null)
+            {
+                rangedAndMeleeParent.triggerArea.SetActive(true);
+                rangedAndMeleeParent.inRange = false;
+                rangedAndMeleeParent.SelectTarget();
+            }
         }
     }
 }
