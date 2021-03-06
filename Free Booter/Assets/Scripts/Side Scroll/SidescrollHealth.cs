@@ -26,6 +26,9 @@ public class SidescrollHealth : MonoBehaviour
             else if (GetComponent<SidescrollEnemy>())
             {
                 GetComponent<SidescrollEnemy>().Kill();
+            } else if(GetComponent<RangedAndMeleeController>())
+            {
+                GetComponent<RangedAndMeleeController>().Kill();
             }
         }
     }

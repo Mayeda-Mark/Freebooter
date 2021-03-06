@@ -15,6 +15,7 @@ public class RangedAndMeleeController : MonoBehaviour
     [HideInInspector] public bool inRange;
     public GameObject hotZone, triggerArea;
     public float deathKickHorizontal, deathKickVertical;
+    public bool hasDeathAnimation, ranged, melee;
     #endregion
     #region Private Variables
     private Animator anim;
@@ -162,25 +163,20 @@ public class RangedAndMeleeController : MonoBehaviour
         float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         pooler.SpawnFromPool(projectile, shooter.position, Quaternion.Euler(0, 0, shootAngle + 270));
     }
-    /*
-     * 
-    private void TurnToShoot() {
-        Vector2 dir = target.position - transform.position;
-        float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        if(shootLeft) {
-            shootAngle += 150;
-        } else {
-            shootAngle -= 30;
-        }
-        Quaternion rotation = Quaternion.Euler( 0, 0, shootAngle);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
-    }
-     * */
     internal void Kill()
     {
         isAlive = false;
-        myRigidBody.AddForce(new Vector2(deathKickHorizontal, deathKickVertical));
+        if(!hasDeathAnimation)
+        {
+            myRigidBody.AddForce(new Vector2(deathKickHorizontal, deathKickVertical));
+            mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
+        } else
+        {
+            anim.SetBool("isDead", true);
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
         myCollider.isTrigger = true;
-        mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
+        hotZone.SetActive(false);
+        triggerArea.SetActive(false);
     }
 }

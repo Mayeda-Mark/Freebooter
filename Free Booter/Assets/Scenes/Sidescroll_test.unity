@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20909611}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -0, y: 0.02, z: 0}
+  m_LocalPosition: {x: 0.24, y: 1.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4810587955549194937}
@@ -215,7 +215,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &41127404
 GameObject:
   m_ObjectHideFlags: 0
@@ -9730,18 +9730,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04662323, y: -0.18229747}
+  m_Offset: {x: -0.03074646, y: -0.82233644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.25, y: 6.25}
+    oldSize: {x: 6.25, y: 5.625}
     newSize: {x: 6, y: 6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.891922, y: 3.792869}
+  m_Size: {x: 0.9754944, y: 3.8908105}
   m_EdgeRadius: 0
 --- !u!114 &588572686312634356
 MonoBehaviour:
@@ -10260,7 +10260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4810587955465565727}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 103.23, y: 10.3, z: -1.9052734}
+  m_LocalPosition: {x: 103.23, y: 10.93, z: -1.9052734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4810587955549194937}
@@ -10431,16 +10431,19 @@ MonoBehaviour:
   leftLimit: {fileID: 4810587956643473550}
   rightLimit: {fileID: 4810587957066617572}
   shooter: {fileID: 20909612}
-  meleeAttackDistance: 2
-  rangedAttackDistance: 10
+  meleeAttackDistance: 4
+  rangedAttackDistance: 15
   moveSpeed: 1
-  attackTimer: 5
+  attackTimer: 3
   target: {fileID: 0}
   inRange: 0
   hotZone: {fileID: 4810587955683543447}
   triggerArea: {fileID: 4810587955916727335}
   deathKickHorizontal: 0
   deathKickVertical: 0
+  hasDeathAnimation: 1
+  ranged: 0
+  melee: 0
 --- !u!4 &4810587955683543444
 Transform:
   m_ObjectHideFlags: 0
@@ -10479,7 +10482,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.26, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &4810587955683543446
 MonoBehaviour:
@@ -10547,7 +10550,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8906705, y: 3.0045724}
+  m_Size: {x: 3.33, y: 3.85}
   m_EdgeRadius: 0
 --- !u!4 &4810587955916727334
 Transform:
@@ -10686,7 +10689,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1789589, y: 0.36597347}
+  m_Offset: {x: 1.686821, y: -0.36895823}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10697,7 +10700,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.56635857, y: 0.6475811}
+  m_Size: {x: 0.6312103, y: 1.7715945}
   m_EdgeRadius: 0
 --- !u!4 &4810587957359089915
 Transform:

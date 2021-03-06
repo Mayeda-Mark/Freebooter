@@ -103,7 +103,7 @@ MonoBehaviour:
   damage: 10
   knockBack: 1
   horizontalKnockback: 300
-  verticalKnockBack: 300
+  verticalKnockBack: 200
 --- !u!1 &5398025944711549608
 GameObject:
   m_ObjectHideFlags: 0
