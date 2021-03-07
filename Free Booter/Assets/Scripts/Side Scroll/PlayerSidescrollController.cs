@@ -21,6 +21,7 @@ public class PlayerSidescrollController : MonoBehaviour
     private LedgeCatcher ledgeCatcher;
     public float startingFallTimer = 0.2f;
     private float fallTimer;
+    private SoundManager soundManager;
     //private SpriteRenderer mySprite;
 
     internal void Death()
@@ -41,6 +42,7 @@ public class PlayerSidescrollController : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         //myFeet = GetComponent<BoxCollider2D>();
         ResetFallTimer();
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -283,6 +285,10 @@ public class PlayerSidescrollController : MonoBehaviour
     {
         SetKnockBack();
         myRigidBody.AddForce(new Vector2(horizontal, vertical));
+    }
+    public void PlaySwordSound()
+    {
+        soundManager.PlaySound("Sword Swing");
     }
     /*public void ShowDamage()
     {

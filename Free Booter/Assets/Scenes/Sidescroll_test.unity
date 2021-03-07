@@ -9843,7 +9843,7 @@ PrefabInstance:
     - target: {fileID: 1386115562699738116, guid: 70adf567504c5c140bf61706ad3f60db,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1386115562699738116, guid: 70adf567504c5c140bf61706ad3f60db,
         type: 3}
@@ -10208,7 +10208,7 @@ PrefabInstance:
     - target: {fileID: 78918487966158701, guid: 9730da6b88bb5b949bdaf9a84d78312c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 78918487966158701, guid: 9730da6b88bb5b949bdaf9a84d78312c,
         type: 3}
@@ -10444,6 +10444,9 @@ MonoBehaviour:
   hasDeathAnimation: 1
   ranged: 0
   melee: 0
+  meleeSound: Golem1
+  rangedSound: Golem2
+  deathSound: Golem Death
 --- !u!4 &4810587955683543444
 Transform:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class RangedAndMeleeController : MonoBehaviour
     public GameObject hotZone, triggerArea;
     public float deathKickHorizontal, deathKickVertical;
     public bool hasDeathAnimation, ranged, melee;
+    public string meleeSound, rangedSound, deathSound;
     #endregion
     #region Private Variables
     private Animator anim;
@@ -28,6 +29,7 @@ public class RangedAndMeleeController : MonoBehaviour
     private BoxCollider2D myCollider;
     private SpriteRenderer mySprite;
     private Pooler pooler;
+    private SoundManager soundManager;
     #endregion
     private void Awake()
     {
@@ -42,6 +44,7 @@ public class RangedAndMeleeController : MonoBehaviour
     private void Start()
     {
         pooler = FindObjectOfType<Pooler>();
+        soundManager = FindObjectOfType<SoundManager>();
     }
     void Update()
     {
@@ -123,6 +126,13 @@ public class RangedAndMeleeController : MonoBehaviour
     public void TriggerCooling()
     {
         inCooldown = true;
+        if(anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Melee"))
+        {
+            soundManager.PlaySound(meleeSound);
+        } else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Ranged"))
+        {
+            soundManager.PlaySound(rangedSound);
+        }
     }
     private bool InsideLimits()
     {
@@ -163,9 +173,18 @@ public class RangedAndMeleeController : MonoBehaviour
         float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         pooler.SpawnFromPool(projectile, shooter.position, Quaternion.Euler(0, 0, shootAngle + 270));
     }
+    /*public void PlayMeleeSound()
+    {
+        
+    }
+    public void PlayRangedSound()
+    {
+        soundManager.PlaySound(rangedSound);
+    }*/
     internal void Kill()
     {
         isAlive = false;
+        soundManager.PlaySound(deathSound);
         if(!hasDeathAnimation)
         {
             myRigidBody.AddForce(new Vector2(deathKickHorizontal, deathKickVertical));

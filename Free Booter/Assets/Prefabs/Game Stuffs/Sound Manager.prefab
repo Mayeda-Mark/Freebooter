@@ -47,6 +47,18 @@ MonoBehaviour:
   sounds:
   - tag: rumble
     clip: {fileID: 8300000, guid: 5d8c8498ea8d1fa438b858de35ce1444, type: 3}
+  - tag: Growl
+    clip: {fileID: 8300000, guid: 7919beeed7afcb94aa05c4017eb5da9b, type: 3}
+  - tag: Monster Death
+    clip: {fileID: 8300000, guid: 87449cb473cc5254fae9f297821eb7a8, type: 3}
+  - tag: Sword Swing
+    clip: {fileID: 8300000, guid: 933215c9960037847980d8cce929258e, type: 3}
+  - tag: Golem1
+    clip: {fileID: 8300000, guid: 7ad0030f25a3e8846b0ad60af01352ed, type: 3}
+  - tag: Golem2
+    clip: {fileID: 8300000, guid: 81e3e5d1cb94c3f4fb17820647789f0d, type: 3}
+  - tag: Golem Death
+    clip: {fileID: 8300000, guid: ccd138b62ba5aa74e9c4e15b6c05a75d, type: 3}
 --- !u!82 &1877335984891393929
 AudioSource:
   m_ObjectHideFlags: 0
