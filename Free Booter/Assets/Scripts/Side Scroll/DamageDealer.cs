@@ -10,7 +10,7 @@ public class DamageDealer : MonoBehaviour
     public float verticalKnockBack;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SidescrollHealth targetHealth = collision.GetComponent<SidescrollHealth>();
+        Health targetHealth = collision.GetComponent<Health>();
         PlayerSidescrollController player = collision.GetComponent<PlayerSidescrollController>();
         SidescrollEnemy enemy = collision.GetComponent<SidescrollEnemy>();
         if(targetHealth)
@@ -28,12 +28,16 @@ public class DamageDealer : MonoBehaviour
                 targetHealth.DealDamage(damage);
                 if(knockBack)
                 {
-                    if(transform.position.x > collision.transform.position.x)
+                    if(player)
                     {
-                        player.KnockBack(horizontalKnockback * -1, verticalKnockBack);
-                    } else if(transform.position.x <= collision.transform.position.x)
-                    {
-                        player.KnockBack(horizontalKnockback, verticalKnockBack);
+                        if (transform.position.x > collision.transform.position.x)
+                        {
+                            player.KnockBack(horizontalKnockback * -1, verticalKnockBack);
+                        }
+                        else if (transform.position.x <= collision.transform.position.x)
+                        {
+                            player.KnockBack(horizontalKnockback, verticalKnockBack);
+                        }
                     }
                 }
             }

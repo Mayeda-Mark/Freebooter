@@ -5,13 +5,11 @@ using UnityEngine;
 public class HotZone : MonoBehaviour
 {
     private SidescrollEnemy enemyParent;
-    private RangedAndMeleeController rangedAndMeleeParent;
     private bool inRange;
     private Animator anim;
     private void Awake()
     {
         enemyParent = GetComponentInParent<SidescrollEnemy>();
-        rangedAndMeleeParent = GetComponentInParent<RangedAndMeleeController>();
         anim = GetComponentInParent<Animator>();
     }
     private void Update()
@@ -21,9 +19,6 @@ public class HotZone : MonoBehaviour
             if(enemyParent != null)
             {
                 enemyParent.Flip();
-            } else if (rangedAndMeleeParent != null)
-            {
-                rangedAndMeleeParent.Flip();
             }
         }
     }
@@ -45,11 +40,6 @@ public class HotZone : MonoBehaviour
                 enemyParent.triggerArea.SetActive(true);
                 enemyParent.inRange = false;
                 enemyParent.SelectTarget();
-            } else if(rangedAndMeleeParent != null)
-            {
-                rangedAndMeleeParent.triggerArea.SetActive(true);
-                rangedAndMeleeParent.inRange = false;
-                rangedAndMeleeParent.SelectTarget();
             }
         }
     }

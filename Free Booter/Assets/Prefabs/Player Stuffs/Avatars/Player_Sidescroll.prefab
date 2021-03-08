@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026384711, y: -1.09}
+  m_Offset: {x: 0.0030856133, y: -1.1112164}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.85589576, y: 0.20118666}
+  m_Size: {x: 1.0702467, y: 0.24361944}
   m_EdgeRadius: 0
 --- !u!1 &1457868024
 GameObject:
@@ -67,6 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457868025}
   - component: {fileID: 1457868026}
+  - component: {fileID: 2673296153971181241}
   m_Layer: 10
   m_Name: Ledge Catcher
   m_TagString: Untagged
@@ -114,6 +115,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1045835, y: 0.3183732}
   m_EdgeRadius: 0
+--- !u!114 &2673296153971181241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457868024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12359069e4a6e764c939962002ff7a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xCorrection: 0.25
+  yCorrection: 0.25
+  touchingLedge: 0
 --- !u!1 &1911425584
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,12 +218,12 @@ GameObject:
   m_Component:
   - component: {fileID: 78918487966158701}
   - component: {fileID: 4666117469768580417}
-  - component: {fileID: 6539561139987107675}
   - component: {fileID: 78918487966158696}
   - component: {fileID: 78918487966158703}
   - component: {fileID: 1328287631742319231}
   - component: {fileID: 78918487966158698}
   - component: {fileID: 4666117469768580419}
+  - component: {fileID: 1985630918}
   m_Layer: 10
   m_Name: Player_Sidescroll
   m_TagString: Player
@@ -244,12 +260,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80901752425b1024dac2853b6f8d8920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 8
+  runSpeed: 6
   jumpSpeed: 6
   climbSpeed: 8
   knockBackTimer: 0.75
+  xClimb: -5
+  yClimb: 8
   myFeet: {fileID: 837129016}
-  ledgeCatcher: {fileID: 1457868026}
   isRunning: 0
   isJumping: 0
   isFalling: 0
@@ -261,21 +278,10 @@ MonoBehaviour:
   isClimbingLedge: 0
   knockBack: 0
   canMove: 0
---- !u!114 &6539561139987107675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78918487966158700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c78c075ead1731742ac17e8c8c1cf700, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 0
-  sprite: {fileID: 78918487966158696}
+  canCatchLedge: 0
+  canClimb: 0
+  canFall: 0
+  startingFallTimer: 0.2
 --- !u!212 &78918487966158696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -313,7 +319,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1443925145
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -8052795731847107983, guid: 1007e5e2b5872a2459bb004e44f394a7,
     type: 3}
@@ -409,3 +415,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1985630918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78918487966158700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e713dc959944441ba19827388a53c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  forSails: 0
+  forSideScroll: 1
+  health: 0
+  sprite: {fileID: 78918487966158696}

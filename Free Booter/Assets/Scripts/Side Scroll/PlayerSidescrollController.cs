@@ -44,8 +44,6 @@ public class PlayerSidescrollController : MonoBehaviour
         ResetFallTimer();
         soundManager = FindObjectOfType<SoundManager>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         SetAnimationBools();
@@ -73,15 +71,6 @@ public class PlayerSidescrollController : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         bool playerIsFalling = (myRigidBody.velocity.y) < 0;
-        //isClimbingLedge = (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge")) && Input.GetButton("Climb Ledge")) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Climb_Ledge");
-        //isHanging = (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && canCatchLedge &&  ledgeCatcher.IsTouchingLayers(LayerMask.GetMask("Ledge"))) || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle")/*&& !isClimbingLedge*/;
-        //isAttacking = Input.GetButton("Attack") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        //isBlocking = Input.GetButton("Block") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
-        //isCrouching = Input.GetButton("Crouch") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        //isRunning = playerHasHorizontalSpeed && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && !isAttacking;
-        //isSliding = Input.GetButton("Crouch") && isRunning;
-        //isFalling = playerIsFalling && !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));;
-        //print(isHanging);
         if(!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             FallTimer();
@@ -98,8 +87,8 @@ public class PlayerSidescrollController : MonoBehaviour
             else if(Input.GetButton("Crouch")) { isCrouching = true; }
             if(playerHasHorizontalSpeed && !isAttacking)
             {
-                if(Input.GetButton("Crouch")) { isSliding = true; }
-                else { isRunning = true; }
+                isRunning = true;
+                if (Input.GetButton("Crouch")) { isSliding = true; }
             }
         } 
         canMove = !isAttacking && !isBlocking && !knockBack && !isCrouching && !isHanging && !myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Attack");
@@ -221,6 +210,7 @@ public class PlayerSidescrollController : MonoBehaviour
     {
         if(isRunning)
         {
+            print("Sliding");
             myAnimator.SetBool("isSliding", isSliding);
         } else
         {

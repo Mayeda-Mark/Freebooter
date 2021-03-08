@@ -76,7 +76,7 @@ public class Projectile : MonoBehaviour, IPooledObject
                 otherCollider.GetComponentInChildren<Sails>().sailHealth.DealDamage(sailDamage);
             } else
             {
-                otherCollider.GetComponent<SidescrollHealth>().DealDamage(sideScrollDamage);
+                otherCollider.GetComponent<Health>().DealDamage(sideScrollDamage);
             }
             DestroyProjectile();
         }

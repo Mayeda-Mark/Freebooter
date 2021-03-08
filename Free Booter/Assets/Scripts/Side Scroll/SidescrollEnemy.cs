@@ -6,14 +6,18 @@ using UnityEngine;
 public class SidescrollEnemy : MonoBehaviour
 {
     #region Public Variables
-    public Transform leftLimit, rightLimit;
-    public float attackDistance;
+    public string projectile;
+    public Transform leftLimit, rightLimit, shooter;
+    public float meleeAttackDistance;
+    public float rangedAttackDistance;
     public float moveSpeed;
     public float attackTimer;
     [HideInInspector] public Transform target;
     [HideInInspector] public bool inRange;
     public GameObject hotZone, triggerArea;
     public float deathKickHorizontal, deathKickVertical;
+    public bool hasDeathAnimation, ranged, melee;
+    public string meleeSound, rangedSound, deathSound;
     #endregion
     #region Private Variables
     private Animator anim;
@@ -25,6 +29,8 @@ public class SidescrollEnemy : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myCollider;
     private SpriteRenderer mySprite;
+    private Pooler pooler;
+    private SoundManager soundManager;
     #endregion
     private void Awake()
     {
@@ -36,19 +42,24 @@ public class SidescrollEnemy : MonoBehaviour
         anim = GetComponent<Animator>();
         myCollider = GetComponent<BoxCollider2D>();
     }
+    private void Start()
+    {
+        pooler = FindObjectOfType<Pooler>();
+        soundManager = FindObjectOfType<SoundManager>();
+    }
     void Update()
     {
-        if(isAlive)
+        if (isAlive)
         {
-            if(!attackMode)
+            if (!attackMode)
             {
                 Move();
             }
-            if(!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack"))
+            if (!InsideLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Melee") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Ranged"))
             {
                 SelectTarget();
             }
-            if(inRange)
+            if (inRange)
             {
                 EnemyLogic();
             }
@@ -58,23 +69,25 @@ public class SidescrollEnemy : MonoBehaviour
     private void EnemyLogic()
     {
         distance = Vector2.Distance(transform.position, target.position);
-        if(distance > attackDistance)
+        if (distance > rangedAttackDistance && distance > meleeAttackDistance)
         {
             StopAttack();
-        } else if(attackDistance >= distance && !inCooldown)
+        }
+        else if ((rangedAttackDistance >= distance || meleeAttackDistance >= distance) && !inCooldown)
         {
             Attack();
         }
-        if(inCooldown)
+        if (inCooldown)
         {
             Cooldown();
-            anim.SetBool("isAttacking", false);
+            anim.SetBool("isAttackingMelee", false);
+            anim.SetBool("isAttackingRanged", false);
         }
     }
     void Move()
     {
         anim.SetBool("isWalking", true);
-        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack"))
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Melee") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Ranged"))
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
@@ -85,12 +98,42 @@ public class SidescrollEnemy : MonoBehaviour
         attackTimer = intTimer;
         attackMode = true;
         anim.SetBool("isWalking", false);
-        anim.SetBool("isAttacking", true);
+        if (melee && ranged)
+        {
+            print(1);
+            if (meleeAttackDistance >= distance && !inCooldown)
+            {
+                print(2);
+                anim.SetBool("isAttackingMelee", true);
+                anim.SetBool("isAttackingRanged", false);
+            }
+            else
+            {
+                print(3);
+                anim.SetBool("isAttackingMelee", false);
+                anim.SetBool("isAttackingRanged", true);
+            }
+        }
+        else if (!melee && ranged)
+        {
+            print(4);
+            anim.SetBool("isAttackingMelee", false);
+            anim.SetBool("isAttackingRanged", true);
+        }
+        else if (melee && !ranged)
+        {
+            print(5);
+            anim.SetBool("isAttackingMelee", true);
+            anim.SetBool("isAttackingRanged", false);
+        }
+
     }
+
+
     void Cooldown()
     {
         attackTimer -= Time.deltaTime;
-        if(attackTimer <= 0 && inCooldown && attackMode)
+        if (attackTimer <= 0 && inCooldown && attackMode)
         {
             inCooldown = false;
             attackTimer = intTimer;
@@ -100,11 +143,20 @@ public class SidescrollEnemy : MonoBehaviour
     {
         inCooldown = false;
         attackMode = false;
-        anim.SetBool("isAttacking", false);
+        anim.SetBool("isAttackingMelee", false);
+        anim.SetBool("isAttackingRanged", false);
     }
     public void TriggerCooling()
     {
         inCooldown = true;
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Melee"))
+        {
+            soundManager.PlaySound(meleeSound);
+        }
+        else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Attack_Ranged"))
+        {
+            soundManager.PlaySound(rangedSound);
+        }
     }
     private bool InsideLimits()
     {
@@ -115,10 +167,11 @@ public class SidescrollEnemy : MonoBehaviour
         float distanceToLeft = Vector2.Distance(transform.position, leftLimit.position);
         float distanceToRight = Vector2.Distance(transform.position, rightLimit.position);
 
-        if(distanceToLeft > distanceToRight)
+        if (distanceToLeft > distanceToRight)
         {
             target = leftLimit;
-        } else
+        }
+        else
         {
             target = rightLimit;
         }
@@ -138,21 +191,28 @@ public class SidescrollEnemy : MonoBehaviour
         }
         transform.eulerAngles = rotation;
     }
-    /*public void ShowDamage()
+    public void FireProjectile()
     {
-        StartCoroutine(ChangeSpriteColorForDamage());
+        Vector2 dir = target.position - transform.position;
+        float shootAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        pooler.SpawnFromPool(projectile, shooter.position, Quaternion.Euler(0, 0, shootAngle + 270));
     }
-    IEnumerator ChangeSpriteColorForDamage()
-    {
-        mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
-        yield return new WaitForSeconds(0.5f);
-        mySprite.color = Color.white;
-    }*/
     internal void Kill()
     {
         isAlive = false;
-        myRigidBody.AddForce(new Vector2(deathKickHorizontal, deathKickVertical));
+        soundManager.PlaySound(deathSound);
+        if (!hasDeathAnimation)
+        {
+            myRigidBody.AddForce(new Vector2(deathKickHorizontal, deathKickVertical));
+            mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
+        }
+        else
+        {
+            anim.SetBool("isDead", true);
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
         myCollider.isTrigger = true;
-        mySprite.color = new Color(0.7294118f, 0.2784314f, 0.2784314f);
+        hotZone.SetActive(false);
+        triggerArea.SetActive(false);
     }
 }

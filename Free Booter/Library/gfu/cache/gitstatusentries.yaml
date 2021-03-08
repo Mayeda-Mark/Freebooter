@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-07T12:28:19.845-08:00
-  initializedAtString: 2021-03-07T12:25:10.651-08:00
+  lastUpdatedAtString: 2021-03-08T11:02:08.623-08:00
+  initializedAtString: 2021-03-08T09:55:09.473-08:00
   entries:
   - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Golem_Melee.anim
@@ -22,22 +22,103 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Attack.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Attack.anim
-    projectPath: Assets\Animations\SideScroll\Player\Player_Attack.anim
+  - path: Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
+    projectPath: Assets\Animations\SideScroll\Enemies\Testers\Minotaur.controller
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sound Manager.prefab
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\PlayerShipHealthBars.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Sound Manager.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Sound Manager.prefab
+      Stuffs\PlayerShipHealthBars.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\PlayerShipHealthBars.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Sidescroll\Golem_Holder.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Sidescroll\Golem_Holder.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Sidescroll\Golem_Holder.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Sidescroll\Minotaur_Holder.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Sidescroll\Minotaur_Holder.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Player
+      Stuffs\Avatars\Player_Sidescroll.prefab
+    projectPath: Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
     projectPath: Assets\Scenes\Sidescroll_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\All Purpose Game\Health.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\Health.cs
+    projectPath: Assets\Scripts\All Purpose Game\Health.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\All Purpose Game\HealthBar.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\HealthBar.cs
+    projectPath: Assets\Scripts\All Purpose Game\HealthBar.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\All Purpose Game\Projectile.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\Projectile.cs
+    projectPath: Assets\Scripts\All Purpose Game\Projectile.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\OverWorld\Player\PlayerHealthBars.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverWorld\Player\PlayerHealthBars.cs
+    projectPath: Assets\Scripts\OverWorld\Player\PlayerHealthBars.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\OverWorld\Player\PlayerShipHealthBars.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverWorld\Player\PlayerShipHealthBars.cs
+    projectPath: Assets\Scripts\OverWorld\Player\PlayerShipHealthBars.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\OverWorld\Ships And UI\HealthBar.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverWorld\Ships
+      And UI\HealthBar.cs
+    projectPath: Assets\Scripts\OverWorld\Ships And UI\HealthBar.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Side Scroll\DamageDealer.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\DamageDealer.cs
+    projectPath: Assets\Scripts\Side Scroll\DamageDealer.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\HotZone.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\HotZone.cs
+    projectPath: Assets\Scripts\Side Scroll\HotZone.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -54,38 +135,28 @@ MonoBehaviour:
     projectPath: Assets\Scripts\Side Scroll\RangedAndMeleeController.cs
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\ToDo.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\ToDo.cs
-    projectPath: Assets\Scripts\ToDo.cs
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollEnemy.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\SidescrollEnemy.cs
+    projectPath: Assets\Scripts\Side Scroll\SidescrollEnemy.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Sounds\SFX\Golem Death.mp3
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\Golem
-      Death.mp3
-    projectPath: Assets\Sounds\SFX\Golem Death.mp3
+  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollHealth.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\SidescrollHealth.cs
+    projectPath: Assets\Scripts\Side Scroll\SidescrollHealth.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Sounds\SFX\Golem1.mp3
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\Golem1.mp3
-    projectPath: Assets\Sounds\SFX\Golem1.mp3
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Side Scroll\TriggerArea.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\TriggerArea.cs
+    projectPath: Assets\Scripts\Side Scroll\TriggerArea.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Sounds\SFX\Golem2.mp3
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\Golem2.mp3
-    projectPath: Assets\Sounds\SFX\Golem2.mp3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Sounds\SFX\Rockslide_small-Sound_Explorer-1935053448.mp3
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Sounds\SFX\Rockslide_small-Sound_Explorer-1935053448.mp3
-    projectPath: Assets\Sounds\SFX\Rockslide_small-Sound_Explorer-1935053448.mp3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -101,6 +172,12 @@ MonoBehaviour:
   - path: Free Booter\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -158,15 +235,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\SourceAssetDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-acdc22e80d1282247a.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-d0b9ea372883bc9429.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-d0b9ea372883bc9429.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-d0b9ea372883bc9429.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -179,6 +262,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
