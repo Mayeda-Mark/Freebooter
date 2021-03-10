@@ -29,13 +29,14 @@ public class PlayerShipController : MonoBehaviour
     Inventory shipInventory;
     CapsuleCollider2D myCollider;
     [SerializeField]Sails mySails;
+    //public Inventory shipInventory;
     Health myHealth;
     Health sailHealth;
     float stopped = 0f;
     int sails = 0;
     bool lightFog, heavyFog = false;
     Animator animator;
-    public bool isColliding = false;
+    bool isColliding = false;
     private void Awake()
     {
         itemDb = FindObjectOfType<ItemDB>();
@@ -43,7 +44,8 @@ public class PlayerShipController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        shipInventory = GetComponent<Inventory>();
+        //shipInventory = GetComponent<Inventory>();
+        shipInventory = GameObject.Find("ShipInventory").GetComponent<Inventory>();
         ResetLootTimer();
         myHealth = GetComponent<Health>();
         myCollider = GetComponent<CapsuleCollider2D>();

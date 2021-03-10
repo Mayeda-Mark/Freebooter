@@ -15,12 +15,14 @@ public class Inventory : MonoBehaviour
     // private void Awake() {
     // }
     private void Start() {
+        DontDestroyOnLoad(this);
         mapController = FindObjectOfType<MapController>();
         toolbarUI = FindObjectOfType<ToolbarUI>();
         shipInventoryUI.gameObject.SetActive(false);
         GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
+        GiveItem(6, 1);
     }
     private void Update() {
         if(Input.GetKeyDown(KeyCode.I)) {

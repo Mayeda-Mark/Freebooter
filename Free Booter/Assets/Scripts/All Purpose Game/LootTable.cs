@@ -22,7 +22,7 @@ public class LootTable : MonoBehaviour
     void Start()
     {
         //table = new Dictionary<int, int>();
-        inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
+        inventory = FindObjectOfType<Inventory>();
         itemDB = FindObjectOfType<ItemDB>();
         SetTotal();
     }

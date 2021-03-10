@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Death.unity
     guid: 5a894558883de0245b8dbe4f709599f9
+  - enabled: 1
+    path: Assets/Scenes/Sidescroll_test.unity
+    guid: 64f1176cc10752e469e8fc65def7e6bc
   m_configObjects: {}

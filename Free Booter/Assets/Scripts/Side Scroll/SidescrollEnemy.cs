@@ -199,6 +199,7 @@ public class SidescrollEnemy : MonoBehaviour
     }
     internal void Kill()
     {
+        StopAttack();
         isAlive = false;
         soundManager.PlaySound(deathSound);
         if (!hasDeathAnimation)

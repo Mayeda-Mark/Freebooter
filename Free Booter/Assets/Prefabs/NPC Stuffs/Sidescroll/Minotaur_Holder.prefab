@@ -102,8 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   knockBack: 1
-  horizontalKnockback: 300
-  verticalKnockBack: 200
+  horizontalKnockback: 200
+  verticalKnockBack: 100
 --- !u!1 &5398025944711549608
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
   meleeAttackDistance: 2
   rangedAttackDistance: 0
   moveSpeed: 2
-  attackTimer: 3
+  attackTimer: 2
   target: {fileID: 0}
   inRange: 0
   hotZone: {fileID: 5398025945956496304}
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e713dc959944441ba19827388a53c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   forSails: 0
   forSideScroll: 1
   health: 0

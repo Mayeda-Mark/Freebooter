@@ -24,6 +24,7 @@ public class LevelController : MonoBehaviour
         }
         if(levelMusic != null)
         {
+            music.StopMusic();
             music.ChangeTrack(levelMusic);
         }
         if(ambiantNoise != null)

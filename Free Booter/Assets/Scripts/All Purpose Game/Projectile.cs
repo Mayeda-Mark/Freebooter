@@ -29,10 +29,7 @@ public class Projectile : MonoBehaviour, IPooledObject
         SetStats();
         myCollider = GetComponent<Collider2D>();
         distanceTravelled = 0;
-        //lastPosition = this.transform.position;
     }
-
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -76,7 +73,10 @@ public class Projectile : MonoBehaviour, IPooledObject
                 otherCollider.GetComponentInChildren<Sails>().sailHealth.DealDamage(sailDamage);
             } else
             {
-                otherCollider.GetComponent<Health>().DealDamage(sideScrollDamage);
+                if(otherCollider.GetComponent<SidescrollEnemy>() == null)
+                {
+                    otherCollider.GetComponent<Health>().DealDamage(sideScrollDamage);
+                }
             }
             DestroyProjectile();
         }

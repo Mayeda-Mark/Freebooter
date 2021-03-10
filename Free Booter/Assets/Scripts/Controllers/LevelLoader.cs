@@ -8,7 +8,6 @@ public class LevelLoader : MonoBehaviour
 {
     [SerializeField] int currentSceneIndex;
     [SerializeField] int timeToWait = 6;
-    // Use this for initialization
     void Start()
     {
         DontDestroyOnLoad(this);
@@ -64,5 +63,9 @@ public class LevelLoader : MonoBehaviour
     internal void LoadDeathScreen()
     {
         SceneManager.LoadScene("Death");
+    }
+    public void LoadSceneByName(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
