@@ -13,7 +13,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     private Tooltip tooltip;
     Inventory inventory;
 
-    private void Awake() {
+    private void Start() {
         quantityText = transform.parent.GetComponentInChildren<Text>();
         spriteImage = GetComponent<Image>();
         inventory = FindObjectOfType<Inventory>();

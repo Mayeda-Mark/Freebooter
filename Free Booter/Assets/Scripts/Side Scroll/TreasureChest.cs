@@ -7,7 +7,13 @@ public class TreasureChest : MonoBehaviour
 {
     bool playerOnBox, looted = false;
     public Sprite openTreasureSprite;
-
+    private ToastController toast;
+    LootTable lootTable;
+    private void Start()
+    {
+        lootTable = FindObjectOfType<LootTable>();
+        toast = FindObjectOfType<ToastController>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerSidescrollController player = collision.GetComponent<PlayerSidescrollController>();
@@ -37,6 +43,8 @@ public class TreasureChest : MonoBehaviour
 
     private void GiveReward()
     {
-        print("Here you go, you earned it!");
+        lootTable.awardLoot();
+        /*toast.gameObject.SetActive(true);
+        toast.TriggetToast();*/
     }
 }

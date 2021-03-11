@@ -8,6 +8,7 @@ public class ItemDB : MonoBehaviour
     [SerializeField] Sprite[] icons;
     private void Awake() {
         BuildDb();
+        DontDestroyOnLoad(this);
     }
     public Item GetItem(int id) {
         return items.Find(item => item.id == id);

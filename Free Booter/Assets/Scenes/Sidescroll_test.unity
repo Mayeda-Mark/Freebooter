@@ -10654,3 +10654,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eef0b95e72462fd4c9eab5f2bace0a3f, type: 3}
+--- !u!1 &7396269890914873944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7396269889825029921, guid: eef0b95e72462fd4c9eab5f2bace0a3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396269890914873943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7396269890914873945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7396269890914873944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7449043157e70b948a7ef841915ad71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+  - itemName: Gold
+    itemIds: 02000000
+    lootProbability: 100
+  maxLoot: 500
+  minLoot: 500

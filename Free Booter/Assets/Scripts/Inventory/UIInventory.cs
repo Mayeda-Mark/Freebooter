@@ -19,6 +19,7 @@ public class UIInventory : MonoBehaviour
         AssignQuantityIndex();
     }
     public void UpdateSlot(int slot, Item item) {
+        print(item.itemName);
         uIItems[slot].UpdateItem(item);
     }
     public void AddNewItem(Item item) {

@@ -7,18 +7,20 @@ public class Inventory : MonoBehaviour
 {
     public List<Item> shipItems = new List<Item>();
     public ItemDB itemDB;
-    public UIInventory shipInventoryUI;
+    //public UIInventory shipInventoryUI;
     Tooltip tooltip;
     ToolbarUI toolbarUI;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     MapController mapController;
+    private ToastController toast;
     // private void Awake() {
     // }
     private void Start() {
+        toast = FindObjectOfType<ToastController>();
         DontDestroyOnLoad(this);
         mapController = FindObjectOfType<MapController>();
         toolbarUI = FindObjectOfType<ToolbarUI>();
-        shipInventoryUI.gameObject.SetActive(false);
+        //shipInventoryUI.gameObject.SetActive(false);
         GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
@@ -26,7 +28,8 @@ public class Inventory : MonoBehaviour
     }
     private void Update() {
         if(Input.GetKeyDown(KeyCode.I)) {
-            shipInventoryUI.gameObject.SetActive(!shipInventoryUI.gameObject.activeSelf);
+            //print("Bloop!");
+            //shipInventoryUI.gameObject.SetActive(!shipInventoryUI.gameObject.activeSelf);
         }
     }
     private void DebugInventory() {
@@ -42,11 +45,13 @@ public class Inventory : MonoBehaviour
         {
             mapController.UnlockFromMap(givenItem.stats["MapIndex"]);
         }
+        toast.gameObject.SetActive(true);
+        toast.TriggetToast("Received " + quantity + " " + givenItem.itemName);
     }
     public void GiveItem(string itemName, int quantity) {
         Item itemToAdd = itemDB.GetItem(itemName);
         shipItems.Add(itemToAdd);
-        shipInventoryUI.AddNewItem(itemToAdd);
+        //shipInventoryUI.AddNewItem(itemToAdd);
         int id = itemDB.GetItem(itemName).id;
         GiveQuantity(id, quantity);
     }
@@ -91,7 +96,7 @@ public class Inventory : MonoBehaviour
     private void AddToInventory(int id) {
         Item itemToAdd = itemDB.GetItem(id);
         shipItems.Add(itemToAdd);
-        shipInventoryUI.AddNewItem(itemToAdd);
+        //shipInventoryUI.AddNewItem(itemToAdd);
     }
     public Item CheckForItem(int id) {
         return shipItems.Find(item => item.id == id);
@@ -120,7 +125,7 @@ public class Inventory : MonoBehaviour
         Item itemToRemove = CheckForItem(id);
         if(itemToRemove != null) {
             shipItems.Remove(itemToRemove);
-            shipInventoryUI.RemoveItem(itemToRemove);
+            //shipInventoryUI.RemoveItem(itemToRemove);
         } else {
             Debug.Log("Item not found");
         }

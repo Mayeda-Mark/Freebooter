@@ -7,16 +7,17 @@ public class LevelController : MonoBehaviour
     public bool isSideScroll = default;
     public string levelMusic = default;
     public string ambiantNoise = default;
+    PlayerShipController ship;
     //SoundManager sound;
     MusicManager music;
-    // Start is called before the first frame update
     void Start()
     {
+        ship = FindObjectOfType<PlayerShipController>();
         //sound = FindObjectOfType<SoundManager>();
-
         music = FindObjectOfType<MusicManager>();
         if(isSideScroll)
         {
+            ship.gameObject.SetActive(false);
             Physics2D.gravity = new Vector2(0, -10);
         } else
         {
@@ -31,11 +32,5 @@ public class LevelController : MonoBehaviour
         {
             music.ChangeAmbianceTrackWithoutFade(ambiantNoise);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
