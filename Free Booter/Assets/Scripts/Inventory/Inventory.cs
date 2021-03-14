@@ -6,18 +6,21 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public List<Item> shipItems = new List<Item>();
-    public ItemDB itemDB;
+    private ItemDB itemDB;
     //public UIInventory shipInventoryUI;
     Tooltip tooltip;
     ToolbarUI toolbarUI;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     MapController mapController;
     private ToastController toast;
-    // private void Awake() {
-    // }
+    private void Awake()
+    {
+       
+    }
     private void Start() {
+        itemDB = FindObjectOfType<ItemDB>();
         toast = FindObjectOfType<ToastController>();
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         mapController = FindObjectOfType<MapController>();
         toolbarUI = FindObjectOfType<ToolbarUI>();
         //shipInventoryUI.gameObject.SetActive(false);
@@ -25,11 +28,24 @@ public class Inventory : MonoBehaviour
         GiveItem(1, 50);
         GiveItem(2, 100);
         GiveItem(6, 1);
+        int numInventories = FindObjectsOfType<Inventory>().Length;
+        /*if (numInventories > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }*/
     }
     private void Update() {
         if(Input.GetKeyDown(KeyCode.I)) {
             //print("Bloop!");
             //shipInventoryUI.gameObject.SetActive(!shipInventoryUI.gameObject.activeSelf);
+        }
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            GiveItem(2, 100);
         }
     }
     private void DebugInventory() {
@@ -39,13 +55,16 @@ public class Inventory : MonoBehaviour
     }
     public void GiveItem(int id, int quantity) {
         GiveQuantity(id, quantity);
-        toolbarUI.UpdateToolbar();
+        if(toolbarUI != null)
+        {
+            toolbarUI.UpdateToolbar();
+        }
         Item givenItem = CheckForItem(id);
         if(givenItem.isAMap)
         {
             mapController.UnlockFromMap(givenItem.stats["MapIndex"]);
         }
-        toast.gameObject.SetActive(true);
+        //toast.gameObject.SetActive(true);
         toast.TriggetToast("Received " + quantity + " " + givenItem.itemName);
     }
     public void GiveItem(string itemName, int quantity) {

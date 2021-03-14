@@ -8,7 +8,15 @@ public class ItemDB : MonoBehaviour
     [SerializeField] Sprite[] icons;
     private void Awake() {
         BuildDb();
-        DontDestroyOnLoad(this);
+        int numDBs = FindObjectsOfType<ItemDB>().Length;
+        if (numDBs > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
     public Item GetItem(int id) {
         return items.Find(item => item.id == id);

@@ -9,8 +9,10 @@ public class HealthBar : MonoBehaviour
     [SerializeField] Health health;
     int startingHealth;
     bool hasBeenDamaged = false;
+    float maxHealth;
     void Start()
     {
+        maxHealth = health.maxHealth;
         parentScale = transform.parent.transform.localScale;
         localScale = transform.localScale;
         startingHealth = health.maxHealth;
@@ -26,7 +28,7 @@ public class HealthBar : MonoBehaviour
     }
     public void UpdateBar() {
         float healthScale = (float)health.GetHealth();
-        localScale.x = healthScale / 100f;
+        localScale.x = healthScale / maxHealth;
         transform.localScale = localScale;
     }
     public void CheckForDamage() {

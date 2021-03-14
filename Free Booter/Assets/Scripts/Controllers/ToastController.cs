@@ -5,26 +5,40 @@ using UnityEngine.UI;
 
 public class ToastController : MonoBehaviour
 {
-    private Text toastText;
+    [SerializeField] Text toastText;
     private float timer;
     private float startingTimer = 3f;
-    private Animator animator;
-    private bool firstUpdate;
+    [SerializeField] Animator animator;
+    private bool firstUpdate, awake;
+    [SerializeField] GameObject toastCanvass;
     void Start()
     {
-        DontDestroyOnLoad(this);
-        toastText = GetComponentInChildren<Text>();
-        animator = GetComponent<Animator>();
+        int numToasts = FindObjectsOfType<ToastController>().Length;
+        if(numToasts > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+        /*toastText = GetComponentInChildren<Text>();
+        animator = GetComponent<Animator>();*/
     }
     void Update()
     {
-        if (animator.GetNextAnimatorStateInfo(0).IsName("Default"))
+        if(awake)
         {
-            TurnOffToastController();
-
+            if (animator.GetNextAnimatorStateInfo(0).IsName("Default"))
+            {
+                TurnOffToastController();
+            }
         }
-        //DebugListener();
         ToastTimer();
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            TriggetToast("Testing");
+        }
     }
     private void ToastTimer()
     {
@@ -45,6 +59,8 @@ public class ToastController : MonoBehaviour
     }
     public void TriggetToast(string newToastText)
     {
+        awake = true;
+        toastCanvass.SetActive(true);
         animator.SetBool("fadeOut", false);
         RestartTimer();
         if(firstUpdate)
@@ -58,17 +74,11 @@ public class ToastController : MonoBehaviour
             toastText.text += "\n" + newToastText;
         }
     }
-    /*private void DebugListener()
-    {
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            TriggetToast("Testing...");
-        }
-    }*/
     public void TurnOffToastController()
     {
         animator.SetBool("fadeOut", false);
         animator.SetBool("fadeIn", false);
-        this.gameObject.SetActive(false);
+        toastCanvass.SetActive(false);
+        awake = false;
     }
 }
