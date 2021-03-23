@@ -43,10 +43,10 @@ public class PlayerShipController : MonoBehaviour
     }
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
         animator = GetComponent<Animator>();
         //shipInventory = GetComponent<Inventory>();
-        shipInventory = GameObject.Find("ShipInventory").GetComponent<Inventory>();
+        shipInventory = FindObjectOfType<Inventory>();
         ResetLootTimer();
         myHealth = GetComponent<Health>();
         myCollider = GetComponent<CapsuleCollider2D>();

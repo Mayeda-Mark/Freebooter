@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     //Dictionary<Item, List<int>> inventoryWithQuantities = new Dictionary<Item, List<int>>();
     MapController mapController;
+    private bool uiActive;
     private ToastController toast;
     private void Awake()
     {
@@ -25,11 +26,13 @@ public class Inventory : MonoBehaviour
         mapController = FindObjectOfType<MapController>();
         toolbarUI = FindObjectOfType<ToolbarUI>();
         //inventoryUI.gameObject.SetActive(false);
-        /*GiveItem(0, 80);
+        GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
-        GiveItem(6, 1);*/
+        GiveItem(6, 1);
         int numInventories = FindObjectsOfType<Inventory>().Length;
+        uiActive = false;
+        inventoryUI.gameObject.SetActive(false);
         /*if (numInventories > 1)
         {
             Destroy(gameObject);
@@ -41,8 +44,10 @@ public class Inventory : MonoBehaviour
     }
     private void Update() {
         if(Input.GetKeyDown(KeyCode.I)) {
+            uiActive = !uiActive;
+            inventoryUI.gameObject.SetActive(uiActive);
             //print("Bloop!");
-            inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
+            // inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
         }
         if(Input.GetKeyDown(KeyCode.P))
         {

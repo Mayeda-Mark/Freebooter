@@ -12,11 +12,12 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     private UIItem selectedItem;
     private Tooltip tooltip;
     Inventory inventory;
+    public string itemName;
     private void Awake()
     {
-        spriteImage = GetComponentInChildren<Image>();
-        quantityText = GetComponentInChildren<Text>();
-        UpdateItem(null);
+        /*spriteImage = GetComponentInChildren<Image>();
+        quantityText = GetComponentInChildren<Text>();*/
+        //UpdateItem(null);
     }
     private void Start() {
         //quantityText = transform.parent.GetComponentInChildren<Text>();
@@ -24,18 +25,21 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         inventory = FindObjectOfType<Inventory>();
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
+        UpdateItem(null);
     }
     public void UpdateItem(Item item) {
         this.item = item;
         if(this.item != null) {
+            //itemName = item.itemName;
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
             int quantityValue = inventory.GetQuantities()[item.id][0];
             quantityText.color = Color.white;
             quantityText.text = quantityValue.ToString();
         } else {
+            print("Something is null!");
             spriteImage.color = Color.clear;
-            //quantityText.color = Color.clear;
+            quantityText.color = Color.clear;
         }
     }
     public void UpdateItem(Item item, int /*index*/ quantity) {

@@ -5,18 +5,26 @@ using UnityEngine;
 public class UIInventory : MonoBehaviour
 {
     //public List<UIItem> uIItems = new List<UIItem>();
-    public GameObject slotPrefab;
+    //public GameObject slotPrefab;
     public Transform slotPanel;
     public int numberOfSlots = 16;
-    public UIItem[] uIItems = new UIItem[16];
+    public UIItem[] uIItems;// = new UIItem[16];
     private void Awake() {
-        for (int i = 0; i < numberOfSlots; i++) {
+        /*for (int i = 0; i < numberOfSlots; i++) {
             GameObject instance = Instantiate(slotPrefab);
             instance.transform.SetParent(slotPanel);
             //uIItems.Add(instance.GetComponentInChildren<UIItem>());
             uIItems[i] = instance.GetComponentInChildren<UIItem>();
             print(1);
             print(uIItems.Length);
+        }*/
+    }
+    private void Start()
+    {
+        uIItems = new UIItem[numberOfSlots];
+        for(int i = 0; i < numberOfSlots; i++)
+        {
+            uIItems[i] = slotPanel.GetChild(i).GetComponent<UIItem>();
         }
     }
     private void Update() {
