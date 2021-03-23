@@ -4,30 +4,50 @@ using UnityEngine;
 
 public class UIInventory : MonoBehaviour
 {
-    public List<UIItem> uIItems = new List<UIItem>();
+    //public List<UIItem> uIItems = new List<UIItem>();
     public GameObject slotPrefab;
     public Transform slotPanel;
     public int numberOfSlots = 16;
+    public UIItem[] uIItems = new UIItem[16];
     private void Awake() {
         for (int i = 0; i < numberOfSlots; i++) {
             GameObject instance = Instantiate(slotPrefab);
             instance.transform.SetParent(slotPanel);
-            uIItems.Add(instance.GetComponentInChildren<UIItem>());
+            //uIItems.Add(instance.GetComponentInChildren<UIItem>());
+            uIItems[i] = instance.GetComponentInChildren<UIItem>();
+            print(1);
+            print(uIItems.Length);
         }
     }
     private void Update() {
-        AssignQuantityIndex();
+        //AssignQuantityIndex();
     }
-    public void UpdateSlot(int slot, Item item) {
-        print(item.itemName);
-        uIItems[slot].UpdateItem(item);
+    public void UpdateSlot(int slot, Item item, int quantity) {
+        //print(item.itemName);
+        //print(uIItems.Count);
+        //print(slot);
+        uIItems[slot].UpdateItem(item, quantity);
     }
-    public void AddNewItem(Item item) {
-        UpdateSlot(uIItems.FindIndex(i => i.item == null), item);
+    public void AddNewItem(Item item, int quantity)
+    {
+        //print(uIItems.FindIndex(i => i.item == null));
+        bool foundEmpty = false;
+        for(int i = 0; i < numberOfSlots - 1; i++)
+        {
+            //print(i);
+            //print(uIItems.Length);
+            if(!foundEmpty && uIItems[i].item == null)
+            {
+                UpdateSlot(i, item, quantity);
+                foundEmpty = true;
+            }
+        }
+        //UpdateSlot(/*uIItems.FindIndex(i => i.item == null)*/, item, quantity);
     }
     public void RemoveItem(Item item) {
-        UpdateSlot(uIItems.FindIndex(i => i.item == item), null);
+        //UpdateSlot(uIItems.FindIndex(i => i.item == item), null, 0);
     }
+    // probably can delete
     private void AssignQuantityIndex() {
         List<int> slotQuantitiesIndexes = new List<int>(); // Make a list of all of the quantities indexes
         for (int i = 0; i < numberOfSlots; i++) { //Iterate through each of your inventory slots

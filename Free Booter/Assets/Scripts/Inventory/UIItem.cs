@@ -7,17 +7,21 @@ using UnityEngine.EventSystems;
 public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Item item;
-    private Image spriteImage;
-    Text quantityText;
+    public Image spriteImage;
+    public Text quantityText;
     private UIItem selectedItem;
     private Tooltip tooltip;
     Inventory inventory;
-
-    private void Start() {
-        quantityText = transform.parent.GetComponentInChildren<Text>();
-        spriteImage = GetComponent<Image>();
-        inventory = FindObjectOfType<Inventory>();
+    private void Awake()
+    {
+        spriteImage = GetComponentInChildren<Image>();
+        quantityText = GetComponentInChildren<Text>();
         UpdateItem(null);
+    }
+    private void Start() {
+        //quantityText = transform.parent.GetComponentInChildren<Text>();
+        //spriteImage = GetComponent<Image>();
+        inventory = FindObjectOfType<Inventory>();
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
     }
@@ -31,15 +35,15 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
             quantityText.text = quantityValue.ToString();
         } else {
             spriteImage.color = Color.clear;
-            quantityText.color = Color.clear;
+            //quantityText.color = Color.clear;
         }
     }
-    public void UpdateItem(Item item, int index) {
+    public void UpdateItem(Item item, int /*index*/ quantity) {
         this.item = item;
         if(this.item != null) {
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
-            int quantityValue = inventory.GetQuantitiesByKeyIndex(this.item.id, index);
+            int quantityValue = quantity;//inventory.GetQuantitiesByKeyIndex(this.item.id, /*index*/);
             quantityText.color = Color.white;
             quantityText.text = quantityValue.ToString();
         } else {

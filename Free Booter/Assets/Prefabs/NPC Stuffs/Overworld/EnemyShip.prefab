@@ -472,13 +472,10 @@ MonoBehaviour:
   table:
   - itemName: Cannon Balls
     itemIds: 
-    lootProbability: 50
+    lootProbability: 55
   - itemName: Chain Shot
     itemIds: 
-    lootProbability: 40
-  - itemName: Map
-    itemIds: 06000000
-    lootProbability: 10
+    lootProbability: 45
   maxLoot: 25
   minLoot: 75
 --- !u!1 &8682879045464581533

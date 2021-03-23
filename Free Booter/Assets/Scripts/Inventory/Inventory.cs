@@ -7,10 +7,10 @@ public class Inventory : MonoBehaviour
 {
     public List<Item> shipItems = new List<Item>();
     private ItemDB itemDB;
-    //public UIInventory shipInventoryUI;
-    Tooltip tooltip;
+    public UIInventory inventoryUI;
     ToolbarUI toolbarUI;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
+    //Dictionary<Item, List<int>> inventoryWithQuantities = new Dictionary<Item, List<int>>();
     MapController mapController;
     private ToastController toast;
     private void Awake()
@@ -18,16 +18,17 @@ public class Inventory : MonoBehaviour
        
     }
     private void Start() {
+        //inventoryUI = FindObjectOfType<UIInventory>();
         itemDB = FindObjectOfType<ItemDB>();
         toast = FindObjectOfType<ToastController>();
         //DontDestroyOnLoad(this);
         mapController = FindObjectOfType<MapController>();
         toolbarUI = FindObjectOfType<ToolbarUI>();
-        //shipInventoryUI.gameObject.SetActive(false);
-        GiveItem(0, 80);
+        //inventoryUI.gameObject.SetActive(false);
+        /*GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
-        GiveItem(6, 1);
+        GiveItem(6, 1);*/
         int numInventories = FindObjectsOfType<Inventory>().Length;
         /*if (numInventories > 1)
         {
@@ -41,7 +42,7 @@ public class Inventory : MonoBehaviour
     private void Update() {
         if(Input.GetKeyDown(KeyCode.I)) {
             //print("Bloop!");
-            //shipInventoryUI.gameObject.SetActive(!shipInventoryUI.gameObject.activeSelf);
+            inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
         }
         if(Input.GetKeyDown(KeyCode.P))
         {
@@ -70,7 +71,7 @@ public class Inventory : MonoBehaviour
     public void GiveItem(string itemName, int quantity) {
         Item itemToAdd = itemDB.GetItem(itemName);
         shipItems.Add(itemToAdd);
-        //shipInventoryUI.AddNewItem(itemToAdd);
+        inventoryUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
         int id = itemDB.GetItem(itemName).id;
         GiveQuantity(id, quantity);
     }
@@ -79,19 +80,27 @@ public class Inventory : MonoBehaviour
         int remainingQuantity = quantity;
         bool hasFinished = false;
         bool hasFoundKey = false;
-        foreach(var keyValue in quantities) { 
-            if(id == keyValue.Key && !hasFinished) {  
-            hasFoundKey = true; 
-                for(int i = 0; i < keyValue.Value.Count; i++) { 
-                    if(remainingQuantity + keyValue.Value[i] > maxQuantity && keyValue.Value[i] != maxQuantity) {
+        foreach (var keyValue in quantities)
+        {
+            if (id == keyValue.Key && !hasFinished)
+            {
+                hasFoundKey = true;
+                for (int i = 0; i < keyValue.Value.Count; i++)
+                {
+                    if (remainingQuantity + keyValue.Value[i] > maxQuantity && keyValue.Value[i] != maxQuantity)
+                    {
                         remainingQuantity = quantity + keyValue.Value[i] - maxQuantity;
                         keyValue.Value[i] = maxQuantity;
                         GiveQuantity(id, remainingQuantity);
                         return;
-                    } else if (remainingQuantity + keyValue.Value[i] <= maxQuantity && !hasFinished) {
+                    }
+                    else if (remainingQuantity + keyValue.Value[i] <= maxQuantity && !hasFinished)
+                    {
                         keyValue.Value[i] += remainingQuantity;
                         hasFinished = true;
-                    } else if(keyValue.Value.Count - 1 == i && keyValue.Value[i] == maxQuantity){
+                    }
+                    else if (keyValue.Value.Count - 1 == i && keyValue.Value[i] == maxQuantity)
+                    {
                         //Save for later keyValue.Value.Count - 1 == i && keyValue.Value[i] == maxQuantity
                         AddToInventory(id);
                         keyValue.Value.Add(remainingQuantity);
@@ -100,22 +109,17 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
-        if(!hasFinished && !hasFoundKey) {
+        if (!hasFinished && !hasFoundKey) {
             List<int> valueList = new List<int>();
             valueList.Add(quantity);
             quantities.Add(id, valueList); 
             AddToInventory(id);
         }
-        // foreach(var keyValue in quantities) {
-        //     for(int i = 0; i < keyValue.Value.Count; i++) {
-        //         Debug.Log(keyValue.Value[i]);
-        //     }
-        // }
     }
     private void AddToInventory(int id) {
         Item itemToAdd = itemDB.GetItem(id);
         shipItems.Add(itemToAdd);
-        //shipInventoryUI.AddNewItem(itemToAdd);
+        inventoryUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
     }
     public Item CheckForItem(int id) {
         return shipItems.Find(item => item.id == id);
@@ -144,7 +148,7 @@ public class Inventory : MonoBehaviour
         Item itemToRemove = CheckForItem(id);
         if(itemToRemove != null) {
             shipItems.Remove(itemToRemove);
-            //shipInventoryUI.RemoveItem(itemToRemove);
+            inventoryUI.RemoveItem(itemToRemove);
         } else {
             Debug.Log("Item not found");
         }

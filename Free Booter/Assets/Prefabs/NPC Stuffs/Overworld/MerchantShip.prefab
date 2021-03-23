@@ -361,13 +361,13 @@ MonoBehaviour:
   table:
   - itemName: Rum/Silk
     itemIds: 0300000004000000
-    lootProbability: 55
+    lootProbability: 40
   - itemName: Spices
     itemIds: 05000000
-    lootProbability: 30
+    lootProbability: 35
   - itemName: Maps
-    itemIds: 06000000
-    lootProbability: 15
+    itemIds: 0e000000
+    lootProbability: 25
   maxLoot: 25
   minLoot: 75
 --- !u!1 &2571098727462969595

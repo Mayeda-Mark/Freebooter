@@ -7,17 +7,12 @@ public class LevelController : MonoBehaviour
     public bool isSideScroll = default;
     public string levelMusic = default;
     public string ambiantNoise = default;
-    PlayerShipController ship;
-    //SoundManager sound;
     MusicManager music;
     void Start()
     {
-        ship = FindObjectOfType<PlayerShipController>();
-        //sound = FindObjectOfType<SoundManager>();
         music = FindObjectOfType<MusicManager>();
         if(isSideScroll)
         {
-            ship.gameObject.SetActive(false);
             Physics2D.gravity = new Vector2(0, -10);
         } else
         {
