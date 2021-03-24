@@ -40,7 +40,7 @@ public class ItemDB : MonoBehaviour
                 {"BaseCost", 5},
                 {"QuantitySoldIn", 10}
             }, true, false, false),
-            new Item(2, "Gold", "Sparkly orangish stuff that you can buy things with", icons[2], 300 , 
+            new Item(2, "Gold", "Sparkly orangish stuff that you can buy things with", icons[2], 400 , 
             new Dictionary<string, int> {}, false, false, false),
             new Item(3, "Rum", "The nectar of the Gods. Good on ham", icons[3], 300,
             new Dictionary<string, int> {

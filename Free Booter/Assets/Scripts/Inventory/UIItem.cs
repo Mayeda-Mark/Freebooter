@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHandler, IPointerExitHandler
 {
     public Item item;
     public Image spriteImage;
@@ -13,6 +13,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     private Tooltip tooltip;
     Inventory inventory;
     public string itemName;
+    public bool itemQuantityFull;
     private void Awake()
     {
         /*spriteImage = GetComponentInChildren<Image>();
@@ -22,12 +23,13 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     private void Start() {
         //quantityText = transform.parent.GetComponentInChildren<Text>();
         //spriteImage = GetComponent<Image>();
+        itemQuantityFull = false;
         inventory = FindObjectOfType<Inventory>();
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
-        UpdateItem(null);
+        UpdateItem(null, 0);
     }
-    public void UpdateItem(Item item) {
+    /*public void UpdateItem(Item item) {
         this.item = item;
         if(this.item != null) {
             //itemName = item.itemName;
@@ -37,11 +39,10 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
             quantityText.color = Color.white;
             quantityText.text = quantityValue.ToString();
         } else {
-            print("Something is null!");
             spriteImage.color = Color.clear;
             quantityText.color = Color.clear;
         }
-    }
+    }*/
     public void UpdateItem(Item item, int /*index*/ quantity) {
         this.item = item;
         if(this.item != null) {
@@ -50,11 +51,15 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
             int quantityValue = quantity;//inventory.GetQuantitiesByKeyIndex(this.item.id, /*index*/);
             quantityText.color = Color.white;
             quantityText.text = quantityValue.ToString();
+            if(quantity >= item.maxQuantity)
+            {
+                itemQuantityFull = true;
+            }
         } else {
             spriteImage.color = Color.clear;
             quantityText.color = Color.clear;
         }
-    }
+    }/*
     public void OnPointerClick(PointerEventData eventData) {
         int clickCount = eventData.clickCount;
         if(clickCount == 2) {
@@ -92,7 +97,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
             UpdateItem(selectedItem.item);
             selectedItem.UpdateItem(null);
         }
-    }
+    }*/
     public void OnPointerEnter(PointerEventData eventData1) {
         if(this.item != null) {
             tooltip.GenerateTooltip(this.item);

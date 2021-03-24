@@ -1365,6 +1365,7 @@ MonoBehaviour:
   spriteImage: {fileID: 0}
   quantityText: {fileID: 0}
   itemName: 
+  itemQuantityFull: 0
 --- !u!114 &439845424
 MonoBehaviour:
   m_ObjectHideFlags: 0

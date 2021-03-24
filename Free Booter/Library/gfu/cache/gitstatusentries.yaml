@@ -13,328 +13,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-23T15:35:41.372-07:00
-  initializedAtString: 2021-03-23T14:18:35.830-07:00
+  lastUpdatedAtString: 2021-03-24T10:51:42.914-07:00
+  initializedAtString: 2021-03-24T09:10:16.045-07:00
   entries:
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\1_normal_ui_set
-      free.psd
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\1_normal_ui_set free.psd
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\1_normal_ui_set
-      free.psd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\1_normal_ui_set-free.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\1_normal_ui_set-free.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\1_normal_ui_set-free.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Close Button.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\Close Button.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Close Button.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Division line.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\Division line.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Division line.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Exclamation_Gray.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\Exclamation_Gray.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Exclamation_Gray.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Exclamation_Red.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\Exclamation_Red.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Exclamation_Red.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Exclamation_Yellow.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\Exclamation_Yellow.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\Exclamation_Yellow.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\IRONY TITLE 
-      empty.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\IRONY TITLE  empty.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\IRONY TITLE  empty.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\IRONY TITLE 
-      Large.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\IRONY TITLE  Large.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\IRONY TITLE  Large.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\notice.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\notice.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\notice.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Big.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_Big.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Big.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Big_Pressed.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_Big_Pressed.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Big_Pressed.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Cancel.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_Cancel.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Cancel.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Cancel_Pressed.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_Cancel_Pressed.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Cancel_Pressed.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Medium.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_Medium.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Medium.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Medium_Pressed.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_Medium_Pressed.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_Medium_Pressed.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_New-Start.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_New-Start.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_New-Start.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_New-Start_Pressed.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\TextBTN_New-Start_Pressed.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\TextBTN_New-Start_Pressed.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Large 
-      parchment.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Large  parchment.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Large 
-      parchment.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Large
-      Set.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Large Set.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Large Set.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Large
-      stone.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Large stone.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Large stone.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Medium 
-      parchment.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Medium  parchment.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Medium 
-      parchment.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Medium
-      Set.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Medium Set.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Medium
-      Set.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Medium
-      stone.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Medium stone.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Medium
-      stone.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Small 
-      parchment.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Small  parchment.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Small 
-      parchment.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Small 
-      stone.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Small  stone.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Small 
-      stone.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Small
-      Set.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\normal_ui_set A\UI board Small Set.png
-    projectPath: Assets\Fantasy Wooden GUI  Free\normal_ui_set A\UI board Small Set.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Fantasy Wooden GUI  Free\Scene\Demo.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Fantasy
-      Wooden GUI  Free\Scene\Demo.unity
-    projectPath: Assets\Fantasy Wooden GUI  Free\Scene\Demo.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Controllers\Level Controller.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Level
-      Controller.prefab
-    projectPath: Assets\Prefabs\Controllers\Level Controller.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Controllers\LevelLoader.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\LevelLoader.prefab
-    projectPath: Assets\Prefabs\Controllers\LevelLoader.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Controllers\Music Manager.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Music
-      Manager.prefab
-    projectPath: Assets\Prefabs\Controllers\Music Manager.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Controllers\PauseController.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\PauseController.prefab
-    projectPath: Assets\Prefabs\Controllers\PauseController.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Controllers\Sound Manager.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Sound
-      Manager.prefab
-    projectPath: Assets\Prefabs\Controllers\Sound Manager.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Controllers\ToastController.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\ToastController.prefab
-    projectPath: Assets\Prefabs\Controllers\ToastController.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Inventory Canvas.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Inventory Canvas.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Inventory Canvas.prefab
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Level Controller.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Level Controller.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Level Controller.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\LevelLoader.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\LevelLoader.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\LevelLoader.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Music Manager.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Music Manager.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Music Manager.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Slot.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Slot.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Slot.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sound Manager.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Sound Manager.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Sound Manager.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\ToastController.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\ToastController.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\ToastController.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Pause Canvas.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Pause
-      Canvas.prefab
-    projectPath: Assets\Prefabs\Pause Canvas.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Scripts\Controllers\PauseController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\PauseController.cs
-    projectPath: Assets\Scripts\Controllers\PauseController.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Assets\Scripts\Inventory\Inventory.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Inventory.cs
     projectPath: Assets\Scripts\Inventory\Inventory.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\ItemDB.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ItemDB.cs
+    projectPath: Assets\Scripts\Inventory\ItemDB.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -347,12 +43,6 @@ MonoBehaviour:
   - path: Free Booter\Assets\Scripts\Inventory\UIItem.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\UIItem.cs
     projectPath: Assets\Scripts\Inventory\UIItem.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\OverWorld\Player\PlayerShipController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\OverWorld\Player\PlayerShipController.cs
-    projectPath: Assets\Scripts\OverWorld\Player\PlayerShipController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -398,12 +88,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\SceneVisibilityState.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
@@ -428,51 +112,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-e7802c50c9d415249b.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-e7802c50c9d415249b.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-e7802c50c9d415249b.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-e03b77284a900e44aa.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-e03b77284a900e44aa.json
-    projectPath: Library\StateCache\SceneView\91733e-e03b77284a900e44aa.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-e7802c50c9d415249b.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-e7802c50c9d415249b.json
-    projectPath: Library\StateCache\SceneView\91733e-e7802c50c9d415249b.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\UIElements\EditorWindows\UnityEditor.PackageManager.UI.PackageManagerWindow.pref
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\UIElements\EditorWindows\UnityEditor.PackageManager.UI.PackageManagerWindow.pref
-    projectPath: Library\UIElements\EditorWindows\UnityEditor.PackageManager.UI.PackageManagerWindow.pref
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

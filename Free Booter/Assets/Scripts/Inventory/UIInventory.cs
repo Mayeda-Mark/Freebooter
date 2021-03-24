@@ -4,21 +4,9 @@ using UnityEngine;
 
 public class UIInventory : MonoBehaviour
 {
-    //public List<UIItem> uIItems = new List<UIItem>();
-    //public GameObject slotPrefab;
     public Transform slotPanel;
     public int numberOfSlots = 16;
-    public UIItem[] uIItems;// = new UIItem[16];
-    private void Awake() {
-        /*for (int i = 0; i < numberOfSlots; i++) {
-            GameObject instance = Instantiate(slotPrefab);
-            instance.transform.SetParent(slotPanel);
-            //uIItems.Add(instance.GetComponentInChildren<UIItem>());
-            uIItems[i] = instance.GetComponentInChildren<UIItem>();
-            print(1);
-            print(uIItems.Length);
-        }*/
-    }
+    public UIItem[] uIItems;
     private void Start()
     {
         uIItems = new UIItem[numberOfSlots];
@@ -27,32 +15,50 @@ public class UIInventory : MonoBehaviour
             uIItems[i] = slotPanel.GetChild(i).GetComponent<UIItem>();
         }
     }
-    private void Update() {
-        //AssignQuantityIndex();
-    }
     public void UpdateSlot(int slot, Item item, int quantity) {
-        //print(item.itemName);
-        //print(uIItems.Count);
-        //print(slot);
         uIItems[slot].UpdateItem(item, quantity);
     }
     public void AddNewItem(Item item, int quantity)
     {
-        //print(uIItems.FindIndex(i => i.item == null));
         bool foundEmpty = false;
         for(int i = 0; i < numberOfSlots - 1; i++)
         {
-            //print(i);
-            //print(uIItems.Length);
             if(!foundEmpty && uIItems[i].item == null)
             {
                 UpdateSlot(i, item, quantity);
                 foundEmpty = true;
             }
         }
-        //UpdateSlot(/*uIItems.FindIndex(i => i.item == null)*/, item, quantity);
     }
-    public void RemoveItem(Item item) {
+    public void AddExistingItem(Item item, int quantity)
+    {
+        bool foundItem = false;
+        for (int i = 0; i < numberOfSlots - 1; i++)
+        {
+            if (!foundItem && !uIItems[i].itemQuantityFull && uIItems[i].item.id == item.id)
+            {
+                UpdateSlot(i, item, quantity);
+                foundItem = true;
+            }
+        }
+
+    }
+    public void RemoveItem(Item item, int quantity) {
+        bool foundItem = false;
+        for(int i = numberOfSlots - 1; i > 0; i--)
+        {
+            if(!foundItem && item == uIItems[i].item)
+            {
+                if(quantity <= 0)
+                {
+                    UpdateSlot(i, null, 0);
+                }
+                else
+                {
+                    UpdateSlot(i, item, quantity);
+                }
+            }
+        }
         //UpdateSlot(uIItems.FindIndex(i => i.item == item), null, 0);
     }
     // probably can delete
