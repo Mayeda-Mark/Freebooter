@@ -25,7 +25,7 @@ public class InventoryUIController : MonoBehaviour
         {
             ActivatePanel("Supplies");
         }
-        DeactivateUI();
+        //DeactivateUI();
     }
     void Update()
     {
@@ -78,6 +78,7 @@ public class InventoryUIController : MonoBehaviour
             } 
             else
             {
+                print("else called"); 
                 panel.ui.gameObject.SetActive(false);
             }
         }
