@@ -9,8 +9,6 @@ public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHand
     public Item item;
     public Image spriteImage;
     public Text quantityText;
-    private UIItem selectedItem;
-    private Tooltip tooltip;
     Inventory inventory;
     public string itemName;
     public bool itemQuantityFull;
@@ -25,8 +23,6 @@ public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHand
         //spriteImage = GetComponent<Image>();
         itemQuantityFull = false;
         inventory = FindObjectOfType<Inventory>();
-        selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
-        tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
         UpdateItem(null, 0);
     }
     /*public void UpdateItem(Item item) {
@@ -100,11 +96,9 @@ public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHand
     }*/
     public void OnPointerEnter(PointerEventData eventData1) {
         if(this.item != null) {
-            tooltip.GenerateTooltip(this.item);
         }
     }
     public void OnPointerExit(PointerEventData eventData2) {
-        tooltip.gameObject.SetActive(false);
     }
     public void UpdateThisItem(int index) {
         UpdateItem(this.item, index);

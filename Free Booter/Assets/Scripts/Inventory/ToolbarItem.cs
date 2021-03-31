@@ -9,6 +9,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
 {
     //I WANT THE TOOLBAR ITEMS TO BECOME GOLD TO INDICATE THAT THEY ARE EQUIPPED, BLACK WHEN EMPTY, MUTED WHEN NOT EQUIPPED, BRIGHTENED TO NORMAL WHEN MOUSED OVER AND EQUIP THE ITEM WHEN CLICKED
     public Item item;
+    public int quantity;
     private Image spriteImage;
     PlayerShipController player;
     [SerializeField] Image parentImage = default;
@@ -33,7 +34,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         player = FindObjectOfType<PlayerShipController>();
         spriteImage = GetComponent<Image>();
         inventory = FindObjectOfType<Inventory>();
-        UpdateItem(null);
+        UpdateItem(null, 0);
         parentImage.color = defaultColor;
         toolbarUI = FindObjectOfType<ToolbarUI>();
     }
@@ -55,9 +56,11 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     {
         quantityText.text = number.ToString();
     }
-    public void UpdateItem(Item item)
+    public void UpdateItem(Item item, int updateQuantity)
     {
         this.item = item;
+        quantity = updateQuantity;
+        SetQuantity(quantity);
         if (this.item != null)
         {
             isActive = true;
@@ -77,16 +80,16 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
             quantityText.color = Color.clear;
         }
     }
-    #region Click
+    #region Equipping
     public void OnPointerClick(PointerEventData eventData)
     {
         if(isActive)
         {
-            EquipItem(item);
+            EquipItem(/*item*/);
         }
     }
 
-    public void EquipItem(Item item)
+    public void EquipItem(/*Item item*/)
     {
         //ADD IF STATEMENT CHECKING FOR QUANTITY > 0
         parentImage.color = selectedItemColor;

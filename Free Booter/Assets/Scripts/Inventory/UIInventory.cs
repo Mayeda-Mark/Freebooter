@@ -7,8 +7,10 @@ public class UIInventory : MonoBehaviour
     public Transform slotPanel;
     public int numberOfSlots = 16;
     public UIItem[] uIItems;
+    private LevelController levelController;
     private void Start()
     {
+        levelController = FindObjectOfType<LevelController>();
         uIItems = new UIItem[numberOfSlots];
         for(int i = 0; i < numberOfSlots; i++)
         {
@@ -96,6 +98,13 @@ public class UIInventory : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+    public void ResetMenu()
+    {
+        foreach(UIItem ui in uIItems)
+        {
+            ui.UpdateItem(null, 0);
         }
     }
 }

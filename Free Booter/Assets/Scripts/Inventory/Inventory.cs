@@ -7,30 +7,33 @@ public class Inventory : MonoBehaviour
 {
     public List<Item> inventoryItems = new List<Item>();
     private ItemDB itemDB;
-    public UIInventory inventoryUI;
-    ToolbarUI toolbarUI;
+    public InventoryUIController inventoryUI;
+    public ToolbarUI toolbarUI;
     Dictionary<int, List<int>> quantities = new Dictionary<int, List<int>>();
     //Dictionary<Item, List<int>> inventoryWithQuantities = new Dictionary<Item, List<int>>();
     MapController mapController;
     private bool uiActive;
     private ToastController toast;
+    private LevelController levelController;
     private void Awake()
     {
        
     }
     private void Start() {
+        levelController = FindObjectOfType<LevelController>();
         //inventoryUI = FindObjectOfType<UIInventory>();
         itemDB = FindObjectOfType<ItemDB>();
         toast = FindObjectOfType<ToastController>();
         //DontDestroyOnLoad(this);
         mapController = FindObjectOfType<MapController>();
-        toolbarUI = FindObjectOfType<ToolbarUI>();
+        //toolbarUI = FindObjectOfType<ToolbarUI>();
         //inventoryUI.gameObject.SetActive(false);
         GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
         GiveItem(6, 1);
-        int numInventories = FindObjectsOfType<Inventory>().Length;
+        GiveItem(17, 1);
+        //int numInventories = FindObjectsOfType<Inventory>().Length;
         uiActive = false;
         inventoryUI.gameObject.SetActive(false);
         /*if (numInventories > 1)
@@ -43,15 +46,16 @@ public class Inventory : MonoBehaviour
         }*/
     }
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.I)) {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
             uiActive = !uiActive;
             inventoryUI.gameObject.SetActive(uiActive);
             //print("Bloop!");
             // inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
         }
-        if(Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            DecreaseQuantity(2, 100);
+            //DecreaseQuantity(2, 100);
         }
     }
     private void DebugInventory() {
@@ -61,10 +65,10 @@ public class Inventory : MonoBehaviour
     }
     public void GiveItem(int id, int quantity) {
         GiveQuantity(id, quantity);
-        if(toolbarUI != null)
+        /*if(toolbarUI != null)
         {
             toolbarUI.UpdateToolbar();
-        }
+        }*/
         Item givenItem = CheckForItem(id);
         if(givenItem.isAMap)
         {
@@ -76,12 +80,17 @@ public class Inventory : MonoBehaviour
     public void GiveItem(string itemName, int quantity) {
         Item itemToAdd = itemDB.GetItem(itemName);
         inventoryItems.Add(itemToAdd);
-        inventoryUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
+        if(itemToAdd.forSidescroll == levelController.isSideScroll)
+        {
+            inventoryUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
+            toolbarUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
+        }
         int id = itemDB.GetItem(itemName).id;
         GiveQuantity(id, quantity);
     }
     public void GiveQuantity(int id, int quantity) {
-        int maxQuantity = itemDB.GetItem(id).GetMaxQuantity();
+        int maxQuantity = itemDB.GetItem(id).maxQuantity
+            ;
         int remainingQuantity = quantity;
         bool hasFinished = false;
         bool hasFoundKey = false;
@@ -96,19 +105,31 @@ public class Inventory : MonoBehaviour
                     { // TOP OFF QUANTITY
                         remainingQuantity = quantity + keyValue.Value[i] - maxQuantity;
                         keyValue.Value[i] = maxQuantity;
-                        inventoryUI.AddExistingItem(itemDB.GetItem(id), maxQuantity);
+                        if(itemDB.GetItem(id).forSidescroll == levelController.isSideScroll)
+                        {
+                            inventoryUI.AddExistingItem(itemDB.GetItem(id), maxQuantity);
+                            toolbarUI.UpdateExistingItem(itemDB.GetItem(id), keyValue.Value[i]);
+                        }
                         GiveQuantity(id, remainingQuantity);
                         return;
                     }
                     else if (remainingQuantity + keyValue.Value[i] <= maxQuantity && !hasFinished)
                     { // ADD TO QUANTITY
                         keyValue.Value[i] += remainingQuantity;
-                        inventoryUI.AddExistingItem(itemDB.GetItem(id), keyValue.Value[i]);
+                        if (itemDB.GetItem(id).forSidescroll == levelController.isSideScroll)
+                        {
+                            inventoryUI.AddExistingItem(itemDB.GetItem(id), keyValue.Value[i]);
+                            toolbarUI.UpdateExistingItem(itemDB.GetItem(id), keyValue.Value[i]);
+                        }
                         hasFinished = true;
                     }
                     else if (keyValue.Value.Count - 1 == i && keyValue.Value[i] == maxQuantity)
                     { // ADD NEW QUANTITY
                         AddExistingToInventory(id, remainingQuantity);
+                        if (itemDB.GetItem(id).forSidescroll == levelController.isSideScroll)
+                        {
+                            toolbarUI.UpdateExistingItem(itemDB.GetItem(id), keyValue.Value[i]);
+                        }
                         keyValue.Value.Add(remainingQuantity);
                         hasFinished = true;
                     }
@@ -126,13 +147,20 @@ public class Inventory : MonoBehaviour
     {
         Item itemToAdd = itemDB.GetItem(id);
         inventoryItems.Add(itemToAdd);
-        inventoryUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
+        if(itemToAdd.forSidescroll == levelController.isSideScroll)
+        {
+            inventoryUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
+            toolbarUI.AddNewItem(itemToAdd, GetTotalQuantity(itemToAdd.id));
+        }
     }
     private void AddExistingToInventory(int id, int quantity)
     {
         Item itemToAdd = itemDB.GetItem(id);
         inventoryItems.Add(itemToAdd);
-        inventoryUI.AddNewItem(itemToAdd, quantity);
+        if(itemToAdd.forSidescroll == levelController.isSideScroll)
+        {
+            inventoryUI.AddNewItem(itemToAdd, quantity);
+        }
     }
     public Item CheckForItem(int id) {
         return inventoryItems.Find(item => item.id == id);
@@ -159,30 +187,32 @@ public class Inventory : MonoBehaviour
     }
     public void DecreaseQuantity(int id, int amount)
     {
-        quantities[id][quantities[id].Count - 1] -= amount;
-        if (quantities[id][quantities[id].Count - 1] <= 0)
+        quantities[id][quantities[id].Count - 1] -= amount; // TAKE THE AMOUNT AWAY FROM THE QUANTITY
+        if (quantities[id][quantities[id].Count - 1] <= 0) // IF THERE ISN'T ANYTHING LEFT IN THE QUANTITY...
         {
             int remainingAmount = quantities[id][quantities[id].Count - 1] * -1;
-            if (quantities[id].Count == 1)
-            {
+            if (quantities[id].Count == 1) // AND IF THAT'S THE ONLY QUANTITY WE HAVE...
+            { // REMOVE IT COMPLETELY FROM THE INVENTORY
                 quantities.Remove(id);
                 RemoveItem(id);
                 return;
-            }
+            } // OTHERWISE, DROP THAT QUANTITY AND RUN IT AGAIN
             quantities[id].RemoveAt(quantities[id].Count - 1);
             DecreaseQuantity(id, remainingAmount);
         }
-        else
+        else // IF THERE IS SOMETHING LEFT IN THE QUANTITY, ADJUST THE UI AND OVE ON WITH YOUR LIFE
         {
             inventoryUI.RemoveItem(itemDB.GetItem(id), quantities[id][quantities[id].Count - 1]);
+            toolbarUI.UpdateExistingItem(itemDB.GetItem(id), GetTotalQuantity(id));
         }
-        toolbarUI.UpdateToolbar();
+        //toolbarUI.UpdateToolbar();
     }
     public void RemoveItem(int id) {
         Item itemToRemove = CheckForItem(id);
         if(itemToRemove != null) {
             inventoryItems.Remove(itemToRemove);
             inventoryUI.RemoveItem(itemToRemove, 0);
+            toolbarUI.RemoveItem(itemToRemove);
         } else {
             Debug.Log("Item not found");
         }
@@ -245,4 +275,16 @@ public class Inventory : MonoBehaviour
     {
         return inventoryItems;
     }
+    /*public void SetUpUI()
+    {
+        print("Setting up UI!");
+        inventoryUI.ResetMenu();
+        foreach(Item item in inventoryItems)
+        {
+            if(item.forSidescroll == levelController.isSideScroll)
+            {
+                inventoryUI.AddNewItem(item, GetTotalQuantity(item.id));
+            }
+        }
+    }*/
 }

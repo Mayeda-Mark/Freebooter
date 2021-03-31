@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class ToolbarUI : MonoBehaviour
 {
-    public List<ToolbarItem> toolbarItems = new List<ToolbarItem>();
-    public GameObject slotPrefab;
+    //public List<ToolbarItem> toolbarItems = new List<ToolbarItem>();
+    public ToolbarItem[] toolbarItems;
+    //public GameObject slotPrefab;
     public Transform slotPanel;
     public int numberOfSlots = 6;
     Inventory inventory;
@@ -14,43 +15,145 @@ public class ToolbarUI : MonoBehaviour
     List<Item> inventoryItems = new List<Item>();
     private void Awake()
     {
-        inventory = FindObjectOfType<Inventory>();
-        inventoryItems = inventory.GetInventory();
-        for (int i = 0; i < numberOfSlots; i++)
+        toolbarItems = new ToolbarItem[numberOfSlots];
+        for (int i = 0; i < numberOfSlots - 1; i++)
         {
-            GameObject instance = Instantiate(slotPrefab);
-            instance.transform.SetParent(slotPanel);
-            toolbarItems.Add(instance.GetComponentInChildren<ToolbarItem>());
+            /*GameObject instance = Instantiate(slotPrefab);
+            instance.transform.SetParent(slotPanel);*/
+            //toolbarItems.Add(instance.GetComponentInChildren<ToolbarItem>());
+            toolbarItems[i] = slotPanel.GetChild(i).GetComponentInChildren<ToolbarItem>();
         }
     }
 
     void Start()
     {
+        inventory = FindObjectOfType<Inventory>();
+        inventoryItems = inventory.GetInventory();
         EquipFirstItem();
         SetSlotNumbers();
     }
+    void Update()
+    {
+        KeyboardListener();
+    }
     public void EquipFirstItem()
     {
-        UpdateToolbar();
+        SetUpToolbar();
         bool foundFirst = false;
-        foreach (Item item in toolbarInventory.Keys)
+        for (int i = 0; i < numberOfSlots - 1; i++)
+        {
+            if (toolbarItems[i].item != null && toolbarItems[i].quantity > 0 && !foundFirst)
+            {
+                toolbarItems[i].EquipItem();
+            }
+        }
+        /*foreach (Item item in toolbarInventory.Keys)
         {
             if (toolbarInventory[item] > 0 && !foundFirst)
             {
                 toolbarItems[toolbarItems.FindIndex(i => i.item == item)].EquipItem(item);
                 foundFirst = true;
             }
-        }
+        }*/
     }
-
     private void SetSlotNumbers()
     {
-        for(int i = 0; i < toolbarItems.Count - 1; i++)
+        for(int i = 0; i < numberOfSlots - 1; i++)
         {
             toolbarItems[i].SetSlotNumer(i + 1);
         }
     }
-    private void UpdateQuantities()
+    public void UpdateExistingItem(Item item, int quantity)
+    {
+        bool foundItem = false;
+        for(int i = 0; i < numberOfSlots - 1; i ++)
+        {
+            if(toolbarItems[i].item == item && !foundItem)
+            {
+                toolbarItems[i].UpdateItem(item, quantity);
+                foundItem = true;
+                return;
+            }
+            //if(toolbarInventory == item) 
+        }
+        //UpdateSlot(toolbarItems.FindIndex(i => i.item == item), item);
+    }
+    public void AddNewItem(Item item, int quantity)
+    {
+        if(item.equipable)
+        {
+            bool foundEmptySlot = false;
+            for (int i = 0; i < numberOfSlots - 1; i++)
+            {
+                if (toolbarItems[i].item == null && !foundEmptySlot)
+                {
+                    toolbarItems[i].UpdateItem(item, quantity);
+                    foundEmptySlot = true;
+                    return;
+                }
+            }
+        }
+        //UpdateSlot(toolbarItems.FindIndex(i => i.item == null), item);
+    }
+    public void RemoveItem(Item item)
+    {
+        bool foundItem = false;
+        for(int i = 0; i < numberOfSlots - 1; i++)
+        {
+            if(toolbarItems[i].item == item && !foundItem)
+            {
+                toolbarItems[i].UpdateItem(null, 0);
+                foundItem = true;
+                return;
+            }
+        }
+        //UpdateSlot(toolbarItems.FindIndex(i => i.item == item), null);
+    }
+
+    internal void UnequipAllButThis(Item item)
+    {
+
+        print(item.itemName);
+        foreach (ToolbarItem slot in toolbarItems)
+        {
+            if (slot.item != item)
+            {
+                slot.Unequip();
+            }
+        }
+    }
+    /*public void UpdateSlot(int slot, Item item)
+    {
+        toolbarItems[slot].UpdateItem(item);
+    }*/
+    private void SetUpToolbar()
+    {
+        foreach (Item item in inventoryItems)
+        {
+            bool hasFoundItem = false;
+            if (item.equipable)
+            {
+                foreach (Item existingItem in toolbarInventory.Keys)
+                {
+                    if (item == existingItem)
+                    {
+                        int totalQuantity = inventory.GetTotalQuantity(item.id);
+                        //toolbarInventory[existingItem] = totalQuantity;
+                        hasFoundItem = true;
+                        UpdateExistingItem(item, totalQuantity);
+                    }
+                }
+                if (!hasFoundItem)
+                {
+                    int totalQuantity = inventory.GetTotalQuantity(item.id);
+                    toolbarInventory.Add(item, totalQuantity);
+                    AddNewItem(item, totalQuantity);
+                }
+            }
+
+        }
+    }
+    /*private void UpdateQuantities()
     {
         for(int i = 0; i < toolbarItems.Count - 1; i ++)
         {
@@ -59,59 +162,8 @@ public class ToolbarUI : MonoBehaviour
                 toolbarItems[i].SetQuantity(inventory.GetTotalQuantity(toolbarItems[i].item.id));
             }
         }
-    }
-    void Update()
-    {
-        KeyboardListener();
-    }
-
-    private void KeyboardListener()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            if(toolbarItems[0].item != null)
-            {
-                toolbarItems[0].EquipItem(toolbarItems[0].item);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            if (toolbarItems[1].item != null)
-            {
-                toolbarItems[1].EquipItem(toolbarItems[1].item);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            if (toolbarItems[2].item != null)
-            {
-                toolbarItems[2].EquipItem(toolbarItems[2].item);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            if (toolbarItems[3].item != null)
-            {
-                toolbarItems[3].EquipItem(toolbarItems[3].item);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            if (toolbarItems[4].item != null)
-            {
-                toolbarItems[4].EquipItem(toolbarItems[4].item);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            if (toolbarItems[5].item != null)
-            {
-                toolbarItems[5].EquipItem(toolbarItems[5].item);
-            }
-        }
-    }
-
-    public void UpdateToolbar()
+    }*/
+    /*public void UpdateToolbar()
     {
         foreach (Item item in inventoryItems)
         {
@@ -137,33 +189,52 @@ public class ToolbarUI : MonoBehaviour
             }
         }
         UpdateQuantities();
-    }
-    public void UpdateExistingItem(Item item)
+    }*/
+    #region Keyboard Listener
+    private void KeyboardListener()
     {
-        UpdateSlot(toolbarItems.FindIndex(i => i.item == item), item);
-    }
-    public void AddNewItem(Item item)
-    {
-        UpdateSlot(toolbarItems.FindIndex(i => i.item == null), item);
-    }
-    public void RemoveItem(Item item)
-    {
-        UpdateSlot(toolbarItems.FindIndex(i => i.item == item), null);
-    }
-
-    internal void UnequipAllButThis(Item item)
-    {
-        foreach(ToolbarItem slot in toolbarItems)
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if(slot.item != item)
+            if (toolbarItems[0].item != null)
             {
-                slot.Unequip();
+                toolbarItems[0].EquipItem(/*toolbarItems[0].item*/);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (toolbarItems[1].item != null)
+            {
+                toolbarItems[1].EquipItem(/*toolbarItems[1].item*/);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (toolbarItems[2].item != null)
+            {
+                toolbarItems[2].EquipItem(/*toolbarItems[2].item*/);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            if (toolbarItems[3].item != null)
+            {
+                toolbarItems[3].EquipItem(/*toolbarItems[3].item*/);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            if (toolbarItems[4].item != null)
+            {
+                toolbarItems[4].EquipItem(/*toolbarItems[4].item*/);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            if (toolbarItems[5].item != null)
+            {
+                toolbarItems[5].EquipItem(/*toolbarItems[5].item*/);
             }
         }
     }
-
-    public void UpdateSlot(int slot, Item item)
-    {
-        toolbarItems[slot].UpdateItem(item);
-    }
+    #endregion
 }
