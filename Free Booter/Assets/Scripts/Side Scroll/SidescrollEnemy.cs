@@ -100,7 +100,6 @@ public class SidescrollEnemy : MonoBehaviour
         anim.SetBool("isWalking", false);
         if (melee && ranged)
         {
-            print(1);
             if (meleeAttackDistance >= distance && !inCooldown)
             {
                 print(2);
@@ -109,20 +108,17 @@ public class SidescrollEnemy : MonoBehaviour
             }
             else
             {
-                print(3);
                 anim.SetBool("isAttackingMelee", false);
                 anim.SetBool("isAttackingRanged", true);
             }
         }
         else if (!melee && ranged)
         {
-            print(4);
             anim.SetBool("isAttackingMelee", false);
             anim.SetBool("isAttackingRanged", true);
         }
         else if (melee && !ranged)
         {
-            print(5);
             anim.SetBool("isAttackingMelee", true);
             anim.SetBool("isAttackingRanged", false);
         }

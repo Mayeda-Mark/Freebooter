@@ -7,10 +7,16 @@ public class LevelController : MonoBehaviour
     public bool isSideScroll = default;
     public string levelMusic = default;
     public string ambiantNoise = default;
+    /*public Transform startingLocation;
+    private Player player;*/
     MusicManager music;
     void Start()
     {
+
         music = FindObjectOfType<MusicManager>();
+        //player = FindObjectOfType<Player>();
+        /*startingLocation = GetComponentInChildren<Transform>();
+        player.StartNewLevel(startingLocation);*/
         if(isSideScroll)
         {
             Physics2D.gravity = new Vector2(0, -10);

@@ -116,7 +116,7 @@ public class ToolbarUI : MonoBehaviour
         print(item.itemName);
         foreach (ToolbarItem slot in toolbarItems)
         {
-            if (slot.item != item)
+            if (slot.item != item || slot.item == null)
             {
                 slot.Unequip();
             }

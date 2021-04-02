@@ -117,8 +117,8 @@ public class LootTable : MonoBehaviour
                 } 
                 else
                 {
-                    print("Giving " + itemToGive.itemName);
-                    inventory.GiveItem(id.itemIds[index], quantityToGive);
+                    //inventory.GiveItem(id.itemIds[index], quantityToGive);
+                    FindObjectOfType<Inventory>().GiveItem(id.itemIds[index], quantityToGive);
                     return;
                 }
             }

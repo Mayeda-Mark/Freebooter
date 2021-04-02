@@ -13,45 +13,36 @@ public class Inventory : MonoBehaviour
     //Dictionary<Item, List<int>> inventoryWithQuantities = new Dictionary<Item, List<int>>();
     MapController mapController;
     private bool uiActive;
-    private ToastController toast;
+    public ToastController toast;
     private LevelController levelController;
     private void Awake()
     {
        
     }
     private void Start() {
+        int numberOfInventories = FindObjectsOfType<Inventory>().Length;
+        if(numberOfInventories > 1)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
         levelController = FindObjectOfType<LevelController>();
-        //inventoryUI = FindObjectOfType<UIInventory>();
-        itemDB = FindObjectOfType<ItemDB>();
+        itemDB = GetComponent<ItemDB>();
         toast = FindObjectOfType<ToastController>();
-        //DontDestroyOnLoad(this);
         mapController = FindObjectOfType<MapController>();
-        //toolbarUI = FindObjectOfType<ToolbarUI>();
-        //inventoryUI.gameObject.SetActive(false);
         GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
         GiveItem(6, 1);
         GiveItem(17, 1);
-        //int numInventories = FindObjectsOfType<Inventory>().Length;
         uiActive = false;
         inventoryUI.gameObject.SetActive(false);
-        /*if (numInventories > 1)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }*/
     }
     private void Update() {
         if (Input.GetKeyDown(KeyCode.I))
         {
             uiActive = !uiActive;
             inventoryUI.gameObject.SetActive(uiActive);
-            //print("Bloop!");
-            // inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -70,11 +61,10 @@ public class Inventory : MonoBehaviour
             toolbarUI.UpdateToolbar();
         }*/
         Item givenItem = CheckForItem(id);
-        if(givenItem.isAMap)
+        if(givenItem.isAMap && mapController != null)
         {
             mapController.UnlockFromMap(givenItem.stats["MapIndex"]);
         }
-        //toast.gameObject.SetActive(true);
         toast.TriggetToast("Received " + quantity + " " + givenItem.itemName);
     }
     public void GiveItem(string itemName, int quantity) {
@@ -89,8 +79,7 @@ public class Inventory : MonoBehaviour
         GiveQuantity(id, quantity);
     }
     public void GiveQuantity(int id, int quantity) {
-        int maxQuantity = itemDB.GetItem(id).maxQuantity
-            ;
+        int maxQuantity = itemDB.GetItem(id).maxQuantity;
         int remainingQuantity = quantity;
         bool hasFinished = false;
         bool hasFoundKey = false;
@@ -275,16 +264,4 @@ public class Inventory : MonoBehaviour
     {
         return inventoryItems;
     }
-    /*public void SetUpUI()
-    {
-        print("Setting up UI!");
-        inventoryUI.ResetMenu();
-        foreach(Item item in inventoryItems)
-        {
-            if(item.forSidescroll == levelController.isSideScroll)
-            {
-                inventoryUI.AddNewItem(item, GetTotalQuantity(item.id));
-            }
-        }
-    }*/
 }

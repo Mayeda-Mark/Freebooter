@@ -25,7 +25,7 @@ public class PlayerShipController : MonoBehaviour
     Item equippedItem;
     [SerializeField] Cannons myCannons;
     [SerializeField] Text healthText;
-    [SerializeField] Text bootyText;
+    //[SerializeField] Text bootyText;
     Inventory shipInventory;
     CapsuleCollider2D myCollider;
     [SerializeField]Sails mySails;
@@ -53,7 +53,7 @@ public class PlayerShipController : MonoBehaviour
 		myRigidBody = GetComponent<Rigidbody2D>();
         rReloadTime = reloadTime;
         lReloadTIme = reloadTime;
-        UpdateBootyDisplay();
+        //UpdateBootyDisplay();
         sailHealth = mySails.sailHealth;
     }
 
@@ -63,7 +63,7 @@ public class PlayerShipController : MonoBehaviour
         SetSails();
         Move();
         FireCannon();
-        UpdateBootyDisplay();
+        //UpdateBootyDisplay();
         LootCountdown();
         ReloadCountdowns();
     }
@@ -195,9 +195,9 @@ public class PlayerShipController : MonoBehaviour
     private void ResetLootTimer() {
         lootTimer = lootTime;
     }
-    private void UpdateBootyDisplay() {
+    /*private void UpdateBootyDisplay() {
         bootyText.text = "" + shipInventory.GetTotalGold().ToString() + " Gold";
-    }
+    }*/
     public void SetUnderWind(bool isUnderWind) => underWind = isUnderWind;
     public bool GetUnderWind() { return underWind; }
     internal void Kill()

@@ -78,7 +78,6 @@ public class InventoryUIController : MonoBehaviour
             } 
             else
             {
-                print("else called"); 
                 panel.ui.gameObject.SetActive(false);
             }
         }

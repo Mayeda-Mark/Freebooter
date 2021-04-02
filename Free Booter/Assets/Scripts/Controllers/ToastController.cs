@@ -13,7 +13,7 @@ public class ToastController : MonoBehaviour
     [SerializeField] GameObject toastCanvass;
     void Start()
     {
-        int numToasts = FindObjectsOfType<ToastController>().Length;
+        /*int numToasts = FindObjectsOfType<ToastController>().Length;
         if(numToasts > 1)
         {
             Destroy(gameObject);
@@ -21,7 +21,7 @@ public class ToastController : MonoBehaviour
         else
         {
             DontDestroyOnLoad(gameObject);
-        }
+        }*/
         /*toastText = GetComponentInChildren<Text>();
         animator = GetComponent<Animator>();*/
     }

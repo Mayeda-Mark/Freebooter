@@ -13,14 +13,15 @@ public class MapController : MonoBehaviour
     {
     }
 
-    [System.Obsolete]
+    //[System.Obsolete]
     public void UnlockFromMap(int mapId)
     {
+        print(mapId);
         Map map = mapDB.GetMap(mapId);
         GameObject target = map.unlockable;
         if(map.isTreasureMap)
         {
-            target.SetActive(true);
+            target.gameObject.SetActive(true);
         } else
         {
             target.GetComponent<LockedArea>().UnlockArea();

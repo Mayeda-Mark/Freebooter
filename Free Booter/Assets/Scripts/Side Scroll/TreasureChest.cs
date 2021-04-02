@@ -43,8 +43,8 @@ public class TreasureChest : MonoBehaviour
 
     private void GiveReward()
     {
-        //lootTable.awardLoot();
+        lootTable.awardLoot();
         //toast.gameObject.SetActive(true);
-        toast.TriggetToast("Received 500 Gold");
+        //toast.TriggetToast("Received 500 Gold");
     }
 }

@@ -11,11 +11,11 @@ public class HiddenPortal : MonoBehaviour
     MusicManager musicManager;
     private void Awake()
     {
+        gameObject.SetActive(false);
     }
     void Start()
     {
         musicManager = FindObjectOfType<MusicManager>();
-        gameObject.SetActive(false);
         //inventory = FindObjectOfType<Inventory>();
         //inventory.GiveItem(2, 500);
         levelLoader = FindObjectOfType<LevelLoader>();
