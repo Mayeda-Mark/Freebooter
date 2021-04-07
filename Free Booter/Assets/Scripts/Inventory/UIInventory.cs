@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UIInventory : MonoBehaviour
-{
+{/*
+    [System.Serializable]
+    public class SelectedItem
+    {
+        public Item item;
+        public int quantity;
+    }*/
     public Transform slotPanel;
     public int numberOfSlots = 16;
     public UIItem[] uIItems;
-    private LevelController levelController;
+    public InventoryUIController inventoryController;
+    //public Dictionary<Item, int> selectedItem = new Dictionary<Item, int>();
+    //public SelectedItem selectedItem;
+    //private LevelController levelController;
     private void Start()
     {
-        levelController = FindObjectOfType<LevelController>();
+        /*levelController = FindObjectOfType<LevelController>();
         uIItems = new UIItem[numberOfSlots];
+        */
         for(int i = 0; i < numberOfSlots; i++)
         {
             uIItems[i] = slotPanel.GetChild(i).GetComponent<UIItem>();
@@ -106,5 +116,10 @@ public class UIInventory : MonoBehaviour
         {
             ui.UpdateItem(null, 0);
         }
-    }
+    }/*
+    public void UpdateSelectedItem(Item item, int quantity)
+    {
+        selectedItem.item = item;
+        selectedItem.quantity = quantity;
+    }*/
 }

@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHandler, IPointerExitHandler
+public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Item item;
     public Image spriteImage;
     public Text quantityText;
     Inventory inventory;
+    UIInventory uIInventory;
     public string itemName;
     public bool itemQuantityFull;
+    int itemQuantity;
+    InventoryUIController inventoryController;
     private void Awake()
     {
         /*spriteImage = GetComponentInChildren<Image>();
@@ -19,10 +22,12 @@ public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHand
         //UpdateItem(null);
     }
     private void Start() {
+        uIInventory = GetComponentInParent<UIInventory>();
         //quantityText = transform.parent.GetComponentInChildren<Text>();
         //spriteImage = GetComponent<Image>();
         itemQuantityFull = false;
         inventory = FindObjectOfType<Inventory>();
+        inventoryController = FindObjectOfType<InventoryUIController>();
         UpdateItem(null, 0);
     }
     /*public void UpdateItem(Item item) {
@@ -41,6 +46,7 @@ public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHand
     }*/
     public void UpdateItem(Item item, int /*index*/ quantity) {
         this.item = item;
+        itemQuantity = quantity;
         if(this.item != null) {
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
@@ -55,16 +61,48 @@ public class UIItem : MonoBehaviour, /*IPointerClickHandler,*/ IPointerEnterHand
             spriteImage.color = Color.clear;
             quantityText.color = Color.clear;
         }
-    }/*
+    }
     public void OnPointerClick(PointerEventData eventData) {
-        int clickCount = eventData.clickCount;
+        /*int clickCount = eventData.clickCount;
         if(clickCount == 2) {
             DoubleClick();
         }
         if(clickCount == 1) {
             SingleClick();
+        }*/
+        if (this.item != null)
+        { // If this square is not empty...
+            if (inventoryController.selectedItem.item != null)
+            { // And you already have an item selected...
+                //Put the selected item into the square
+                //Item clone = new Item(uIInventory.selectedItem);
+                //selectedItem.UpdateItem(this.item);
+                Item cloneItem = this.item;
+                int cloneQuantity = this.itemQuantity;
+                UpdateItem(inventoryController.selectedItem.item, inventoryController.selectedItem.quantity);
+                inventoryController.UpdateSelectedItem(cloneItem, cloneQuantity);
+            }
+            else
+            { //You don't have an item selected...
+                inventoryController.UpdateSelectedItem(this.item, this.itemQuantity);
+                UpdateItem(null, 0);
+            }
+        }
+        else if (this.item == null/*uIInventory.selectedItem.item != null*/)
+        { //If this square is empty...
+            if(inventoryController.selectedItem.item != null)
+            { // ... And you have an item selected...
+                // Move the selected item into the square
+                UpdateItem(inventoryController.selectedItem.item, inventoryController.selectedItem.quantity);
+                inventoryController.UpdateSelectedItem(null, 0);
+            }
+            else
+            {
+                print("empty to empty");
+            }
         }
     }
+    /*
     private void SingleClick() {
         if(this.item != null) { // If this square is empty...
             if(selectedItem.item != null) { // And you already have an item selected...

@@ -20,10 +20,12 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     ToolbarUI toolbarUI;
     [SerializeField] Text slotNumber;
     [SerializeField] Text quantityText;
-    //public Text keyboardShortcut;
+    /*public*/ InventoryUIController inventoryController;
     Inventory inventory;
+    LevelController levelController;
     bool equipped;
-    bool isActive = false;
+    public bool isActive = false;
+    public int slotIndex;
     private void Awake()
     {
         //parentImage = GetComponentInParent<Image>();
@@ -38,11 +40,14 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         parentImage.color = defaultColor;
         toolbarUI = FindObjectOfType<ToolbarUI>();
     }
-    /*void Start()
+    void Start()
     {
-        
+        //uIInventory = FindObjectOfType<UIInventory>();
+        levelController = FindObjectOfType<LevelController>();
+        isActive = false;
+        inventoryController = FindObjectOfType<InventoryUIController>();
     }
-
+/*
     // Update is called once per frame
     void Update()
     {
@@ -60,9 +65,9 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     {
         this.item = item;
         quantity = updateQuantity;
-        SetQuantity(quantity);
         if (this.item != null)
         {
+            SetQuantity(quantity);
             isActive = true;
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
@@ -71,7 +76,6 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
             {
                 parentImage.color = defaultColor;
             }
- 
         }
         else
         {
@@ -83,10 +87,54 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     #region Equipping
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(isActive)
+        if(inventory.uiActive)
         {
-            EquipItem(/*item*/);
+            if(this.item != null && isActive)
+            {
+                if(inventoryController.selectedItem.item != null)
+                { // If you have an item in this slot and you have an item selected from the menu
+                    if(levelController.isSideScroll == inventoryController.selectedItem.item.forSidescroll)
+                    {
+                        Item cloneItem = this.item;
+                        int cloneQuantity = this.quantity;
+                        UpdateItem(inventoryController.selectedItem.item, inventoryController.selectedItem.quantity);
+                        inventoryController.UpdateSelectedItem(cloneItem, cloneQuantity);
+                    }
+                }
+                else
+                {// If you have an item in this slot, but don't have anything selected
+                    if (equipped)
+                    {
+                        Unequip();
+                    }
+                    inventoryController.UpdateSelectedItem(this.item, this.quantity);
+                    UpdateItem(null, 0);
+                    isActive = false;
+                }
+            }
+            else if(this.item == null && !isActive)
+            {
+                if(inventoryController.selectedItem.item != null)
+                {
+                    print("Bloop!");
+                    UpdateItem(inventoryController.selectedItem.item, inventoryController.selectedItem.quantity);
+                    inventoryController.UpdateSelectedItem(null, 0);
+                }
+                else
+                {
+                    print("Empty on empty");
+                    print(inventoryController.selectedItem.item.itemName);
+                }
+            }
         }
+        /*if(isActive)
+        {
+            EquipItem(*//*item*//*);
+        }*/
+    }
+    public void SetSlotIndex(int number)
+    {
+        slotIndex = number;
     }
 
     public void EquipItem(/*Item item*/)
@@ -95,7 +143,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         parentImage.color = selectedItemColor;
         player.EquipItem(item.itemName);
         equipped = true;
-        toolbarUI.UnequipAllButThis(item);
+        toolbarUI.UnequipAllButThis(slotIndex);
     }
     public void Unequip()
     {

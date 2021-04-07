@@ -6,6 +6,12 @@ using UnityEngine.UI;
 public class InventoryUIController : MonoBehaviour
 {
     [System.Serializable]
+    public class SelectedItem
+    {
+        public Item item;
+        public int quantity;
+    }
+    [System.Serializable]
     public class Panel
     {
         public string panelName;
@@ -14,6 +20,7 @@ public class InventoryUIController : MonoBehaviour
     public List<Panel> panels = new List<Panel>();
     private Inventory inventory;
     private bool active = false;
+    public SelectedItem selectedItem;
     void Start()
     {
         inventory = FindObjectOfType<Inventory>();
@@ -131,5 +138,10 @@ public class InventoryUIController : MonoBehaviour
                 }
             }
         }
+    }
+    public void UpdateSelectedItem(Item item, int quantity)
+    {
+        selectedItem.item = item;
+        selectedItem.quantity = quantity;
     }
 }

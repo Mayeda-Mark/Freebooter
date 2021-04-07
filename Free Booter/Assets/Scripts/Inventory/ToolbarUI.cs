@@ -13,23 +13,26 @@ public class ToolbarUI : MonoBehaviour
     Inventory inventory;
     Dictionary<Item, int> toolbarInventory = new Dictionary<Item, int>();
     List<Item> inventoryItems = new List<Item>();
+    UIInventory uiInventory;
     private void Awake()
     {
         toolbarItems = new ToolbarItem[numberOfSlots];
-        for (int i = 0; i < numberOfSlots - 1; i++)
+        for (int i = 0; i < numberOfSlots /*- 1*/; i++)
         {
             /*GameObject instance = Instantiate(slotPrefab);
             instance.transform.SetParent(slotPanel);*/
             //toolbarItems.Add(instance.GetComponentInChildren<ToolbarItem>());
             toolbarItems[i] = slotPanel.GetChild(i).GetComponentInChildren<ToolbarItem>();
+            toolbarItems[i].SetSlotIndex(i);
         }
     }
 
     void Start()
     {
+        uiInventory = FindObjectOfType<UIInventory>();
         inventory = FindObjectOfType<Inventory>();
         inventoryItems = inventory.GetInventory();
-        EquipFirstItem();
+        //EquipFirstItem();
         SetSlotNumbers();
     }
     void Update()
@@ -38,7 +41,7 @@ public class ToolbarUI : MonoBehaviour
     }
     public void EquipFirstItem()
     {
-        SetUpToolbar();
+        //SetUpToolbar();
         bool foundFirst = false;
         for (int i = 0; i < numberOfSlots - 1; i++)
         {
@@ -98,7 +101,7 @@ public class ToolbarUI : MonoBehaviour
     public void RemoveItem(Item item)
     {
         bool foundItem = false;
-        for(int i = 0; i < numberOfSlots - 1; i++)
+        for(int i = 0; i < numberOfSlots /*- 1*/; i++)
         {
             if(toolbarItems[i].item == item && !foundItem)
             {
@@ -110,15 +113,13 @@ public class ToolbarUI : MonoBehaviour
         //UpdateSlot(toolbarItems.FindIndex(i => i.item == item), null);
     }
 
-    internal void UnequipAllButThis(Item item)
+    internal void UnequipAllButThis(int index)
     {
-
-        print(item.itemName);
-        foreach (ToolbarItem slot in toolbarItems)
+        for(int i = 0; i < numberOfSlots /*- 1*/; i++)
         {
-            if (slot.item != item || slot.item == null)
+            if(i != index)
             {
-                slot.Unequip();
+                toolbarItems[i].Unequip();
             }
         }
     }
