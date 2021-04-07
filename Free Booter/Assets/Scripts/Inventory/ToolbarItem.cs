@@ -11,7 +11,8 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     public Item item;
     public int quantity;
     private Image spriteImage;
-    PlayerShipController player;
+    /*PlayerShipController playerShip;
+    PlayerSidescrollController platerSidescroll;*/
     [SerializeField] Image parentImage = default;
     Color selectedItemColor = new Color();
     Color emptyItemColor = new Color();
@@ -33,7 +34,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         ColorUtility.TryParseHtmlString("#575757", out emptyItemColor);
         ColorUtility.TryParseHtmlString("#AB843A", out defaultColor);
         ColorUtility.TryParseHtmlString("#DDAA4A", out mouseOverColor);
-        player = FindObjectOfType<PlayerShipController>();
+        //playerShip = FindObjectOfType<PlayerShipController>();
         spriteImage = GetComponent<Image>();
         inventory = FindObjectOfType<Inventory>();
         UpdateItem(null, 0);
@@ -141,7 +142,14 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     {
         //ADD IF STATEMENT CHECKING FOR QUANTITY > 0
         parentImage.color = selectedItemColor;
-        player.EquipItem(item.itemName);
+        if(levelController.isSideScroll)
+        {
+            FindObjectOfType<PlayerSidescrollController>().EquipItemOrAbility(item);
+        }
+        else
+        {
+            /*playerShip*/FindObjectOfType<PlayerShipController>().EquipItem(item.itemName);
+        }
         equipped = true;
         toolbarUI.UnequipAllButThis(slotIndex);
     }

@@ -103,7 +103,6 @@ public class ItemDB : MonoBehaviour
             }, false, true, false),
             new Item(17, "Sword", "Equipment", "Stick them with the pointy end", icons[7], 1,
             new Dictionary<string, int> {
-                {"Damage", 10 },
                 {"SidescrollIndex", 0 }
             }, true, false, true)
         };

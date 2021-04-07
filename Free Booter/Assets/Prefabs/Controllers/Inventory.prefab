@@ -457,6 +457,8 @@ MonoBehaviour:
   parentImage: {fileID: 4711151405105136874}
   slotNumber: {fileID: 2341871664725581466}
   quantityText: {fileID: 2848861447279545172}
+  isActive: 0
+  slotIndex: 0
 --- !u!1 &673723263040541714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,6 +2221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 700031219434886162}
   toolbarUI: {fileID: 700031218687235260}
+  uiActive: 0
   toast: {fileID: 3686044059149219940}
 --- !u!114 &6055215678939409276
 MonoBehaviour:
@@ -2924,6 +2927,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  inventoryController: {fileID: 0}
 --- !u!1 &700031218380143375
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,7 +4324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6875, y: -389.99994}
+  m_AnchoredPosition: {x: 4.6875, y: -425}
   m_SizeDelta: {x: 432.61426, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &700031218687235262
@@ -7407,6 +7411,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  inventoryController: {fileID: 0}
 --- !u!1 &700031219373878094
 GameObject:
   m_ObjectHideFlags: 0
@@ -7813,7 +7818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 41}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700031219434886162
@@ -7835,6 +7840,8 @@ MonoBehaviour:
     ui: {fileID: 700031219358420367}
   - panelName: Map
     ui: {fileID: 700031218352309926}
+  selectedItem:
+    quantity: 0
 --- !u!1 &700031219437732538
 GameObject:
   m_ObjectHideFlags: 0
@@ -8471,6 +8478,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  inventoryController: {fileID: 0}
 --- !u!1 &700031219529710302
 GameObject:
   m_ObjectHideFlags: 0
@@ -13022,6 +13030,8 @@ MonoBehaviour:
   parentImage: {fileID: 8579874282360331921}
   slotNumber: {fileID: 1589619840690308321}
   quantityText: {fileID: 1295270232002138415}
+  isActive: 0
+  slotIndex: 0
 --- !u!1 &3629868065289968935
 GameObject:
   m_ObjectHideFlags: 0
@@ -15123,6 +15133,8 @@ MonoBehaviour:
   parentImage: {fileID: 2201574745876123911}
   slotNumber: {fileID: 9192744522787867511}
   quantityText: {fileID: 8675621505906908857}
+  isActive: 0
+  slotIndex: 0
 --- !u!1 &6359113810454114873
 GameObject:
   m_ObjectHideFlags: 0
@@ -15396,6 +15408,8 @@ MonoBehaviour:
   parentImage: {fileID: 1936559969340341925}
   slotNumber: {fileID: 8934767728755942613}
   quantityText: {fileID: 8937503765242409243}
+  isActive: 0
+  slotIndex: 0
 --- !u!1 &6708158736049085970
 GameObject:
   m_ObjectHideFlags: 0
@@ -15853,6 +15867,8 @@ MonoBehaviour:
   parentImage: {fileID: 2726962784628946182}
   slotNumber: {fileID: 4955858263353470838}
   quantityText: {fileID: 4841494317467728568}
+  isActive: 0
+  slotIndex: 0
 --- !u!1 &7410437353643047720
 GameObject:
   m_ObjectHideFlags: 0
@@ -16647,6 +16663,8 @@ MonoBehaviour:
   parentImage: {fileID: 4454270735951024562}
   slotNumber: {fileID: 6687316871330253762}
   quantityText: {fileID: 6573233419835121164}
+  isActive: 0
+  slotIndex: 0
 --- !u!1 &8919729054232367458
 GameObject:
   m_ObjectHideFlags: 0

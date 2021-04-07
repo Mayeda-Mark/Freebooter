@@ -12029,6 +12029,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6653550005369624667, guid: 38a548c93ce34fd40b4275adfdb781d7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708158736049085965, guid: 38a548c93ce34fd40b4275adfdb781d7,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -13641,7 +13646,7 @@ MonoBehaviour:
   isFalling: 0
   isBlocking: 0
   isCrouching: 0
-  isAttacking: 0
+  isUsingItemOrAbility: 0
   isSliding: 0
   isHanging: 0
   isClimbingLedge: 0

@@ -35,7 +35,10 @@ public class SidescrollItemDB : MonoBehaviour
     {
         sidescrollItems = new List<SidescrollItem>
         {
-            new SidescrollItem(0, "Sword", "Melee", 0, "none"),
+            new SidescrollItem(0, "Sword", "Melee", "none", 
+            new Dictionary<string, int> {
+                {"Damage", 10 }
+            })
         };
     }
 }

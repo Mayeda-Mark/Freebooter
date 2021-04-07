@@ -17,11 +17,13 @@ public class PlayerSidescrollController : MonoBehaviour
     [SerializeField] BoxCollider2D myFeet/*, ledgeCatcher*/;
     private bool MovingForClimb = false;
     //[SerializeField] BoxCollider2D frontOfBody;
-    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isAttacking, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge, canClimb, canFall;
+    [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isUsingItemOrAbility, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge, canClimb, canFall;
     private LedgeCatcher ledgeCatcher;
     public float startingFallTimer = 0.2f;
     private float fallTimer;
     private SoundManager soundManager;
+    public SidescrollItem equippedItem;
+    private SidescrollItemDB sidescrollItemDB;
     //private SpriteRenderer mySprite;
 
     internal void Death()
@@ -32,6 +34,7 @@ public class PlayerSidescrollController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sidescrollItemDB = GetComponent<SidescrollItemDB>();
         ledgeCatcher = GetComponentInChildren<LedgeCatcher>();
         canCatchLedge = true;
         //mySprite = GetComponent<SpriteRenderer>();
@@ -47,7 +50,7 @@ public class PlayerSidescrollController : MonoBehaviour
     void Update()
     {
         SetAnimationBools();
-        Attack();
+        UseItemOrAbility();
         Crouch();
         Run();
         FlipSprite();
@@ -64,7 +67,7 @@ public class PlayerSidescrollController : MonoBehaviour
         isFalling = false;
         isBlocking = false;
         isCrouching = false;
-        isAttacking = false;
+        isUsingItemOrAbility = false;
         isSliding = false;
         isHanging = false;
         isClimbingLedge = false;
@@ -82,16 +85,16 @@ public class PlayerSidescrollController : MonoBehaviour
         }
         else if(myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
             ResetFallTimer();
-            if(Input.GetButton("Attack")) { isAttacking = true; }
+            if(Input.GetButton("Attack")) { isUsingItemOrAbility = true; }
             else if(Input.GetButton("Block")) { isBlocking = true; }
             else if(Input.GetButton("Crouch")) { isCrouching = true; }
-            if(playerHasHorizontalSpeed && !isAttacking)
+            if(playerHasHorizontalSpeed && !isUsingItemOrAbility)
             {
                 isRunning = true;
                 if (Input.GetButton("Crouch")) { isSliding = true; }
             }
         } 
-        canMove = !isAttacking && !isBlocking && !knockBack && !isCrouching && !isHanging && !myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Attack");
+        canMove = !isUsingItemOrAbility && !isBlocking && !knockBack && !isCrouching && !isHanging && !myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Sword");
         canClimb = myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Hang_Idle");
     }
     private void ResetFallTimer()
@@ -224,15 +227,32 @@ public class PlayerSidescrollController : MonoBehaviour
         StopMovement();
         myAnimator.SetBool("isSliding", false);
     }
-    private void Attack()
+    public void EquipItemOrAbility(Item item)
     {
-        if(isAttacking)
+        if(item.forSidescroll)
+        {
+            print(item.stats["SidescrollIndex"]);
+            equippedItem = sidescrollItemDB.GetSidescrollItem(item.stats["SidescrollIndex"]);
+        }
+    }
+    private void UseItemOrAbility()
+    {
+        if(isUsingItemOrAbility)
         {
             Vector2 playerVelocity = new Vector2(0, 0);
             myRigidBody.velocity = playerVelocity;
             StopMovement();
         }
-        myAnimator.SetBool("isAttacking", isAttacking);
+        if(equippedItem != null)
+        {
+            print(equippedItem.type);
+        }
+        if(equippedItem != null && equippedItem.type == "Melee")
+        {
+            print(isUsingItemOrAbility);
+            myAnimator.SetBool("isSwingingSword", isUsingItemOrAbility);
+        }
+        //myAnimator.SetBool("isAttacking", isUsingItemOrAbility);
     }
     private void Block()
     {

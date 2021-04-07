@@ -13,24 +13,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-04-06T20:22:24.605-07:00
-  initializedAtString: 2021-04-06T20:22:24.605-07:00
+  lastUpdatedAtString: 2021-04-07T16:22:33.293-07:00
+  initializedAtString: 2021-04-07T14:54:27.845-07:00
   entries:
-  - path: Free Booter\Assets\Scenes\Overworld_test.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
-    projectPath: Assets\Scenes\Overworld_test.unity
+  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
+    projectPath: Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\Inventory.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Inventory.cs
-    projectPath: Assets\Scripts\Inventory\Inventory.cs
+  - path: Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
+    projectPath: Assets\Prefabs\Controllers\Inventory.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
-    projectPath: Assets\Scripts\Inventory\InventoryUIController.cs
+  - path: Free Booter\Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Player
+      Stuffs\Avatars\Player_Sidescroll.prefab
+    projectPath: Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -44,35 +45,24 @@ MonoBehaviour:
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\SidescrollItem.cs
     projectPath: Assets\Scripts\Inventory\SidescrollItem.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Inventory\SidescrollItemDB.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\SidescrollItemDB.cs
     projectPath: Assets\Scripts\Inventory\SidescrollItemDB.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
     projectPath: Assets\Scripts\Inventory\ToolbarItem.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
-    projectPath: Assets\Scripts\Inventory\ToolbarUI.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\UIInventory.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\UIInventory.cs
-    projectPath: Assets\Scripts\Inventory\UIInventory.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\UIItem.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\UIItem.cs
-    projectPath: Assets\Scripts\Inventory\UIItem.cs
+  - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\PlayerSidescrollController.cs
+    projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -85,18 +75,6 @@ MonoBehaviour:
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -124,6 +102,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -142,15 +126,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

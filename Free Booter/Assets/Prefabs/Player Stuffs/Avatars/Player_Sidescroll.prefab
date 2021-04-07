@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 78918487966158698}
   - component: {fileID: 4666117469768580419}
   - component: {fileID: 1985630918}
+  - component: {fileID: 3313858784034980842}
   m_Layer: 10
   m_Name: Player_Sidescroll
   m_TagString: Player
@@ -272,7 +273,7 @@ MonoBehaviour:
   isFalling: 0
   isBlocking: 0
   isCrouching: 0
-  isAttacking: 0
+  isUsingItemOrAbility: 0
   isSliding: 0
   isHanging: 0
   isClimbingLedge: 0
@@ -432,3 +433,15 @@ MonoBehaviour:
   forSideScroll: 1
   health: 0
   sprite: {fileID: 78918487966158696}
+--- !u!114 &3313858784034980842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78918487966158700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665100693f471ca4e9fce5db9c25561c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
