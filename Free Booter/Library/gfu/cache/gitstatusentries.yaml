@@ -13,25 +13,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-04-07T16:22:33.293-07:00
-  initializedAtString: 2021-04-07T14:54:27.845-07:00
+  lastUpdatedAtString: 2021-04-09T00:31:53.711-07:00
+  initializedAtString: 2021-04-08T22:31:23.959-07:00
   entries:
-  - path: Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
-    projectPath: Assets\Animations\SideScroll\Player\Player_Sidescroll.controller
+  - path: Free Booter\Assets\Animations\SideScroll\Bomb.controller
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Bomb.controller
+    projectPath: Assets\Animations\SideScroll\Bomb.controller
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
-    projectPath: Assets\Prefabs\Controllers\Inventory.prefab
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Bomb_Explode.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Bomb_Explode.anim
+    projectPath: Assets\Animations\SideScroll\Bomb_Explode.anim
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Animations\SideScroll\Bomb_Fuse.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Bomb_Fuse.anim
+    projectPath: Assets\Animations\SideScroll\Bomb_Fuse.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Projectiles\Bomb.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Projectiles\Bomb.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Projectiles\Bomb.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Player
       Stuffs\Avatars\Player_Sidescroll.prefab
     projectPath: Assets\Prefabs\Player Stuffs\Avatars\Player_Sidescroll.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Resources\Sprites\Items\Bomb.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Sprites\Items\Bomb.png
+    projectPath: Assets\Resources\Sprites\Items\Bomb.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Resources\Sprites\UI\Crosshairs.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Sprites\UI\Crosshairs.png
+    projectPath: Assets\Resources\Sprites\UI\Crosshairs.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Inventory.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Inventory.cs
+    projectPath: Assets\Scripts\Inventory\Inventory.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -53,12 +84,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
-    projectPath: Assets\Scripts\Inventory\ToolbarItem.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\PlayerSidescrollController.cs
@@ -66,6 +91,13 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\ThrownItem.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\ThrownItem.cs
+    projectPath: Assets\Scripts\Side Scroll\ThrownItem.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -75,6 +107,18 @@ MonoBehaviour:
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\expandedItems
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -99,6 +143,12 @@ MonoBehaviour:
   - path: Free Booter\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -135,6 +185,18 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\ProjectSettings\InputManager.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\InputManager.asset
+    projectPath: ProjectSettings\InputManager.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

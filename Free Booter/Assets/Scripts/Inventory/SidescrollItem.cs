@@ -9,7 +9,7 @@ public class SidescrollItem
     public string itemName;
     //public int range;
     public string effector;
-    Dictionary<string, int> stats = new Dictionary<string, int>();
+    public Dictionary<string, int> stats = new Dictionary<string, int>();
 
     public SidescrollItem(int id, string itemName, string type, /*int range,*/ string effector, Dictionary<string, int> stats)
     {

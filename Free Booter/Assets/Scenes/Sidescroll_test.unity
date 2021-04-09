@@ -6213,6 +6213,12 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!4 &711891008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1660826685711669977, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4744892880787862058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &773327862
 GameObject:
   m_ObjectHideFlags: 0
@@ -7498,6 +7504,10 @@ MonoBehaviour:
   pools:
   - tag: Golem Fist
     prefab: {fileID: 779682427095990779, guid: 5d57dc906d2e1f74e9cea87fedf52991, type: 3}
+    size: 5
+  - tag: Bomb
+    prefab: {fileID: 6996276340462142188, guid: ac9bba5027ca245469777c006746491e,
+      type: 3}
     size: 5
 --- !u!4 &1275541604
 Transform:
@@ -11969,6 +11979,17 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6055215678939409276, guid: 38a548c93ce34fd40b4275adfdb781d7,
+        type: 3}
+      propertyPath: icons.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055215678939409276, guid: 38a548c93ce34fd40b4275adfdb781d7,
+        type: 3}
+      propertyPath: icons.Array.data[8]
+      value: 
+      objectReference: {fileID: -1483665779731714255, guid: e4770b83ce42cf341831bf7a35ee1185,
+        type: 3}
     - target: {fileID: 6256805860593184837, guid: 38a548c93ce34fd40b4275adfdb781d7,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -13307,11 +13328,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Sidescroll
       objectReference: {fileID: 0}
-    - target: {fileID: 78918487966158700, guid: 9730da6b88bb5b949bdaf9a84d78312c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 78918487966158701, guid: 9730da6b88bb5b949bdaf9a84d78312c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13366,6 +13382,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660826685711669977, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666117469768580417, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: shooter
+      value: 
+      objectReference: {fileID: 711891008}
+    - target: {fileID: 4666117469768580417, guid: 9730da6b88bb5b949bdaf9a84d78312c,
+        type: 3}
+      propertyPath: aimRate
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9730da6b88bb5b949bdaf9a84d78312c, type: 3}
@@ -13475,6 +13506,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sailHealth: {fileID: 978367810030623474}
+--- !u!1001 &6996276341208219066
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 176.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.067572
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41342497
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142176, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142188, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_Name
+      value: Bomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996276340462142188, guid: ac9bba5027ca245469777c006746491e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac9bba5027ca245469777c006746491e, type: 3}
 --- !u!1 &7211747862912566524
 GameObject:
   m_ObjectHideFlags: 0
@@ -13640,6 +13745,7 @@ MonoBehaviour:
   knockBackTimer: 0.75
   xClimb: -5
   yClimb: 8
+  aimRate: 0.5
   myFeet: {fileID: 3239265674456813078}
   isRunning: 0
   isJumping: 0
@@ -13656,6 +13762,7 @@ MonoBehaviour:
   canClimb: 0
   canFall: 0
   startingFallTimer: 0.2
+  shooter: {fileID: 0}
 --- !u!1 &8177029406995949092
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class PlayerSidescrollController : MonoBehaviour
     [SerializeField] float knockBackTimer = 0.25f;
     [SerializeField] float xClimb = 0.25f;
     [SerializeField] float yClimb = 0.25f;
+    [SerializeField] float aimRate = 0.5f;
     float startingKnockBackTimer;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
@@ -24,6 +25,8 @@ public class PlayerSidescrollController : MonoBehaviour
     private SoundManager soundManager;
     public SidescrollItem equippedItem;
     private SidescrollItemDB sidescrollItemDB;
+    public Transform shooter;
+    Pooler pooler;
     //private SpriteRenderer mySprite;
 
     internal void Death()
@@ -34,6 +37,7 @@ public class PlayerSidescrollController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pooler = FindObjectOfType<Pooler>();
         sidescrollItemDB = GetComponent<SidescrollItemDB>();
         ledgeCatcher = GetComponentInChildren<LedgeCatcher>();
         canCatchLedge = true;
@@ -60,6 +64,7 @@ public class PlayerSidescrollController : MonoBehaviour
         KnockBackTimer();
         ClimbLedge();
         CatchLedge();
+        AimShooter();
     }
     private void SetAnimationBools()
     {
@@ -253,6 +258,25 @@ public class PlayerSidescrollController : MonoBehaviour
             myAnimator.SetBool("isSwingingSword", isUsingItemOrAbility);
         }
         //myAnimator.SetBool("isAttacking", isUsingItemOrAbility);
+    }
+    private void AimShooter()
+    {
+        if(equippedItem != null && (equippedItem.type == "Thrown" || equippedItem.type == "Projectile"))
+        {
+            shooter.gameObject.SetActive(true);
+            float controlThrow = Input.GetAxis("Aim") * aimRate * Time.deltaTime;
+            Quaternion aimRotation = shooter.rotation;
+            aimRotation.z -= controlThrow;
+            shooter.rotation = aimRotation;
+            if(Input.GetButton("Attack"))
+            {
+                pooler.SpawnFromPool("Bomb", shooter.position, shooter.rotation);
+            }
+        }
+        else
+        {
+            shooter.gameObject.SetActive(false);
+        }
     }
     private void Block()
     {

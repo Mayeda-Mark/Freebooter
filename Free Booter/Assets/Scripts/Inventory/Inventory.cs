@@ -35,6 +35,7 @@ public class Inventory : MonoBehaviour
         GiveItem(2, 100);
         GiveItem(6, 1);
         GiveItem(17, 1);
+        GiveItem(18, 10);
         uiActive = false;
         inventoryUI.gameObject.SetActive(false);
     }

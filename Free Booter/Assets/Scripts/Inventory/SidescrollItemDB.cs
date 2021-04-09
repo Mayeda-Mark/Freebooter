@@ -38,6 +38,13 @@ public class SidescrollItemDB : MonoBehaviour
             new SidescrollItem(0, "Sword", "Melee", "none", 
             new Dictionary<string, int> {
                 {"Damage", 10 }
+            }),
+            new SidescrollItem(1, "Bomb", "Thrown", "Explosive",
+            new Dictionary<string, int>
+            {
+                {"Damage", 20 },
+                {"Range", 500 },
+                {"Knockback", 3 }
             })
         };
     }
