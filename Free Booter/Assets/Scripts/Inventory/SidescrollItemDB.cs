@@ -43,7 +43,7 @@ public class SidescrollItemDB : MonoBehaviour
             new Dictionary<string, int>
             {
                 {"Damage", 20 },
-                {"Range", 500 },
+                {"Range", 5 },
                 {"Knockback", 3 }
             })
         };

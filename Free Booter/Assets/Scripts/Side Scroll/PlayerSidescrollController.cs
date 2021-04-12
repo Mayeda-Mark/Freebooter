@@ -248,13 +248,8 @@ public class PlayerSidescrollController : MonoBehaviour
             myRigidBody.velocity = playerVelocity;
             StopMovement();
         }
-        if(equippedItem != null)
-        {
-            print(equippedItem.type);
-        }
         if(equippedItem != null && equippedItem.type == "Melee")
         {
-            print(isUsingItemOrAbility);
             myAnimator.SetBool("isSwingingSword", isUsingItemOrAbility);
         }
         //myAnimator.SetBool("isAttacking", isUsingItemOrAbility);
