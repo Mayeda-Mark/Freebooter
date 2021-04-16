@@ -13,12 +13,14 @@ public class PlayerSidescrollController : MonoBehaviour
     [SerializeField] float yClimb = 0.25f;
     [SerializeField] float aimRate = 0.5f;
     float startingKnockBackTimer;
+    public float cooldownTimer;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
     [SerializeField] BoxCollider2D myFeet/*, ledgeCatcher*/;
     private bool MovingForClimb = false;
     //[SerializeField] BoxCollider2D frontOfBody;
     [HideInInspector] public bool isRunning, isJumping, isFalling, isBlocking, isCrouching, isUsingItemOrAbility, isSliding, isHanging, isClimbingLedge, knockBack, canMove, canCatchLedge, canClimb, canFall;
+    public bool inCooldown;
     private LedgeCatcher ledgeCatcher;
     public float startingFallTimer = 0.2f;
     private float fallTimer;
@@ -64,7 +66,8 @@ public class PlayerSidescrollController : MonoBehaviour
         KnockBackTimer();
         ClimbLedge();
         CatchLedge();
-        AimShooter();
+        //AimShooter();
+        CooldownTimer();
     }
     private void SetAnimationBools()
     {
@@ -252,20 +255,53 @@ public class PlayerSidescrollController : MonoBehaviour
         {
             myAnimator.SetBool("isSwingingSword", isUsingItemOrAbility);
         }
+        else if(equippedItem != null && equippedItem.type == "Thrown")
+        {
+            if(Input.GetButton("Attack") && !inCooldown)
+            {
+                pooler.SpawnFromPool(equippedItem.itemName, transform.position, Quaternion.identity);
+                ResetCooldown(equippedItem.cooldown);
+            }
+        }
         //myAnimator.SetBool("isAttacking", isUsingItemOrAbility);
+    }
+    private void CooldownTimer()
+    {
+        cooldownTimer -= Time.deltaTime;
+        if(cooldownTimer <= 0)
+        {
+            inCooldown = false;
+        }
+    }
+    private void ResetCooldown(float itemCooldown)
+    {
+        cooldownTimer = itemCooldown;
+        inCooldown = true;
     }
     private void AimShooter()
     {
         if(equippedItem != null && (equippedItem.type == "Thrown" || equippedItem.type == "Projectile"))
         {
+            print(shooter.rotation);
             shooter.gameObject.SetActive(true);
             float controlThrow = Input.GetAxis("Aim") * aimRate * Time.deltaTime;
             Quaternion aimRotation = shooter.rotation;
-            aimRotation.z -= controlThrow;
-            shooter.rotation = aimRotation;
-            if(Input.GetButton("Attack"))
+            if(transform.localScale.x > 0)
             {
-                pooler.SpawnFromPool("Bomb", shooter.position, shooter.rotation);
+                aimRotation.z += controlThrow;
+            }
+            else
+            {
+                aimRotation.z -= controlThrow;
+            }
+            shooter.rotation = aimRotation;
+                //print(aimRotation);
+            if(Input.GetButton("Attack") && !inCooldown)
+            {
+                /* GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir)));*/
+                /*pooler.SpawnFromPool("Bomb", shooter.position, Quaternion.Euler(new Vector3(0, 0, shooter.rotation.z)));*/
+                shooter.gameObject.GetComponent<Shooter>().Shoot(equippedItem);
+                ResetCooldown(equippedItem.cooldown);
             }
         }
         else

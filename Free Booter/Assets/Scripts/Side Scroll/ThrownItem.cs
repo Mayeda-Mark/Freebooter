@@ -1,34 +1,87 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ThrownItem : MonoBehaviour, IPooledObject
 {
     public int itemIndex;
+    public bool reactable;
     private int damage;
     private int range;
-    SidescrollItem ssItem;
+    public SidescrollItem ssItem;
     Rigidbody2D myRigidBody;
     Item item;
+    CircleCollider2D myCollider;
+    public float distanceToClearPlayer = 3f;
+    private float distanceTraveled;
+    private Vector2 lastPosition;
+    private Transform playerTransform;
+    private int animationState;
+    private Animator animator;
+    DamageDealer damageDealer;
     // Start is called before the first frame update
     void Start()
     {
     }
     public void OnObjectSpawn()
     {
+        damageDealer = GetComponent<DamageDealer>();
+        animator = GetComponent<Animator>();
+        ResetAnimation();
+        playerTransform = FindObjectOfType<PlayerSidescrollController>().GetComponent<Transform>();
+        distanceTraveled = 0;
+        lastPosition = transform.position;
+        reactable = false;
+        myCollider = GetComponent<CircleCollider2D>();
+        myCollider.isTrigger = true;
         item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
-        //print("I'm here! " + item.stats["SidescrollIndex"]);
         ssItem = FindObjectOfType<SidescrollItemDB>().GetSidescrollItem(item.stats["SidescrollIndex"]);
         myRigidBody = GetComponent<Rigidbody2D>();
-        myRigidBody.velocity = new Vector2(0, 0);
-        //print(ssItem.stats["Range"]);
-        //myRigidBody.AddForce(new Vector2(ssItem.stats["Range"] * 10, 0));
-        //myRigidBody.AddForce(myRigidBody.GetRelativeVector(Vector2.right * ssItem.stats["Range"] * 100));
-        myRigidBody.velocity += (myRigidBody.GetRelativeVector(Vector2.up * ssItem.stats["Range"]));
+        damageDealer.damage = ssItem.stats["Damage"];
+        /*myRigidBody.velocity = new Vector2(0, 0);
+        myRigidBody.velocity += (myRigidBody.GetRelativeVector(Vector2.up * ssItem.stats["Range"]));*/
+        if(playerTransform.localScale.x > 0)
+        {
+            myRigidBody.AddForce(new Vector2(ssItem.stats["Range"] * 40, ssItem.stats["Range"] * 40));
+        }
+        else
+        {
+            myRigidBody.AddForce(new Vector2(ssItem.stats["Range"] * -40, ssItem.stats["Range"] * 40));
+        }
     }
-    // Update is called once per frame
     void Update()
     {
-        
+        distanceTraveled = CalculateDistanceToClearPlayer();
+        lastPosition = transform.position;
+        if(distanceTraveled >= distanceToClearPlayer)
+        {
+            print("Triggering");
+            myCollider.isTrigger = false;
+        }
+    }
+
+    private float CalculateDistanceToClearPlayer()
+    {
+        return Vector2.Distance(lastPosition, transform.position) + distanceTraveled;
+    }
+    public void AdvanceAnimation()
+    {
+        animationState++;
+        animator.SetInteger("AnimationState", animationState);
+    }
+    public void ResetAnimation()
+    {
+        animationState = 0;
+        animator.SetInteger("AnimationState", animationState);
+    }
+    public void Kill()
+    {
+        //ResetAnimation();
+        this.gameObject.SetActive(false);
+    }
+    public void ActivateReaction()
+    {
+        reactable = true;
     }
 }

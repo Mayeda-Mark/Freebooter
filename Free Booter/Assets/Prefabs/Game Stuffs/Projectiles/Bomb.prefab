@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6996276340462142178}
   - component: {fileID: 6996276340462142189}
   - component: {fileID: 1310622332239906514}
+  - component: {fileID: 4279643066115998585}
+  - component: {fileID: 5363722879804666173}
   m_Layer: 14
   m_Name: Bomb
   m_TagString: Untagged
@@ -47,6 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIndex: 18
+  reactable: 0
+  distanceToClearPlayer: 1
 --- !u!212 &6996276340462142178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83,8 +87,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 818620103
-  m_SortingLayer: 8
+  m_SortingLayerID: 1443925145
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1483665779731714255, guid: e4770b83ce42cf341831bf7a35ee1185,
     type: 3}
@@ -138,3 +142,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &4279643066115998585
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6996276340462142188}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009017944, y: -0.011271}
+  serializedVersion: 2
+  m_Radius: 0.1912427
+--- !u!114 &5363722879804666173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6996276340462142188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c175a498660d66d46b7794058bba6956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  knockBack: 0
+  horizontalKnockback: 0
+  verticalKnockBack: 0
