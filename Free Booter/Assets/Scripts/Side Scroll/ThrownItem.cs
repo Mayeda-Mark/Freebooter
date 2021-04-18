@@ -23,6 +23,7 @@ public class ThrownItem : MonoBehaviour, IPooledObject
     // Start is called before the first frame update
     void Start()
     {
+        damageDealer.enabled = false;
     }
     public void OnObjectSpawn()
     {
@@ -38,7 +39,6 @@ public class ThrownItem : MonoBehaviour, IPooledObject
         item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
         ssItem = FindObjectOfType<SidescrollItemDB>().GetSidescrollItem(item.stats["SidescrollIndex"]);
         myRigidBody = GetComponent<Rigidbody2D>();
-        damageDealer.damage = ssItem.stats["Damage"];
         /*myRigidBody.velocity = new Vector2(0, 0);
         myRigidBody.velocity += (myRigidBody.GetRelativeVector(Vector2.up * ssItem.stats["Range"]));*/
         if(playerTransform.localScale.x > 0)
@@ -56,9 +56,9 @@ public class ThrownItem : MonoBehaviour, IPooledObject
         lastPosition = transform.position;
         if(distanceTraveled >= distanceToClearPlayer)
         {
-            print("Triggering");
             myCollider.isTrigger = false;
         }
+        damageDealer.enabled = reactable;
     }
 
     private float CalculateDistanceToClearPlayer()
@@ -78,6 +78,7 @@ public class ThrownItem : MonoBehaviour, IPooledObject
     public void Kill()
     {
         //ResetAnimation();
+        reactable = false;
         this.gameObject.SetActive(false);
     }
     public void ActivateReaction()

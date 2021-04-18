@@ -13,70 +13,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-04-16T12:05:57.246-07:00
-  initializedAtString: 2021-04-16T11:29:02.933-07:00
+  lastUpdatedAtString: 2021-04-18T14:42:44.534-07:00
+  initializedAtString: 2021-04-18T13:30:00.198-07:00
   entries:
-  - path: Free Booter\Assets\Animations\SideScroll\Bomb.controller
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Bomb.controller
-    projectPath: Assets\Animations\SideScroll\Bomb.controller
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Assets\Animations\SideScroll\Bomb_Explode.anim
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Bomb_Explode.anim
     projectPath: Assets\Animations\SideScroll\Bomb_Explode.anim
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Animations\SideScroll\Bomb_Fuse.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Bomb_Fuse.anim
-    projectPath: Assets\Animations\SideScroll\Bomb_Fuse.anim
+  - path: Free Booter\Assets\Downloaded Assets\Rock1.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Rock1.png
+    projectPath: Assets\Downloaded Assets\Rock1.png
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Projectiles\Bomb.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Projectiles\Bomb.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Projectiles\Bomb.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
-    projectPath: Assets\Scenes\Sidescroll_test.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\SidescrollItem.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\SidescrollItem.cs
-    projectPath: Assets\Scripts\Inventory\SidescrollItem.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\SidescrollItemDB.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\SidescrollItemDB.cs
-    projectPath: Assets\Scripts\Inventory\SidescrollItemDB.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\PlayerSidescrollController.cs
-    projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Scripts\Side Scroll\ReactableObject.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\ReactableObject.cs
     projectPath: Assets\Scripts\Side Scroll\ReactableObject.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Shooter.cs
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\ReactionTriger.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Shooter.cs
-    projectPath: Assets\Scripts\Side Scroll\Shooter.cs
+      Scroll\ReactionTriger.cs
+    projectPath: Assets\Scripts\Side Scroll\ReactionTriger.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -96,18 +59,6 @@ MonoBehaviour:
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\expandedItems
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
-    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -132,18 +83,6 @@ MonoBehaviour:
   - path: Free Booter\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
-    projectPath: Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
