@@ -13,46 +13,349 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-04-18T14:42:44.534-07:00
-  initializedAtString: 2021-04-18T13:30:00.198-07:00
+  lastUpdatedAtString: 2021-04-18T15:02:28.051-07:00
+  initializedAtString: 2021-04-18T14:48:36.109-07:00
   entries:
-  - path: Free Booter\Assets\Animations\SideScroll\Bomb_Explode.anim
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\SideScroll\Bomb_Explode.anim
-    projectPath: Assets\Animations\SideScroll\Bomb_Explode.anim
+  - path: Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
+    projectPath: Assets\Prefabs\Controllers\Inventory.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Downloaded Assets\Rock1.png
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
-      Assets\Rock1.png
-    projectPath: Assets\Downloaded Assets\Rock1.png
+  - path: Free Booter\Assets\Prefabs\Controllers\Options Controller.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Options
+      Controller.prefab
+    projectPath: Assets\Prefabs\Controllers\Options Controller.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\ReactableObject.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\ReactableObject.cs
-    projectPath: Assets\Scripts\Side Scroll\ReactableObject.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\ReactionTriger.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\ReactionTriger.cs
-    projectPath: Assets\Scripts\Side Scroll\ReactionTriger.cs
+  - path: Free Booter\Assets\Prefabs\Controllers\Player Prefs Controller.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Player
+      Prefs Controller.prefab
+    projectPath: Assets\Prefabs\Controllers\Player Prefs Controller.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\ThrownItem.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\ThrownItem.cs
-    projectPath: Assets\Scripts\Side Scroll\ThrownItem.cs
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Health Bar.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Health Bar.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Health Bar.prefab
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ArtifactDB
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
-    projectPath: Library\ArtifactDB
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Inventory Canvas.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Inventory Canvas.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Inventory Canvas.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Options Controller.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Options Controller.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Options Controller.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Instructions Canvas.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Instructions Canvas.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Instructions Canvas.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\PlayerShipHealthBars.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\PlayerShipHealthBars.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\PlayerShipHealthBars.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (1).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (1).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (1).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (2).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (2).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (2).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (3).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (3).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (3).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (4).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (4).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (4).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (5).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (5).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (5).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (6).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (6).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (6).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (7).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (7).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (7).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (8).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal (8).prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (8).prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Overworld\Portals\Town Portal.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Player Prefs Controller.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Player Prefs Controller.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Player Prefs Controller.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\PlayerShipHealthBars.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\PlayerShipHealthBars.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\PlayerShipHealthBars.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Quantity.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Quantity.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Quantity.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Reactable Objects\Destroyable Rock.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Reactable Objects\Destroyable Rock.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Reactable Objects\Destroyable Rock.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll Cameras.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Sidescroll Cameras.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll Cameras.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll\Reactable Objects\Destroyable
+      Rock.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Sidescroll\Reactable Objects\Destroyable Rock.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll\Reactable Objects\Destroyable
+      Rock.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll\Sidescroll Cameras.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Sidescroll\Sidescroll Cameras.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll\Sidescroll Cameras.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll\Treasure Chest.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Sidescroll\Treasure Chest.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll\Treasure Chest.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Toolbar.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Toolbar.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Toolbar.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\ToolbarSlot.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\ToolbarSlot.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\ToolbarSlot.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Treasure Chest.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Treasure Chest.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Treasure Chest.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (1).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (1).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (2).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (2).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (3).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (3).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (4).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (4).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (5).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (5).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (6).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (6).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (7).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (7).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (8).prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal (8).prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal.prefab
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab.meta
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
+      Stuffs\Overworld\Portals\Town Portal.prefab.meta
+    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Prefabs\UI\Health Bar.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\UI\Health
+      Bar.prefab
+    projectPath: Assets\Prefabs\UI\Health Bar.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
+    projectPath: Assets\Scenes\Sidescroll_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -92,21 +395,27 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Free Booter\Library\SourceAssetDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-ab268b757985546459.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-ab268b757985546459.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-ab268b757985546459.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-fa027dd7274abe2478.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-fa027dd7274abe2478.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-fa027dd7274abe2478.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -116,15 +425,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
-    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+  - path: Free Booter\Library\StateCache\SceneView\91733e-fa027dd7274abe2478.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-fa027dd7274abe2478.json
+    projectPath: Library\StateCache\SceneView\91733e-fa027dd7274abe2478.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
