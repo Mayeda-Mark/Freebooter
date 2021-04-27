@@ -221,7 +221,6 @@ public class PlayerSidescrollController : MonoBehaviour
     {
         if(isRunning)
         {
-            print("Sliding");
             myAnimator.SetBool("isSliding", isSliding);
         } else
         {

@@ -24,14 +24,14 @@ public class InventoryUIController : MonoBehaviour
     void Start()
     {
         inventory = FindObjectOfType<Inventory>();
-        if (FindObjectOfType<LevelController>().isSideScroll)
+        /*if (FindObjectOfType<LevelController>().isSideScroll && FindObjectOfType<LevelController>() != null)
         {
             ActivatePanel("Equipment");
         }
         else
         {
             ActivatePanel("Supplies");
-        }
+        }*/
         //DeactivateUI();
     }
     void Update()

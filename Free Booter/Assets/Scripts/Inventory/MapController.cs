@@ -27,4 +27,15 @@ public class MapController : MonoBehaviour
             target.GetComponent<LockedArea>().UnlockArea();
         }
     }
+    public void UnlockAllMapsInInventory()
+    {
+        List<Item> inventory = FindObjectOfType<Inventory>().GetInventory();
+        foreach(Item item in inventory)
+        {
+            if(item.isAMap)
+            {
+                UnlockFromMap(item.stats["MapIndex"]);
+            }
+        }
+    }
 }

@@ -105,7 +105,7 @@ public class ItemDB : MonoBehaviour
             new Dictionary<string, int> {
                 {"SidescrollIndex", 0 }
             }, true, false, true),
-            new Item(18, "Bomb", "Equipment", "It looks like some sort of bowling ball candle that goes boom", icons[8], 25, 
+            new Item(18, "Bombs", "Equipment", "It looks like some sort of bowling ball candle that goes boom", icons[8], 25, 
             new Dictionary<string, int>
             {
                 {"SidescrollIndex", 1 }

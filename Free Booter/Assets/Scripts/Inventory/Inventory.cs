@@ -30,14 +30,30 @@ public class Inventory : MonoBehaviour
         itemDB = GetComponent<ItemDB>();
         toast = FindObjectOfType<ToastController>();
         mapController = FindObjectOfType<MapController>();
-        GiveItem(0, 80);
+        /*GiveItem(0, 80);
         GiveItem(1, 50);
         GiveItem(2, 100);
         GiveItem(6, 1);
-        GiveItem(17, 1);
-        GiveItem(18, 10);
+        GiveItem(17, 1);*/
+        //GiveItem(18, 10);
         uiActive = false;
         inventoryUI.gameObject.SetActive(false);
+    }
+    public void DisableUIs()
+    {
+        toast.gameObject.SetActive(false);
+        toolbarUI.gameObject.SetActive(false);
+        inventoryUI.gameObject.SetActive(false);
+    }
+    public void EnableUIs()
+    {
+        toast.gameObject.SetActive(true);
+        toolbarUI.gameObject.SetActive(true);
+        //inventoryUI.gameObject.SetActive(true);
+    }
+    public void StartNewLevel()
+    {
+        levelController = FindObjectOfType<LevelController>();
     }
     private void Update() {
         if (Input.GetKeyDown(KeyCode.I))

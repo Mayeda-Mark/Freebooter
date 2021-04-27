@@ -71,7 +71,10 @@ public class MusicManager : MonoBehaviour
     public void ChangeAmbianceTrackWithoutFade(string tag)
     {
         var clipToPlay = ambianceTracks.Find(tracks => tracks.trackName == tag);
-        ambianceAudioSource.clip = clipToPlay.clip;
+        if(clipToPlay != null)
+        {
+            ambianceAudioSource.clip = clipToPlay.clip;
+        }
         //ambianceAudioSource.volume = clipToPlay.volume;
         ambianceAudioSource.Play();
     }

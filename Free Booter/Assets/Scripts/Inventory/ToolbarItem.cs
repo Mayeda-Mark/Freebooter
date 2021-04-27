@@ -48,6 +48,11 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         isActive = false;
         inventoryController = FindObjectOfType<InventoryUIController>();
     }
+    public void SetuUpVars()
+    {
+        inventoryController = FindObjectOfType<InventoryUIController>();
+        levelController = FindObjectOfType<LevelController>();
+    }
 /*
     // Update is called once per frame
     void Update()
@@ -88,6 +93,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     #region Equipping
     public void OnPointerClick(PointerEventData eventData)
     {
+        SetuUpVars();
         if(inventory.uiActive)
         {
             if(this.item != null && isActive)
@@ -140,6 +146,7 @@ public class ToolbarItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
 
     public void EquipItem(/*Item item*/)
     {
+        SetuUpVars();
         //ADD IF STATEMENT CHECKING FOR QUANTITY > 0
         parentImage.color = selectedItemColor;
         if(levelController.isSideScroll)

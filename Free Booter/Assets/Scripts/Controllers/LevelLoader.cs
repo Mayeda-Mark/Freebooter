@@ -11,11 +11,11 @@ public class LevelLoader : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        /*currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
             StartCoroutine(LoadStartMenu());
-        }
+        }*/
     }
     IEnumerator LoadStartMenu()
     {

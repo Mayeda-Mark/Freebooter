@@ -6,13 +6,11 @@ using UnityEngine;
 public class TreasureChest : MonoBehaviour
 {
     bool playerOnBox, looted = false;
-    public Sprite openTreasureSprite;
-    private ToastController toast;
+    public Sprite openTreasureSprite = default;
     LootTable lootTable;
     private void Start()
     {
-        lootTable = FindObjectOfType<LootTable>();
-        toast = FindObjectOfType<ToastController>();
+        lootTable = GetComponent<LootTable>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -44,7 +42,5 @@ public class TreasureChest : MonoBehaviour
     private void GiveReward()
     {
         lootTable.awardLoot();
-        //toast.gameObject.SetActive(true);
-        //toast.TriggetToast("Received 500 Gold");
     }
 }

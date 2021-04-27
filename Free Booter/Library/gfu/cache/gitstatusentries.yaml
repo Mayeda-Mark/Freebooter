@@ -13,355 +13,2147 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-04-18T15:02:28.051-07:00
-  initializedAtString: 2021-04-18T14:48:36.109-07:00
+  lastUpdatedAtString: 2021-04-27T15:53:30.024-07:00
+  initializedAtString: 2021-04-27T15:46:12.207-07:00
   entries:
-  - path: Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
-    projectPath: Assets\Prefabs\Controllers\Inventory.prefab
+  - path: Free Booter\Assets\Animations\Overworld\IntroAnimation.anim
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Animations\Overworld\IntroAnimation.anim
+    projectPath: Assets\Animations\Overworld\IntroAnimation.anim
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Controllers\Options Controller.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Options
-      Controller.prefab
-    projectPath: Assets\Prefabs\Controllers\Options Controller.prefab
+  - path: Free Booter\Assets\Downloaded Assets\animated_wooden_castle_door.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\animated_wooden_castle_door.png
+    projectPath: Assets\Downloaded Assets\animated_wooden_castle_door.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Controllers\Player Prefs Controller.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Player
-      Prefs Controller.prefab
-    projectPath: Assets\Prefabs\Controllers\Player Prefs Controller.prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\base\base_dark.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\base\base_dark.png
+    projectPath: Assets\Downloaded Assets\maleBase\base\base_dark.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Health Bar.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Health Bar.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Health Bar.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Inventory Canvas.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Inventory Canvas.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Inventory Canvas.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Options Controller.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Options Controller.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Options Controller.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Instructions Canvas.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Instructions Canvas.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Instructions Canvas.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\PlayerShipHealthBars.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\PlayerShipHealthBars.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\PlayerShipHealthBars.prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\base\base_light.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\base\base_light.png
+    projectPath: Assets\Downloaded Assets\maleBase\base\base_light.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (1).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (1).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (1).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\base\base_undead.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\base\base_undead.png
+    projectPath: Assets\Downloaded Assets\maleBase\base\base_undead.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (2).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (2).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (2).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\frameGuide.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\frameGuide.png
+    projectPath: Assets\Downloaded Assets\maleBase\frameGuide.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (3).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (3).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (3).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\frameTestAnim.gif
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\frameTestAnim.gif
+    projectPath: Assets\Downloaded Assets\maleBase\frameTestAnim.gif
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (4).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (4).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (4).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\full\advnt_full.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\full\advnt_full.png
+    projectPath: Assets\Downloaded Assets\maleBase\full\advnt_full.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (5).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (5).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (5).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\full\ninja_full.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\full\ninja_full.png
+    projectPath: Assets\Downloaded Assets\maleBase\full\ninja_full.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (6).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (6).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (6).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_hair_dark00.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_hair_dark00.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_hair_dark00.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (7).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (7).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (7).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_hair_dark01.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_hair_dark01.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_hair_dark01.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (8).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal (8).prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal (8).prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_hair_light00.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_hair_light00.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_hair_light00.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Portals\Town Portal.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Portals\Town Portal.prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_hair_light01.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_hair_light01.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_hair_light01.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Player Prefs Controller.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Player Prefs Controller.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Player Prefs Controller.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\PlayerShipHealthBars.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\PlayerShipHealthBars.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\PlayerShipHealthBars.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Quantity.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Quantity.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Quantity.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Reactable Objects\Destroyable Rock.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Reactable Objects\Destroyable Rock.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Reactable Objects\Destroyable Rock.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll Cameras.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Sidescroll Cameras.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll Cameras.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll\Reactable Objects\Destroyable
-      Rock.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Sidescroll\Reactable Objects\Destroyable Rock.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll\Reactable Objects\Destroyable
-      Rock.prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_ninja_blue.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_ninja_blue.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_ninja_blue.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll\Sidescroll Cameras.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Sidescroll\Sidescroll Cameras.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll\Sidescroll Cameras.prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_ninja_gray.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_ninja_gray.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_ninja_gray.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Sidescroll\Treasure Chest.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Sidescroll\Treasure Chest.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Sidescroll\Treasure Chest.prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_ninja_red.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_ninja_red.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_ninja_red.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Toolbar.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Toolbar.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Toolbar.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\ToolbarSlot.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\ToolbarSlot.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\ToolbarSlot.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Treasure Chest.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Treasure Chest.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Treasure Chest.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (1).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (1).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (1).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (2).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (2).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (2).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (3).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (3).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (3).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (4).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (4).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (4).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (5).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (5).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (5).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (6).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (6).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (6).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (7).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (7).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (7).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (8).prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal (8).prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal (8).prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal.prefab
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab.meta
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\NPC
-      Stuffs\Overworld\Portals\Town Portal.prefab.meta
-    projectPath: Assets\Prefabs\NPC Stuffs\Overworld\Portals\Town Portal.prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Free Booter\Assets\Prefabs\UI\Health Bar.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\UI\Health
-      Bar.prefab
-    projectPath: Assets\Prefabs\UI\Health Bar.prefab
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\head\head_steel_helm.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\head\head_steel_helm.png
+    projectPath: Assets\Downloaded Assets\maleBase\head\head_steel_helm.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\maleBase.xcf
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\maleBase.xcf
+    projectPath: Assets\Downloaded Assets\maleBase\maleBase.xcf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\maleBasePreview.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\maleBasePreview.png
+    projectPath: Assets\Downloaded Assets\maleBase\maleBasePreview.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\outfit\outfit_lightArmor.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\outfit\outfit_lightArmor.png
+    projectPath: Assets\Downloaded Assets\maleBase\outfit\outfit_lightArmor.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\outfit\outfit_ninja_blue.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\outfit\outfit_ninja_blue.png
+    projectPath: Assets\Downloaded Assets\maleBase\outfit\outfit_ninja_blue.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\outfit\outfit_ninja_gray.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\outfit\outfit_ninja_gray.png
+    projectPath: Assets\Downloaded Assets\maleBase\outfit\outfit_ninja_gray.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\maleBase\outfit\outfit_ninja_red.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\maleBase\outfit\outfit_ninja_red.png
+    projectPath: Assets\Downloaded Assets\maleBase\outfit\outfit_ninja_red.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\PathAndObjects.png
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\PathAndObjects.png
+    projectPath: Assets\Downloaded Assets\PathAndObjects.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_0.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_0.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_0.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_1.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_1.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_1.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_10.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_10.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_10.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_100.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_100.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_100.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_101.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_101.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_101.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_102.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_102.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_102.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_103.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_103.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_103.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_104.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_104.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_104.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_105.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_105.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_105.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_106.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_106.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_106.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_107.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_107.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_107.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_108.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_108.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_108.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_109.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_109.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_109.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_11.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_11.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_11.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_110.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_110.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_110.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_111.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_111.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_111.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_112.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_112.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_112.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_113.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_113.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_113.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_114.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_114.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_114.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_115.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_115.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_115.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_116.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_116.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_116.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_117.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_117.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_117.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_118.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_118.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_118.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_119.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_119.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_119.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_12.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_12.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_12.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_120.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_120.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_120.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_121.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_121.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_121.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_122.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_122.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_122.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_123.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_123.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_123.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_124.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_124.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_124.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_125.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_125.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_125.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_126.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_126.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_126.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_127.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_127.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_127.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_128.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_128.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_128.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_129.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_129.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_129.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_13.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_13.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_13.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_130.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_130.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_130.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_131.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_131.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_131.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_132.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_132.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_132.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_133.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_133.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_133.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_134.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_134.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_134.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_135.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_135.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_135.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_136.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_136.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_136.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_137.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_137.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_137.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_138.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_138.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_138.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_139.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_139.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_139.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_14.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_14.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_14.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_140.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_140.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_140.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_141.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_141.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_141.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_142.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_142.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_142.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_143.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_143.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_143.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_144.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_144.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_144.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_145.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_145.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_145.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_146.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_146.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_146.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_147.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_147.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_147.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_148.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_148.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_148.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_149.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_149.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_149.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_15.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_15.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_15.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_150.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_150.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_150.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_151.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_151.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_151.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_152.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_152.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_152.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_153.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_153.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_153.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_154.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_154.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_154.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_155.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_155.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_155.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_156.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_156.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_156.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_157.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_157.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_157.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_158.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_158.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_158.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_159.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_159.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_159.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_16.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_16.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_16.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_160.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_160.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_160.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_161.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_161.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_161.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_162.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_162.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_162.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_163.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_163.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_163.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_164.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_164.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_164.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_165.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_165.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_165.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_166.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_166.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_166.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_167.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_167.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_167.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_168.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_168.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_168.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_169.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_169.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_169.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_17.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_17.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_17.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_170.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_170.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_170.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_171.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_171.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_171.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_172.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_172.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_172.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_173.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_173.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_173.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_174.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_174.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_174.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_175.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_175.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_175.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_176.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_176.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_176.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_177.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_177.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_177.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_178.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_178.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_178.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_179.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_179.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_179.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_18.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_18.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_18.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_180.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_180.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_180.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_181.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_181.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_181.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_182.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_182.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_182.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_183.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_183.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_183.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_184.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_184.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_184.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_185.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_185.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_185.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_186.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_186.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_186.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_187.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_187.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_187.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_188.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_188.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_188.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_189.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_189.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_189.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_19.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_19.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_19.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_190.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_190.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_190.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_191.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_191.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_191.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_192.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_192.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_192.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_193.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_193.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_193.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_194.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_194.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_194.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_195.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_195.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_195.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_196.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_196.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_196.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_197.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_197.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_197.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_198.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_198.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_198.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_199.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_199.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_199.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_2.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_2.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_2.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_20.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_20.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_20.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_200.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_200.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_200.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_201.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_201.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_201.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_202.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_202.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_202.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_203.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_203.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_203.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_204.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_204.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_204.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_205.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_205.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_205.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_206.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_206.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_206.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_207.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_207.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_207.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_208.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_208.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_208.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_209.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_209.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_209.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_21.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_21.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_21.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_210.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_210.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_210.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_211.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_211.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_211.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_212.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_212.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_212.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_213.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_213.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_213.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_214.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_214.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_214.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_215.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_215.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_215.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_216.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_216.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_216.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_217.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_217.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_217.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_218.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_218.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_218.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_219.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_219.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_219.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_22.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_22.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_22.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_220.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_220.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_220.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_221.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_221.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_221.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_222.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_222.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_222.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_223.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_223.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_223.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_224.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_224.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_224.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_225.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_225.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_225.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_226.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_226.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_226.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_227.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_227.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_227.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_228.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_228.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_228.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_229.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_229.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_229.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_23.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_23.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_23.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_230.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_230.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_230.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_231.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_231.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_231.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_232.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_232.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_232.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_233.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_233.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_233.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_234.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_234.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_234.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_235.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_235.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_235.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_236.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_236.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_236.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_237.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_237.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_237.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_238.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_238.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_238.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_239.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_239.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_239.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_24.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_24.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_24.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_240.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_240.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_240.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_241.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_241.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_241.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_242.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_242.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_242.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_243.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_243.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_243.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_244.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_244.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_244.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_245.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_245.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_245.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_246.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_246.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_246.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_247.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_247.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_247.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_248.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_248.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_248.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_249.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_249.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_249.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_25.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_25.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_25.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_250.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_250.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_250.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_251.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_251.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_251.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_252.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_252.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_252.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_253.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_253.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_253.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_26.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_26.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_26.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_27.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_27.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_27.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_28.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_28.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_28.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_29.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_29.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_29.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_3.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_3.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_3.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_30.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_30.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_30.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_31.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_31.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_31.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_32.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_32.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_32.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_33.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_33.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_33.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_34.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_34.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_34.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_35.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_35.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_35.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_36.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_36.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_36.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_37.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_37.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_37.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_38.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_38.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_38.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_39.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_39.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_39.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_4.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_4.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_4.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_40.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_40.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_40.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_41.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_41.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_41.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_42.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_42.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_42.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_43.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_43.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_43.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_44.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_44.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_44.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_45.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_45.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_45.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_46.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_46.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_46.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_47.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_47.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_47.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_48.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_48.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_48.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_49.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_49.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_49.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_5.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_5.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_5.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_50.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_50.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_50.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_51.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_51.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_51.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_52.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_52.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_52.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_53.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_53.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_53.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_54.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_54.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_54.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_55.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_55.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_55.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_56.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_56.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_56.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_57.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_57.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_57.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_58.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_58.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_58.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_59.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_59.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_59.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_6.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_6.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_6.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_60.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_60.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_60.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_61.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_61.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_61.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_62.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_62.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_62.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_63.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_63.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_63.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_64.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_64.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_64.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_65.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_65.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_65.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_66.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_66.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_66.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_67.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_67.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_67.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_68.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_68.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_68.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_69.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_69.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_69.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_7.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_7.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_7.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_70.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_70.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_70.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_71.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_71.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_71.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_72.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_72.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_72.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_73.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_73.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_73.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_74.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_74.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_74.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_75.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_75.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_75.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_76.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_76.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_76.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_77.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_77.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_77.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_78.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_78.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_78.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_79.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_79.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_79.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_8.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_8.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_8.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_80.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_80.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_80.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_81.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_81.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_81.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_82.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_82.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_82.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_83.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_83.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_83.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_84.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_84.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_84.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_85.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_85.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_85.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_86.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_86.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_86.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_87.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_87.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_87.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_88.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_88.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_88.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_89.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_89.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_89.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_9.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_9.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_9.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_90.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_90.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_90.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_91.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_91.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_91.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_92.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_92.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_92.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_93.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_93.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_93.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_94.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_94.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_94.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_95.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_95.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_95.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_96.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_96.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_96.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_97.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_97.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_97.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_98.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_98.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_98.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Downloaded Assets\Tilesheet\PathAndObjects_99.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Downloaded
+      Assets\Tilesheet\PathAndObjects_99.asset
+    projectPath: Assets\Downloaded Assets\Tilesheet\PathAndObjects_99.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\Projectiles\Bomb.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\Projectiles\Bomb.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\Projectiles\Bomb.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Resources\Tilesheets\Town_test.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Tilesheets\Town_test.prefab
+    projectPath: Assets\Resources\Tilesheets\Town_test.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Resources\Video\19_1.mp4
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Video\19_1.mp4
+    projectPath: Assets\Resources\Video\19_1.mp4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Resources\Video\VideoOutput.renderTexture
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Video\VideoOutput.renderTexture
+    projectPath: Assets\Resources\Video\VideoOutput.renderTexture
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Moonrift_splash.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Moonrift_splash.unity
+    projectPath: Assets\Scenes\Moonrift_splash.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scenes\Overworld_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Overworld_test.unity
+    projectPath: Assets\Scenes\Overworld_test.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
     projectPath: Assets\Scenes\Sidescroll_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Splash.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Splash.unity
+    projectPath: Assets\Scenes\Splash.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Start.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Start.unity
+    projectPath: Assets\Scenes\Start.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scenes\Town_test.unity
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Town_test.unity
+    projectPath: Assets\Scenes\Town_test.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Controllers\GameController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\GameController.cs
+    projectPath: Assets\Scripts\Controllers\GameController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Controllers\LevelController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\LevelController.cs
+    projectPath: Assets\Scripts\Controllers\LevelController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Controllers\LevelLoader.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\LevelLoader.cs
+    projectPath: Assets\Scripts\Controllers\LevelLoader.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Controllers\MusicManager.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\MusicManager.cs
+    projectPath: Assets\Scripts\Controllers\MusicManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Controllers\SplashController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\SplashController.cs
+    projectPath: Assets\Scripts\Controllers\SplashController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Controllers\StartMenu.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\StartMenu.cs
+    projectPath: Assets\Scripts\Controllers\StartMenu.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Controllers\VideoPlayer.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\VideoPlayer.cs
+    projectPath: Assets\Scripts\Controllers\VideoPlayer.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Inventory.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Inventory.cs
+    projectPath: Assets\Scripts\Inventory\Inventory.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
+    projectPath: Assets\Scripts\Inventory\InventoryUIController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\ItemDB.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ItemDB.cs
+    projectPath: Assets\Scripts\Inventory\ItemDB.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\MapController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\MapController.cs
+    projectPath: Assets\Scripts\Inventory\MapController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarItem.cs
+    projectPath: Assets\Scripts\Inventory\ToolbarItem.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\UIInventory.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\UIInventory.cs
+    projectPath: Assets\Scripts\Inventory\UIInventory.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\PlayerSidescrollController.cs
+    projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\ThrownItem.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\ThrownItem.cs
+    projectPath: Assets\Scripts\Side Scroll\ThrownItem.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\TreasureChest.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\TreasureChest.cs
+    projectPath: Assets\Scripts\Side Scroll\TreasureChest.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ArtifactDB
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
     projectPath: Library\Collab\CollabSnapshot_0a967b62-2575-4473-8969-f8e3786fa225.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\EditorUserBuildSettings.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\EditorUserBuildSettings.asset
+    projectPath: Library\EditorUserBuildSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\expandedItems
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -389,9 +2181,159 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
+    projectPath: Library\GridBrush\UnityEditor.Tilemaps.GridBrush.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\LastBuild.buildreport
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\LastBuild.buildreport
+    projectPath: Library\LastBuild.buildreport
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\globalgamemanagers.assets
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\globalgamemanagers.assets
+    projectPath: Library\PlayerDataCache\Win\Data\globalgamemanagers.assets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Assembly-CSharp.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Assembly-CSharp.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Cinemachine.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Cinemachine.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Cinemachine.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Animation.Runtime.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Animation.Runtime.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Animation.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Animation.Triangle.Runtime.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Animation.Triangle.Runtime.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Animation.Triangle.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Common.Runtime.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Common.Runtime.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.2D.Common.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.PixelPerfect.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.PixelPerfect.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.2D.PixelPerfect.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.SpriteShape.Runtime.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.2D.SpriteShape.Runtime.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.2D.SpriteShape.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.Mathematics.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.Mathematics.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.Mathematics.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.TextMeshPro.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.TextMeshPro.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.Timeline.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\Unity.Timeline.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\Managed\UnityEngine.UI.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\Managed\UnityEngine.UI.dll
+    projectPath: Library\PlayerDataCache\Win\Data\Managed\UnityEngine.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\resources.assets
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\resources.assets
+    projectPath: Library\PlayerDataCache\Win\Data\resources.assets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\resources.assets.resS
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\resources.assets.resS
+    projectPath: Library\PlayerDataCache\Win\Data\resources.assets.resS
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\Data\sharedassets0.assets
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\Data\sharedassets0.assets
+    projectPath: Library\PlayerDataCache\Win\Data\sharedassets0.assets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\PlayerDataCache\Win\ScriptsOnlyCache.yaml
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\PlayerDataCache\Win\ScriptsOnlyCache.yaml
+    projectPath: Library\PlayerDataCache\Win\ScriptsOnlyCache.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Library\SceneVisibilityState.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -401,21 +2343,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-ab268b757985546459.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-ab268b757985546459.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-ab268b757985546459.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-e03b77284a900e44aa.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-fa027dd7274abe2478.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-fa027dd7274abe2478.json
-    projectPath: Library\StateCache\Hierarchy\7e5c39-fa027dd7274abe2478.json
+  - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
+    projectPath: Library\StateCache\Hierarchy\7e5c39-7c99e8f1e309e5e498.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -425,9 +2355,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\StateCache\SceneView\91733e-fa027dd7274abe2478.json
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-fa027dd7274abe2478.json
-    projectPath: Library\StateCache\SceneView\91733e-fa027dd7274abe2478.json
+  - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
+    projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\ProjectSettings\EditorBuildSettings.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\ProjectSettings\EditorBuildSettings.asset
+    projectPath: ProjectSettings\EditorBuildSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

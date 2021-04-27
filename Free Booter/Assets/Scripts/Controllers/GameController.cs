@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] Canvas instructionCanvas;
-    // Start is called before the first frame update
+    private Inventory inventory;
     void Start()
     {
         DontDestroyOnLoad(this);
-        instructionCanvas.enabled = true;
-        Time.timeScale = 0;
+        inventory = FindObjectOfType<Inventory>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void GiveStartingInventory()
     {
-        
-    }
-    public void StartButton() {
-        Time.timeScale = 1.0f;
-        instructionCanvas.enabled = false;
+        inventory.GiveItem(0, 80);
+        inventory.GiveItem(1, 50);
+        inventory.GiveItem(2, 100);
+        inventory.GiveItem(6, 1);
+        inventory.GiveItem(17, 1);
     }
 }

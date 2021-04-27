@@ -19,15 +19,12 @@ public class ThrownItem : MonoBehaviour, IPooledObject
     private Transform playerTransform;
     private int animationState;
     private Animator animator;
-    DamageDealer damageDealer;
     // Start is called before the first frame update
     void Start()
     {
-        damageDealer.enabled = false;
     }
     public void OnObjectSpawn()
     {
-        damageDealer = GetComponent<DamageDealer>();
         animator = GetComponent<Animator>();
         ResetAnimation();
         playerTransform = FindObjectOfType<PlayerSidescrollController>().GetComponent<Transform>();
@@ -58,7 +55,10 @@ public class ThrownItem : MonoBehaviour, IPooledObject
         {
             myCollider.isTrigger = false;
         }
-        damageDealer.enabled = reactable;
+        if(reactable)
+        {
+            print("Reactable");
+        }
     }
 
     private float CalculateDistanceToClearPlayer()

@@ -13,9 +13,9 @@ public class StartMenu : MonoBehaviour
     MusicManager music;
     private void Start()
     {
-        music = FindObjectOfType<MusicManager>();
+        music = FindObjectOfType<MusicManager>();/*
         music.ChangeTrack("MenuTrack");
-        music.SetMaintainMusic(true);
+        music.SetMaintainMusic(true);*/
         levelLoader = FindObjectOfType<LevelLoader>();
         newCanvas.SetActive(false);
         differentCanvas.SetActive(false);
@@ -51,6 +51,7 @@ public class StartMenu : MonoBehaviour
     }
     public void StartGame()
     {
+        FindObjectOfType<GameController>().GiveStartingInventory();
         music.SetMaintainMusic(false);
         music.StopMusic();
         levelLoader.LoadOverworld();
