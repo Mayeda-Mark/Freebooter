@@ -248,6 +248,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c48a381b2a646e343875f8f3df6eac29, type: 3}
   - trackName: Boss
     clip: {fileID: 8300000, guid: 643c3f2862f7da54cb222b5100d87c27, type: 3}
+  - trackName: Town
+    clip: {fileID: 8300000, guid: 2fdc094904dc2274ab1c03a56aa16284, type: 3}
   ambianceTracks:
   - trackName: Waves
     clip: {fileID: 8300000, guid: fe3b0954151c4e74ca9aee48404305fa, type: 3}
