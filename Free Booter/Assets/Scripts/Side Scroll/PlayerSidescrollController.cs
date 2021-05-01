@@ -93,7 +93,7 @@ public class PlayerSidescrollController : MonoBehaviour
         }
         else if(myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
             ResetFallTimer();
-            if(Input.GetButton("Attack")) { isUsingItemOrAbility = true; }
+            if(Input.GetButton("Action")) { isUsingItemOrAbility = true; }
             else if(Input.GetButton("Block")) { isBlocking = true; }
             else if(Input.GetButton("Crouch")) { isCrouching = true; }
             if(playerHasHorizontalSpeed && !isUsingItemOrAbility)
@@ -256,7 +256,7 @@ public class PlayerSidescrollController : MonoBehaviour
         }
         else if(equippedItem != null && equippedItem.type == "Thrown")
         {
-            if(Input.GetButton("Attack") && !inCooldown)
+            if(Input.GetButton("Action") && !inCooldown)
             {
                 pooler.SpawnFromPool(equippedItem.itemName, transform.position, Quaternion.identity);
                 ResetCooldown(equippedItem.cooldown);
@@ -295,7 +295,7 @@ public class PlayerSidescrollController : MonoBehaviour
             }
             shooter.rotation = aimRotation;
                 //print(aimRotation);
-            if(Input.GetButton("Attack") && !inCooldown)
+            if(Input.GetButton("Action") && !inCooldown)
             {
                 /* GameObject newCloud = pooler.SpawnFromPool(cloudTag, cloudPosition, Quaternion.Euler(new Vector3(0, 0, windDir)));*/
                 /*pooler.SpawnFromPool("Bomb", shooter.position, Quaternion.Euler(new Vector3(0, 0, shooter.rotation.z)));*/

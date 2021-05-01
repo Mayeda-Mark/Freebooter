@@ -7,10 +7,12 @@ public class Door : MonoBehaviour
     public GameObject inside, outside, doors, bg = default;
     BoxCollider2D myCollider;
     private bool inDoors, inCooldown = false;
+    SpriteRenderer mySprite;
     // Start is called before the first frame update
     void Start()
     {
         myCollider = GetComponent<BoxCollider2D>();
+        mySprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -36,14 +38,22 @@ public class Door : MonoBehaviour
     }
     private void DisappearDoors()
     {
+        //ANIMATION TRIGGERS GO HERE
         var doorsAlpha = doors.GetComponent<SpriteRenderer>().color; 
         doorsAlpha.a = 0;
         doors.GetComponent<SpriteRenderer>().color = doorsAlpha;
+        var frameAlpha = mySprite.color;
+        frameAlpha.a = 0;
+        mySprite.color = frameAlpha;
     }
     private void ReappearDoors()
     {
+        //ANIMATION TRIGGERS GO HERE
         var doorsAlpha = doors.GetComponent<SpriteRenderer>().color;
         doorsAlpha.a = 1;
         doors.GetComponent<SpriteRenderer>().color = doorsAlpha;
+        var frameAlpha = mySprite.color;
+        frameAlpha.a = 1;
+        mySprite.color = frameAlpha;
     }
 }
