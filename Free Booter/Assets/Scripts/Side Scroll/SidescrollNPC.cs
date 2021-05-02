@@ -13,9 +13,11 @@ public class SidescrollNPC : MonoBehaviour
     private float intervalTimer;
     private bool canWalk;
     private Animator anim;
+    private DialogueTree tree;
     //private float startingTimer = 1.5f;
     void Start()
     {
+        tree = GetComponent<DialogueTree>();
         RollInterval();
         myCollider = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
@@ -106,7 +108,8 @@ public class SidescrollNPC : MonoBehaviour
     {
         if(myCollider.IsTouchingLayers(LayerMask.GetMask("Player")) && Input.GetButton("Action"))
         {
-            FindObjectOfType<DialogueController>().ActivateDialogue((int)dialogueIds[Random.Range(0, dialogueIds.Length - 1)]);
+            /*FindObjectOfType<DialogueController>().ActivateDialogue((int)dialogueIds[Random.Range(0, dialogueIds.Length - 1)]);*/
+            tree.StartDialogue();
         }
     }
     #endregion

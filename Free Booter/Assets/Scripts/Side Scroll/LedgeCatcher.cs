@@ -16,7 +16,6 @@ public class LedgeCatcher : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Detected");
         if(collision.CompareTag("Ledge"))
         {
             print("detected the tag");

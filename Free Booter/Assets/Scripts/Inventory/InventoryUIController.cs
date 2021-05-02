@@ -88,6 +88,10 @@ public class InventoryUIController : MonoBehaviour
                 panel.ui.gameObject.SetActive(false);
             }
         }
+        if(panelName == "Quests")
+        {
+
+        }
     }
     public void AddNewItem(Item item, int quantity)
     {
