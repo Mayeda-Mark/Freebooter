@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab7954876ab3cb4d98d9a6f490b35e7, type: 3}
   m_Name: TestingClose
   m_EditorClassIdentifier: 
-  responseText: Testing Close
+  responseText: No, I'm Good

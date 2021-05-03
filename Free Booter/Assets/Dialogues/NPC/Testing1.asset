@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Testing1
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  dialogue: Testing1...
+  dialogue: Testing...
   playerResponses:
   - {fileID: 11400000, guid: cb1b8fdf87b388e4daf2cdd11990306c, type: 2}

@@ -13,18 +13,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-02T09:39:00.955-07:00
-  initializedAtString: 2021-05-02T08:34:51.501-07:00
+  lastUpdatedAtString: 2021-05-03T16:41:24.408-07:00
+  initializedAtString: 2021-05-03T15:01:56.302-07:00
   entries:
   - path: Free Booter\Assets\Dialogues\NPC\Testing1.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Dialogues\NPC\Testing1.asset
     projectPath: Assets\Dialogues\NPC\Testing1.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Dialogues\NPC\Testing2.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Dialogues\NPC\Testing2.asset
     projectPath: Assets\Dialogues\NPC\Testing2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Dialogues\NPC\Testing3.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Dialogues\NPC\Testing3.asset
+    projectPath: Assets\Dialogues\NPC\Testing3.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Dialogues\Player\Branch\Response Branch 1.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Dialogues\Player\Branch\Response
+      Branch 1.asset
+    projectPath: Assets\Dialogues\Player\Branch\Response Branch 1.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Dialogues\Player\Branch\Response Branch.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Dialogues\Player\Branch\Response
+      Branch.asset
+    projectPath: Assets\Dialogues\Player\Branch\Response Branch.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -33,11 +53,18 @@ MonoBehaviour:
       Branch.asset
     projectPath: Assets\Dialogues\Player\Branch\Testing Branch.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Dialogues\Player\Close\TestingClose.asset
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Dialogues\Player\Close\TestingClose.asset
     projectPath: Assets\Dialogues\Player\Close\TestingClose.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Dialogues\Player\Quest\Testing Quest.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Dialogues\Player\Quest\Testing
+      Quest.asset
+    projectPath: Assets\Dialogues\Player\Quest\Testing Quest.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -47,50 +74,92 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Free Booter\Assets\Prefabs\Game Stuffs\QuestSlot.prefab
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
+      Stuffs\QuestSlot.prefab
+    projectPath: Assets\Prefabs\Game Stuffs\QuestSlot.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Quests\Tutorial\TutorialQuest.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Quests\Tutorial\TutorialQuest.asset
+    projectPath: Assets\Quests\Tutorial\TutorialQuest.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Scenes\Town_test.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Town_test.unity
     projectPath: Assets\Scenes\Town_test.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
-    projectPath: Assets\Scripts\Inventory\InventoryUIController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\DialogueController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\DialogueController.cs
-    projectPath: Assets\Scripts\Side Scroll\DialogueController.cs
+  - path: Free Booter\Assets\Scripts\All Purpose Game\Quest.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\Quest.cs
+    projectPath: Assets\Scripts\All Purpose Game\Quest.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Assets\Scripts\Side Scroll\LedgeCatcher.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\LedgeCatcher.cs
-    projectPath: Assets\Scripts\Side Scroll\LedgeCatcher.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\SidescrollNPC.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\SidescrollNPC.cs
-    projectPath: Assets\Scripts\Side Scroll\SidescrollNPC.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue.cs
+  - path: Free Booter\Assets\Scripts\All Purpose Game\QuestDB.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\QuestDB.cs
+    projectPath: Assets\Scripts\All Purpose Game\QuestDB.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\Dialogue.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue\Dialogue.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\Dialogue.cs
+  - path: Free Booter\Assets\Scripts\All Purpose Game\QuestItem.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\QuestItem.cs
+    projectPath: Assets\Scripts\All Purpose Game\QuestItem.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\All Purpose Game\QuestLog.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\QuestLog.cs
+    projectPath: Assets\Scripts\All Purpose Game\QuestLog.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Controllers\QuestController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\QuestController.cs
+    projectPath: Assets\Scripts\Controllers\QuestController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Quests\Quest.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Quests\Quest.cs
+    projectPath: Assets\Scripts\Quests\Quest.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Quests\QuestController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Quests\QuestController.cs
+    projectPath: Assets\Scripts\Quests\QuestController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Quests\QuestDB.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Quests\QuestDB.cs
+    projectPath: Assets\Scripts\Quests\QuestDB.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Quests\QuestItem.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Quests\QuestItem.cs
+    projectPath: Assets\Scripts\Quests\QuestItem.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Quests\QuestLog.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Quests\QuestLog.cs
+    projectPath: Assets\Scripts\Quests\QuestLog.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Quests\QuestUIController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Quests\QuestUIController.cs
+    projectPath: Assets\Scripts\Quests\QuestUIController.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -99,64 +168,15 @@ MonoBehaviour:
       Scroll\Towns\Dialogue\DialogueController.cs
     projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\DialogueController.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\DialogueDB.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue\DialogueDB.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\DialogueDB.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\DialogueTree.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue\DialogueTree.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\DialogueTree.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\NPCDIalogue.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue\NPCDIalogue.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\NPCDIalogue.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\BranchResponse.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue\Player Responses\BranchResponse.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\BranchResponse.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\CloseResponse.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue\Player Responses\CloseResponse.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\CloseResponse.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\PlayerResponse.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\Dialogue\Player Responses\PlayerResponse.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\PlayerResponse.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Free Booter\Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\QuestResponse.cs
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
       Scroll\Towns\Dialogue\Player Responses\QuestResponse.cs
     projectPath: Assets\Scripts\Side Scroll\Towns\Dialogue\Player Responses\QuestResponse.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\DialogueDB.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
-      Scroll\Towns\DialogueDB.cs
-    projectPath: Assets\Scripts\Side Scroll\Towns\DialogueDB.cs
-    originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: Free Booter\Library\ArtifactDB
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -430,6 +450,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\Hierarchy\7e5c39-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7e5c39-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\StateCache\SceneView\91733e-e7802c50c9d415249b.json
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-e7802c50c9d415249b.json
+    projectPath: Library\StateCache\SceneView\91733e-e7802c50c9d415249b.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

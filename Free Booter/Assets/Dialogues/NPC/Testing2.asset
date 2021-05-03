@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Testing2
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  dialogue: Testing2...
+  dialogue: Hey man, want a quest?
   playerResponses:
+  - {fileID: 11400000, guid: 426e7f63a253e6045ae9e56a4d2d8acd, type: 2}
   - {fileID: 11400000, guid: a92e789cb60ad7c4ea5f4b94ff8a7dac, type: 2}

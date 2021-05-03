@@ -7,17 +7,19 @@ public class QuestResponse : PlayerResponse
 {
     public bool startingQuest = default;
     public int questId = default;
+    public Quest quest;
     public QuestItem questItem;
 
     public override void ResponseButton()
     {
         if(startingQuest)
         {
-            // START THE QUEST
+            quest.GiveQuest();
+            FindObjectOfType<DialogueController>().CloseDialogue();
         }
         else
         {
-            // ADVANCE THE QUEST
+            quest.AdvanceQuest();
         }
     }
 }

@@ -24,11 +24,18 @@ public class DialogueController : MonoBehaviour
         Time.timeScale = 0;
         dialogueCanvas.SetActive(true);
         dialogueText.text = dialogue.dialogue.ToString();
-        for(int i = 0; i < playerResponseButtons.Length; i++)
+        for(int i = 0; i < dialogue.playerResponses.Length; i++)
         {
-            //playerResponseButtons[i].GetComponentInChildren<Text>().text = dialogue.playerResponses[i].responseText.ToString();
+            playerResponseButtons[i].gameObject.SetActive(true);
             buttonTexts[i].text = dialogue.playerResponses[i].responseText.ToString();
             ChangeButtonOnClick(i, dialogue.playerResponses[i]);
+        }
+        if(playerResponseButtons.Length > dialogue.playerResponses.Length)
+        {
+            for(int i = dialogue.playerResponses.Length; i < playerResponseButtons.Length; i++)
+            {
+                playerResponseButtons[i].gameObject.SetActive(false);
+            }
         }
     }
     private void ChangeButtonOnClick(int buttonIndex, PlayerResponse response)

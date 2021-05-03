@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Testing3
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  dialogue: This one should have a few responses
+  playerResponses:
+  - {fileID: 11400000, guid: 099fa406a83cb9a4d8cc821830b3c9c7, type: 2}
+  - {fileID: 11400000, guid: a0a943b2b04f522419787b333a3946d4, type: 2}
+  - {fileID: 11400000, guid: a92e789cb60ad7c4ea5f4b94ff8a7dac, type: 2}
