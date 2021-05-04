@@ -71,6 +71,7 @@ public class Inventory : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
+            GiveItem(18, 10);
             //DecreaseQuantity(2, 100);
         }
     }

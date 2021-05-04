@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   title: Test Tutorial
-  description: 
+  description: Testing 1 2 3
   activeStep: 0
   questItems: []
   completed: 0

@@ -24,7 +24,10 @@ public class UIInventory : MonoBehaviour
         */
         for(int i = 0; i < numberOfSlots /*- 1*/; i++)
         {
-            uIItems[i] = slotPanel.GetChild(i).GetComponent<UIItem>();
+            if(transform.childCount > i)
+            {
+                uIItems[i] = slotPanel.GetChild(i).GetComponent<UIItem>();
+            }            
         }
     }
     public void UpdateSlot(int slot, Item item, int quantity) {
@@ -112,10 +115,17 @@ public class UIInventory : MonoBehaviour
     }
     public void ResetMenu()
     {
-        foreach(UIItem ui in uIItems)
+        for(int i = 0; i < numberOfSlots; i++)
+        {
+            if(uIItems[i] != null)
+            {
+                uIItems[i].UpdateItem(null, 0);
+            }
+        }
+        /*foreach (UIItem ui in uIItems)
         {
             ui.UpdateItem(null, 0);
-        }
+        }*/
     }/*
     public void UpdateSelectedItem(Item item, int quantity)
     {

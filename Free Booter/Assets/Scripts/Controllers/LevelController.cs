@@ -48,9 +48,7 @@ public class LevelController : MonoBehaviour
         if(ambiantNoise != "")
         {
             music.ChangeAmbianceTrackWithoutFade(ambiantNoise);
-        } else
-        {
-            print("Blarg!");
         }
+        //FindObjectOfType<GameController>().GiveStartingInventory();
     }
 }

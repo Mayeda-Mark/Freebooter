@@ -11,16 +11,19 @@ public class InventoryUIController : MonoBehaviour
         public Item item;
         public int quantity;
     }
-    [System.Serializable]
+    /*[System.Serializable]
     public class Panel
     {
         public string panelName;
         public UIInventory ui;
     }
-    public List<Panel> panels = new List<Panel>();
+    public List<Panel> panels = new List<Panel>();*/
+    public GameObject inventoryPanel, questPanel;
+    public UIInventory inventoryUI;
     private Inventory inventory;
     private bool active = false;
     public SelectedItem selectedItem;
+    public QuestUIController questUI;
     void Start()
     {
         inventory = FindObjectOfType<Inventory>();
@@ -50,14 +53,14 @@ public class InventoryUIController : MonoBehaviour
     }
     private void DeactivateUI()
     {
-        foreach(Panel panel in panels)
+        /*foreach (Panel panel in panels)
         {
             panel.ui.gameObject.SetActive(false);
         }
-        foreach(Button button in GetComponentsInChildren<Button>())
+        foreach (Button button in GetComponentsInChildren<Button>())
         {
             button.gameObject.SetActive(false);
-        }
+        }*/
     }
     private void ActivateUI()
     {
@@ -76,7 +79,7 @@ public class InventoryUIController : MonoBehaviour
     }
     public void ActivatePanel(string panelName)
     {
-        foreach(Panel panel in panels)
+        /*foreach(Panel panel in panels)
         {
             if(panel.panelName == panelName)
             {
@@ -87,45 +90,64 @@ public class InventoryUIController : MonoBehaviour
             {
                 panel.ui.gameObject.SetActive(false);
             }
-        }
+        }*/
         if(panelName == "Quests")
         {
-
+            questPanel.SetActive(true);
+            inventoryPanel.SetActive(false);
+            questUI.ActivateUI();
+        }
+        else
+        {
+            inventoryPanel.SetActive(true);
+            questPanel.SetActive(false);
+            RefreshPanel(panelName);
         }
     }
     public void AddNewItem(Item item, int quantity)
     {
-        foreach(Panel panel in panels)
+        /*foreach(Panel panel in panels)
         {
             if(panel.panelName == item.type)
             {
                 panel.ui.AddNewItem(item, quantity);
             }
-        }
+        }*/
     }
     public void AddExistingItem(Item item, int quantity)
     {
-        foreach (Panel panel in panels)
+        /*foreach (Panel panel in panels)
         {
             if (panel.panelName == item.type)
             {
                 panel.ui.AddExistingItem(item, quantity);
             }
-        }
+        }*/
     }
     public void RemoveItem(Item item, int quantity)
     {
-        foreach (Panel panel in panels)
+        /*foreach (Panel panel in panels)
         {
             if (panel.panelName == item.type)
             {
                 panel.ui.RemoveItem(item, quantity);
             }
-        }
+        }*/
     }
     public void RefreshPanel(string panelName)
     {
-        foreach(Panel panel in panels)
+        inventoryUI.ResetMenu();
+        foreach(Item item in inventory.GetInventory())
+        {
+            if(item.type == panelName)
+            {
+                foreach(int quantity in inventory.GetQuantitiesByKey(item.id))
+                {
+                    inventoryUI.AddNewItem(item, quantity);
+                }
+            }
+        }
+        /*foreach(Panel panel in panels)
         {
             if(panel.panelName == panelName)
             {
@@ -141,7 +163,7 @@ public class InventoryUIController : MonoBehaviour
                     }
                 }
             }
-        }
+        }*/
     }
     public void UpdateSelectedItem(Item item, int quantity)
     {

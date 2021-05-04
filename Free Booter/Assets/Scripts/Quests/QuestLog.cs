@@ -5,15 +5,16 @@ using UnityEngine.UI;
 
 public class QuestLog : MonoBehaviour
 {
-    private Image checkMark;
-    private Text questText;
+    public Image checkMark;
+    public Text questText, descriptionText;
     private Quest quest;
     private QuestItem questItem;
     public void ActivateSlot(Quest quest)
     {
-        checkMark.gameObject.SetActive(quest.completed);
-        string titleAndDescription = "" + quest.title + "\n \t" + quest.description;
-        questText.text = titleAndDescription.ToString();
+        //checkMark.gameObject.SetActive(quest.completed);
+        //string titleAndDescription = "" + quest.title + "\n \t" + quest.description;
+        questText.text = quest.title.ToString();//titleAndDescription.ToString();
+        descriptionText.text = quest.description;
     }
     public void ActivateSlot(QuestItem questItem)
     {

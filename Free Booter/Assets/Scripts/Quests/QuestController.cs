@@ -23,7 +23,6 @@ public class QuestController : MonoBehaviour
         {
             Quest questToGive = db.GetQuest(id);
             playerQuests.Add(questToGive);
-            print("Giving quest: " + playerQuests[0].title);
         }
     }
 }
