@@ -16,5 +16,8 @@ MonoBehaviour:
   title: Test Tutorial
   description: Testing 1 2 3
   activeStep: 0
-  questItems: []
+  questItems:
+  - {fileID: 11400000, guid: ef644b4bce8a7b544bf593f703a9b1a4, type: 2}
+  - {fileID: 11400000, guid: ae56e0cc8885cab4895199c16db2524e, type: 2}
+  - {fileID: 11400000, guid: a3dfa9d5325a9ad41939c2408b8565ce, type: 2}
   completed: 0

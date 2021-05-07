@@ -28,7 +28,10 @@ public class SidescrollNPC : MonoBehaviour
     void Update()
     {
         RunTimer();
-        Move();
+        if(!isStationary)
+        {
+            Move();
+        }
         Interact();
     }
     #region Timer

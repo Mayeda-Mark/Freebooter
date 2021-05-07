@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b9f9020045c9143b5a0c90912cfb7e, type: 3}
+  m_Name: Don't Take My Stuff
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  dialogue: Hello kind traveler. I am an extremely poor peasant.  Please don't take
+    the contents of my chest...
+  playerResponses:
+  - {fileID: 11400000, guid: ccb7c57a5d46922409da25baae62cfaf, type: 2}
+  - {fileID: 11400000, guid: 6faf44b326a36104d9cb3a2a76be0406, type: 2}

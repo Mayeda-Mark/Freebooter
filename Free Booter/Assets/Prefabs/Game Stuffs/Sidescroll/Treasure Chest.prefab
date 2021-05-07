@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7396269889825029934}
   - component: {fileID: 7396269889825029935}
   - component: {fileID: 7396269889825029920}
+  - component: {fileID: 7396269890914873945}
   m_Layer: 0
   m_Name: Treasure Chest
   m_TagString: Untagged
@@ -124,3 +125,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7396269890914873945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7396269889825029921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7449043157e70b948a7ef841915ad71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+  - itemName: Bomb
+    itemIds: 12000000
+    lootProbability: 100
+  maxLoot: 15
+  minLoot: 15

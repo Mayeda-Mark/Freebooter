@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentId: 0
   questStep: 0
-  description: Speak to everyone in town
-  reward: []
-  completed: 0
+  description: Speak to Old Gus at the edge of town
+  rewards: []
+  completed: 1

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestUIController : MonoBehaviour
 {
-    public GameObject prefab = default;
+    public GameObject prefab, questItemPrefab = default;
    //ublic GameObject questPanel = default;
     private QuestController questController;
     void Start()
@@ -23,10 +23,18 @@ public class QuestUIController : MonoBehaviour
             if(!playerQuest.completed)
             {
                 AttachUI(playerQuest);
+                /*foreach(QuestItem questItem in playerQuest.questItems)
+                {
+                    AttachQuestItem(questItem);
+                }*/
             }
             else
             {
                 AttachUI(playerQuest);
+                /*foreach (QuestItem questItem in playerQuest.questItems)
+                {
+                    AttachQuestItem(questItem);
+                }*/
             }
         }
     }
@@ -35,9 +43,19 @@ public class QuestUIController : MonoBehaviour
         GameObject instance = Instantiate(prefab);
         instance.GetComponent<QuestLog>().ActivateSlot(quest);
         instance.transform.parent = this.transform;
+        /*foreach(QuestItem questItem in quest.questItems)
+        {
+            AttachQuestItem(questItem, instance.GetComponent<QuestLog>());
+        }*/
+        for(int i = 0; i <= quest.activeStep; i++)
+        {
+            AttachQuestItem(quest.questItems[i], instance.GetComponent<QuestLog>());
+        }
     }
-    private void AttachQuestItem(QuestItem questItem)
+    private void AttachQuestItem(QuestItem questItem, QuestLog parentQuest)
     {
-
+        GameObject instance = Instantiate(questItemPrefab);
+        instance.GetComponent<QuestLog>().ActivateQuestItemSlot(questItem);
+        instance.transform.parent = parentQuest.grid.transform;
     }
 }

@@ -25,4 +25,8 @@ public class QuestController : MonoBehaviour
             playerQuests.Add(questToGive);
         }
     }
+    public Quest FindQuest(int id)
+    {
+        return playerQuests.Find(playerQuest => playerQuest.id == id);
+    }
 }
