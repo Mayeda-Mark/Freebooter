@@ -27,25 +27,50 @@ public class DialogueController : MonoBehaviour
         List<PlayerResponse> activeResponses = new List<PlayerResponse>();
         for(int i = 0; i < dialogue.playerResponses.Length; i++)
         {
-            activeResponses.Add(dialogue.playerResponses[i]);
+            //activeResponses.Add(dialogue.playerResponses[i]);
+            if(dialogue.playerResponses[i].GetType() == typeof(QuestResponse))
+            {
+                QuestResponse questResponse = (QuestResponse)dialogue.playerResponses[i];
+                Quest foundPlayerQuest = FindObjectOfType<QuestController>().FindQuest(questResponse.quest.id);
+                if(foundPlayerQuest != null)
+                {
+                    if(!questResponse.startingQuest && foundPlayerQuest.activeStep <= questResponse.questStep)
+                    {
+                        activeResponses.Add(dialogue.playerResponses[i]);
+                    }
+                    /*else if(foundPlayerQuest.activeStep > questResponse.questStep)
+                    {
+                        activeResponses.Add(dialogue.playerResponses[i]);
+                    }*/
+                }
+                else
+                {
+                    activeResponses.Add(dialogue.playerResponses[i]);
+                }
+            }
+            else
+            {
+                activeResponses.Add(dialogue.playerResponses[i]);
+            }
         }
-        foreach(PlayerResponse playerResponse in dialogue.playerResponses)
+        /*foreach(PlayerResponse playerResponse in dialogue.playerResponses)
         {
             QuestResponse questResponse;
             if (playerResponse.GetType() == typeof(QuestResponse))
             {
+                print("Shouldn't be called");
                 questResponse = (QuestResponse)playerResponse;
             }
-            else { return; }
+            else { questResponse = null; }
             //int questId = questResponse.quest.id;
-            Quest foundPlayerQuest = FindObjectOfType<QuestController>().FindQuest(questResponse.quest.id);/*playerQuests.Find(playerQuest => playerQuest.id == questResponse.quest.id);*/
+            Quest foundPlayerQuest = FindObjectOfType<QuestController>().FindQuest(questResponse.quest.id);*//*playerQuests.Find(playerQuest => playerQuest.id == questResponse.quest.id);*//*
             if(foundPlayerQuest != null)
             {
-                if (questResponse.startingQuest)
+                if (questResponse != null && questResponse.startingQuest)
                 { //CHECKING QUEST
                     activeResponses.Remove(playerResponse);
                 }
-                else if(!questResponse.startingQuest)
+                else if(questResponse != null && !questResponse.startingQuest)
                 { // CHECKING QUEST ITEM
                     if(foundPlayerQuest.activeStep > questResponse.questStep)
                     {
@@ -54,6 +79,7 @@ public class DialogueController : MonoBehaviour
                 }
             }
         }
+        print("It's making it this far...");*/
         for(int i = 0; i < /*dialogue.playerResponses.Length*/activeResponses.Count; i++)
         {
             playerResponseButtons[i].gameObject.SetActive(true);
@@ -62,8 +88,10 @@ public class DialogueController : MonoBehaviour
         }
         if(playerResponseButtons.Length > /*dialogue.playerResponses.Length*/activeResponses.Count)
         {
-            for(int i = dialogue.playerResponses.Length; i < /*playerResponseButtons.Length*/activeResponses.Count; i++)
+            print("This should be getting called");
+            for(int i = /*dialogue.playerResponses.Length*/activeResponses.Count; i < playerResponseButtons.Length; i++)
             {
+                print("This too...");
                 playerResponseButtons[i].gameObject.SetActive(false);
             }
         }
