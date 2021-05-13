@@ -54,7 +54,6 @@ MonoBehaviour:
   - {fileID: -3913596140653326087, guid: ec3dc4fdf110dd24fbdc9fc177e4df60, type: 3}
   - {fileID: 3624604430652784724, guid: ec3dc4fdf110dd24fbdc9fc177e4df60, type: 3}
   - {fileID: -4345943878540487376, guid: ec3dc4fdf110dd24fbdc9fc177e4df60, type: 3}
-  collider: {fileID: 3720522292637827924}
 --- !u!212 &4663553342272797179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,7 +91,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 212159951
-  m_SortingLayer: 5
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: -3967920315399815954, guid: 809a8541cc15c1e4b84e4e45bee550d6,
     type: 3}
@@ -100,7 +99,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8, y: 8}
+  m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

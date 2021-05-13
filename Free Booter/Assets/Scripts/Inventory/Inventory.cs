@@ -15,6 +15,7 @@ public class Inventory : MonoBehaviour
     public bool uiActive;
     public ToastController toast;
     private LevelController levelController;
+    public GameObject toolbar, toastCanvas;
     private void Awake()
     {
        
@@ -41,14 +42,16 @@ public class Inventory : MonoBehaviour
     }
     public void DisableUIs()
     {
-        toast.gameObject.SetActive(false);
+        toastCanvas.gameObject.SetActive(false);
         toolbarUI.gameObject.SetActive(false);
         inventoryUI.gameObject.SetActive(false);
     }
     public void EnableUIs()
     {
-        toast.gameObject.SetActive(true);
+        print("Turning everything on");
+        toastCanvas.gameObject.SetActive(true);
         toolbarUI.gameObject.SetActive(true);
+        toolbar.SetActive(true);
         //inventoryUI.gameObject.SetActive(true);
     }
     public void StartNewLevel()

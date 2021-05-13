@@ -127,7 +127,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map
+          m_StringArgument: Quests
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &613651527
@@ -757,6 +757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 466377328567090455}
   - component: {fileID: 6081225871044674095}
+  - component: {fileID: 1646497817}
   m_Layer: 5
   m_Name: SlotPanel
   m_TagString: Untagged
@@ -800,13 +801,28 @@ MonoBehaviour:
     m_Right: 10
     m_Top: 20
     m_Bottom: 10
-  m_ChildAlignment: 1
+  m_ChildAlignment: 0
   m_StartCorner: 0
-  m_StartAxis: 0
-  m_CellSize: {x: 75, y: 75}
+  m_StartAxis: 1
+  m_CellSize: {x: 700, y: 75}
   m_Spacing: {x: 10, y: 10}
-  m_Constraint: 0
-  m_ConstraintCount: 2
+  m_Constraint: 1
+  m_ConstraintCount: 1
+--- !u!114 &1646497817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650951730002647102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25e1bcf775805e24e838d0b85b9ca412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 9194543070397677895, guid: 8e7924ba649b4ed4581b2372296ad6a9, type: 3}
+  questItemPrefab: {fileID: 9194543070397677895, guid: f07f9b489c75d1549be261668d8d85b4,
+    type: 3}
 --- !u!1 &673723263040541714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,6 +1362,8 @@ GameObject:
   - component: {fileID: 700031218198626427}
   - component: {fileID: 700031218198626428}
   - component: {fileID: 6055215678939409276}
+  - component: {fileID: 858519231}
+  - component: {fileID: 858519232}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -1386,6 +1404,7 @@ MonoBehaviour:
   toolbarUI: {fileID: 700031218687235260}
   uiActive: 0
   toast: {fileID: 3686044059149219940}
+  toolbar: {fileID: 700031218687235258}
 --- !u!114 &6055215678939409276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,6 +1427,34 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ac5961ac9a3f65c4b9e4148dd5bf1c9c, type: 3}
   - {fileID: 21300000, guid: 632634ae7f68cec448af6afe8806a2ad, type: 3}
   - {fileID: -1483665779731714255, guid: e4770b83ce42cf341831bf7a35ee1185, type: 3}
+--- !u!114 &858519231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700031218198626426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119379e8f11dffb44b9b9c6941b672f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - {fileID: 11400000, guid: 1e16d06007e71a340b9f869ed6d88698, type: 2}
+  questItems: []
+--- !u!114 &858519232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700031218198626426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae148cccbcf0b3a4aabcef2ee4c4d6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerQuests: []
 --- !u!1 &700031218348932833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,6 +1897,7 @@ MonoBehaviour:
   inventoryUI: {fileID: 1312505271854737405}
   selectedItem:
     quantity: 0
+  questUI: {fileID: 1646497817}
 --- !u!1 &700031219440875246
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,23 +2055,23 @@ MonoBehaviour:
   slotPanel: {fileID: 700031217881881330}
   numberOfSlots: 16
   uIItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  inventoryController: {fileID: 0}
+  - {fileID: 5534265398030240320}
+  - {fileID: 4316264228467548981}
+  - {fileID: 3932835708255172211}
+  - {fileID: 7235977321483028349}
+  - {fileID: 7314040064461716185}
+  - {fileID: 8121943231366353639}
+  - {fileID: 1543402547948180288}
+  - {fileID: 5293636795785422405}
+  - {fileID: 6082341422367214607}
+  - {fileID: 1459809230810800739}
+  - {fileID: 8045630271583283509}
+  - {fileID: 63077919112489472}
+  - {fileID: 546923280215644420}
+  - {fileID: 6934686469400242964}
+  - {fileID: 2484287318918886261}
+  - {fileID: 8206390922309776946}
+  inventoryController: {fileID: 700031219434886162}
 --- !u!1 &700031219799776085
 GameObject:
   m_ObjectHideFlags: 0
@@ -6415,7 +6463,6 @@ GameObject:
   - component: {fileID: 3551051127996698653}
   - component: {fileID: 7340413792027767292}
   - component: {fileID: 7892696008591877671}
-  - component: {fileID: 5624999951047533832}
   m_Layer: 5
   m_Name: QuestPanel
   m_TagString: Untagged
@@ -6480,38 +6527,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5624999951047533832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6435478564226360898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 198476d8016004b429fcd5e6aedd277c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotPanel: {fileID: 466377328567090455}
-  numberOfSlots: 16
-  uIItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  inventoryController: {fileID: 0}
 --- !u!1 &6635970223955353168
 GameObject:
   m_ObjectHideFlags: 0
@@ -8171,7 +8186,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map
+          m_StringArgument: Abilities
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &9066526937736310917

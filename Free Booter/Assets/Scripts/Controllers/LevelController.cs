@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    public bool isSideScroll, isMenu = default;
+    public bool isSideScroll, isMenu = false;
     public string levelMusic = null;
     public string ambiantNoise = null;
     private Inventory inventory;
@@ -38,6 +38,7 @@ public class LevelController : MonoBehaviour
         }
         else if(!isMenu)
         {
+            print("Not a menu!");
             inventory.EnableUIs();
         }
         if(levelMusic != "")

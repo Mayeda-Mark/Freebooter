@@ -22,12 +22,12 @@ public class UIInventory : MonoBehaviour
         /*levelController = FindObjectOfType<LevelController>();
         uIItems = new UIItem[numberOfSlots];
         */
-        for(int i = 0; i < numberOfSlots /*- 1*/; i++)
+        for (int i = 0; i < numberOfSlots - 1; i++)
         {
-            if(transform.childCount > i)
+            if (transform.childCount > i)
             {
                 uIItems[i] = slotPanel.GetChild(i).GetComponent<UIItem>();
-            }            
+            }
         }
     }
     public void UpdateSlot(int slot, Item item, int quantity) {
