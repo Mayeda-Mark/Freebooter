@@ -139,7 +139,7 @@ public class InventoryUIController : MonoBehaviour
         inventoryUI.ResetMenu();
         foreach(Item item in inventory.GetInventory())
         {
-            if(item.type == panelName)
+            if(item.panelName == panelName) // This might cause an error with different classes
             {
                 foreach(int quantity in inventory.GetQuantitiesByKey(item.id))
                 {

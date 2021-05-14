@@ -56,7 +56,7 @@ public class MerchantMenu : MonoBehaviour
         }
         if(!foundItemInCart) {
             shoppingCart.Add(item, cost);
-            quantities.Add(item.stats["QuantitySoldIn"]);
+            quantities.Add(item.buyQuantity);
         } else{
             if(totalCostInCart + cost <= playerGold) {
                 alertBox.gameObject.SetActive(false);
@@ -84,7 +84,7 @@ public class MerchantMenu : MonoBehaviour
         foreach(int stack in amountPlayerHas) {
             amountOfItem += stack;
         }
-        int maxCost = (amountOfItem * cost) / item.stats["QuantitySoldIn"];
+        int maxCost = (amountOfItem * cost) / item.buyQuantity;
         int costInCart = 0;
         int quantityIndex = 0;
         bool foundItemInCart = false;
@@ -100,7 +100,7 @@ public class MerchantMenu : MonoBehaviour
         }
         if(!foundItemInCart) { // IF YOU MAKE IT THROUGH THE DICTIONARY WITHOUT FINDING THE KEY
             shoppingCart.Add(item, cost); // ADD IT
-            quantities.Add(item.stats["QuantitySoldIn"]); // ADD IT TO THE QUANTITY LIST TOO
+            quantities.Add(item.buyQuantity); // ADD IT TO THE QUANTITY LIST TOO
         } else{ // IF YOU MAKE IT THROUGH THE LOOP AND HAVE FOUND THE ITEM...
             if(costInCart + cost < maxCost) { //... AND THE COST IN THE CART IS LESS THAN THE MAXCOST
                 shoppingCart[item] = (costInCart + cost); // ADD THE COST TO THE CART
@@ -239,8 +239,8 @@ public class MerchantMenu : MonoBehaviour
     }
     private void UpdateBuyTextBox() {
         for (int i = 0; i < numBuySlots; i++) {
-            string priceString = "Price: " + buyUIs[i].item.stats["BaseCost"].ToString();
-            string quantityString = buyUIs[i].item.stats["QuantitySoldIn"].ToString();
+            string priceString = "Price: " + buyUIs[i].item.buyPrice.ToString();
+            string quantityString = buyUIs[i].item.buyQuantity.ToString();
             string textBox = string.Format("{0} X {1}\n{2}", buyUIs[i].item.itemName, quantityString, priceString);
             buyUIs[i].UpdateText(textBox);
         }
@@ -254,8 +254,8 @@ public class MerchantMenu : MonoBehaviour
                 }
             }
             string cartQuantity = "";
-            string priceString = "Price: " + sellUIs[i].item.stats["BaseCost"].ToString();
-            string quantityString = sellUIs[i].item.stats["QuantitySoldIn"].ToString();
+            string priceString = "Price: " + sellUIs[i].item.buyPrice.ToString();
+            string quantityString = sellUIs[i].item.buyQuantity.ToString();
             int totalQuantity = 0;
             int id = sellUIs[i].item.id;
             List<int> quantityInInventory = inventory.GetQuantitiesByKey(id); // THIS IS THE QUANTITIES FROM THE INVENTORY

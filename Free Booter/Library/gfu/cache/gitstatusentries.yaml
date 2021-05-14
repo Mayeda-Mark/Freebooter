@@ -13,56 +13,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-13T11:35:46.847-07:00
-  initializedAtString: 2021-05-13T11:32:24.625-07:00
+  lastUpdatedAtString: 2021-05-14T00:53:08.845-07:00
+  initializedAtString: 2021-05-13T21:11:51.154-07:00
   entries:
+  - path: Free Booter\Assets\Inventory\Equipment\Bomb.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Equipment\Bomb.asset
+    projectPath: Assets\Inventory\Equipment\Bomb.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Equipment\Cannon Balls.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Equipment\Cannon
+      Balls.asset
+    projectPath: Assets\Inventory\Equipment\Cannon Balls.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Equipment\Chain Shot.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Equipment\Chain
+      Shot.asset
+    projectPath: Assets\Inventory\Equipment\Chain Shot.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Equipment\Sword.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Equipment\Sword.asset
+    projectPath: Assets\Inventory\Equipment\Sword.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Gold\Gold.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Gold\Gold.asset
+    projectPath: Assets\Inventory\Gold\Gold.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Maps\Map 1.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Maps\Map
+      1.asset
+    projectPath: Assets\Inventory\Maps\Map 1.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Maps\Map 2.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Maps\Map
+      2.asset
+    projectPath: Assets\Inventory\Maps\Map 2.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Supplies\Rum.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Supplies\Rum.asset
+    projectPath: Assets\Inventory\Supplies\Rum.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Supplies\Silk.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Supplies\Silk.asset
+    projectPath: Assets\Inventory\Supplies\Silk.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Inventory\Supplies\Spices.asset
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Inventory\Supplies\Spices.asset
+    projectPath: Assets\Inventory\Supplies\Spices.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Controllers\Inventory.prefab
     projectPath: Assets\Prefabs\Controllers\Inventory.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\HeavyFog.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightFog.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\Conditions\LightFog.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\Conditions\LightFog.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\StormCloud.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\StormCloud.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Prefabs\Game
-      Stuffs\Overworld\Weather\WindCloud.prefab
-    projectPath: Assets\Prefabs\Game Stuffs\Overworld\Weather\WindCloud.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Resources\Tilesheets\New Palette.prefab
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Tilesheets\New
-      Palette.prefab
-    projectPath: Assets\Resources\Tilesheets\New Palette.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Free Booter\Assets\Resources\Tilesheets\tiles_sheet.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Resources\Tilesheets\tiles_sheet.asset
-    projectPath: Assets\Resources\Tilesheets\tiles_sheet.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Free Booter\Assets\Scenes\Moonrift_splash.unity
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Moonrift_splash.unity
     projectPath: Assets\Scenes\Moonrift_splash.unity
@@ -75,21 +98,30 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scenes\Sidescroll_test.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Sidescroll_test.unity
-    projectPath: Assets\Scenes\Sidescroll_test.unity
+  - path: Free Booter\Assets\Scripts\All Purpose Game\BuySellUI.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\BuySellUI.cs
+    projectPath: Assets\Scripts\All Purpose Game\BuySellUI.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scenes\Town_test.unity
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scenes\Town_test.unity
-    projectPath: Assets\Scenes\Town_test.unity
+  - path: Free Booter\Assets\Scripts\All Purpose Game\LootTable.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\LootTable.cs
+    projectPath: Assets\Scripts\All Purpose Game\LootTable.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Controllers\LevelController.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\LevelController.cs
-    projectPath: Assets\Scripts\Controllers\LevelController.cs
+  - path: Free Booter\Assets\Scripts\All Purpose Game\Projectile.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\All
+      Purpose Game\Projectile.cs
+    projectPath: Assets\Scripts\All Purpose Game\Projectile.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Controllers\GameController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Controllers\GameController.cs
+    projectPath: Assets\Scripts\Controllers\GameController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -99,9 +131,123 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Assets\Scripts\Inventory\UIInventory.cs
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\UIInventory.cs
-    projectPath: Assets\Scripts\Inventory\UIInventory.cs
+  - path: Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\InventoryUIController.cs
+    projectPath: Assets\Scripts\Inventory\InventoryUIController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\Item.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Item.cs
+    projectPath: Assets\Scripts\Inventory\Item.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Inventory\ItemDB.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ItemDB.cs
+    projectPath: Assets\Scripts\Inventory\ItemDB.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\Items\Abilities.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Items\Abilities.cs
+    projectPath: Assets\Scripts\Inventory\Items\Abilities.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Items\Equipment.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Items\Equipment.cs
+    projectPath: Assets\Scripts\Inventory\Items\Equipment.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Items\Gold.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Items\Gold.cs
+    projectPath: Assets\Scripts\Inventory\Items\Gold.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Items\Item.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Items\Item.cs
+    projectPath: Assets\Scripts\Inventory\Items\Item.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Items\Map.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Items\Map.cs
+    projectPath: Assets\Scripts\Inventory\Items\Map.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Items\Supplies.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Items\Supplies.cs
+    projectPath: Assets\Scripts\Inventory\Items\Supplies.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Inventory\Map.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\Map.cs
+    projectPath: Assets\Scripts\Inventory\Map.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Inventory\MapController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\MapController.cs
+    projectPath: Assets\Scripts\Inventory\MapController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\MapDB.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\MapDB.cs
+    projectPath: Assets\Scripts\Inventory\MapDB.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Inventory\ToolbarUI.cs
+    projectPath: Assets\Scripts\Inventory\ToolbarUI.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\PlayerSidescrollController.cs
+    projectPath: Assets\Scripts\Side Scroll\PlayerSidescrollController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\ReactionTriger.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\ReactionTriger.cs
+    projectPath: Assets\Scripts\Side Scroll\ReactionTriger.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\Shooter.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\Shooter.cs
+    projectPath: Assets\Scripts\Side Scroll\Shooter.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Assets\Scripts\Side Scroll\ThrownItem.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\ThrownItem.cs
+    projectPath: Assets\Scripts\Side Scroll\ThrownItem.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Free Booter\Assets\Scripts\Side Scroll\ThrownItemController.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\ThrownItemController.cs
+    projectPath: Assets\Scripts\Side Scroll\ThrownItemController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Free Booter\Assets\Scripts\Side Scroll\Towns\MerchantMenu.cs
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Assets\Scripts\Side
+      Scroll\Towns\MerchantMenu.cs
+    projectPath: Assets\Scripts\Side Scroll\Towns\MerchantMenu.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -153,15 +299,63 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
+  - path: Free Booter\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Free Booter\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
+  - path: Free Booter\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Unity.Timeline.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Unity.Timeline.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+    projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\UnityEditor.UI.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\UnityEditor.UI.dll
+    projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+    projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\Library\ScriptAssemblies\UnityEngine.UI.dll
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\ScriptAssemblies\UnityEngine.UI.dll
+    projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -186,6 +380,12 @@ MonoBehaviour:
   - path: Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\Library\StateCache\SceneView\91733e-mainStage.json
     projectPath: Library\StateCache\SceneView\91733e-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\markr\Development\Unity\Freebooter\Free Booter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

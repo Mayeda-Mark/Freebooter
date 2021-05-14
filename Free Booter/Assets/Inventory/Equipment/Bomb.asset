@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa17e50f1f5c5c642af63a7f547ab21b, type: 3}
+  m_Name: Bomb
+  m_EditorClassIdentifier: 
+  id: 7
+  itemName: Bomb
+  description: It looks like some sort of bowling ball candle that goes boom
+  icon: {fileID: -1483665779731714255, guid: e4770b83ce42cf341831bf7a35ee1185, type: 3}
+  quantity: 0
+  maxQuantity: 50
+  forSidescroll: 1
+  ableToBuy: 1
+  buyQuantity: 1
+  buyPrice: 15
+  sellPrice: 5
+  panelName: Equipment
+  melee: 0
+  sidescrollDamage: 20
+  hullDamage: 0
+  sailDamage: 0
+  range: 5
+  cooldown: 0
+  rangedType: 
+  effector: Explosive

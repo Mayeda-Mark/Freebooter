@@ -18,7 +18,7 @@ public class BuySellUI : MonoBehaviour
         merchantMenu = GetComponentInParent<MerchantMenu>();
         //descriptonText = GetComponent<Text>();
         //spriteImage = GetComponent<Image>();
-        costOfItem = this.item.stats["BaseCost"];
+        costOfItem = this.item.buyPrice;
     }
     public void UpdateEntry(Item item) {
         this.item = item;
@@ -64,11 +64,11 @@ public class BuySellUI : MonoBehaviour
     public void AddToCart() {
         if(merchantMenu.isBuy()) {
             costInCart += costOfItem;
-            quantityInCart += this.item.stats["QuantitySoldIn"];
+            quantityInCart += this.item.buyQuantity;
             merchantMenu.UpdateCartInfo(this.item, costOfItem, quantityInCart);
         } else {
             costInCart += costOfItem;
-            quantityInCart += this.item.stats["QuantitySoldIn"];
+            quantityInCart += this.item.buyQuantity;
             merchantMenu.UpdateCartForSale(/*this.item.stats["BaseCost"], this.item.stats["QuantitySoldIn"]*/this.item, costOfItem, quantityInCart);
             // merchantMenu.UpdateCartInfo(this.item, costOfItem, quantityInCart);
         }
@@ -83,7 +83,7 @@ public class BuySellUI : MonoBehaviour
         // if(merchantMenu.isBuy()) {
             if(costInCart > 0) {
                 costInCart -= costOfItem;
-                quantityInCart -= this.item.stats["QuantitySoldIn"];
+                quantityInCart -= this.item.buyQuantity;
                 if(costInCart <= 0) {
                     costInCart = 0;
                     if(!merchantMenu.isBuy()) {

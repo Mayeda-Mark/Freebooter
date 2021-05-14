@@ -9,10 +9,10 @@ public class ReactionTriger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Eventually set up projectile items here
-        ThrownItem thrownItem = collision.GetComponent<ThrownItem>();
+        ThrownItemController thrownItem = collision.GetComponent<ThrownItemController>();
         if (thrownItem != null)
         {
-            if (thrownItem.ssItem.effector == effector && thrownItem.reactable)
+            if (thrownItem.item.effector == effector && thrownItem.reactable)
             {
                 parent.GetComponent<ReactableObject>().React();
             }
@@ -20,10 +20,10 @@ public class ReactionTriger : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        ThrownItem thrownItem = collision.GetComponent<ThrownItem>();
+        ThrownItemController thrownItem = collision.GetComponent<ThrownItemController>();
         if (thrownItem != null)
         {
-            if (thrownItem.ssItem.effector == effector && thrownItem.reactable)
+            if (thrownItem.item.effector == effector && thrownItem.reactable)
             {
                 parent.GetComponent<ReactableObject>().React();
             }
