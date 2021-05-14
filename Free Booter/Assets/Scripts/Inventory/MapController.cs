@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
-    MapDB mapDB;
+    //MapDB mapDB;
+    ItemDB db;
+    public GameObject[] unlockables;
     private void Awake()
     {
-        mapDB = GetComponent<MapDB>();
+        //mapDB = GetComponent<MapDB>();
+        db = GetComponent<ItemDB>();
     }
-    void Start()
+    public void UnlockFromMap(Map map)
     {
-    }
-
-    //[System.Obsolete]
-    public void UnlockFromMap(int mapId)
-    {
-        print(mapId);
-        Map map = mapDB.GetMap(mapId);
-        GameObject target = map.unlockable;
-        if(map.isTreasureMap)
+        //Map map = mapDB.GetMap(mapId);
+        GameObject target = unlockables[map.unlockableIndex];
+        LockedArea lockedArea = target.GetComponent<LockedArea>();
+        if(/*map.isTreasureMap*/lockedArea == null)
         {
             target.gameObject.SetActive(true);
         } else
         {
-            target.GetComponent<LockedArea>().UnlockArea();
+            lockedArea.UnlockArea();
         }
     }
     public void UnlockAllMapsInInventory()
@@ -32,9 +30,9 @@ public class MapController : MonoBehaviour
         List<Item> inventory = FindObjectOfType<Inventory>().GetInventory();
         foreach(Item item in inventory)
         {
-            if(item.isAMap)
+            if(item.GetType() == typeof(Map))
             {
-                UnlockFromMap(item.stats["MapIndex"]);
+                UnlockFromMap((Map)item);
             }
         }
     }

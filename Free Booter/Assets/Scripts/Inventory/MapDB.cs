@@ -30,7 +30,7 @@ public class MapDB : MonoBehaviour
         return maps.Find(map => map.id == id);
     }
     private void BuildDb()
-    {
+    {/*
         maps = new List<Map>
         {
             new Map(0, true, unlockables[0]),
@@ -43,7 +43,7 @@ public class MapDB : MonoBehaviour
             new Map(7, true, unlockables[7]),
             new Map(8, false, unlockables[8]),
             new Map(9, false, unlockables[9]),
-        };
+        };*/
     }
      
 }

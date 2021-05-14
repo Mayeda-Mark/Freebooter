@@ -83,7 +83,7 @@ public class ToolbarUI : MonoBehaviour
     }
     public void AddNewItem(Item item, int quantity)
     {
-        if(item.equipable)
+        if(item.GetType() == typeof(Equipment))
         {
             bool foundEmptySlot = false;
             for (int i = 0; i < numberOfSlots - 1; i++)
@@ -132,7 +132,7 @@ public class ToolbarUI : MonoBehaviour
         foreach (Item item in inventoryItems)
         {
             bool hasFoundItem = false;
-            if (item.equipable)
+            if (item.GetType() == typeof(Equipment))
             {
                 foreach (Item existingItem in toolbarInventory.Keys)
                 {

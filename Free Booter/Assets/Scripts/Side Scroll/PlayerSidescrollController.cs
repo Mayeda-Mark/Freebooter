@@ -25,7 +25,7 @@ public class PlayerSidescrollController : MonoBehaviour
     public float startingFallTimer = 0.2f;
     private float fallTimer;
     private SoundManager soundManager;
-    public SidescrollItem equippedItem;
+    [HideInInspector]public Equipment equippedItem;
     private SidescrollItemDB sidescrollItemDB;
     public Transform shooter;
     Pooler pooler;
@@ -238,8 +238,7 @@ public class PlayerSidescrollController : MonoBehaviour
     {
         if(item.forSidescroll)
         {
-            print(item.stats["SidescrollIndex"]);
-            equippedItem = sidescrollItemDB.GetSidescrollItem(item.stats["SidescrollIndex"]);
+            equippedItem = (Equipment)item;//sidescrollItemDB.GetSidescrollItem(item.stats["SidescrollIndex"]);
         }
     }
     private void UseItemOrAbility()
@@ -250,11 +249,11 @@ public class PlayerSidescrollController : MonoBehaviour
             myRigidBody.velocity = playerVelocity;
             StopMovement();
         }
-        if(equippedItem != null && equippedItem.type == "Melee")
+        if(equippedItem != null && equippedItem.melee)
         {
             myAnimator.SetBool("isSwingingSword", isUsingItemOrAbility);
         }
-        else if(equippedItem != null && equippedItem.type == "Thrown")
+        else if(equippedItem != null && equippedItem.rangedType == "Thrown")
         {
             if(Input.GetButton("Action") && !inCooldown)
             {
@@ -279,7 +278,7 @@ public class PlayerSidescrollController : MonoBehaviour
     }
     private void AimShooter()
     {
-        if(equippedItem != null && (equippedItem.type == "Thrown" || equippedItem.type == "Projectile"))
+        if(equippedItem != null && (equippedItem.rangedType == "Thrown" || equippedItem.rangedType == "Projectile"))
         {
             print(shooter.rotation);
             shooter.gameObject.SetActive(true);

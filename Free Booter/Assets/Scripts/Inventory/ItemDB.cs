@@ -7,7 +7,7 @@ public class ItemDB : MonoBehaviour
     [SerializeField] public List<Item> items = new List<Item>();
     [SerializeField] Sprite[] icons;
     private void Awake() {
-        BuildDb();
+        //BuildDb();
         int numDBs = FindObjectsOfType<ItemDB>().Length;
         if (numDBs > 1)
         {
@@ -24,7 +24,7 @@ public class ItemDB : MonoBehaviour
     public Item GetItem(string itemName) {
         return items.Find(item => item.itemName == itemName);
     }
-    void BuildDb() {
+    /*void BuildDb() {
         items = new List<Item>{
             new Item(0, "Cannon Balls", "Supplies", "Big balls of metal that you can hurl at other boats", icons[0], 99, 
             new Dictionary<string, int> {
@@ -111,5 +111,5 @@ public class ItemDB : MonoBehaviour
                 {"SidescrollIndex", 1 }
             }, true, false, true),
         };
-    }
+    }*/
 }

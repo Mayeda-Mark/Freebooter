@@ -9,10 +9,10 @@ public class Shooter : MonoBehaviour
     {
         pooler = FindObjectOfType<Pooler>();
     }
-    public void Shoot(SidescrollItem ssItem)
+    public void Shoot(Equipment item)
     {
         print(transform.localRotation);
-        pooler.SpawnFromPool(ssItem.itemName, transform.position, /*this*/transform.localRotation);
+        pooler.SpawnFromPool(item.itemName, transform.position, /*this*/transform.localRotation);
     }
     //public void 
 }

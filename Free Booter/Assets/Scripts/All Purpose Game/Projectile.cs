@@ -14,7 +14,7 @@ public class Projectile : MonoBehaviour, IPooledObject
     [SerializeField] bool sideScroll;
     float distanceToClearShip = 0.2f;
     bool canDamage = false;
-    Item item;
+    /*Item*/Equipment item;
     Vector2 lastPosition;
     float distanceTravelled;
     Collider2D myCollider;
@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour, IPooledObject
         canDamage = false;
         if(!sideScroll)
         {
-            item = FindObjectOfType<ItemDB>().GetItem(itemIndex);
+            item = (Equipment)FindObjectOfType<ItemDB>().GetItem(itemIndex);
         }
         SetStats();
         myCollider = GetComponent<Collider2D>();
@@ -38,8 +38,8 @@ public class Projectile : MonoBehaviour, IPooledObject
     {
         if(!sideScroll)
         {
-            hullDamage = item.stats["HullDamage"];
-            sailDamage = item.stats["SailDamage"];
+            hullDamage = item.hullDamage;
+            sailDamage = item.sailDamage;
         }
     }
 

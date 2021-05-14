@@ -20,11 +20,11 @@ public class GameController : MonoBehaviour
     }
     public void GiveStartingInventory()
     {
-        inventory.GiveItem(0, 80);
-        inventory.GiveItem(1, 50);
-        inventory.GiveItem(2, 100);
+        inventory.GiveItem(1, 80);
+        inventory.GiveItem(2, 50);
+        inventory.GiveItem(0, 100);
+        inventory.GiveItem(8, 1);
         inventory.GiveItem(6, 1);
-        inventory.GiveItem(17, 1);
     }
     public void AdvanceThisQuest(int questId, int stepIndex)
     {

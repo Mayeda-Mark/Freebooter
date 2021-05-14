@@ -90,9 +90,9 @@ public class Inventory : MonoBehaviour
             toolbarUI.UpdateToolbar();
         }*/
         Item givenItem = CheckForItem(id);
-        if(givenItem.isAMap && mapController != null)
+        if(givenItem.GetType() == typeof(Map) && mapController != null)
         {
-            mapController.UnlockFromMap(givenItem.stats["MapIndex"]);
+            mapController.UnlockFromMap((Map)givenItem);
         }
         toast.TriggetToast("Received " + quantity + " " + givenItem.itemName);
     }

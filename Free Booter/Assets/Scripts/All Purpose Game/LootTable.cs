@@ -44,7 +44,7 @@ public class LootTable : MonoBehaviour
             if(randomNumber <= id.lootProbability)
             {
                 Item itemToGive = itemDB.GetItem(id.itemIds[index]);
-                if(itemToGive.isAMap)
+                if(itemToGive.GetType() == typeof(Map))
                 {
                     List<int> mapsTriedToGive = new List<int>();
                     bool mapAlreadyInInventory = false;
