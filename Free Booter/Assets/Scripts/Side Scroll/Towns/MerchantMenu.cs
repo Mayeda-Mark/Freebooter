@@ -5,38 +5,74 @@ using UnityEngine.UI;
 
 public class MerchantMenu : MonoBehaviour
 {
-    public GameObject buySellPrefab;
-    public Transform buyInventoryPanel, sellInventoryPanel;
-    public List<int> itemIdsForSale;
+    public GameObject buySellPrefab, merchantCanvas;
+    public Transform merchantPanel;
+    public List<Item> itemsForSale;
     Dictionary<Item, int> shoppingCart = new Dictionary<Item, int>();
-    List<int> quantities = new List<int>();
-    public List<BuySellUI> buyUIs = new List<BuySellUI>();
-    public List<BuySellUI> sellUIs = new List<BuySellUI>();
-    Dictionary<int, List<int>> quantitiesFromInventory = new Dictionary<int, List<int>>();
+    //List<int> quantities = new List<int>();
+    public List<BuySellUI> buySellUIs = new List<BuySellUI>();
+    //public List<BuySellUI> sellUIs = new List<BuySellUI>();
+    //Dictionary<int, List<int>> quantitiesFromInventory = new Dictionary<int, List<int>>();
     public Text cart, alertBox;
     int cartTotal = 0;
     Inventory inventory;
-    Button checkout;
+    public Button checkout;
     ItemDB itemDB;
-    int numSellSlots, numBuySlots = 0;
+    int numBuySellSlots;//numSellSlots, numBuySlots = 0;
     bool buy, cartEmpty = true;
-    private void Awake() // May need to be Start instead of Awake
+
+    public void SetUpSell()
+    {
+        merchantCanvas.SetActive(true);
+        ClearUI();
+        foreach (Item item in inventory.inventoryItems)
+        {
+            if (item.ableToBuy)
+            {
+                GameObject instance = Instantiate(buySellPrefab);
+                instance.transform.SetParent(merchantPanel);
+                instance.GetComponent<BuySellUI>().SetUpUI(item, buy);
+            }
+        }
+    }
+    //MAYBE SET UP A BOOL IN BUYSELLUI TO DETERMINE WHETHER YOU ARE BUYING OR SELLING
+    public void SetUpBuy()
+    {
+        buy = true;
+        merchantCanvas.SetActive(true);
+        inventory = FindObjectOfType<Inventory>();
+        ClearUI();
+        foreach (Item item in itemsForSale)
+        {
+            GameObject instance = Instantiate(buySellPrefab);
+            instance.transform.SetParent(merchantPanel);
+            instance.GetComponent<BuySellUI>().SetUpUI(item, buy);
+        }
+    }
+    private void ClearUI()
+    {
+        for (int i = 0; i < merchantPanel.childCount; i++)
+        {
+            Destroy(merchantPanel.GetChild(i));
+        }
+    }
+    /*private void Awake() // May need to be Start instead of Awake
     {
         inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         quantitiesFromInventory = inventory.GetQuantities();
         checkout = GetComponent<Button>();
         itemDB = FindObjectOfType<ItemDB>();
         numBuySlots = itemIdsForSale.Count;
-    }
-    void Start() {
+    }*/
+   /* void Start() {
         alertBox.gameObject.SetActive(false);
         buyInventoryPanel.gameObject.SetActive(false);
         sellInventoryPanel.gameObject.SetActive(false);
         //cart.gameObject.SetActive(false);
         TurnOffCart();
         SetUpForBuy();
-    }
-    public void UpdateCartInfo(Item item, int cost, int quantity) {
+    }*/
+    /*public void UpdateCartInfo(Item item, int cost, int quantity) {
         // GET HOW MUCH GOLD THE PLAYER HAS AND COMPARE IT AGAINST HOW MUCH THEY WANT TO SPEND. IF WHAT THEY WANT TO SPEND EXCEEDS THE AMOUNT OF GOLD THEY HAVE, DON'T ADD ANYTHING TO THE CART AND SET THE BUYSELL VALUES BACK TO WHAT THEY WERE BEFORE THE BUTTON WAS PRESSED
         int playerGold = inventory.GetTotalGold();
         int costInCart = 0;
@@ -77,8 +113,8 @@ public class MerchantMenu : MonoBehaviour
             UpdateSellTextBox();
         }
         DisplayCart();
-    }
-    public void UpdateCartForSale(Item item, int cost, int quantity) {
+    }*/
+   /* public void UpdateCartForSale(Item item, int cost, int quantity) {
         int amountOfItem = 0;
         List<int> amountPlayerHas = inventory.GetQuantitiesByKey(item.id);
         foreach(int stack in amountPlayerHas) {
@@ -124,8 +160,8 @@ public class MerchantMenu : MonoBehaviour
         cartEmpty = false;
         DisplayCart();   
         UpdateSellTextBox(); 
-    }
-    public void RemoveItemFromCart(Item item, int cost) {
+    }*/
+    /*public void RemoveItemFromCart(Item item, int cost) {
         int quantityIndex = 0;
         foreach(var key in shoppingCart.Keys) {
             if(key == item) {
@@ -148,10 +184,10 @@ public class MerchantMenu : MonoBehaviour
             totalCost += shoppingCart[key];
             cartText += key.itemName + ":\t" + shoppingCart[key].ToString() + " Gold \n";
         }
-        cartText += "\nTotal: " + /*costInCart.ToString()*/totalCost.ToString() + " Gold";
+        cartText += "\nTotal: " + *//*costInCart.ToString()*//*totalCost.ToString() + " Gold";
         cart.text = cartText;
-    }
-    public void BuySellButton() {
+    }*/
+    /*public void BuySellButton() {
         List<Item> transactionItems = new List<Item>();
         int quantityIndex = 0;
         foreach(var key in shoppingCart.Keys) {
@@ -175,8 +211,8 @@ public class MerchantMenu : MonoBehaviour
         //costInCart = 0; 
         //cart.gameObject.SetActive(false);
         TurnOffCart();
-    }
-    public void BuyButtonClick() {
+    }*/
+   /* public void BuyButtonClick() {
         DisplayCart();
         
         buyInventoryPanel.gameObject.SetActive(true);
@@ -184,8 +220,8 @@ public class MerchantMenu : MonoBehaviour
         cart.gameObject.SetActive(true);
         buy = true;
         //costInCart = 0;
-    }
-    private void SetUpForBuy() {
+    }*/
+    /*private void SetUpForBuy() {
         for(int i = 0; i < numBuySlots; i++) {
             GameObject instance = Instantiate(buySellPrefab);
             instance.transform.SetParent(buyInventoryPanel);
@@ -195,8 +231,8 @@ public class MerchantMenu : MonoBehaviour
             buyUIs[i].UpdateEntry(itemDB.GetItem(itemIdsForSale[i]));
         }
         UpdateBuyTextBox();
-    }
-    public void SellButtonClick() {
+    }*/
+    /*public void SellButtonClick() {
         //inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         SetUpForSale();
         buyInventoryPanel.gameObject.SetActive(false);
@@ -204,8 +240,8 @@ public class MerchantMenu : MonoBehaviour
         cart.gameObject.SetActive(true);
         buy = false;  
         //costInCart = 0;     
-    }
-    private void SetUpForSale() { 
+    }*/
+    /*private void SetUpForSale() { 
         //inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         numSellSlots = inventory.GetCountLessGold();
         if(sellUIs.Count == 0) {
@@ -232,8 +268,8 @@ public class MerchantMenu : MonoBehaviour
             }
         }
         UpdateSellTextBox();
-    }
-    public bool isBuy() { return buy; }
+    }*/
+    /*public bool isBuy() { return buy; }
     public List<int> GetQuantitiesByKey(int key) {
         return quantitiesFromInventory[key];
     }
@@ -261,7 +297,7 @@ public class MerchantMenu : MonoBehaviour
             List<int> quantityInInventory = inventory.GetQuantitiesByKey(id); // THIS IS THE QUANTITIES FROM THE INVENTORY
             // for(int j = 0; i < quantityInInventory.Count; j++) {
             //     Debug.Log(j);
-            //     /*totalQuantity +=*/ Debug.Log(quantityInInventory[j]);
+            //     /*totalQuantity +=*//* Debug.Log(quantityInInventory[j]);
             // }
             foreach(int stack in quantityInInventory) {
                 totalQuantity += stack; // THIS IS THE TOTAL AMOUNT OF ONE ITEM IN THE INVENTORY
@@ -279,8 +315,8 @@ public class MerchantMenu : MonoBehaviour
             string textBox = string.Format("{0} X {1}\n{2}\n{3}", sellUIs[i].item.itemName, quantityString, priceString, stock);
             sellUIs[i].UpdateText(textBox);
         }
-    }
-    private int GetQuantityIndex(Item item) {
+    }*/
+    /*private int GetQuantityIndex(Item item) {
         int quantityIndex = 0;
         bool foundIndex = false;
         foreach(var key in shoppingCart.Keys) {
@@ -292,7 +328,7 @@ public class MerchantMenu : MonoBehaviour
             }
         } 
         return quantityIndex;
-    }
+    }*/
 }
 /*THINGS TO DO BEFORE NEXT BUILD IS FINISHED: 
     BUG: WHEN YOU DROP BELOW 0 ON AN ITEM'S QUANTITY, IT DOESN'T REMOVE IT FROM THE UI AND CAUSES AN ARGUMENTOUTOFRANGE ERROR - MIGHT NOT BE ABLE TO SPLIT QUANTITY, WHICH COULD KIND OF SUCK

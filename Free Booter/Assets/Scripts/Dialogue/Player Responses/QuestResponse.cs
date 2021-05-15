@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Response Quest", menuName = "Response Quest ")]
+[CreateAssetMenu(fileName = "Response-Quest", menuName = "Response-Quest ")]
 public class QuestResponse : PlayerResponse
 {
     public bool startingQuest = default;
