@@ -88,10 +88,8 @@ public class DialogueController : MonoBehaviour
         }
         if(playerResponseButtons.Length > /*dialogue.playerResponses.Length*/activeResponses.Count)
         {
-            print("This should be getting called");
             for(int i = /*dialogue.playerResponses.Length*/activeResponses.Count; i < playerResponseButtons.Length; i++)
             {
-                print("This too...");
                 playerResponseButtons[i].gameObject.SetActive(false);
             }
         }

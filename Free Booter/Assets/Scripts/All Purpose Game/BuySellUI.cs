@@ -8,11 +8,48 @@ public class BuySellUI : MonoBehaviour
     public Item item;
     public Image spriteImage;
     public Text descriptonText;
+    public Button plusButton, minusButton;
     int costInCart, quantityInCart = 0;
     int costOfItem;
     MerchantMenu merchantMenu;
     Inventory inventory;
-    void Start()
+    //private bool buy = default;
+
+    public void SetUpUI(Item item, bool buy)
+    {
+        spriteImage.sprite = item.icon;
+        if(buy)
+        {
+            SetUpBuy(item);
+        }
+    }
+    private void SetUpBuy(Item item)
+    {
+        string text = "" + item.itemName + "\nPrice: " + item.buyPrice.ToString() + " X " + item.buyQuantity.ToString();
+        descriptonText.text = text;
+        plusButton.onClick.RemoveAllListeners();
+        plusButton.onClick.AddListener(BuyPlusClick);
+        minusButton.onClick.RemoveAllListeners();
+        minusButton.onClick.AddListener(BuyMinusClick);
+    }
+    public void BuyPlusClick()
+    {
+        print("Plus Clicked");
+
+    }
+    public void BuyMinusClick()
+    {
+        print("Minus clicked!");
+    }
+    public void SellPlusClick()
+    {
+
+    }
+    public void SellMinusClick()
+    {
+
+    }
+    /*void Start()
     {
         inventory = FindObjectOfType<PlayerShipController>().GetComponent<Inventory>();
         merchantMenu = GetComponentInParent<MerchantMenu>();
@@ -26,19 +63,19 @@ public class BuySellUI : MonoBehaviour
         // if(!merchantMenu.isBuy()) {
         // List<int> quantityInInventory = merchantMenu.GetQuantitiesByKey(item.id); 
         // }
-        /*
+        *//*
         string priceString = "Price: " + item.stats["BaseCost"].ToString();
         string quantityString = item.stats["QuantitySoldIn"].ToString();
-        */
+        *//*
         // int totalQuantity = 0;
         // for(int i = 0; i < quantityInInventory.Count; i++) {
         //     totalQuantity += quantityInInventory[i];
         // }
         // string stock = "Quantity in inventory: " + totalQuantity.ToString();
-        /*
+        *//*
         string textBox = string.Format("{0} X {1}\n{2}", item.itemName, quantityString, priceString);
         descriptonText.text = textBox;
-        */
+        *//*
         //UpdateTextBox();
     }
     public void UpdateText(string textBox) {
@@ -69,7 +106,7 @@ public class BuySellUI : MonoBehaviour
         } else {
             costInCart += costOfItem;
             quantityInCart += this.item.buyQuantity;
-            merchantMenu.UpdateCartForSale(/*this.item.stats["BaseCost"], this.item.stats["QuantitySoldIn"]*/this.item, costOfItem, quantityInCart);
+            merchantMenu.UpdateCartForSale(*//*this.item.stats["BaseCost"], this.item.stats["QuantitySoldIn"]*//*this.item, costOfItem, quantityInCart);
             // merchantMenu.UpdateCartInfo(this.item, costOfItem, quantityInCart);
         }
     }
@@ -106,5 +143,5 @@ public class BuySellUI : MonoBehaviour
     public Item GetItem() { return item; }
     public void KillSelf() {
         Destroy(gameObject);
-    }
+    }*/
 }

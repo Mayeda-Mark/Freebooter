@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Response Branch", menuName = "Branch Responses")]
+[CreateAssetMenu(fileName = "Response-Branch", menuName = "Response-Branch")]
 public class BranchResponse : PlayerResponse
 {
     public NPCDialogue[] nextSteps;
